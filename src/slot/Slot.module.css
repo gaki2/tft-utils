@@ -1,0 +1,14 @@
+.slot_wrapper {
+   width: 84px;
+   height: 96px;
+   /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+   background-color: aqua;
+   padding: 4px;
+}
+
+.slot_content {
+   height: 100%;
+   /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+   background-color: yellow;
+}
+
