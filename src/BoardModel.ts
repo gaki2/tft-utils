@@ -9,6 +9,9 @@ export type ConstructorParams = {
 
 export type DragState = {
   isDragging: boolean;
+  /**
+   * 만약 드래그 중이라면, 현재 드래그중인 슬롯의 인덱스이다.
+   */
   slotIdx: SlotIndex | null;
 };
 
@@ -22,7 +25,7 @@ export type BoardMeta = {
 };
 
 export type BoardModelState = {
-  [slotIdx in SlotIndex]: SlotData | null;
+  slots: (SlotData | null)[];
 } & BoardMeta;
 
 let boardModelIndex = 0;
@@ -36,26 +39,24 @@ export class BoardModel {
   public constructor(rawData?: ConstructorParams[]) {
     this.state = this.createInitialState(rawData);
   }
-  // { dragState: { isDragging: false, slotIdx: null }, id: this.id,  }
   private createInitialState(initialState?: ConstructorParams[]): BoardModelState {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    const state: BordModelState = {};
-    ([...Array(BOARD_COL_COUNT * BOARD_ROW_COUNT).keys()] as SlotIndex[]).forEach((slotIdx) => {
-      state[slotIdx] = null;
+    const state: BoardModelState = {
+      slots: [],
+      id: this.id,
+      dragState: { isDragging: false, slotIdx: null },
+    };
+    [...Array(BOARD_COL_COUNT * BOARD_ROW_COUNT).keys()].forEach((idx) => {
+      state.slots[idx] = null;
     });
-
     if (initialState) {
       for (const slotMeta of initialState) {
-        const slotIdx = this.getSlotIndex(slotMeta.position);
-        state[slotIdx] = slotMeta.champion;
+        const slotIdx = this.positionToSlotIdx(slotMeta.position);
+        state.slots[slotIdx] = { name: slotMeta.champion };
       }
     }
-
     return state;
   }
-
-  private getSlotIndex(position: Position): number {
+  private positionToSlotIdx(position: Position): number {
     const idx = position.row * BOARD_COL_COUNT + position.col;
     if (idx < 0 || idx >= BOARD_SLOT_COUNT) {
       throw new Error(`Invalid slot index: ${idx}`);
@@ -63,29 +64,29 @@ export class BoardModel {
 
     return position.row * BOARD_COL_COUNT + position.col;
   }
-
-  private getSlotPosition(slotIdx: SlotIndex): Position {
+  private slotIdxToPosition(slotIdx: SlotIndex): Position {
     const row = Math.floor(slotIdx / BOARD_COL_COUNT);
     const col = slotIdx % BOARD_COL_COUNT;
     return { row, col };
   }
-
   private notifyStateListeners() {
     for (const listener of this.stateListeners) {
       listener(this.state);
     }
   }
-
   private notifyDragListeners() {
     for (const listener of this.dragListeners) {
       listener(this.state.dragState);
     }
   }
-
   private swap(slot1: SlotIndex, slot2: SlotIndex) {
-    const temp = this.state[slot1];
-    this.state[slot1] = this.state[slot2];
-    this.state[slot2] = temp;
+    const temp = this.state.slots[slot1];
+    this.state.slots[slot1] = this.state.slots[slot2];
+    this.state.slots[slot2] = temp;
+  }
+
+  public getBoardState() {
+    return this.state;
   }
 
   public onChangeState(listener: (state: BoardModelState) => void) {
@@ -109,7 +110,7 @@ export class BoardModel {
    * @returns 만약 해당 슬롯에 챔피언이 없다면 null 을 반환합니다.
    */
   public getSlotData(slotIdx: SlotIndex): { position: Position; slotData: SlotData | null } {
-    const position = this.getSlotPosition(slotIdx);
+    const position = this.slotIdxToPosition(slotIdx);
     const slotData = this.state[slotIdx];
 
     return { position, slotData };
