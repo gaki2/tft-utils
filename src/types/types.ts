@@ -1,5 +1,7 @@
 /**
  * @description Build 에서의 위치를 나타내는 타입입니다.
+ * row 는 0 ~ 3,
+ * col 은 0 ~ 6 의 값을 가집니다.
  */
 export type Position = {
   row: number;

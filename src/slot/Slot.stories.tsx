@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Slot } from './Slot';
+import { rawChampions } from '../data/season_9/champion';
+import '../styles/style.css';
 
 const meta = {
   title: 'Example/Slot',
@@ -11,10 +13,23 @@ const meta = {
     layout: 'centered',
   },
 } satisfies Meta<typeof Slot>;
-
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Temp: Story = {
-  args: { slotIdx: 1, slotData: { name: 'Irelia' } },
+const AllSlots = () => {
+  const allChampions = Object.keys(rawChampions.data);
+  return (
+    <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', flexWrap: 'wrap' }}>
+      {allChampions.map((champion) => (
+        <div key={champion} style={{ position: 'relative', width: '84px', height: '96px' }}>
+          <Slot slotIdx={1} slotData={{ name: champion }} />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export const Template: Story = {
+  render: () => <AllSlots />,
 };

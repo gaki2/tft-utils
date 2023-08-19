@@ -1,6 +1,6 @@
-import { Position, SlotIndex } from './types';
-import { ChampionName } from './data/season_9/champion';
-import { BOARD_COL_COUNT, BOARD_ROW_COUNT, BOARD_SLOT_COUNT } from './board_constants';
+import { Position, SlotIndex } from '../../types/types';
+import { ChampionName } from '../../data/season_9/champion';
+import { BOARD_COL_COUNT, BOARD_ROW_COUNT, BOARD_SLOT_COUNT } from '../constants/board_constants';
 
 export type ConstructorParams = {
   position: Position;
@@ -85,8 +85,8 @@ export class BoardModel {
     this.state.slots[slot2] = temp;
   }
 
-  public getBoardState() {
-    return this.state;
+  public getAllSlots() {
+    return this.state.slots;
   }
 
   public onChangeState(listener: (state: BoardModelState) => void) {
@@ -102,7 +102,7 @@ export class BoardModel {
   }
 
   public addChampion(slotIdx: SlotIndex, championName: ChampionName) {
-    this.state[slotIdx] = { name: championName };
+    this.state.slots[slotIdx] = { name: championName };
     this.notifyStateListeners();
   }
 
@@ -111,7 +111,7 @@ export class BoardModel {
    */
   public getSlotData(slotIdx: SlotIndex): { position: Position; slotData: SlotData | null } {
     const position = this.slotIdxToPosition(slotIdx);
-    const slotData = this.state[slotIdx];
+    const slotData = this.state.slots[slotIdx];
 
     return { position, slotData };
   }
