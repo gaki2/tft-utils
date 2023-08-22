@@ -3,9 +3,12 @@
  * row 는 0 ~ 3,
  * col 은 0 ~ 6 의 값을 가집니다.
  */
+export type Row = 0 | 1 | 2 | 3;
+export type Col = 0 | 1 | 2 | 3 | 4 | 5 | 6;
+
 export type Position = {
-  row: number;
-  col: number;
+  row: Row;
+  col: Col;
 };
 
 export type SlotIndex =

@@ -1,8 +1,10 @@
-import { Position, SlotIndex } from '../../types/types';
+import { Col, Position, Row, SlotIndex } from '../../types/types';
 import { ChampionName } from '../../data/season_9/champion';
 import { BOARD_COL_COUNT, BOARD_ROW_COUNT, BOARD_SLOT_COUNT } from '../constants/board_constants';
 
-export type ConstructorParams = {
+export type StarLevel = 1 | 2 | 3 | 4;
+
+export type BoardParams = {
   position: Position;
   champion: ChampionName;
 };
@@ -13,10 +15,12 @@ export type DragState = {
    * 만약 드래그 중이라면, 현재 드래그중인 슬롯의 인덱스이다.
    */
   slotIdx: SlotIndex | null;
+  overSlotIdx: SlotIndex | null;
 };
 
 export type SlotData = {
   name: ChampionName;
+  starLevel?: StarLevel | 0;
 };
 
 export type BoardMeta = {
@@ -28,22 +32,26 @@ export type BoardModelState = {
   slots: (SlotData | null)[];
 } & BoardMeta;
 
+export type BoardStateListener = (state: BoardModelState) => void;
+export type BoardDragListener = (state: DragState) => void;
+
 let boardModelIndex = 0;
 
 export class BoardModel {
   private id: number = boardModelIndex++;
   private state: BoardModelState;
-  private stateListeners: Set<(state: BoardModelState) => void> = new Set();
-  private dragListeners: Set<(state: DragState) => void> = new Set();
+  private stateListeners: Set<BoardStateListener> = new Set();
+  private dragListeners: Set<BoardDragListener> = new Set();
 
-  public constructor(rawData?: ConstructorParams[]) {
+  public constructor(rawData?: BoardParams[]) {
     this.state = this.createInitialState(rawData);
   }
-  private createInitialState(initialState?: ConstructorParams[]): BoardModelState {
+
+  private createInitialState(initialState?: BoardParams[]): BoardModelState {
     const state: BoardModelState = {
       slots: [],
       id: this.id,
-      dragState: { isDragging: false, slotIdx: null },
+      dragState: { isDragging: false, slotIdx: null, overSlotIdx: null },
     };
     [...Array(BOARD_COL_COUNT * BOARD_ROW_COUNT).keys()].forEach((idx) => {
       state.slots[idx] = null;
@@ -65,8 +73,8 @@ export class BoardModel {
     return position.row * BOARD_COL_COUNT + position.col;
   }
   private slotIdxToPosition(slotIdx: SlotIndex): Position {
-    const row = Math.floor(slotIdx / BOARD_COL_COUNT);
-    const col = slotIdx % BOARD_COL_COUNT;
+    const row = Math.floor(slotIdx / BOARD_COL_COUNT) as Row;
+    const col = (slotIdx % BOARD_COL_COUNT) as Col;
     return { row, col };
   }
   private notifyStateListeners() {
@@ -85,11 +93,20 @@ export class BoardModel {
     this.state.slots[slot2] = temp;
   }
 
+  public setStarLevel(slotIdx: SlotIndex, starLevel: StarLevel | 0) {
+    this.state.slots[slotIdx]!.starLevel = starLevel;
+    this.notifyStateListeners();
+  }
+
+  public getState() {
+    return this.state;
+  }
+
   public getAllSlots() {
     return this.state.slots;
   }
 
-  public onChangeState(listener: (state: BoardModelState) => void) {
+  public addStateListener(listener: (state: BoardModelState) => void) {
     this.stateListeners.add(listener);
   }
 
@@ -109,11 +126,12 @@ export class BoardModel {
   /**
    * @returns 만약 해당 슬롯에 챔피언이 없다면 null 을 반환합니다.
    */
-  public getSlotData(slotIdx: SlotIndex): { position: Position; slotData: SlotData | null } {
-    const position = this.slotIdxToPosition(slotIdx);
-    const slotData = this.state.slots[slotIdx];
+  public getSlotData(slotIdx: SlotIndex) {
+    return this.state.slots[slotIdx];
+  }
 
-    return { position, slotData };
+  public getId() {
+    return this.id;
   }
 
   public notifyDragStart(slotIdx: SlotIndex) {
@@ -123,14 +141,28 @@ export class BoardModel {
     this.notifyDragListeners();
   }
 
-  public notifyDragEnd(slotIdx: SlotIndex) {
-    if (!this.state.dragState.isDragging || !this.state.dragState.slotIdx) {
+  public setMousePos(slotIdx: SlotIndex | null) {
+    if (slotIdx !== null) {
+      this.state.dragState.overSlotIdx = slotIdx;
+    } else {
+      this.state.dragState.overSlotIdx = null;
+    }
+  }
+
+  public notifyDragEnd() {
+    if (!this.state.dragState.isDragging || this.state.dragState.slotIdx === null) {
       throw new Error('Fail to swap champion: dragState is not valid');
     }
 
-    this.swap(this.state.dragState.slotIdx, slotIdx);
+    if (this.state.dragState.overSlotIdx === null) {
+      console.error('overSlotIdx is null');
+      return;
+    }
+
+    this.swap(this.state.dragState.slotIdx, this.state.dragState.overSlotIdx);
     this.state.dragState.isDragging = false;
     this.state.dragState.slotIdx = null;
+    this.state.dragState.overSlotIdx = null;
 
     this.notifyDragListeners();
     this.notifyStateListeners();

@@ -15,6 +15,15 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Temp: Story = {
-  args: {},
+const Boards = () => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', flexWrap: 'wrap' }}>
+      <Board />
+      <Board />
+    </div>
+  );
+};
+
+export const Template: Story = {
+  render: () => <Boards />,
 };

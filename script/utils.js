@@ -9,4 +9,8 @@ const removePrefixFromKeys = (obj, prefix) => {
   return result;
 };
 
-module.exports = { removePrefixFromKeys };
+const removeStringPrefix = (str, prefix) => {
+  return str.replace(prefix, '');
+};
+
+module.exports = { removePrefixFromKeys, removeStringPrefix };

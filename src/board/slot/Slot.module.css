@@ -17,8 +17,7 @@
 .slot_champion_img {
    height: 100%;
    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-   background-color: yellow;
-   background-size: contain;
+   background: #fff 50%/cover no-repeat
 }
 
 /**
@@ -26,4 +25,8 @@
  */
 .slot_wrapper:hover div[id=star_level] {
    visibility: visible;
+}
+
+.isOver div[id="slot_img"] {
+   background-color: #6497af;
 }
