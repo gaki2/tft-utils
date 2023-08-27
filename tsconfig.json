@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [ "src/*" ]
+    },
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     /* Visit https://aka.ms/tsconfig to read more about this file */
     // Absolute path 를 위한 alias 추가를 추가함.
@@ -26,7 +30,8 @@
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
 
     /* Modules */
-    "module": "ESNext" /* Specify what module code is generated. */,
+    "preserveValueImports": false,
+    "module": "CommonJS" /* Specify what module code is generated. */,
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
     "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
     // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
@@ -102,6 +107,8 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "files": ["src/index.ts"],
-  "include": ["src", "src/types/svg.d.ts"],
+  "include": ["src", "src/types/svg.d.ts",
+    "src/script"
+  ],
   "exclude": ["*.js", "*.json"]
 }
