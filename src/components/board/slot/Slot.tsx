@@ -22,13 +22,9 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
   const price = useMemo(() => (slotData ? getCost(slotData.name, season) : null), [slotData]);
 
   useEffect(() => {
-    if (typeof boardId === 'number') {
-      BoardController.getInstance().addStateListener(boardId, (newState) => {
-        setSlotData(newState.slots[slotIdx]);
-      });
-    } else {
-      console.error('Wrong boardId: boardId is undefined or null !');
-    }
+    BoardController.getInstance().addStateListener(boardId, (newState) => {
+      setSlotData(newState.slots[slotIdx]);
+    });
 
     function onDragStart(e: DragEvent) {
       BoardController.getInstance().notifyDragStart(boardId, slotIdx);
