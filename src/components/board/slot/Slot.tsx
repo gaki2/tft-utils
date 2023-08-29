@@ -6,7 +6,8 @@ import { BoardController } from '../controller/BoardController';
 import { SlotData } from '../model/BoardModel';
 import { Season } from '@src/static/types/seasonType';
 import { LanguageType } from '@src/script/config';
-import { getCost } from '@src/static/getter';
+import { getChampionData, getChampionTraits, getCost } from '@src/static/getter';
+import { SlotPopover } from '@src/components/board/slot/popover/SlotPopover';
 
 type SlotProps = {
   initialSlotData: SlotData | null;
@@ -82,6 +83,7 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
       <div className={style.slot_border} style={borderStyle}>
         <div id={'slot_img'} className={style.slot_champion_img} style={championImgDivStyle} />
       </div>
+      {slotData && <SlotPopover championName={slotData.name} season={season} language={language} />}
     </div>
   );
 };

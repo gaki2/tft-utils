@@ -6,9 +6,31 @@ import { LANGUAGES, LanguageType, SEASONS, SeasonType } from '@src/script/config
 const publicDir = path.join(__dirname, '../../public');
 const outDir = path.join(__dirname, '../static');
 
-const createObject = (name: string, values: { name: string }[]) => {
+/**
+ * trait_{lang}.ts 파일의 icon 속성을 실제 아이콘 이미지의 Path 로 만듦
+ */
+const parseIconPath = (path: string, season: SeasonType) => {
+  const splitPath = path.split('/');
+  const fileName = splitPath[splitPath.length - 1];
+  return `/img/season_${season}/trait/${fileName.replace('tex', 'png')}`;
+};
+
+const createObject = (
+  name: string,
+  values: { apiName: string; icon: string }[],
+  season: SeasonType
+) => {
   return `export const ${name} = {
-    ${values.map((value) => `'${value.name}': ${JSON.stringify(value, null, 4)}`).join(',\n    ')}
+    ${values
+      .map(
+        (value) =>
+          `'${value.apiName}': ${JSON.stringify(
+            Object.assign(value, { icon: parseIconPath(value.icon, season) }),
+            null,
+            4
+          )}`
+      )
+      .join(',\n    ')}
   }`;
 };
 
@@ -22,7 +44,7 @@ const championTrait = (lang: LanguageType, season: SeasonType) =>
     ).traits;
     writeFile(
       `${outDir}/season_${season}/trait_${lang}.ts`,
-      createObject(`trait_${season}`, object)
+      createObject(`trait_${season}`, object, season)
     )
       .then(() => resolve(''))
       .catch((err) => reject(err));
