@@ -55,3 +55,12 @@ export const getChampionTraits = (
   }
   return ret;
 };
+
+export const getChampionName = (
+  championName: ChampionName,
+  season: Season,
+  lang: LanguageType = 'ko_kr'
+) => {
+  const championsData = getChampions(season, lang);
+  return championsData[championName].name;
+};

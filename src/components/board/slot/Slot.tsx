@@ -6,8 +6,10 @@ import { BoardController } from '../controller/BoardController';
 import { SlotData } from '../model/BoardModel';
 import { Season } from '@src/static/types/seasonType';
 import { LanguageType } from '@src/script/config';
-import { getChampionData, getChampionTraits, getCost } from '@src/static/getter';
-import { SlotPopover } from '@src/components/board/slot/popover/SlotPopover';
+import { getCost } from '@src/static/getter';
+import { Popover } from '@src/utils/popover/Popover';
+import { throttle } from '@src/utils/throttle';
+import { SlotPopover } from '@src/components/board/slot/popup_view/SlotPopover';
 
 type SlotProps = {
   initialSlotData: SlotData | null;
@@ -17,10 +19,39 @@ type SlotProps = {
   language: LanguageType;
 };
 
+type Dimension = {
+  top: number;
+  left: number;
+  width: number;
+  height: number;
+};
+
 export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: SlotProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [slotData, setSlotData] = useState<SlotData | null>(initialSlotData);
   const price = useMemo(() => (slotData ? getCost(slotData.name, season) : null), [slotData]);
+  const [isOpened, setIsOpend] = useState(false);
+  const [dimension, setDimension] = useState<Dimension | null>(null);
+
+  useEffect(() => {
+    const updateDimension = throttle(() => {
+      if (wrapperRef.current) {
+        const scrollY = window.scrollY;
+        const scrollX = window.scrollX;
+        const { top, left, width, height } = wrapperRef.current?.getBoundingClientRect();
+        setDimension({ top: top + scrollY, left: left + scrollX, width, height });
+      }
+    }, 20);
+
+    if (wrapperRef.current && slotData) {
+      updateDimension();
+      window.addEventListener('resize', updateDimension);
+
+      return () => {
+        window.removeEventListener('resize', updateDimension);
+      };
+    }
+  }, [slotData]);
 
   useEffect(() => {
     BoardController.getInstance().addStateListener(boardId, (newState) => {
@@ -28,6 +59,7 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
     });
 
     function onDragStart(e: DragEvent) {
+      setIsOpend(false);
       BoardController.getInstance().notifyDragStart(boardId, slotIdx);
     }
 
@@ -78,12 +110,27 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
   };
 
   return (
-    <div className={style.slot_wrapper} draggable={Boolean(slotData)} ref={wrapperRef}>
-      {slotData && <StarLevel id={'star_level'} can4thStar={false} />}
-      <div className={style.slot_border} style={borderStyle}>
-        <div id={'slot_img'} className={style.slot_champion_img} style={championImgDivStyle} />
+    <>
+      <div
+        className={style.slot_wrapper}
+        draggable={Boolean(slotData)}
+        ref={wrapperRef}
+        onClick={() => setIsOpend(true)}>
+        {slotData && <StarLevel id={'star_level'} can4thStar={false} />}
+        <div className={style.slot_border} style={borderStyle}>
+          <div id={'slot_img'} className={style.slot_champion_img} style={championImgDivStyle} />
+        </div>
       </div>
-      {slotData && <SlotPopover championName={slotData.name} season={season} language={language} />}
-    </div>
+      {slotData && isOpened && (
+        <Popover
+          parentTop={dimension?.top ?? 0}
+          parentLeft={dimension?.left ?? 0}
+          parentWidth={dimension?.width ?? 0}
+          parentHeight={dimension?.height ?? 0}
+          closePopover={() => setIsOpend(false)}>
+          <SlotPopover championName={slotData?.name} season={season} language={language} />
+        </Popover>
+      )}
+    </>
   );
 };
