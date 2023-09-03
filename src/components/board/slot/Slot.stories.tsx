@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Slot } from './Slot';
 import '../../../styles/style.css';
-import { getAllChampionNames, getAllChampions } from '@src/static/getter';
+import { getAllChampionNames, getChampions } from '@src/static/getter';
 
 const meta = {
   title: 'Example/Slot',
