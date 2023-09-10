@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { writeFile } from '@src/script/utils/file';
-import { LANGUAGES, LanguageType, SEASONS, SeasonType } from '@src/script/config';
+import { LANGUAGES, LanguageType, SEASONS, SeasonType } from './config';
+import { writeFile } from './utils/file';
 
 const publicDir = path.join(__dirname, '../../public');
-const outDir = path.join(__dirname, '../static');
+const outDir = path.join(__dirname, '../_generated');
 
 const createObject = (name: string, values: { apiName: string }[]) => {
   return `export const ${name} = {

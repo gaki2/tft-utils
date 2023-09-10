@@ -1,6 +1,6 @@
-import { CSSProperties, useRef, useState, ReactNode, useCallback } from 'react';
-import { useClickOutside } from '@src/utils/popover/useClickOutside';
+import { CSSProperties, useRef, ReactNode, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import { useClickOutside } from './useClickOutside';
 
 type PopoverProps = {
   parentWidth: number;

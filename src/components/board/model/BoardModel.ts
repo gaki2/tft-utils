@@ -1,6 +1,6 @@
-import { Col, Position, Row, SlotIndex } from '@src/types/types';
-import { ChampionName } from '@src/static/types/championType';
 import { BOARD_COL_COUNT, BOARD_ROW_COUNT, BOARD_SLOT_COUNT } from '../constants/board_constants';
+import { Col, Position, Row, SlotIndex } from '../../../types/types';
+import { ChampionName } from '../../../_generated/types/championType';
 
 export type StarLevel = 1 | 2 | 3 | 4;
 

@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@src/*": [ "src/*" ]
-    },
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     /* Visit https://aka.ms/tsconfig to read more about this file */
     // Absolute path 를 위한 alias 추가를 추가함.
@@ -107,8 +104,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "files": ["src/index.ts"],
-  "include": ["src", "src/types/svg.d.ts",
-    "src/script"
-  ],
+  "include": ["src", "src/types/types.ts"],
   "exclude": ["*.js", "*.json"]
 }

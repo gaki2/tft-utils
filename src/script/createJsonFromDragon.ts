@@ -1,7 +1,7 @@
 import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
-import { LANGUAGES } from '@src/script/config';
+import { LANGUAGES } from './config';
 
 const outDir = path.join(__dirname, '../../public');
 const baseUrl = 'https://raw.communitydragon.org/latest/cdragon/tft';

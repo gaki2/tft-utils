@@ -1,53 +1,27 @@
 import { useMemo } from 'react';
-import styles from './Board.module.css';
-import { Slot } from './slot/Slot';
-import '../../styles/style.css';
-import { Position, SlotIndex } from '@src/types/types';
-import { BoardModel } from '@src/components/board/model/BoardModel';
-import { BoardController } from '@src/components/board/controller/BoardController';
-import { ChampionName } from '@src/static/types/championType';
+import { Slot } from '../slot/Slot';
+import { Position, SlotIndex } from '../../types/types';
+import { Season } from '../../_generated/types/seasonType';
+import { LanguageType } from '../../script/config';
+import { ChampionName } from '../../_generated/types/championType';
+import { BoardController } from './controller/BoardController';
+import styled from 'styled-components';
 
-export type BuilderProps = { temp?: number };
+export type BuilderProps = { champions: ChampionData[]; season: Season; language?: LanguageType };
 
-type MOCK = {
+export type ChampionData = {
   position: Position;
   champion: ChampionName;
 };
 
-const MOCK_DATA: MOCK[] = [
-  {
-    position: {
-      row: 0,
-      col: 3,
-    },
-    champion: 'TFT9_JarvanIV',
-  },
-  {
-    position: {
-      row: 3,
-      col: 4,
-    },
-    champion: 'TFT9_Karma',
-  },
-  {
-    position: {
-      row: 0,
-      col: 4,
-    },
-    champion: 'TFT9_Sion',
-  },
-];
-
-export const Board = ({}: BuilderProps) => {
-  const season = 'season_9';
-  const language = 'ko_kr';
+export const Board = ({ champions, season, language = 'ko_kr' }: BuilderProps) => {
   const { board, boardId } = useMemo(
-    () => BoardController.getInstance().createBoard(MOCK_DATA),
+    () => BoardController.getInstance().createBoard(champions),
     []
   );
 
   return (
-    <div className={styles.board_wrapper}>
+    <Wrapper>
       {board.getAllSlots().map((_, idx) => (
         <Slot
           key={idx}
@@ -58,6 +32,39 @@ export const Board = ({}: BuilderProps) => {
           language={language}
         />
       ))}
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  --width: 632px;
+  --ratio: 1.6;
+
+  width: var(--width);
+  height: calc(var(--width) / var(--ratio));
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0 8px;
+  flex-shrink: 0;
+
+  & > :nth-child(n + 1):nth-child(-n + 7) {
+    transform: translateX(-25%);
+  }
+
+  & > :nth-child(n + 8):nth-child(-n + 14) {
+    transform: translate(25%, -10%);
+  }
+
+  & > :nth-child(n + 15):nth-child(-n + 21) {
+    transform: translate(-25%, -20%);
+  }
+
+  & > :nth-child(n + 22):nth-child(-n + 28) {
+    transform: translate(25%, -30%);
+  }
+
+  & > * {
+    box-sizing: border-box;
+  }
+`;

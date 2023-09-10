@@ -1,6 +1,6 @@
-import { execute as createJson } from '@src/script/createJsonFromDragon';
-import { execute as createTraitObject } from '@src/script/traitObject';
-import { execute as createChampionObject } from '@src/script/championObject';
+import { execute as createJson } from '../script/createJsonFromDragon';
+import { execute as createTraitObject } from '../script/traitObject';
+import { execute as createChampionObject } from '../script/championObject';
 
 const execute = async () => {
   try {
