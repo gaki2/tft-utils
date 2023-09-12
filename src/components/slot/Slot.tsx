@@ -10,6 +10,7 @@ import { Popover } from '../../utils/popover/Popover';
 import { SlotPopup } from './popup_view/SlotPopup';
 import styled from 'styled-components';
 import { StarLevel } from './star/StarLevel';
+import {S3} from "../../environments/urls";
 
 type SlotProps = {
   initialSlotData: SlotData | null;
@@ -176,7 +177,7 @@ const ImageDiv = styled.div<{ championName: string | undefined; season: Season }
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: #fff 50% / cover no-repeat;
   background-image: ${({ championName, season }) =>
-    championName ? `url(/img/${season}/champion/${championName}.png)` : ''};
+    championName ? `url(${S3}/${season}/champions/${championName}.png)` : ''};
   cursor: ${({ championName }) => (championName ? 'pointer' : 'default')};
 `;
 

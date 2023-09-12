@@ -1,10 +1,8 @@
-import copy from 'rollup-plugin-copy'
 import dts from 'rollup-plugin-dts'
 import esbuild from 'rollup-plugin-esbuild';
 import nodeResolve from "@rollup/plugin-node-resolve";
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import commonjs from "rollup-plugin-commonjs";
-import postcss from 'rollup-plugin-postcss';
 
 const extensions = ['.tsx', 'ts', 'js', '.mjs'];
 
@@ -47,7 +45,7 @@ const dtsConfig = {
   plugins: [dts()]
 };
 
-const Plugins = [commonjs(), peerDepsExternal(), esbuildConfig, copy({targets: [{ src: './public/img/*', dest: 'lib/public/img'}]})];
+const Plugins = [commonjs(), peerDepsExternal(), esbuildConfig];
 
 /** @type {import('rollup').RollupOptions} */
 const commonjsConfig = {
