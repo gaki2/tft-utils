@@ -20,8 +20,8 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "BonusArmor": 55,
-                "BonusMR": 55,
+                "BonusArmor": 50,
+                "BonusMR": 50,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -32,8 +32,8 @@ export const trait_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "BonusArmor": 100,
-                "BonusMR": 100,
+                "BonusArmor": 95,
+                "BonusMR": 95,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -52,7 +52,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Bastion.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Bastion.TFT_Set9.png",
     "name": "Bastion"
 },
     'Set9_Sorcerer': {
@@ -65,7 +65,7 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "{08335318}": 1,
-                "{6266505a}": 0.10000000149011612,
+                "{6266505a}": 0.07000000029802322,
                 "{a34f32df}": 3,
                 "{d49caf5d}": 25
             }
@@ -104,7 +104,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_3_Sorcerer.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_3_Sorcerer.png",
     "name": "Sorcerer"
 },
     'Set9_BandleCity': {
@@ -140,7 +140,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_6_Yordle.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_6_Yordle.png",
     "name": "Yordle"
 },
     'Set9_Deadeye': {
@@ -175,7 +175,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Deadeye.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Deadeye.TFT_Set9.png",
     "name": "Deadeye"
 },
     'Set9_Void': {
@@ -210,7 +210,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Void.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Void.TFT_Set9.png",
     "name": "Void"
 },
     'Set9_Demacia': {
@@ -241,7 +241,7 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "{a750b59f}": 4,
-                "{bd072701}": 50
+                "{bd072701}": 40
             }
         },
         {
@@ -254,7 +254,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Demacia.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Demacia.TFT_Set9.png",
     "name": "Demacia"
 },
     'Set9_Rogue': {
@@ -288,7 +288,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Rogue.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Rogue.TFT_Set9.png",
     "name": "Rogue"
 },
     'Set9_Slayer': {
@@ -346,7 +346,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_4_Slayer.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_4_Slayer.png",
     "name": "Slayer"
 },
     'Set9_Preserver': {
@@ -384,7 +384,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Preserver.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Preserver.TFT_Set9.png",
     "name": "Invoker"
 },
     'Set9_Bruiser': {
@@ -419,7 +419,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_6_Bruiser.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_6_Bruiser.png",
     "name": "Bruiser"
 },
     'Set9_Noxus': {
@@ -453,14 +453,14 @@ export const trait_9 = {
             "minUnits": 9,
             "style": 5,
             "variables": {
-                "AD": 60,
-                "AP": 60,
-                "Health": 600,
+                "AD": 70,
+                "AP": 70,
+                "Health": 700,
                 "{d04ae9af}": 0.05000000074505806
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Noxus.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Noxus.TFT_Set9.png",
     "name": "Noxus"
 },
     'Set9_Shurima': {
@@ -524,7 +524,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Shurima.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Shurima.TFT_Set9.png",
     "name": "Shurima"
 },
     'Set9_Strategist': {
@@ -537,7 +537,7 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "ShieldDuration": 15,
-                "{9d0939e8}": 200,
+                "{9d0939e8}": 250,
                 "{d49caf5d}": 15
             }
         },
@@ -547,7 +547,7 @@ export const trait_9 = {
             "style": 3,
             "variables": {
                 "ShieldDuration": 15,
-                "{9d0939e8}": 350,
+                "{9d0939e8}": 400,
                 "{d49caf5d}": 25
             }
         },
@@ -557,7 +557,7 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "ShieldDuration": 15,
-                "{9d0939e8}": 500,
+                "{9d0939e8}": 600,
                 "{d49caf5d}": 40
             }
         },
@@ -567,12 +567,12 @@ export const trait_9 = {
             "style": 5,
             "variables": {
                 "ShieldDuration": 15,
-                "{9d0939e8}": 800,
+                "{9d0939e8}": 900,
                 "{d49caf5d}": 60
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Strategist.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Strategist.TFT_Set9.png",
     "name": "Strategist"
 },
     'Set9_Redeemer': {
@@ -588,7 +588,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Mistwalker.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Mistwalker.TFT_Set9.png",
     "name": "Redeemer"
 },
     'Set9_Piltover': {
@@ -614,7 +614,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Piltover.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Piltover.TFT_Set9.png",
     "name": "Piltover"
 },
     'Set9_Multicaster': {
@@ -640,7 +640,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Multicaster.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Multicaster.TFT_Set9.png",
     "name": "Multicaster"
 },
     'Set9_Marksman': {
@@ -662,7 +662,7 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "MaxStacks": 8,
-                "{df3d2f5f}": 12
+                "{df3d2f5f}": 14
             }
         },
         {
@@ -671,11 +671,11 @@ export const trait_9 = {
             "style": 5,
             "variables": {
                 "MaxStacks": 8,
-                "{df3d2f5f}": 22
+                "{df3d2f5f}": 25
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Gunner.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Gunner.TFT_Set9.png",
     "name": "Gunner"
 },
     'Set9_Empress': {
@@ -694,7 +694,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Empress.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Empress.TFT_Set9.png",
     "name": "Empress"
 },
     'Set9_ShadowIsles': {
@@ -738,7 +738,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_ShadowIsles.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_ShadowIsles.TFT_Set9.png",
     "name": "Shadow Isles"
 },
     'Set9_Freljord': {
@@ -782,7 +782,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Freljord.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Freljord.TFT_Set9.png",
     "name": "Freljord"
 },
     'Set9_Targon': {
@@ -794,7 +794,7 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "{0b39c7c2}": 0.20000000298023224
+                "{0b39c7c2}": 0.18000000715255737
             }
         },
         {
@@ -802,7 +802,7 @@ export const trait_9 = {
             "minUnits": 3,
             "style": 4,
             "variables": {
-                "{0b39c7c2}": 0.4000000059604645
+                "{0b39c7c2}": 0.3499999940395355
             }
         },
         {
@@ -810,11 +810,11 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 5,
             "variables": {
-                "{0b39c7c2}": 0.699999988079071
+                "{0b39c7c2}": 0.6000000238418579
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Targon.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Targon.TFT_Set9.png",
     "name": "Targon"
 },
     'Set9_Darkin': {
@@ -832,7 +832,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Darkin.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Darkin.TFT_Set9.png",
     "name": "Darkin"
 },
     'Set9_Wanderer': {
@@ -846,7 +846,7 @@ export const trait_9 = {
             "variables": {}
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Wanderer.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Wanderer.TFT_Set9.png",
     "name": "Wanderer"
 },
     'Set9_Zaun': {
@@ -881,7 +881,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Zaun.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Zaun.TFT_Set9.png",
     "name": "Zaun"
 },
     'Set9_Armorclad': {
@@ -919,7 +919,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Juggernaut.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Juggernaut.TFT_Set9.png",
     "name": "Juggernaut"
 },
     'Set9_Technogenius': {
@@ -937,7 +937,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Technogenius.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Technogenius.TFT_Set9.png",
     "name": "Technogenius"
 },
     'Set9_Challenger': {
@@ -985,7 +985,7 @@ export const trait_9 = {
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_6_Challenger.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_6_Challenger.png",
     "name": "Challenger"
 },
     'Set9_Ionia': {
@@ -1008,7 +1008,7 @@ export const trait_9 = {
                 "{b9a6ee1b}": 15,
                 "{c5f948bd}": 1,
                 "{eb0c521b}": 15,
-                "{ed124bdb}": 20,
+                "{ed124bdb}": 25,
                 "{f2474447}": 1,
                 "{f6b4b588}": 3,
                 "{f809601e}": 33
@@ -1030,7 +1030,7 @@ export const trait_9 = {
                 "{b9a6ee1b}": 30,
                 "{c5f948bd}": 2,
                 "{eb0c521b}": 30,
-                "{ed124bdb}": 40,
+                "{ed124bdb}": 50,
                 "{f2474447}": 2,
                 "{f6b4b588}": 6,
                 "{f809601e}": 66
@@ -1052,14 +1052,14 @@ export const trait_9 = {
                 "{b9a6ee1b}": 48.75,
                 "{c5f948bd}": 3,
                 "{eb0c521b}": 48.75,
-                "{ed124bdb}": 65,
+                "{ed124bdb}": 81.25,
                 "{f2474447}": 3.25,
                 "{f6b4b588}": 10,
                 "{f809601e}": 107.25
             }
         }
     ],
-    "icon": "/img/season_9/trait/Trait_Icon_9_Ionia.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Ionia.TFT_Set9.png",
     "name": "Ionia"
 }
   }

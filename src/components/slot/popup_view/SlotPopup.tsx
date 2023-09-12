@@ -6,6 +6,7 @@ import { getChampionDisplayName, getChampionTraits, getCost } from '../../../_ge
 import { ChampionImageView } from './ChampionImageView';
 import { TraitsView } from './TraitsView';
 import { CostView } from './CostView';
+import {S3} from "../../../environments/urls";
 
 type SlotPopupProps = {
   championName: ChampionName;
@@ -22,7 +23,7 @@ export const SlotPopup = ({ championName, season, language }: SlotPopupProps) =>
   }, [championName, season, language]);
 
   const championImageUrl = useMemo(() => {
-    return `url(/img/${season}/champion/${championName}.png)`;
+    return `url(${S3}/${season}/champions/${championName}.png)`;
   }, [championName, season]);
 
   const championCost = useMemo(() => {
