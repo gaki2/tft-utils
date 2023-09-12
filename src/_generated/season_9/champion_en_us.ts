@@ -909,13 +909,13 @@ export const champion_9 = {
             {
                 "name": "PercentAD",
                 "value": [
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579
+                    0.6499999761581421,
+                    0.6499999761581421,
+                    0.6499999761581421,
+                    0.6499999761581421,
+                    0.6499999761581421,
+                    0.6499999761581421,
+                    0.6499999761581421
                 ]
             },
             {
@@ -934,8 +934,8 @@ export const champion_9 = {
                 "name": "BonusFlatDamage",
                 "value": [
                     15,
-                    15,
-                    25,
+                    18,
+                    30,
                     50,
                     60,
                     70,
@@ -989,13 +989,13 @@ export const champion_9 = {
             {
                 "name": "PercentMaximumHealthDamage",
                 "value": [
-                    0.11999999731779099,
-                    0.11999999731779099,
-                    0.11999999731779099,
-                    0.11999999731779099,
-                    0.11999999731779099,
-                    0.11999999731779099,
-                    0.11999999731779099
+                    0.14000000059604645,
+                    0.14000000059604645,
+                    0.14000000059604645,
+                    0.14000000059604645,
+                    0.14000000059604645,
+                    0.14000000059604645,
+                    0.14000000059604645
                 ]
             },
             {
@@ -1138,9 +1138,9 @@ export const champion_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    290,
-                    435,
-                    710,
+                    300,
+                    450,
+                    725,
                     0,
                     0,
                     0
@@ -2001,7 +2001,7 @@ export const champion_9 = {
 },
     TFT9_KSante: {
     "ability": {
-        "desc": "Knock up the current target before smashing them to the edge of the battlefield. Deal <br><magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and Stun them for <scaleLevel>@StunDuration@</scaleLevel> seconds. Deal <magicDamage>@CollisionDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies the target collides with and Stun them for <scaleLevel>@SecondaryStunDuration@</scaleLevel> second.<br><br>If the target can't be pushed back any further, knock them off the battlefield. Otherwise, K'Sante will chase after them.",
+        "desc": "Heal for <scaleHealth>@HealAmount@ (%i:scaleHealth%)</scaleHealth>, then knock up the current target before smashing them to the edge of the battlefield. Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and Stun them for <scaleLevel>@StunDuration@</scaleLevel> seconds. Deal <magicDamage>@CollisionDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies the target collides with and Stun them for <scaleLevel>@SecondaryStunDuration@</scaleLevel> seconds.<br><br>If the target can't be pushed back any further, knock them off the battlefield. Otherwise, K'Sante will chase after them.",
         "icon": "ASSETS/Characters/TFT9_KSante/HUD/Icons2D/Icons_TFT9_KSante_R2.TFT_Set9.dds",
         "name": "All Out Strike",
         "variables": [
@@ -2051,6 +2051,18 @@ export const champion_9 = {
                     0.5,
                     0.5,
                     0.5
+                ]
+            },
+            {
+                "name": "PercentHealthHeal",
+                "value": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
                 ]
             }
         ]
@@ -2434,9 +2446,9 @@ export const champion_9 = {
                 "name": "AllyShieldAmount",
                 "value": [
                     0,
+                    225,
                     275,
-                    350,
-                    2000,
+                    1500,
                     0,
                     0,
                     0
@@ -2446,8 +2458,8 @@ export const champion_9 = {
                 "name": "SelfShieldAmount",
                 "value": [
                     0,
-                    400,
-                    500,
+                    350,
+                    450,
                     2000,
                     0,
                     0,
@@ -2519,7 +2531,7 @@ export const champion_9 = {
         "hp": 1000,
         "initialMana": 70,
         "magicResist": 60,
-        "mana": 140,
+        "mana": 150,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_Shen/HUD/TFT9_Shen_Square.TFT_Set9.tex",
@@ -2677,10 +2689,10 @@ export const champion_9 = {
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 50,
-        "hp": 600,
+        "hp": 650,
         "initialMana": 50,
         "magicResist": 45,
-        "mana": 120,
+        "mana": 110,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_Renekton/HUD/TFT9_Renekton_Square.TFT_Set9.tex",
@@ -2791,8 +2803,8 @@ export const champion_9 = {
                 "name": "ADRatio",
                 "value": [
                     0,
-                    1.899999976158142,
-                    2,
+                    2.3499999046325684,
+                    2.5,
                     20,
                     0,
                     0,
@@ -2803,8 +2815,8 @@ export const champion_9 = {
                 "name": "ShieldAmount",
                 "value": [
                     0,
-                    250,
-                    325,
+                    200,
+                    275,
                     4000,
                     0,
                     0,
@@ -5042,7 +5054,7 @@ export const champion_9 = {
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nasus_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 60,
-        "attackSpeed": 0.6000000238418579,
+        "attackSpeed": 0.6499999761581421,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 60,
@@ -5068,9 +5080,9 @@ export const champion_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    185,
-                    280,
-                    420,
+                    205,
+                    310,
+                    460,
                     12000,
                     12000,
                     12000
@@ -5326,13 +5338,13 @@ export const champion_9 = {
             {
                 "name": "TooltipIoniaBonus",
                 "value": [
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20
+                    25,
+                    25,
+                    25,
+                    25,
+                    25,
+                    25,
+                    25
                 ]
             },
             {
@@ -5728,7 +5740,7 @@ export const champion_9 = {
                 "value": [
                     0,
                     1,
-                    2,
+                    1,
                     3,
                     0,
                     0,

@@ -1,6 +1,6 @@
 {
   "name": "tft-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "tft team-builder",
   "keywords": [
     "tft",
@@ -42,6 +42,13 @@
   "files": [
     "lib"
   ],
+  "scripts": {
+    "parse": "ts-node src/script/index.ts",
+    "storybook": "storybook dev -p 6006",
+    "build-rollup": "rollup -c",
+    "build": "rimraf lib && npm run build-rollup",
+    "prepublishOnly": "npm run parse && npm run build"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.22.10",
@@ -101,11 +108,6 @@
     "typescript-plugin-css-modules": "^5.0.1",
     "vitest": "^0.34.3",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build-rollup": "rollup -c",
-    "build": "rimraf lib && npm run build-rollup"
   },
   "eslintConfig": {
     "extends": [

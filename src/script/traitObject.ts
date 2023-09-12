@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { LANGUAGES, LanguageType, SEASONS, SeasonType } from './config';
 import { writeFile } from './utils/file';
+import {S3} from "../environments/urls";
 
 const publicDir = path.join(__dirname, '../../public');
 const outDir = path.join(__dirname, '../_generated');
@@ -12,7 +13,7 @@ const outDir = path.join(__dirname, '../_generated');
 const parseIconPath = (path: string, season: SeasonType) => {
   const splitPath = path.split('/');
   const fileName = splitPath[splitPath.length - 1];
-  return `/img/season_${season}/trait/${fileName.replace('tex', 'png')}`;
+  return `${S3}/season_${season}/traits/${fileName.replace('tex', 'png')}`;
 };
 
 const createObject = (
