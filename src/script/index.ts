@@ -12,4 +12,4 @@ const execute = async () => {
   }
 };
 
-execute();
+void execute();
