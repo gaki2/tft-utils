@@ -1,21 +1,21 @@
-# TFT Utils v0.1.3
+# TFT Utils v0.1.4
 ![poro](https://tft-utils.s3.ap-northeast-2.amazonaws.com/assets/poro.jpeg)
-<hr>
 
 # Installation
-<hr>
 
 ```
 $ npm i tft-utils
 ```
+# New Features
+### 0.1.4
+- Add `season_9.5` support
+- type definition added
 
 # What is TFT Utils?
-<hr>
+
 TFT Utils is a library that provides React Components that are useful for TFT.
-<br>
 
 # Provided Components
-<hr>
 
 ## Board
 ### Board Component is TFT Team Builder. You can use it like this.
@@ -49,7 +49,6 @@ const App = () => {
 ![tft_popup](https://tft-utils.s3.ap-northeast-2.amazonaws.com/assets/tft_popup.png)
 
 # Season, Language Support
-<hr>
 
 #### Season Support
 `season_9`
@@ -57,13 +56,19 @@ const App = () => {
 #### Language Support
 `en_us` `ko_kr`
 
-# Upcomming
-<hr>
+# Peer Dependencies
 
-`season9.5 will be added soon.`
+react, react-dom, styled-components
+```
+"peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "styled-components": ">=5"
+  }
+```
 
 # Contribution
-<hr>
+
 Any bug reports or feature requests are welcome. <br>
 New Features are also welcome. <br>
 
