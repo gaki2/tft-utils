@@ -134,6 +134,7 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
   );
 };
 
+
 const Wrapper = styled.div`
   --initial_bg: transparent;
 
@@ -155,7 +156,7 @@ const Border = styled.div<{ cost: number | undefined | null }>`
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 3px;
+  padding: var(--border-width);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-color: ${({ cost }) => (cost ? `var(--${cost}_cost_border)` : '#000')};
 `;
@@ -183,6 +184,7 @@ const ChampionName = styled.span`
   text-shadow: rgb(0, 0, 0) -1px 0px, rgb(0, 0, 0) 0px 1px, rgb(0, 0, 0) 1px 0px,
     rgb(0, 0, 0) 0px -1px;
   text-align: center;
-  font-size: 12px;
+  font-size: var(--font-size);
   font-weight: 600;
+  transform: scale(var(--font-scale));
 `;

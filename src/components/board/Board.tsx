@@ -37,34 +37,46 @@ export const Board = ({ champions, season, language = 'ko_kr' }: BuilderProps) =
 };
 
 const Wrapper = styled.div`
-  --width: 632px;
-  --ratio: 1.6;
+  --slot-width: 84px;
+  --slot-height: 96px;
+  --font-size: 13px;
+  --border-width: 3px;
+  --font-scale: 1;
 
-  width: var(--width);
-  height: calc(var(--width) / var(--ratio));
+  width: 100%;
+  justify-content: center;
+  -webkit-box-pack: center;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0 8px;
+  grid-template-rows: repeat(4, var(--slot-height));
+  grid-template-columns: repeat(7, var(--slot-width));
+  gap: 0 4px;
   flex-shrink: 0;
 
   & > :nth-child(n + 1):nth-child(-n + 7) {
-    transform: translateX(-25%);
+    transform: translateX(calc(-25% - 1px));
   }
 
   & > :nth-child(n + 8):nth-child(-n + 14) {
-    transform: translate(25%, -10%);
+    transform: translateX(calc(25% + 1px));
   }
 
   & > :nth-child(n + 15):nth-child(-n + 21) {
-    transform: translate(-25%, -20%);
+    transform: translateX(calc(-25% - 1px));
   }
 
   & > :nth-child(n + 22):nth-child(-n + 28) {
-    transform: translate(25%, -30%);
+    transform: translateX(calc(25% + 1px));
   }
 
-  & > * {
+  & * {
     box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    --font-scale: 0.7;
+    --slot-width: 44px;
+    --slot-height: 50px;
+    --font-size: 11px;
+    --border-width: 2px;
   }
 `;
