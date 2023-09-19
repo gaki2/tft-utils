@@ -1,4 +1,4 @@
-export const trait_9 = {
+export const trait_season_9 = {
     'Set9_Bastion': {
     "apiName": "Set9_Bastion",
     "desc": "요새 챔피언이 방어력과 마법 저항력을 얻습니다. 이 효과는 전투 시작 후 @Duration@초 동안 @BonusPercent*100@%만큼 증가합니다.<br><br><expandRow>(@MinUnits@) %i:scaleArmor% +@BonusArmor@, %i:scaleMR% +@BonusArmor@</expandRow>",
@@ -8,8 +8,8 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusArmor": 25,
-                "BonusMR": 25,
+                "BonusArmor": 20,
+                "BonusMR": 20,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -20,8 +20,8 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "BonusArmor": 50,
-                "BonusMR": 50,
+                "BonusArmor": 40,
+                "BonusMR": 40,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -32,8 +32,8 @@ export const trait_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "BonusArmor": 95,
-                "BonusMR": 95,
+                "BonusArmor": 65,
+                "BonusMR": 65,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -42,10 +42,10 @@ export const trait_9 = {
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 5,
+            "style": 4,
             "variables": {
-                "BonusArmor": 240,
-                "BonusMR": 240,
+                "BonusArmor": 125,
+                "BonusMR": 125,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -64,10 +64,10 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
+                "BonusAP": 25,
+                "HealthPct": 0.07000000029802322,
                 "{08335318}": 1,
-                "{6266505a}": 0.07000000029802322,
-                "{a34f32df}": 3,
-                "{d49caf5d}": 25
+                "{a34f32df}": 3
             }
         },
         {
@@ -75,10 +75,10 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
+                "BonusAP": 45,
+                "HealthPct": 0.10000000149011612,
                 "{08335318}": 1,
-                "{6266505a}": 0.10000000149011612,
-                "{a34f32df}": 3,
-                "{d49caf5d}": 50
+                "{a34f32df}": 3
             }
         },
         {
@@ -86,21 +86,21 @@ export const trait_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
+                "BonusAP": 80,
+                "HealthPct": 0.11999999731779099,
                 "{08335318}": 2,
-                "{6266505a}": 0.11999999731779099,
-                "{a34f32df}": 3,
-                "{d49caf5d}": 80
+                "{a34f32df}": 3
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 5,
+            "style": 4,
             "variables": {
+                "BonusAP": 125,
+                "HealthPct": 0.15000000596046448,
                 "{08335318}": 2,
-                "{6266505a}": 0.20000000298023224,
-                "{a34f32df}": 3,
-                "{d49caf5d}": 120
+                "{a34f32df}": 3
             }
         }
     ],
@@ -117,11 +117,11 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "BonusAttackSpeed": 0.10000000149011612,
+                "DodgeChance": 100,
+                "DodgeDuration": 2,
+                "ManaReduction": 15,
                 "{25ec78e1}": 1,
-                "{7ccd3647}": 15,
-                "{852a9a90}": 2,
                 "{c235f1f1}": 0.5,
-                "{c4b5579c}": 100,
                 "{eae1472b}": 1
             }
         },
@@ -131,11 +131,11 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "BonusAttackSpeed": 0.10000000149011612,
+                "DodgeChance": 100,
+                "DodgeDuration": 2,
+                "ManaReduction": 15,
                 "{25ec78e1}": 2,
-                "{7ccd3647}": 15,
-                "{852a9a90}": 2,
                 "{c235f1f1}": 0.5,
-                "{c4b5579c}": 100,
                 "{eae1472b}": 2
             }
         }
@@ -203,7 +203,7 @@ export const trait_9 = {
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 5,
+            "style": 4,
             "variables": {
                 "{1eb1d2ae}": 0.25,
                 "{a4dcb3da}": 0.4000000059604645
@@ -215,7 +215,7 @@ export const trait_9 = {
 },
     'Set9_Demacia': {
     "apiName": "Set9_Demacia",
-    "desc": "가장 강한 아군 데마시아 유닛이 정예가 되어 매 전투에서 무작위 찬란한 아이템을 장착합니다. 정예 유닛은 자신과 주변 아군에게 방어력과 마법 저항력을 부여하지만, 이 효과는 중첩되지 않습니다.<br><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><br><rules>찬란한 아이템은 완성 아이템보다 더 강력합니다.</rules>",
+    "desc": "가장 강한 아군 데마시아 유닛이 정예가 되어 매 전투에서 찬란한 아이템을 장착합니다. 정예 유닛은 자신과 주변 아군에게 방어력과 마법 저항력을 부여하지만, 이 효과는 중첩되지 않습니다.<br><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><row>(@MinUnits@) 정예 @NumElites@명, %i:scaleArmor% +@BonusDefenses@, %i:scaleMR% +@BonusDefenses@</row><br><br><rules>찬란한 아이템은 완성 아이템보다 더 강력합니다.</rules>",
     "effects": [
         {
             "maxUnits": 4,
@@ -232,7 +232,7 @@ export const trait_9 = {
             "style": 3,
             "variables": {
                 "{a750b59f}": 2,
-                "{bd072701}": 30
+                "{bd072701}": 15
             }
         },
         {
@@ -240,8 +240,8 @@ export const trait_9 = {
             "minUnits": 7,
             "style": 4,
             "variables": {
-                "{a750b59f}": 4,
-                "{bd072701}": 40
+                "{a750b59f}": 3,
+                "{bd072701}": 35
             }
         },
         {
@@ -250,7 +250,7 @@ export const trait_9 = {
             "style": 5,
             "variables": {
                 "{a750b59f}": 6,
-                "{bd072701}": 100
+                "{bd072701}": 150
             }
         }
     ],
@@ -259,19 +259,19 @@ export const trait_9 = {
 },
     'Set9_Rogue': {
     "apiName": "Set9_Rogue",
-    "desc": "<row>(@MinUnits@) 불한당의 체력이 @HealthThreshold*100@% 아래로 떨어지면 잠시 대상으로 지정할 수 없는 상태가 되어 @HexRange@칸 내 적에게 돌진합니다(후방 적 우선).</row><br><row>(@MinUnits@) 또한 적에게 가하는 불한당의 첫 기본 공격이 출혈을 일으켜 @BleedDuration@초 동안 대상 최대 체력의 @BleedMaxHealthPct*100@%에 해당하는 마법 피해를 입힙니다.</row>",
+    "desc": "<row>(@MinUnits@) 불한당의 체력이 @HealthThreshold*100@% 아래로 떨어지면 잠시 대상으로 지정할 수 없는 상태가 되어 @HexRange@칸 내 적에게 돌진합니다. (후방 적 우선)</row><br><row>(@MinUnits@) 불한당에게 피해를 입은 적은 출혈로 인해 @BleedDuration@초에 걸쳐 @BleedPct*100@%의 추가 마법 피해를 입습니다.</row>",
     "effects": [
         {
             "maxUnits": 3,
             "minUnits": 2,
             "style": 1,
             "variables": {
+                "BleedDuration": "null",
                 "DamageReduction": 100,
                 "HealthThreshold": 0.5,
-                "{0bc5955f}": "null",
-                "{77df45b0}": "null",
-                "{9b1e8f37}": 4,
-                "{b1442c34}": 1.5
+                "HexRange": 4,
+                "StealthDuration": 1.5,
+                "{fdaf3546}": "null"
             }
         },
         {
@@ -279,12 +279,12 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 4,
             "variables": {
+                "BleedDuration": 2.5,
                 "DamageReduction": 100,
                 "HealthThreshold": 0.5,
-                "{0bc5955f}": 5,
-                "{77df45b0}": 0.5,
-                "{9b1e8f37}": 4,
-                "{b1442c34}": 1.5
+                "HexRange": 4,
+                "StealthDuration": 1.5,
+                "{fdaf3546}": 0.699999988079071
             }
         }
     ],
@@ -296,53 +296,33 @@ export const trait_9 = {
     "desc": "학살자가 @Omnivamp@%의 모든 피해 흡혈을 얻습니다.<br><br>학살자는 추가 피해를 입힙니다. 체력이 @HealthThreshold*100@% 아래인 유닛에게는 추가 피해가 2배로 증가합니다.<br><br><expandRow>(@MinUnits@) 추가 피해 +@BonusDamageBase@%</expandRow>",
     "effects": [
         {
-            "maxUnits": 2,
+            "maxUnits": 3,
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusDamageBase": 5,
+                "BonusDamageBase": 6,
                 "HealthThreshold": 0.6600000262260437,
-                "{ad16f688}": 12
+                "Omnivamp": 12
             }
         },
         {
-            "maxUnits": 3,
-            "minUnits": 3,
-            "style": 3,
-            "variables": {
-                "BonusDamageBase": 10,
-                "HealthThreshold": 0.6600000262260437,
-                "{ad16f688}": 12
-            }
-        },
-        {
-            "maxUnits": 4,
+            "maxUnits": 5,
             "minUnits": 4,
             "style": 3,
             "variables": {
                 "BonusDamageBase": 20,
                 "HealthThreshold": 0.6600000262260437,
-                "{ad16f688}": 12
-            }
-        },
-        {
-            "maxUnits": 5,
-            "minUnits": 5,
-            "style": 4,
-            "variables": {
-                "BonusDamageBase": 30,
-                "HealthThreshold": 0.6600000262260437,
-                "{ad16f688}": 12
+                "Omnivamp": 12
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 6,
-            "style": 5,
+            "style": 4,
             "variables": {
                 "BonusDamageBase": 40,
                 "HealthThreshold": 0.6600000262260437,
-                "{ad16f688}": 12
+                "Omnivamp": 12
             }
         }
     ],
@@ -351,15 +331,16 @@ export const trait_9 = {
 },
     'Set9_Preserver': {
     "apiName": "Set9_Preserver",
-    "desc": "@TickRate@초마다 아군 유닛의 마나가 회복됩니다.<br><br><row>(@MinUnits@) %i:scaleMana% @TeamMana@</row><br><row>(@MinUnits@) 기원자는 @SelfBonusMana@ 추가 회복</row><br><row>(@MinUnits@) 모든 유닛 %i:scaleMana% @TeamMana@, 기원자는 추가 @SelfBonusMana@</row><br>",
+    "desc": "@TickRate@초마다 아군 유닛의 마나가 회복됩니다.<br><br><row>(@MinUnits@) 모든 유닛 @TeamMana@ %i:scaleMana%</row><br><row>(@MinUnits@) 기원자는 @SelfBonusMana@ 추가 회복</row><br><row>(@MinUnits@) 모든 유닛 @TeamMana@ %i:scaleMana%, 기원자는 추가 @SelfBonusMana@</row><br><row>(@MinUnits@) 모든 유닛 @TeamMana@ %i:scaleMana%, 시작 시 추가 주문력 @TeamAP@</row><br>",
     "effects": [
         {
             "maxUnits": 3,
             "minUnits": 2,
             "style": 1,
             "variables": {
+                "TickRate": 3,
+                "{2098e1a5}": "null",
                 "{2af5ed55}": "null",
-                "{471b1a16}": 3,
                 "{dd3e2f2b}": 5
             }
         },
@@ -368,19 +349,32 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
+                "TickRate": 3,
+                "{2098e1a5}": "null",
                 "{2af5ed55}": 15,
-                "{471b1a16}": 3,
                 "{dd3e2f2b}": 5
             }
         },
         {
-            "maxUnits": 25000,
+            "maxUnits": 7,
             "minUnits": 6,
             "style": 4,
             "variables": {
+                "TickRate": 3,
+                "{2098e1a5}": "null",
                 "{2af5ed55}": 15,
-                "{471b1a16}": 3,
-                "{dd3e2f2b}": 20
+                "{dd3e2f2b}": 15
+            }
+        },
+        {
+            "maxUnits": 25000,
+            "minUnits": 8,
+            "style": 4,
+            "variables": {
+                "TickRate": 3,
+                "{2098e1a5}": 30,
+                "{2af5ed55}": "null",
+                "{dd3e2f2b}": 40
             }
         }
     ],
@@ -396,8 +390,8 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "{392edb65}": 100,
-                "{a92bb347}": 0.10000000149011612
+                "BonusPercentHealth": 0.10000000149011612,
+                "{392edb65}": 100
             }
         },
         {
@@ -405,8 +399,8 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "{392edb65}": 100,
-                "{a92bb347}": 0.4000000059604645
+                "BonusPercentHealth": 0.44999998807907104,
+                "{392edb65}": 100
             }
         },
         {
@@ -414,8 +408,8 @@ export const trait_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "{392edb65}": 100,
-                "{a92bb347}": 0.699999988079071
+                "BonusPercentHealth": 0.800000011920929,
+                "{392edb65}": 100
             }
         }
     ],
@@ -427,25 +421,36 @@ export const trait_9 = {
     "desc": "녹서스 챔피언은 체력, 주문력, 공격력을 얻습니다. 해당 효과는 전투에서 정복하거나 탈락한 상대 1명당 @BonusRatio*100@% 증가합니다.<br><br><expandRow>(@MinUnits@) %i:scaleHealth% @Health@, %i:scaleAP% @AP@, %i:scaleAD% @AD@%</expandRow><br><br><TFTTrackerLabel>정복 추가 효과: @TFTUnitProperty.trait:TFT9_Trait_ConquerorBonus@%/@BonusRatio*700@%</TFTTrackerLabel>",
     "effects": [
         {
-            "maxUnits": 5,
+            "maxUnits": 4,
             "minUnits": 3,
             "style": 1,
             "variables": {
-                "AD": 17,
-                "AP": 17,
-                "Health": 170,
-                "{d04ae9af}": 0.05000000074505806
+                "AD": 16,
+                "AP": 16,
+                "BonusRatio": 0.05000000074505806,
+                "Health": 160
+            }
+        },
+        {
+            "maxUnits": 6,
+            "minUnits": 5,
+            "style": 3,
+            "variables": {
+                "AD": 30,
+                "AP": 30,
+                "BonusRatio": 0.05000000074505806,
+                "Health": 300
             }
         },
         {
             "maxUnits": 8,
-            "minUnits": 6,
+            "minUnits": 7,
             "style": 4,
             "variables": {
-                "AD": 34,
-                "AP": 34,
-                "Health": 340,
-                "{d04ae9af}": 0.05000000074505806
+                "AD": 45,
+                "AP": 45,
+                "BonusRatio": 0.05000000074505806,
+                "Health": 450
             }
         },
         {
@@ -453,10 +458,10 @@ export const trait_9 = {
             "minUnits": 9,
             "style": 5,
             "variables": {
-                "AD": 70,
-                "AP": 70,
-                "Health": 700,
-                "{d04ae9af}": 0.05000000074505806
+                "AD": 75,
+                "AP": 75,
+                "BonusRatio": 0.05000000074505806,
+                "Health": 750
             }
         }
     ],
@@ -465,16 +470,16 @@ export const trait_9 = {
 },
     'Set9_Shurima': {
     "apiName": "Set9_Shurima",
-    "desc": "@PulsePeriod@초마다 슈리마 유닛이 최대 체력의 @HealthRegen*100@%만큼 회복합니다. @SecondsToAscend@초 후 선택된 슈리마 유닛이 초월해 최대 체력이 @BonusHealthPercent*100@%, 공격 속도가 @BonusASPercent*100@% 증가합니다.<br><br><row>(@MinUnits@) 가장 강한 슈리마 유닛 초월</row><br><row>(@MinUnits@) 모든 슈리마 유닛 초월</row><br><row>(@MinUnits@) 전투 시작 시 초월. 초월 추가 효과 +@AscensionStrengthBoost*100@%</row><br><row>(@MinUnits@) 2회 초월(전투 시작 시 및 @SecondsToAscend@초 후). 초월 추가 효과 +@AscensionStrengthBoost*100@%</row>",
+    "desc": "@PulsePeriod@초마다 슈리마 유닛이 최대 체력의 @HealthRegen*100@%만큼 회복합니다. @SecondsToAscend@초 후 특정 슈리마 유닛이 초월해 최대 체력이 @BonusHealthPercent*100@%, 공격 속도가 @BonusASPercent*100@% 증가합니다.<br><br><row>(@MinUnits@) 가장 강한 슈리마 유닛 초월</row><br><row>(@MinUnits@) 모든 슈리마 유닛 초월. 초월 추가 효과 +@AscensionStrengthBoost*100@%</row><br><row>(@MinUnits@) 전투 시작 시 초월. 초월 추가 효과 +@AscensionStrengthBoost*100@%</row><br><row>(@MinUnits@) 2회 초월(전투 시작 시 및 @SecondsToAscend@초 후). 초월 추가 효과 +@AscensionStrengthBoost*100@%</row>",
     "effects": [
         {
-            "maxUnits": 4,
-            "minUnits": 3,
+            "maxUnits": 3,
+            "minUnits": 2,
             "style": 1,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.44999998807907104,
-                "{31128603}": 0.33000001311302185,
+                "{255e11cd}": 0.30000001192092896,
+                "{31128603}": 0.20000000298023224,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
                 "{98193878}": "null",
@@ -482,30 +487,30 @@ export const trait_9 = {
             }
         },
         {
-            "maxUnits": 6,
-            "minUnits": 5,
+            "maxUnits": 5,
+            "minUnits": 4,
             "style": 3,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.44999998807907104,
-                "{31128603}": 0.33000001311302185,
+                "{255e11cd}": 0.30000001192092896,
+                "{31128603}": 0.20000000298023224,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
-                "{98193878}": "null",
+                "{98193878}": 0.15000000596046448,
                 "{e3dc0fc2}": 2
             }
         },
         {
             "maxUnits": 8,
-            "minUnits": 7,
+            "minUnits": 6,
             "style": 4,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.44999998807907104,
-                "{31128603}": 0.33000001311302185,
+                "{255e11cd}": 0.30000001192092896,
+                "{31128603}": 0.20000000298023224,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
-                "{98193878}": 0.25,
+                "{98193878}": 0.44999998807907104,
                 "{e3dc0fc2}": 2
             }
         },
@@ -515,11 +520,11 @@ export const trait_9 = {
             "style": 5,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.44999998807907104,
-                "{31128603}": 0.33000001311302185,
+                "{255e11cd}": 0.30000001192092896,
+                "{31128603}": 0.20000000298023224,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
-                "{98193878}": 0.25,
+                "{98193878}": 0.75,
                 "{e3dc0fc2}": 2
             }
         }
@@ -536,9 +541,9 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
+                "BonusAP": 15,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 250,
-                "{d49caf5d}": 15
+                "{9d0939e8}": 250
             }
         },
         {
@@ -546,9 +551,9 @@ export const trait_9 = {
             "minUnits": 3,
             "style": 3,
             "variables": {
+                "BonusAP": 25,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 400,
-                "{d49caf5d}": 25
+                "{9d0939e8}": 400
             }
         },
         {
@@ -556,19 +561,19 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 4,
             "variables": {
+                "BonusAP": 40,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 600,
-                "{d49caf5d}": 40
+                "{9d0939e8}": 600
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 5,
-            "style": 5,
+            "style": 4,
             "variables": {
+                "BonusAP": 60,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 900,
-                "{d49caf5d}": 60
+                "{9d0939e8}": 900
             }
         }
     ],
@@ -626,7 +631,7 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "DamageReduction": 0.6600000262260437,
+                "DamageReduction": 0.6000000238418579,
                 "{b99088b8}": 1
             }
         },
@@ -635,7 +640,7 @@ export const trait_9 = {
             "minUnits": 4,
             "style": 4,
             "variables": {
-                "DamageReduction": 0.6600000262260437,
+                "DamageReduction": 0.6000000238418579,
                 "{b99088b8}": 2
             }
         }
@@ -653,7 +658,7 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "MaxStacks": 8,
-                "{df3d2f5f}": 6
+                "PercentAD": 6
             }
         },
         {
@@ -662,16 +667,16 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "MaxStacks": 8,
-                "{df3d2f5f}": 14
+                "PercentAD": 14
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 6,
-            "style": 5,
+            "style": 4,
             "variables": {
                 "MaxStacks": 8,
-                "{df3d2f5f}": 25
+                "PercentAD": 25
             }
         }
     ],
@@ -687,10 +692,10 @@ export const trait_9 = {
             "minUnits": 1,
             "style": 4,
             "variables": {
+                "HexRange": 2,
                 "PercentHealthHeal": 0.20000000298023224,
                 "{0b0b3c63}": 0.5,
-                "{1ec4c4d2}": 0.10000000149011612,
-                "{9b1e8f37}": 2
+                "{1ec4c4d2}": 0.10000000149011612
             }
         }
     ],
@@ -707,10 +712,10 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "Duration": 15,
-                "{0f5e9c98}": 10,
-                "{471b1a16}": 1,
-                "{4e39b1d2}": 45,
-                "{d8f646f3}": 6
+                "ManaRegen": 6,
+                "MaxHealthShield": 45,
+                "TickRate": 1,
+                "{0f5e9c98}": 10
             }
         },
         {
@@ -719,10 +724,10 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "Duration": 15,
-                "{0f5e9c98}": 10,
-                "{471b1a16}": 1,
-                "{4e39b1d2}": 80,
-                "{d8f646f3}": 12
+                "ManaRegen": 12,
+                "MaxHealthShield": 80,
+                "TickRate": 1,
+                "{0f5e9c98}": 10
             }
         },
         {
@@ -731,10 +736,10 @@ export const trait_9 = {
             "style": 5,
             "variables": {
                 "Duration": 15,
-                "{0f5e9c98}": 10,
-                "{471b1a16}": 1,
-                "{4e39b1d2}": 115,
-                "{d8f646f3}": 18
+                "ManaRegen": 18,
+                "MaxHealthShield": 115,
+                "TickRate": 1,
+                "{0f5e9c98}": 10
             }
         }
     ],
@@ -743,7 +748,7 @@ export const trait_9 = {
 },
     'Set9_Freljord': {
     "apiName": "Set9_Freljord",
-    "desc": "@DelayTime@초 후에 전장에 얼음 폭풍이 붑니다. 적들은 최대 체력 비례 고정 피해를 입고 해로운 효과를 받습니다.<br><br><row>(@MinUnits@) %i:scaleHealth% @PercentHealthDamage@%, @Duration@초 동안 적 @ShredSunder@% <TFTKeyword>파열</TFTKeyword> 및 <TFTKeyword>파쇄</TFTKeyword></row><br><row>(@MinUnits@) %i:scaleHealth% @PercentHealthDamage@%, @Reave@% <TFTKeyword>마나 강탈</TFTKeyword></row><br><row>(@MinUnits@) %i:scaleHealth% @PercentHealthDamage@%, @StunDuration@초 동안 적 기절</row><br><br><rules><tftbold>파열</tftbold>: 방어력을 감소시킵니다.<br><tftbold>파쇄</tftbold>: 마법 저항력을 감소시킵니다.<br><tftbold>마나 강탈</tftbold>: 스킬을 사용하기 전까지 최대 마나를 증가시킵니다.</rules>",
+    "desc": "@DelayTime@초 후에 전장에 얼음 폭풍이 붑니다. 적들은 최대 체력 비례 고정 피해를 입고 해로운 효과를 받습니다.<br><br><row>(@MinUnits@) %i:scaleHealth% @PercentHealthDamage@%, @Duration@초 동안 적 @ShredSunder@% <TFTKeyword>파열</TFTKeyword> 및 <TFTKeyword>파쇄</TFTKeyword></row><br><row>(@MinUnits@) %i:scaleHealth% @PercentHealthDamage@%, @StunDuration@초 동안 적 <TFTKeyword>기절</TFTKeyword></row><br><br><rules><tftbold>파열</tftbold>: 방어력을 감소시킵니다.<br><tftbold>파쇄</tftbold>: 마법 저항력을 감소시킵니다.</rules>",
     "effects": [
         {
             "maxUnits": 2,
@@ -751,34 +756,22 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "Duration": 10,
-                "PercentHealthDamage": 5,
-                "{14adee04}": 40,
+                "PercentHealthDamage": 8,
+                "{14adee04}": 30,
                 "{17f82fb1}": 8,
                 "{81ce23cf}": 1
             }
         },
         {
-            "maxUnits": 3,
+            "maxUnits": 25000,
             "minUnits": 3,
             "style": 4,
-            "variables": {
-                "Duration": 10,
-                "PercentHealthDamage": 10,
-                "{17f82fb1}": 8,
-                "{5e31469e}": 30,
-                "{81ce23cf}": 2
-            }
-        },
-        {
-            "maxUnits": 25000,
-            "minUnits": 4,
-            "style": 5,
             "variables": {
                 "Duration": 10,
                 "PercentHealthDamage": 15,
                 "StunDuration": 1.5,
                 "{17f82fb1}": 8,
-                "{81ce23cf}": 3
+                "{81ce23cf}": 2
             }
         }
     ],
@@ -794,7 +787,7 @@ export const trait_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "{0b39c7c2}": 0.18000000715255737
+                "HealShieldIncrease": 0.18000000715255737
             }
         },
         {
@@ -802,15 +795,15 @@ export const trait_9 = {
             "minUnits": 3,
             "style": 4,
             "variables": {
-                "{0b39c7c2}": 0.3499999940395355
+                "HealShieldIncrease": 0.3499999940395355
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 4,
-            "style": 5,
+            "style": 4,
             "variables": {
-                "{0b39c7c2}": 0.6000000238418579
+                "HealShieldIncrease": 0.550000011920929
             }
         }
     ],
@@ -827,7 +820,7 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "BonusHealth": 350,
-                "{8bdcd88d}": 0.15000000596046448,
+                "BonusOmnivamp": 0.15000000596046448,
                 "{ad17ba74}": 4
             }
         }
@@ -851,7 +844,7 @@ export const trait_9 = {
 },
     'Set9_Zaun': {
     "apiName": "Set9_Zaun",
-    "desc": "자운 유닛은 자신들만 사용할 수 있는 무작위 화학공학 개조체를 생성합니다. 유닛은 하나의 개조체만 장착할 수 있습니다. 개조체를 제거하려면 유닛을 판매하거나 대기석에 보내야 합니다.<br><br><row>(@MinUnits@) 화학공학 개조체 1개 획득</row><br><row>(@MinUnits@) 화학공학 개조체 2개 획득 </row><br><row>(@MinUnits@) 과충전 효과가 부여된 화학공학 개조체 3개 획득</row><br>",
+    "desc": "자운 유닛은 자신들만 사용할 수 있는 무작위 화학공학 개조체를 생성합니다. 유닛은 하나의 개조체만 장착할 수 있습니다. 개조체를 제거하려면 유닛을 판매하거나 대기석에 보내야 합니다.<br><br><row>(@MinUnits@) 화학공학 개조체 1개 획득</row><br><row>(@MinUnits@) 과충전 효과가 부여된 화학공학 개조체 2개 획득</row><br><row>(@MinUnits@) 과충전 효과가 부여된 화학공학 개조체 5개 획득</row><br>",
     "effects": [
         {
             "maxUnits": 3,
@@ -868,21 +861,56 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "{05b87026}": 2,
-                "{dbf68e4f}": "null"
+                "{dbf68e4f}": 1
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 6,
-            "style": 5,
+            "style": 4,
             "variables": {
-                "{05b87026}": 3,
+                "{05b87026}": 5,
                 "{dbf68e4f}": 1
             }
         }
     ],
     "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Zaun.TFT_Set9.png",
     "name": "자운"
+},
+    'Set9b_Vanquisher': {
+    "apiName": "Set9b_Vanquisher",
+    "desc": "토벌자는 추가 치명타 피해량과 확률을 획득하며, 스킬에 치명타가 적용될 수 있습니다.<br><br><expandRow>(@MinUnits@) @BaseCritChance@% %i:scaleCrit%, @CritDmg@% %i:scaleCritMult%</expandRow><br>",
+    "effects": [
+        {
+            "maxUnits": 3,
+            "minUnits": 2,
+            "style": 1,
+            "variables": {
+                "{c4441218}": 15,
+                "{ecb9c76f}": 10
+            }
+        },
+        {
+            "maxUnits": 5,
+            "minUnits": 4,
+            "style": 4,
+            "variables": {
+                "{c4441218}": 35,
+                "{ecb9c76f}": 25
+            }
+        },
+        {
+            "maxUnits": 25000,
+            "minUnits": 6,
+            "style": 4,
+            "variables": {
+                "{c4441218}": 55,
+                "{ecb9c76f}": 40
+            }
+        }
+    ],
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Vanquisher.TFT_Set9_Stage2.png",
+    "name": "토벌자"
 },
     'Set9_Armorclad': {
     "apiName": "Set9_Armorclad",
@@ -977,7 +1005,7 @@ export const trait_9 = {
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 5,
+            "style": 4,
             "variables": {
                 "BonusAS": 140,
                 "{17cfa971}": 2.5,
@@ -998,13 +1026,14 @@ export const trait_9 = {
             "style": 1,
             "variables": {
                 "Mana": 20,
-                "{18bfc1ac}": 10,
+                "{18bfc1ac}": 8,
                 "{1b8cd16a}": 20,
                 "{27b17444}": 25,
                 "{3076bc18}": 4,
                 "{3fc62f6f}": 2,
                 "{4df03474}": 200,
                 "{53912082}": 1,
+                "{7d34708f}": 5,
                 "{b9a6ee1b}": 15,
                 "{c5f948bd}": 1,
                 "{eb0c521b}": 15,
@@ -1020,13 +1049,14 @@ export const trait_9 = {
             "style": 4,
             "variables": {
                 "Mana": 20,
-                "{18bfc1ac}": 20,
+                "{18bfc1ac}": 16,
                 "{1b8cd16a}": 40,
                 "{27b17444}": 50,
                 "{3076bc18}": 4,
                 "{3fc62f6f}": 2,
                 "{4df03474}": 400,
                 "{53912082}": 1,
+                "{7d34708f}": 10,
                 "{b9a6ee1b}": 30,
                 "{c5f948bd}": 2,
                 "{eb0c521b}": 30,
@@ -1042,20 +1072,21 @@ export const trait_9 = {
             "style": 5,
             "variables": {
                 "Mana": 20,
-                "{18bfc1ac}": 32.5,
-                "{1b8cd16a}": 65,
-                "{27b17444}": 81.25,
+                "{18bfc1ac}": 34.20000076293945,
+                "{1b8cd16a}": 76,
+                "{27b17444}": 95,
                 "{3076bc18}": 4,
                 "{3fc62f6f}": 2,
-                "{4df03474}": 650,
+                "{4df03474}": 760,
                 "{53912082}": 1,
-                "{b9a6ee1b}": 48.75,
-                "{c5f948bd}": 3,
-                "{eb0c521b}": 48.75,
-                "{ed124bdb}": 81.25,
-                "{f2474447}": 3.25,
-                "{f6b4b588}": 10,
-                "{f809601e}": 107.25
+                "{7d34708f}": 19,
+                "{b9a6ee1b}": 57,
+                "{c5f948bd}": 4,
+                "{eb0c521b}": 57,
+                "{ed124bdb}": 95,
+                "{f2474447}": 3.799999952316284,
+                "{f6b4b588}": 11.399999618530273,
+                "{f809601e}": 125.4000015258789
             }
         }
     ],

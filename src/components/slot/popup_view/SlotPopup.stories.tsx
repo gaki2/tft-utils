@@ -4,7 +4,6 @@ import { SlotPopup } from './SlotPopup';
 const meta = {
   title: 'Example/SlotPopup',
   component: SlotPopup,
-  tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
