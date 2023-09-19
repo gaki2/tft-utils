@@ -1,12 +1,12 @@
 import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
-import { LANGUAGES } from './config';
+import { LANGUAGES } from '../types/config';
 
-const outDir = path.join(__dirname, '../../public');
+const outDir = path.join(__dirname, '../json');
 const baseUrl = 'https://raw.communitydragon.org/latest/cdragon/tft';
 
-const getJsonData = (url: string, language: string) => {
+const fetchJson = (url: string, language: string) => {
   return new Promise((resolve, reject) => {
     axios
       .get(url)
@@ -24,7 +24,7 @@ const getJsonData = (url: string, language: string) => {
 export const execute = async () => {
   const promises = LANGUAGES.map((language) => {
     const url = `${baseUrl}/${language}.json`;
-    return getJsonData(url, language);
+    return fetchJson(url, language);
   });
 
   return Promise.all(promises);

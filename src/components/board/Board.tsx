@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { Slot } from '../slot/Slot';
-import { Position, SlotIndex } from '../../types/types';
-import { Season } from '../../_generated/types/seasonType';
-import { LanguageType } from '../../script/config';
-import { ChampionName } from '../../_generated/types/championType';
+import { Position, SlotIndex } from '../../types/board';
+import { Season } from '../../types/seasonType';
+import { LanguageType } from '../../types/config';
+import { ChampionName } from '../../types/championType';
 import { BoardController } from './controller/BoardController';
 import styled from 'styled-components';
 

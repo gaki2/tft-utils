@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Slot } from './Slot';
-import { getAllChampionNames } from '../../_generated/getter';
+import { getAllChampionNames } from '../../getter';
 
 const meta = {
   title: 'Example/Slot',
@@ -16,8 +16,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const AllSlots = () => {
-  const champions = getAllChampionNames('season_9', 'en_us');
-  const season = 'season_9';
+  const season = 'season_9b';
+  const lang = 'ko_kr';
+  const champions = getAllChampionNames(season, lang);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', gap: '8px', flexWrap: 'wrap' }}>
@@ -29,7 +30,7 @@ const AllSlots = () => {
             slotIdx={1}
             initialSlotData={{ name: champion }}
             season={season}
-            language={'en_us'}
+            language={lang}
           />
         </div>
       ))}

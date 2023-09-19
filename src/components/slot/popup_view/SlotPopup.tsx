@@ -1,12 +1,12 @@
-import { Season } from '../../../_generated/types/seasonType';
-import { LanguageType } from '../../../script/config';
+import { Season } from '../../../types/seasonType';
 import { useMemo } from 'react';
-import { ChampionName } from '../../../_generated/types/championType';
-import { getChampionDisplayName, getChampionTraits, getCost } from '../../../_generated/getter';
+import { ChampionName } from '../../../types/championType';
+import { getChampionDisplayName, getChampionTraits, getCost } from '../../../getter';
 import { ChampionImageView } from './ChampionImageView';
 import { TraitsView } from './TraitsView';
 import { CostView } from './CostView';
 import {S3} from "../../../environments/urls";
+import {LanguageType} from "../../../types/config";
 
 type SlotPopupProps = {
   championName: ChampionName;

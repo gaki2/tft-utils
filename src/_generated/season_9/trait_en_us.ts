@@ -1,4 +1,4 @@
-export const trait_9 = {
+export const trait_season_9 = {
     'Set9_Bastion': {
     "apiName": "Set9_Bastion",
     "desc": "Bastion champions gain Armor and Magic Resist. This is increased by @BonusPercent*100@% for the first @Duration@ seconds of combat.<br><br><expandRow>(@MinUnits@) +@BonusArmor@ %i:scaleArmor%, +@BonusArmor@ %i:scaleMR%</expandRow>",

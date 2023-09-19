@@ -1,16 +1,16 @@
-export const champion_season_9 = {
+export const champion_season_9b = {
     TFT_Voidspawn: {
     "ability": {
-        "desc": "공허 생물이 현재 스테이지를 기준으로 추가 체력과 공격력을 얻습니다. ",
+        "desc": "The Voidspawn gains bonus Health and Attack Damage based on the current Stage. ",
         "icon": "ASSETS/Characters/TFT_VoidSpawn/HUD/Voidspawn_square.dds",
-        "name": "공허 태생",
+        "name": "Voidborn",
         "variables": []
     },
     "apiName": "TFT_Voidspawn",
     "characterName": "TFT_VoidSpawn",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT_Voidspawn.dds",
-    "name": "공허 생물",
+    "name": "Voidspawn",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT_Voidspawn_Mobile.DDS",
     "stats": {
         "armor": 20,
@@ -29,16 +29,16 @@ export const champion_season_9 = {
 },
     TFT_TrainingDummy: {
     "ability": {
-        "desc": "훈련 봇은 움직이거나 공격할 수 없으며 마성의 외모를 지닌 요들의 모습을 하고 있습니다.",
+        "desc": "The Training Dummy cannot move or attack. It is also dressed like a devilishly handsome Yordle.",
         "icon": "ASSETS/Characters/TFTDebug_Dummy/HUD/Icons2D/TFTDebug_Dummy_DoNothing.dds",
-        "name": "근무 중!",
+        "name": "On Duty!",
         "variables": []
     },
     "apiName": "TFT_TrainingDummy",
     "characterName": "TFT_TrainingDummy",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFTDebug_Dummy.dds",
-    "name": "훈련 봇",
+    "name": "Target Dummy",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFTDebug_Dummy_Mobile.dds",
     "stats": {
         "armor": 40,
@@ -57,9 +57,9 @@ export const champion_season_9 = {
 },
     TFT5_EmblemArmoryKey: {
     "ability": {
-        "desc": "이 고서를 상점에 끌어다 놓으면 상징이 가득한 무기고가 열립니다! 30초 안에 선택해야 합니다.",
+        "desc": "Drag this Tome to the Shop to open an Armory full of emblems! You will have 30 seconds to choose.",
         "icon": "ASSETS/Characters/TFT5_EmblemArmoryKey/HUD/TFT5_EmblemArmoryKey_Square.TFT_DoubleUp_Assist_Update.tex",
-        "name": "특성의 고서",
+        "name": "Tome of Traits",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -79,7 +79,7 @@ export const champion_season_9 = {
     "characterName": "TFT5_EmblemArmoryKey",
     "cost": 8,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT5_EmblemArmoryKey.dds",
-    "name": "특성의 고서",
+    "name": "Tome of Traits",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT5_DraconicEgg_Mobile.dds",
     "stats": {
         "armor": 10,
@@ -98,9 +98,9 @@ export const champion_season_9 = {
 },
     TFT_ArmoryKeyCompleted: {
     "ability": {
-        "desc": "이 아이템을 상점에 끌어다 놓으면 완성 아이템이 가득한 무기고가 열립니다! 30초 안에 선택해야 합니다.",
+        "desc": "Drag this to the Shop to open an Armory full of completed items! You will have 30 seconds to choose.",
         "icon": "ASSETS/Characters/TFT_ArmoryKeyCompleted/HUD/TFT_ArmoryKeyCompleted_Square.TFT_DoubleUp_Assist_Update.tex",
-        "name": "완성 아이템 모루",
+        "name": "Completed Item Anvil",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -120,7 +120,7 @@ export const champion_season_9 = {
     "characterName": "TFT_ArmoryKeyCompleted",
     "cost": 8,
     "icon": null,
-    "name": "완성 아이템 모루",
+    "name": "Completed Item Anvil",
     "squareIcon": null,
     "stats": {
         "armor": 10,
@@ -139,9 +139,9 @@ export const champion_season_9 = {
 },
     TFT_ArmoryKeyComponent: {
     "ability": {
-        "desc": "이 아이템을 상점에 끌어다 놓으면 조합 아이템이 가득한 무기고가 열립니다! 30초 안에 선택해야 합니다.",
+        "desc": "Drag this to the Shop to open an Armory full of component items! You will have 30 seconds to choose.",
         "icon": "ASSETS/Characters/TFT_ArmoryKeyComponent/HUD/TFT_ArmoryKeyComponent_Square.TFT_DoubleUp_Assist_Update.tex",
-        "name": "조합 아이템 모루",
+        "name": "Component Anvil",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -161,7 +161,7 @@ export const champion_season_9 = {
     "characterName": "TFT_ArmoryKeyComponent",
     "cost": 8,
     "icon": null,
-    "name": "조합 아이템 모루",
+    "name": "Component Anvil",
     "squareIcon": null,
     "stats": {
         "armor": 10,
@@ -180,9 +180,9 @@ export const champion_season_9 = {
 },
     TFT_ArmoryKeyOrnn: {
     "ability": {
-        "desc": "상점에 끌어다 놓으면 유물 아이템이 가득한 무기고가 열립니다! 30초 안에 선택해야 합니다.",
+        "desc": "Drag this to the Shop to open an Armory full of Artifact items! You will have 30 seconds to choose.",
         "icon": "ASSETS/Characters/TFT_ArmoryKeyOrnn/HUD/TFT_ArmoryKeyOrnn_Square.TFT_DoubleUp_Assist_Update.tex",
-        "name": "유물 아이템 모루",
+        "name": "Artifact Item Anvil",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -202,7 +202,7 @@ export const champion_season_9 = {
     "characterName": "TFT_ArmoryKeyOrnn",
     "cost": 8,
     "icon": null,
-    "name": "유물 아이템 모루",
+    "name": "Artifact Item Anvil",
     "squareIcon": null,
     "stats": {
         "armor": 10,
@@ -221,9 +221,9 @@ export const champion_season_9 = {
 },
     TFT_ArmoryKeySupport: {
     "ability": {
-        "desc": "상점에 끌어다 놓으면 지원 아이템이 가득한 무기고가 열립니다! 30초 안에 선택해야 합니다.",
+        "desc": "Drag this to the Shop to open an Armory full of Support items! You will have 30 seconds to choose.",
         "icon": "ASSETS/Characters/TFT_ArmoryKeySupport/HUD/TFT_ArmoryKeySupport_Square.TFT_9_5_ItemUpdate.tex",
-        "name": "지원 아이템 모루",
+        "name": "Support item anvil",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -243,7 +243,7 @@ export const champion_season_9 = {
     "characterName": "TFT_ArmoryKeySupport",
     "cost": 8,
     "icon": null,
-    "name": "지원 아이템 모루",
+    "name": "Support item anvil",
     "squareIcon": null,
     "stats": {
         "armor": 10,
@@ -260,127 +260,11 @@ export const champion_season_9 = {
     "tileIcon": "ASSETS/Characters/TFT_ArmoryKeySupport/HUD/TFT_ArmoryKeySupport_Square.TFT_9_5_ItemUpdate.tex",
     "traits": []
 },
-    TFT9_Tristana: {
-    "ability": {
-        "desc": "@Duration@초 동안 <TFTBonus>@ModifiedAttackSpeed@ (%i:scaleAP%)의</TFTBonus> 공격 속도를 얻습니다. 지속시간 동안 기본 공격이 폭발하며 1칸 내 적들에게 <physicalDamage>@BonusDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.<br><br>4성 업그레이드: @NumberOfAttacks@번째 기본 공격을 가할 때마다 <physicalDamage>@4StarShotDamage@ (%i:scaleAD%)</physicalDamage>의 추가 물리 피해를 입힙니다. 이후 가장 큰 적 무리에 도탄되어 1칸 내 모든 적에게 <physicalDamage>@ExplosionDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.",
-        "icon": "ASSETS/Characters/TFT9_Tristana/HUD/Icons2D/TFT9_Tristana_Q.TFT_Set9.dds",
-        "name": "속사",
-        "variables": [
-            {
-                "name": "AttackSpeed",
-                "value": [
-                    0.699999988079071,
-                    0.699999988079071,
-                    0.699999988079071,
-                    0.699999988079071,
-                    0.699999988079071,
-                    0.699999988079071,
-                    0.699999988079071
-                ]
-            },
-            {
-                "name": "Duration",
-                "value": [
-                    4,
-                    4,
-                    4,
-                    4,
-                    4,
-                    4,
-                    4
-                ]
-            },
-            {
-                "name": "PercentAttackDamage",
-                "value": [
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579,
-                    0.6000000238418579
-                ]
-            },
-            {
-                "name": "EmpoweredBonus",
-                "value": [
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1
-                ]
-            },
-            {
-                "name": "ExplosionPercent",
-                "value": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5
-                ]
-            },
-            {
-                "name": "NumberOfAttacks",
-                "value": [
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10
-                ]
-            },
-            {
-                "name": "HexRadius",
-                "value": [
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Tristana",
-    "characterName": "TFT9_Tristana",
-    "cost": 1,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Tristana.TFT_Set9.tex",
-    "name": "트리스타나",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Tristana_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 15,
-        "attackSpeed": 0.699999988079071,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 45,
-        "hp": 400,
-        "initialMana": 0,
-        "magicResist": 15,
-        "mana": 40,
-        "range": 4
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Tristana/HUD/TFT9_Tristana_Square.TFT_Set9.tex",
-    "traits": [
-        "요들",
-        "사수"
-    ]
-},
     TFT9_Irelia: {
     "ability": {
-        "desc": "방어 태세를 갖추며 <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 획득합니다. 보호막은 @ShieldDuration@초 걸쳐 유지된 후 사라집니다. 보호막이 사라지면 <magicDamage>@ModifiedBaseStrikeDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해+받은 피해량의 <magicDamage>@PercentShieldDamage*100@%</magicDamage>에 해당하는 피해를 이렐리아 전방 및 주변 적에게 입힙니다.<br><br>아이오니아 추가 효과: 방어력 및 마법 저항력 <TFTBonus>+@TooltipIoniaBonus@</TFTBonus>",
+        "desc": "Enter a defensive stance and gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield that rapidly decays over @ShieldDuration@ seconds. When it expires, deal <magicDamage>@ModifiedBaseStrikeDamage@ (%i:scaleAP%)</magicDamage> magic damage + <magicDamage>@PercentShieldDamage*100@%</magicDamage> of the damage absorbed to enemies around and in front of Irelia.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@</TFTBonus> Armor and Magic Resist",
         "icon": "ASSETS/Characters/TFT9_Irelia/HUD/Icons2D/TFT9_Irelia_Passive.TFT_Set9.dds",
-        "name": "저항의 춤",
+        "name": "Defiant Dance",
         "variables": [
             {
                 "name": "ShieldDuration",
@@ -448,7 +332,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Irelia",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Irelia.TFT_Set9.tex",
-    "name": "이렐리아",
+    "name": "Irelia",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Irelia_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -464,108 +348,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Irelia/HUD/TFT9_Irelia_Square.TFT_Set9.tex",
     "traits": [
-        "아이오니아",
-        "도전자"
-    ]
-},
-    TFT9_Aatrox: {
-    "ability": {
-        "desc": "@Duration@초 동안 변신해 <TFTBonus>@ModifiedOmnivamp@(%i:scaleAP%)</TFTBonus>의 <TFTKeyword>모든 피해 흡혈</TFTKeyword>을 얻고 추가 공격 속도의 @ADPerASConversion*100@%를 공격력으로 전환합니다. 변신 중에는 기본 공격이 <physicalDamage>@GreatswordDamage@(%i:scaleAD%)</physicalDamage>의 범위 물리 피해를 입힙니다.<br><br><rules><tftbold>모든 피해 흡혈:</tftbold> 입힌 피해량의 일부만큼 체력을 회복합니다.</rules>",
-        "icon": "ASSETS/Characters/TFT9_Aatrox/HUD/Icons2D/TFT9_Aatrox_R.TFT_Set9.dds",
-        "name": "세계의 종결자",
-        "variables": [
-            {
-                "name": "Duration",
-                "value": [
-                    10,
-                    12,
-                    12,
-                    30,
-                    10,
-                    10,
-                    10
-                ]
-            },
-            {
-                "name": "Omnivamp",
-                "value": [
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224
-                ]
-            },
-            {
-                "name": "GreatswordADRatio",
-                "value": [
-                    0,
-                    2.75,
-                    2.75,
-                    25,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "ADPerASConversion",
-                "value": [
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929
-                ]
-            },
-            {
-                "name": "MovementSpeed",
-                "value": [
-                    700,
-                    700,
-                    700,
-                    700,
-                    700,
-                    700,
-                    700
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Aatrox",
-    "characterName": "TFT9_Aatrox",
-    "cost": 5,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aatrox.TFT_Set9.tex",
-    "name": "아트록스",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aatrox_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 70,
-        "attackSpeed": 0.800000011920929,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 80,
-        "hp": 900,
-        "initialMana": 0,
-        "magicResist": 70,
-        "mana": 50,
-        "range": 1
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Aatrox/HUD/TFT9_Aatrox_Square.TFT_Set9.tex",
-    "traits": [
-        "다르킨",
-        "학살자",
-        "전쟁기계"
+        "Ionia",
+        "Challenger"
     ]
 },
     TFT9_Ahri: {
     "ability": {
-        "desc": "현재 대상 주위의 적들로부터 정기를 빼앗으며 <magicDamage>@ModifiedEssenceDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @TooltipReave@%만큼 <TFTKeyword>마나를 강탈</TFTKeyword>합니다. <br><br><scaleLevel>@ActualBoomTooltip@</scaleLevel> 시전 때마다 파동을 방출해 적중하는 모든 적에게 <magicDamage>@ModifiedMagicDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 정기를 흡수당한 적들에게는 피해량이 <magicDamage>@EssenceStolenMultiplier*100@%</magicDamage> 증가합니다.<br><br>아이오니아 추가 효과: 초당 마나 <TFTBonus>+@TooltipIoniaBonus@</TFTBonus><br><br><rules><tftbold>마나 강탈</tftbold>: 스킬을 사용하기 전까지 최대 마나를 증가시킵니다.</rules>",
+        "desc": "Steal essence from enemies around the current target, dealing <magicDamage>@ModifiedEssenceDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipReave@% <TFTKeyword>Mana Reaving</TFTKeyword> them. <br><br>Every <scaleLevel>@ActualBoomTooltip@</scaleLevel> casts, unleash a wave that deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to all enemies hit. This deals <magicDamage>@EssenceStolenMultiplier*100@%</magicDamage> more damage to enemies whose essence has been stolen.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@</TFTBonus> Mana per second<br><br><rules><tftbold>Mana Reave</tftbold>: Increase max Mana until the next cast</rules>",
         "icon": "ASSETS/Characters/TFT9_Ahri/HUD/Icons2D/Icons_TFT9_Ahri_R.TFT_Set9.dds",
-        "name": "정기 흡수",
+        "name": "Essence Thief",
         "variables": [
             {
                 "name": "MagicDamage",
@@ -645,7 +436,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ahri",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ahri.TFT_Set9.tex",
-    "name": "아리",
+    "name": "Ahri",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ahri_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -661,95 +452,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ahri/HUD/TFT9_Ahri_Square.TFT_Set9.tex",
     "traits": [
-        "아이오니아",
-        "마법사"
-    ]
-},
-    TFT9_Akshan: {
-    "ability": {
-        "desc": "가장 멀리 있는 적을 향해 @NumBullets@회 연속 공격합니다. 각 공격은 처음 적중하는 적에게<br><physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다.",
-        "icon": "ASSETS/Characters/TFT9_Akshan/HUD/Icons2D/TFT9_Akshan_R.TFT_Set9.dds",
-        "name": "인과응보",
-        "variables": [
-            {
-                "name": "NumBullets",
-                "value": [
-                    6,
-                    6,
-                    6,
-                    6,
-                    6,
-                    6,
-                    6
-                ]
-            },
-            {
-                "name": "ADRatio",
-                "value": [
-                    1.25,
-                    1.25,
-                    1.25,
-                    1.25,
-                    1.25,
-                    1.25,
-                    1.25
-                ]
-            },
-            {
-                "name": "BaseDamage",
-                "value": [
-                    0,
-                    20,
-                    35,
-                    60,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "RocketsPerSimulatedLaunchAttack",
-                "value": [
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Akshan",
-    "characterName": "TFT9_Akshan",
-    "cost": 3,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Akshan.TFT_Set9.tex",
-    "name": "아크샨",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Akshan_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 25,
-        "attackSpeed": 0.75,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 60,
-        "hp": 700,
-        "initialMana": 30,
-        "magicResist": 25,
-        "mana": 110,
-        "range": 4
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Akshan/HUD/TFT9_Akshan_Square.TFT_Set9.tex",
-    "traits": [
-        "슈리마",
-        "백발백중"
+        "Ionia",
+        "Sorcerer"
     ]
 },
     TFT9_Ashe: {
     "ability": {
-        "desc": "원뿔 범위에 @Shots@개의 화살을 발사합니다. 각 화살은 처음 적중한 적에게 <physicalDamage>@ArrowDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입히고 <TFTBonus>@ModifiedDuration@ (%i:scaleAP%)</TFTBonus>초 동안 <TFTKeyword>냉각</TFTKeyword> 상태로 만듭니다.<br><br><rules><tftbold>냉각:</tftbold> 공격 속도를 @Chill@% 감소시킵니다.</rules>",
+        "desc": "Fire @Shots@ arrows in a cone, each dealing <physicalDamage>@ArrowDamage@ (%i:scaleAD%)</physicalDamage> physical damage to the first enemy hit and <TFTKeyword>Chilling</TFTKeyword> them for <TFTBonus>@ModifiedDuration@ (%i:scaleAP%)</TFTBonus> seconds.<br><br><rules><tftbold>Chill:</tftbold> Reduce Attack Speed by @Chill@%</rules>",
         "icon": "ASSETS/Characters/TFT9_Ashe/HUD/Icons2D/TFT9_Ashe_W.TFT_Set9.dds",
-        "name": "일제 사격",
+        "name": "Volley",
         "variables": [
             {
                 "name": "ADPercent",
@@ -817,7 +528,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ashe",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ashe.TFT_Set9.tex",
-    "name": "애쉬",
+    "name": "Ashe",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ashe_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 20,
@@ -833,15 +544,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ashe/HUD/TFT9_Ashe_Square.TFT_Set9.tex",
     "traits": [
-        "프렐요드",
-        "토벌자"
+        "Freljord",
+        "Vanquisher"
     ]
 },
     TFT9_Azir: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 3회 공격할 때마다 모래 병사가 대상에게 <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> 모래 병사를 소환해 대상을 공격합니다. 이미 아지르의 모래 병사 수가 @MaxSummons@명일 경우 모든 병사가 즉시 공격해 <magicDamage>@MaxSoldierStrike@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "<spellPassive>Passive:</spellPassive> Every third attack, a Sand Soldier deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to their target.<br><br><spellActive>Active:</spellActive> Summon a Sand Soldier to attack your target. If Azir already has @MaxSummons@ Soldiers, they all immediately deal <magicDamage>@MaxSoldierStrike@ (%i:scaleAP%)</magicDamage> magic damage instead.",
         "icon": "ASSETS/Characters/TFT9_Azir/HUD/Icons2D/TFT9_Azir_W.TFT_Set9.dds",
-        "name": "일어나라!",
+        "name": "Arise!",
         "variables": [
             {
                 "name": "BaseMagicDamage",
@@ -897,7 +608,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Azir",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Azir.TFT_Set9.tex",
-    "name": "아지르",
+    "name": "Azir",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Azir_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -913,15 +624,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Azir/HUD/TFT9_Azir_Square.TFT_Set9.tex",
     "traits": [
-        "슈리마",
-        "책략가"
+        "Shurima",
+        "Strategist"
     ]
 },
     TFT9_BelVeth: {
     "ability": {
-        "desc": "사거리 내 체력이 가장 낮은 적을 빠르게 <TFTBonus>@ModifiedNumStrikes@(%i:scaleAS%)</TFTBonus>회 공격합니다. 각 공격은 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해+대상 최대 체력의 <trueDamage>@PercentHealthTrueDamage*100@%</trueDamage>에 해당하는 고정 피해를 입힙니다.",
+        "desc": "Lash out at the lowest Health enemy in range <TFTBonus>@ModifiedNumStrikes@ (%i:scaleAS%)</TFTBonus> times. Each lash deals <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage and <trueDamage>@PercentHealthTrueDamage*100@%</trueDamage> of the target's max Health as true damage.",
         "icon": "ASSETS/Characters/TFT9_BelVeth/HUD/Icons2D/TFT9_BelVethE.TFT_Set9.dds",
-        "name": "여제의 소용돌이",
+        "name": "Royal Maelstrom",
         "variables": [
             {
                 "name": "Duration",
@@ -1001,7 +712,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_BelVeth",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_BelVeth.TFT_Set9.tex",
-    "name": "벨베스",
+    "name": "Bel'Veth",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_BelVeth_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -1017,15 +728,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_BelVeth/HUD/TFT9_Belveth_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "여제"
+        "Void",
+        "Empress"
     ]
 },
     TFT9_ChoGath: {
     "ability": {
-        "desc": "체력이 가장 낮은 근처 적에게 <magicDamage>@TotalDamage@ (%i:scaleHealth%%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 적이 사망할 경우 집어삼켜 최대 체력이 영구적으로 <scaleHealth>@BonusHealthOnKill@</scaleHealth> 증가합니다<rules>(초고속 모드에서는 2배로 적용)</rules>. <br><br><rules>(현재 추가 수치: 체력 +@TFTUnitProperty.:TFT9_ChoGathBonusHealth@)</rules>",
+        "desc": "Deal <magicDamage>@TotalDamage@ (%i:scaleHealth%%i:scaleAP%)</magicDamage> magic damage to the lowest Health enemy in range. If this kills them, devour them and permanently gain <scaleHealth>@BonusHealthOnKill@</scaleHealth> maximum Health <rules>(doubled in Hyper Roll)</rules>. <br><br><rules>(Current Bonus: +@TFTUnitProperty.:TFT9_ChoGathBonusHealth@ Health)</rules>",
         "icon": "ASSETS/Characters/Chogath/HUD/Icons2D/GreenTerror_Feast.dds",
-        "name": "포식",
+        "name": "Feast",
         "variables": [
             {
                 "name": "PercentMaximumHealthDamage",
@@ -1069,7 +780,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_ChoGath",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_ChoGath.TFT_Set9.tex",
-    "name": "초가스",
+    "name": "Cho'Gath",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_ChoGath_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -1085,15 +796,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_ChoGath/HUD/TFT9_ChoGath_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "난동꾼"
+        "Void",
+        "Bruiser"
     ]
 },
     TFT9_Darius: {
     "ability": {
-        "desc": "현재 대상에게 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다. 대상이 사망하면 곧바로 다시 시전해 <scaleLevel>@PercentDamageFalloff*100@%</scaleLevel>의 피해를 입힙니다.",
+        "desc": "Deal <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage to the current target. If they die, immediately cast this again with <scaleLevel>@PercentDamageFalloff*100@%</scaleLevel> damage.",
         "icon": "ASSETS/Characters/Darius/HUD/Icons2D/Darius_Icon_Sudden_Death.dds",
-        "name": "녹서스의 단두대",
+        "name": "Noxian Guillotine",
         "variables": [
             {
                 "name": "AttackDamagePercent",
@@ -1149,7 +860,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Darius",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Darius.TFT_Set9.tex",
-    "name": "다리우스",
+    "name": "Darius",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Darius_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -1165,16 +876,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Darius/HUD/TFT9_Darius_Square.TFT_Set9.tex",
     "traits": [
-        "녹서스",
-        "전쟁기계",
-        "토벌자"
+        "Noxus",
+        "Juggernaut",
+        "Vanquisher"
     ]
 },
     TFT9_Ekko: {
     "ability": {
-        "desc": "지난 @RewindTime@초 동안 받은 피해량의 <scaleHealth>@HealPercent*100@%</scaleHealth>만큼 체력을 회복하고 현재 대상에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Heal <scaleHealth>@HealPercent*100@%</scaleHealth> of damage taken in the last @RewindTime@ seconds and deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target.",
         "icon": "ASSETS/Characters/TFT9_Ekko/HUD/Icons2D/TFT9_Ekko_E.TFT_Set9.dds",
-        "name": "시간 도약",
+        "name": "Phase Dive",
         "variables": [
             {
                 "name": "Damage",
@@ -1230,7 +941,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ekko",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ekko.TFT_Set9.tex",
-    "name": "에코",
+    "name": "Ekko",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ekko_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -1246,19 +957,43 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ekko/HUD/TFT9_Ekko_Square.TFT_Set9.tex",
     "traits": [
-        "자운",
-        "필트오버",
-        "불한당"
+        "Zaun",
+        "Piltover",
+        "Rogue"
     ]
 },
-    TFT9_Garen: {
+    TFT9_Quinn: {
     "ability": {
-        "desc": "<TFTBonus>@ModifiedDuration@ (%i:scaleAP%)</TFTBonus>초 동안 매초 <TFTBonus>@SpinsTooltip@ (%i:scaleAS%)</TFTBonus>회 회전하며 1회 회전할 때마다 주변 적들에게 <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.",
-        "icon": "ASSETS/Characters/Garen/HUD/Icons2D/Garen_E1.dds",
-        "name": "심판",
+        "desc": "Launch Valor through the row or column with the most enemies, marking them to take <TFTBonus>@ModifiedAmpDamage@ (%i:scaleAP%)</TFTBonus> increased damage for @Duration@ seconds. Then rain down arrows, dealing <physicalDamage>@ModifiedDamage@ (%i:scaleAD%)</physicalDamage> physical damage split between all marked enemies.",
+        "icon": "ASSETS/Characters/TFT9_Quinn/HUD/Icons2D/TFT9_Quinn_R2.TFT_Set9.dds",
+        "name": "Skystrike",
         "variables": [
             {
-                "name": "SpinDuration",
+                "name": "AmpDamage",
+                "value": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            },
+            {
+                "name": "PercentAD",
+                "value": [
+                    6,
+                    5.5,
+                    5.550000190734863,
+                    5.650000095367432,
+                    6,
+                    6,
+                    6
+                ]
+            },
+            {
+                "name": "Duration",
                 "value": [
                     4,
                     4,
@@ -1268,178 +1003,38 @@ export const champion_season_9 = {
                     4,
                     4
                 ]
-            },
-            {
-                "name": "BaseTicks",
-                "value": [
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2
-                ]
-            },
-            {
-                "name": "DamagePerTick",
-                "value": [
-                    15,
-                    0.800000011920929,
-                    0.8199999928474426,
-                    0.8500000238418579,
-                    115,
-                    140,
-                    165
-                ]
-            },
-            {
-                "name": "ASPerTickTooltip",
-                "value": [
-                    50,
-                    50,
-                    50,
-                    50,
-                    50,
-                    50,
-                    50
-                ]
-            },
-            {
-                "name": "SpinsPerLaunchAttack",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
             }
         ]
     },
-    "apiName": "TFT9_Garen",
-    "characterName": "TFT9_Garen",
+    "apiName": "TFT9_Quinn",
+    "characterName": "TFT9_Quinn",
     "cost": 3,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Garen.TFT_Set9.tex",
-    "name": "가렌",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Garen_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Quinn.TFT_Set9.tex",
+    "name": "Quinn",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Quinn_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 45,
+        "armor": 25,
         "attackSpeed": 0.75,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 70,
-        "hp": 850,
-        "initialMana": 0,
-        "magicResist": 45,
-        "mana": 80,
-        "range": 1
+        "damage": 60,
+        "hp": 700,
+        "initialMana": 30,
+        "magicResist": 25,
+        "mana": 90,
+        "range": 4
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Garen/HUD/TFT9_Garen_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Quinn/HUD/TFT9_Quinn_Square.TFT_Set9.tex",
     "traits": [
-        "데마시아",
-        "전쟁기계"
-    ]
-},
-    TFT9_Gwen: {
-    "ability": {
-        "desc": "현재 대상 주변을 돌며 원뿔 범위를 @Snips@회 가위질해 적중한 적들에게 회당 <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>@CastCountForMist@회 시전할 때마다 <scaleLevel>@MistDuration@</scaleLevel>초 동안 방어력 및 마법 저항력이 <TFTBonus>@MistResists@</TFTBonus> 증가합니다.",
-        "icon": "ASSETS/Characters/Gwen/HUD/Icons2D/Gwen_E.dds",
-        "name": "싹둑싹둑!",
-        "variables": [
-            {
-                "name": "Snips",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "MagicDamage",
-                "value": [
-                    0,
-                    100,
-                    150,
-                    400,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "MistDuration",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    5,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "CastCountForMist",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "MistResists",
-                "value": [
-                    150,
-                    120,
-                    120,
-                    300,
-                    150,
-                    150,
-                    150
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Gwen",
-    "characterName": "TFT9_Gwen",
-    "cost": 4,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Gwen.TFT_Set9.tex",
-    "name": "그웬",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Gwen_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 50,
-        "attackSpeed": 0.800000011920929,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 55,
-        "hp": 1000,
-        "initialMana": 0,
-        "magicResist": 50,
-        "mana": 35,
-        "range": 2
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Gwen/HUD/TFT9_Gwen_Square.TFT_Set9.tex",
-    "traits": [
-        "그림자 군도",
-        "학살자"
+        "Demacia",
+        "Slayer"
     ]
 },
     TFT9_Heimerdinger: {
     "ability": {
-        "desc": "가장 큰 적 무리를 향해 수류탄을 던집니다. 수류탄은 광범위하게 폭발하며 적중한 적들에게 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 <scaleLevel>@StunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다.",
+        "desc": "Hurl a grenade towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies in a large area and <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/TFT9_Heimerdinger/HUD/Icons2D/TFT9_Heimerdinger_E1.TFT_Set9.dds",
-        "name": "CH-3X 전격 수류탄",
+        "name": "CH-3X Lightning Grenade",
         "variables": [
             {
                 "name": "Damage",
@@ -1471,7 +1066,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Heimerdinger",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Heimerdinger.TFT_Set9.tex",
-    "name": "하이머딩거",
+    "name": "Heimerdinger",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Heimerdinger_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -1487,15 +1082,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Heimerdinger/HUD/TFT9_Heimerdinger_Square.TFT_Set9.tex",
     "traits": [
-        "필트오버",
-        "발명의 대가"
+        "Piltover",
+        "Technogenius"
     ]
 },
     TFT9_JarvanIV: {
     "ability": {
-        "desc": "근처 적에게 달려들어 @HexRadius@칸 내 모든 적에게 <magicDamage>@TotalDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 <scaleLevel>@StunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다.",
+        "desc": "Leap on a nearby enemy. Deal <magicDamage>@TotalDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within @HexRadius@ hexes and <TFTKeyword>Stun</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/TFT9_JarvanIV/HUD/Icons2D/TFT9_JarvanIV_Cataclysm.TFT_Set9.dds",
-        "name": "대격변",
+        "name": "Cataclysm",
         "variables": [
             {
                 "name": "StunDuration",
@@ -1551,7 +1146,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_JarvanIV",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_JarvanIV.TFT_Set9.tex",
-    "name": "자르반 4세",
+    "name": "Jarvan IV",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_JarvanIV_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 60,
@@ -1567,15 +1162,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_JarvanIV/HUD/TFT9_JarvanIV_Square.TFT_Set9.tex",
     "traits": [
-        "데마시아",
-        "책략가"
+        "Demacia",
+        "Strategist"
     ]
 },
     TFT9_Jayce: {
     "ability": {
-        "desc": "제이스에게 <TFTBonus>@ModifiedEnhancedAttackSpeed@(%i:scaleAP%)</TFTBonus>, 제이스 양 옆 아군에게 <TFTBonus>@ModifiedPercentAttackSpeed@(%i:scaleAP%)</TFTBonus>의 공격 속도를 @Duration@초 동안 부여합니다. 그리고 현재 대상에게 폭발 구체를 발사합니다. 구체는 처음 맞는 적 위에서 폭발하며 근처 적에게 <physicalDamage>@TotalDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.",
+        "desc": "Grant <TFTBonus>@ModifiedEnhancedAttackSpeed@ (%i:scaleAP%)</TFTBonus> Attack Speed to Jayce and <TFTBonus>@ModifiedPercentAttackSpeed@ (%i:scaleAP%)</TFTBonus> to the allies on his left and right for @Duration@ seconds. Fire a blast at the current target that explodes on the first enemy hit. It deals <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies near the blast.",
         "icon": "ASSETS/Characters/TFT9_Jayce/HUD/Icons2D/TFT9_Jayce_ShotBlast.TFT_Set9.dds",
-        "name": "가속 폭발",
+        "name": "Acceleration Blast",
         "variables": [
             {
                 "name": "PercentAttackSpeed",
@@ -1655,7 +1250,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Jayce",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Jayce.TFT_Set9.tex",
-    "name": "제이스",
+    "name": "Jayce",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Jayce_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
@@ -1671,15 +1266,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Jayce/HUD/TFT9_Jayce_Square.TFT_Set9.tex",
     "traits": [
-        "필트오버",
-        "사수"
+        "Piltover",
+        "Gunner"
     ]
 },
     TFT9_Jinx: {
     "ability": {
-        "desc": "현재 대상과 @HexRadius@칸 내에 있는 적들에게 무작위로 @NumberOfRockets@개의 로켓을 발사합니다. 각 로켓은 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다.",
+        "desc": "Fire @NumberOfRockets@ rockets at random enemies within @HexRadius@ hexes of the current target. Each rocket deals <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage.",
         "icon": "ASSETS/Characters/TFT9_Jinx/HUD/Icons2D/TFT9_Jinx_Q1.TFT_Set9.dds",
-        "name": "생선대가리!",
+        "name": "Fishbones!",
         "variables": [
             {
                 "name": "NumberOfRockets",
@@ -1747,7 +1342,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Jinx",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Jinx.TFT_Set9.tex",
-    "name": "징크스",
+    "name": "Jinx",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Jinx_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 20,
@@ -1763,15 +1358,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Jinx/HUD/TFT9_Jinx_Square.TFT_Set9.tex",
     "traits": [
-        "자운",
-        "사수"
+        "Zaun",
+        "Gunner"
     ]
 },
     TFT9_KaiSa: {
     "ability": {
-        "desc": "적들에게서 멀어지며 가장 가까운 적 @NumTargets@명에게 <scaleLevel>@NumMissiles@</scaleLevel>개의 미사일을 발사합니다. 각 미사일은 <magicDamage>@TotalDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Dash away from all enemies, then fire <scaleLevel>@NumMissiles@</scaleLevel> missiles split across the @NumTargets@ nearest enemies. Each missile deals <magicDamage>@TotalDamage@ (%i:scaleAP%)</magicDamage> magic damage.",
         "icon": "ASSETS/Characters/TFT9_KaiSa/HUD/Icons2D/TFT9_KaiSa_W.TFT_Set9.dds",
-        "name": "이케시아 폭우",
+        "name": "Icathian Rain",
         "variables": [
             {
                 "name": "NumMissiles",
@@ -1815,7 +1410,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_KaiSa",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_KaiSa.TFT_Set9.tex",
-    "name": "카이사",
+    "name": "Kai'Sa",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_KaiSa_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 35,
@@ -1831,15 +1426,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_KaiSa/HUD/TFT9_KaiSa_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "도전자"
+        "Void",
+        "Challenger"
     ]
 },
     TFT9_Karma: {
     "ability": {
-        "desc": "충돌 시 폭발하는 에너지 구체를 발사해 주변 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 3회 사용할 때마다 구체를 @EmpoweredBursts@개 발사합니다.<br><br>아이오니아 추가 효과: 주문력 <TFTBonus>+@TooltipIoniaBonus@</TFTBonus>",
+        "desc": "Fire a burst of energy that explodes upon impact, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies. Every third cast launches @EmpoweredBursts@ bursts.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@</TFTBonus> Ability Power",
         "icon": "ASSETS/Characters/TFT9_Karma/HUD/Icons2D/TFT9_Karma_Q1.TFT_Set9.dds",
-        "name": "내면의 열정",
+        "name": "Inner Flame",
         "variables": [
             {
                 "name": "MagicDamage",
@@ -1883,7 +1478,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Karma",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Karma.TFT_Set9.tex",
-    "name": "카르마",
+    "name": "Karma",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Karma_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
@@ -1899,15 +1494,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Karma/HUD/TFT9_Karma_Square.TFT_Set9.tex",
     "traits": [
-        "아이오니아",
-        "기원자"
+        "Ionia",
+        "Invoker"
     ]
 },
     TFT9_Katarina: {
     "ability": {
-        "desc": "단검 3개를 적의 <TFTBonus>@SpellRange@ (%i:scaleRange%)</TFTBonus>칸 내 위치에 던집니다. 이후 각 단검으로 순간이동하며 근처 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 피해를 가하며 @WoundDuration@초 동안 <TFTKeyword>상처</TFTKeyword>를 입힙니다.<br><br><rules><tftbold>상처:</tftbold> 체력 회복량이 @WoundPercent*100@% 감소합니다.</rules>",
+        "desc": "Throw three daggers that land next to enemies within <TFTBonus>@SpellRange@ (%i:scaleRange%)</TFTBonus> hexes. Then, teleport to each and deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies and <TFTKeyword>Wound</TFTKeyword> them for @WoundDuration@ seconds.<br><br><rules><tftbold>Wound:</tftbold> Reduce healing received by @WoundPercent*100@%</rules>",
         "icon": "ASSETS/Characters/TFT9_Katarina/HUD/Icons2D/TFT9_Katarina_W.TFT_Set9.dds",
-        "name": "탐욕",
+        "name": "Voracity",
         "variables": [
             {
                 "name": "Damage",
@@ -1963,7 +1558,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Katarina",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Katarina.TFT_Set9.tex",
-    "name": "카타리나",
+    "name": "Katarina",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Katarina_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -1979,84 +1574,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Katarina/HUD/TFT9_Katarina_Square.TFT_Set9.tex",
     "traits": [
-        "녹서스",
-        "불한당"
-    ]
-},
-    TFT9_Kled: {
-    "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 전투 시작 시 <TFTBonus>@Shield@</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 보호막이 사라지면 스칼에서 내린 후 남은 전투 동안 <TFTBonus>@ModifiedAttackSpeedPercent@ (%i:scaleAP%)</TFTBonus>의 중첩되는 공격 속도를 얻습니다.<br><br><spellActive>사용 시:</spellActive> 스칼에 다시 탑승해 <TFTBonus>@Shield@ (%i:scaleHealth%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다.<br><br>4성 업그레이드: 체력이 @ExecuteThreshold@% 아래인 적들을 처형합니다.",
-        "icon": "ASSETS/Characters/Kled/HUD/Icons2D/Kled_R.dds",
-        "name": "스카아아아아알!",
-        "variables": [
-            {
-                "name": "ShieldPercent",
-                "value": [
-                    0.30000001192092896,
-                    0.30000001192092896,
-                    0.30000001192092896,
-                    0.30000001192092896,
-                    0.30000001192092896,
-                    0.30000001192092896,
-                    0.30000001192092896
-                ]
-            },
-            {
-                "name": "AttackSpeedPercent",
-                "value": [
-                    0.6000000238418579,
-                    0.6499999761581421,
-                    0.699999988079071,
-                    0.75,
-                    0.800000011920929,
-                    0.8500000238418579,
-                    0.8999999761581421
-                ]
-            },
-            {
-                "name": "ExecuteThreshold",
-                "value": [
-                    25,
-                    25,
-                    25,
-                    25,
-                    25,
-                    25,
-                    25
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Kled",
-    "characterName": "TFT9_Kled",
-    "cost": 2,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kled.TFT_Set9.tex",
-    "name": "클레드",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kled_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 40,
-        "attackSpeed": 0.75,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 58,
-        "hp": 550,
-        "initialMana": 0,
-        "magicResist": 40,
-        "mana": 175,
-        "range": 1
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Kled/HUD/TFT9_Kled_Square.TFT_Set9.tex",
-    "traits": [
-        "녹서스",
-        "요들",
-        "학살자"
+        "Noxus",
+        "Rogue"
     ]
 },
     TFT9_KSante: {
     "ability": {
-        "desc": "체력을 <scaleHealth>@HealAmount@ (%i:scaleHealth%)</scaleHealth> 회복한 뒤 현재 대상을 공중에 띄우고 전장 끝으로 날려 버리며 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 <scaleLevel>@StunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다. 대상과 충돌한 적들은 <magicDamage>@CollisionDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입고 <scaleLevel>@SecondaryStunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>합니다.<br><br>뒤로 날아가는 대상을 추격하며, 더 이상 밀릴 수 없는 대상은 전장 밖으로 이탈합니다.",
+        "desc": "Heal for <scaleHealth>@HealAmount@ (%i:scaleHealth%)</scaleHealth>, then knock up the current target before smashing them to the edge of the battlefield. Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Stun</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds. Deal <magicDamage>@CollisionDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies the target collides with and <TFTKeyword>Stun</TFTKeyword> them for <scaleLevel>@SecondaryStunDuration@</scaleLevel> seconds.<br><br>If the target can't be pushed back any further, knock them off the battlefield. Otherwise, chase after them.",
         "icon": "ASSETS/Characters/TFT9_KSante/HUD/Icons2D/Icons_TFT9_KSante_R2.TFT_Set9.dds",
-        "name": "총공세 타격",
+        "name": "All Out Strike",
         "variables": [
             {
                 "name": "Damage",
@@ -2124,7 +1650,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_KSante",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_KSante.TFT_Set9.tex",
-    "name": "크산테",
+    "name": "K'Sante",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_KSante_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -2140,127 +1666,115 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_KSante/HUD/TFT9_KSante_Square.TFT_Set9.tex",
     "traits": [
-        "슈리마",
-        "요새"
+        "Shurima",
+        "Bastion"
     ]
 },
-    TFT9_Lissandra: {
+    TFT9_Nautilus: {
     "ability": {
-        "desc": "현재 대상을 @StunDuration@초 동안 기절시키고 2칸 내 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 피해를 입은 적들은 @DebuffDuration@초 동안 받는 피해량이 @DamageAmp*100@% 증가합니다.",
-        "icon": "ASSETS/Characters/TFT9_Lissandra/HUD/Icons2D/TFT9_Lissandra_R.TFT_Set9.dds",
-        "name": "얼음 무덤",
+        "desc": "<spellPassive>Passive:</spellPassive> Gain <TFTBonus>@StatAmp*100@%</TFTBonus> bonus Armor and Magic Resistance from all sources.<br><br><spellActive>Active:</spellActive> Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within two hexes. Knock them up and pull them together, <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
+        "icon": "ASSETS/Characters/Nautilus/HUD/Icons2D/Nautilus_RippleEffect.dds",
+        "name": "Riptide",
         "variables": [
+            {
+                "name": "StatAmp",
+                "value": [
+                    0.30000001192092896,
+                    0.30000001192092896,
+                    0.30000001192092896,
+                    0.30000001192092896,
+                    0.30000001192092896,
+                    0.30000001192092896,
+                    0.30000001192092896
+                ]
+            },
             {
                 "name": "Damage",
                 "value": [
                     0,
-                    160,
-                    240,
-                    400,
-                    160,
-                    200,
-                    240
+                    150,
+                    225,
+                    360,
+                    600,
+                    750,
+                    900
                 ]
             },
             {
                 "name": "StunDuration",
                 "value": [
+                    1,
+                    1.5,
+                    1.5,
                     2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2
-                ]
-            },
-            {
-                "name": "DebuffDuration",
-                "value": [
-                    4,
-                    4,
-                    4,
-                    4,
-                    4,
-                    4,
-                    4
-                ]
-            },
-            {
-                "name": "DamageAmp",
-                "value": [
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612
+                    1,
+                    1,
+                    1
                 ]
             }
         ]
     },
-    "apiName": "TFT9_Lissandra",
-    "characterName": "TFT9_Lissandra",
+    "apiName": "TFT9_Nautilus",
+    "characterName": "TFT9_Nautilus",
     "cost": 3,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Lissandra.TFT_Set9.tex",
-    "name": "리산드라",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Lissandra_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nautilus.TFT_Set9_Stage2.tex",
+    "name": "Nautilus",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nautilus_Mobile.TFT_Set9_Stage2.tex",
     "stats": {
-        "armor": 40,
-        "attackSpeed": 0.699999988079071,
+        "armor": 35,
+        "attackSpeed": 0.5,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 50,
-        "hp": 800,
-        "initialMana": 30,
-        "magicResist": 40,
-        "mana": 90,
-        "range": 2
+        "damage": 80,
+        "hp": 950,
+        "initialMana": 80,
+        "magicResist": 35,
+        "mana": 160,
+        "range": 1
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Lissandra/HUD/TFT9_Lissandra_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Nautilus/HUD/TFT9_Nautilus_Square.TFT_Set9_Stage2.tex",
     "traits": [
-        "프렐요드",
-        "기원자"
+        "Bilgewater",
+        "Juggernaut"
     ]
 },
-    TFT9_Lux: {
+    TFT9_Silco: {
     "ability": {
-        "desc": "현재 대상에게 빛의 탄환을 난사해 <scaleLevel>@Duration@</scaleLevel>초 동안 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입히며 매초 마법 저항력을 <scaleLevel>@Shred@</scaleLevel> 감소시킵니다. 적이 사망하면 새로운 대상을 찾습니다.",
-        "icon": "ASSETS/Characters/Lux/HUD/Icons2D/LuxFinaleFunkeln.dds",
-        "name": "몰아치는 빛",
+        "desc": "Throw a vial at a nearby enemy, covering adjacent hexes in shimmer for <scaleLevel>@ShimmerDuration@</scaleLevel> seconds. Enemies affected by shimmer take <magicDamage>@ModifiedShimmerDamagePerSec@ (%i:scaleAP%)</magicDamage> magic damage per second. Allies affected by shimmer heal <scaleHealth>@ModifiedHealPerSec@ (%i:scaleAP%)</scaleHealth> Health per second. ",
+        "icon": "ASSETS/Characters/TFT9_Silco/HUD/Icons2D/TFT6_Silco_EyeOfTheStorm.TFT_Set9_Stage2.dds",
+        "name": "Undercity Tactics",
         "variables": [
             {
-                "name": "Duration",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "Damage",
+                "name": "ShimmerDuration",
                 "value": [
                     0,
-                    735,
-                    1100,
-                    2750,
+                    6,
+                    6,
+                    10,
                     0,
                     0,
                     0
                 ]
             },
             {
-                "name": "Shred",
+                "name": "ShimmerDamagePerSec",
                 "value": [
                     0,
-                    15,
-                    15,
-                    40,
+                    80,
+                    120,
+                    425,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "HealPerSec",
+                "value": [
+                    0,
+                    20,
+                    30,
+                    120,
                     0,
                     0,
                     0
@@ -2268,12 +1782,12 @@ export const champion_season_9 = {
             }
         ]
     },
-    "apiName": "TFT9_Lux",
-    "characterName": "TFT9_Lux",
+    "apiName": "TFT9_Silco",
+    "characterName": "TFT9_Silco",
     "cost": 4,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Lux.TFT_Set9.tex",
-    "name": "럭스",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Lux_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Silco.TFT_Set9_Stage2.tex",
+    "name": "Silco",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Silco_Mobile.TFT_Set9_Stage2.tex",
     "stats": {
         "armor": 30,
         "attackSpeed": 0.699999988079071,
@@ -2283,20 +1797,20 @@ export const champion_season_9 = {
         "hp": 750,
         "initialMana": 0,
         "magicResist": 30,
-        "mana": 40,
+        "mana": 50,
         "range": 4
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Lux/HUD/TFT9_Lux_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Silco/HUD/TFT9_Silco_Square.TFT_Set9_Stage2.tex",
     "traits": [
-        "데마시아",
-        "마법사"
+        "Zaun",
+        "Sorcerer"
     ]
 },
     TFT9_Orianna: {
     "ability": {
-        "desc": "체력이 가장 낮은 아군에게 @ShieldDuration@초 동안 <TFTBonus>@ModifiedShielding@(%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 씌우고 오리아나의 다음 기본 공격이 강화되어 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 추가 마법 피해를 입힙니다.",
+        "desc": "Grant the lowest Health ally <TFTBonus>@ModifiedShielding@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds and empowers Orianna's next attack to deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> bonus magic damage.",
         "icon": "ASSETS/Characters/TFT9_Orianna/HUD/Icons2D/TFT9_OriannaCommandAttack.TFT_Set9.dds",
-        "name": "명령: 보호",
+        "name": "Command: Protect",
         "variables": [
             {
                 "name": "ShieldHealth",
@@ -2340,7 +1854,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Orianna",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Orianna.TFT_Set9.tex",
-    "name": "오리아나",
+    "name": "Orianna",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Orianna_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 15,
@@ -2356,15 +1870,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Orianna/HUD/TFT9_Orianna_Square.TFT_Set9.tex",
     "traits": [
-        "필트오버",
-        "마법사"
+        "Piltover",
+        "Sorcerer"
     ]
 },
     TFT9_Poppy: {
     "ability": {
-        "desc": "@ShieldDuration@초 동안 <TFTBonus>@ModifiedShieldAmount@(%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻고 현재 대상에게 <magicDamage>@ModifiedMagicDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target.",
         "icon": "ASSETS/Characters/TFT9_Poppy/HUD/Icons2D/TFT9_Poppy_Q.TFT_Set9.dds",
-        "name": "굳건한 망치",
+        "name": "Steadfast Hammer",
         "variables": [
             {
                 "name": "ShieldAmount",
@@ -2456,7 +1970,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Poppy",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Poppy.TFT_Set9.tex",
-    "name": "뽀삐",
+    "name": "Poppy",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Poppy_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -2472,15 +1986,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Poppy/HUD/TFT9_Poppy_Square.TFT_Set9.tex",
     "traits": [
-        "데마시아",
-        "요새"
+        "Demacia",
+        "Bastion"
     ]
 },
     TFT9_Shen: {
     "ability": {
-        "desc": "@ShieldDuration@초 동안 <TFTBonus>@ModifiedSelfShieldAmount@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻고 체력이 가장 낮은 아군 2명에게 <TFTBonus>@ModifiedAllyShieldAmount@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 부여합니다. 아군에게 보호막을 부여한 후 쉔의 보호막이 즉시 초기화되며 주변 적에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>아이오니아 추가 효과: 피해량 감소 <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus>",
+        "desc": "Gain <TFTBonus>@ModifiedSelfShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield and grant <TFTBonus>@ModifiedAllyShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield to the 2 lowest-Health allies for @ShieldDuration@ seconds. After shielding his allies, Shen's Shield refreshes with a burst, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus> Damage Reduction",
         "icon": "ASSETS/Characters/Shen/HUD/Icons2D/Shen_Passive.dds",
-        "name": "기 보호막",
+        "name": "Ki Barrier",
         "variables": [
             {
                 "name": "MagicDamage",
@@ -2572,7 +2086,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Shen",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Shen.TFT_Set9.tex",
-    "name": "쉔",
+    "name": "Shen",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Shen_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 60,
@@ -2588,16 +2102,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Shen/HUD/TFT9_Shen_Square.TFT_Set9.tex",
     "traits": [
-        "아이오니아",
-        "요새",
-        "기원자"
+        "Ionia",
+        "Bastion",
+        "Invoker"
     ]
 },
     TFT9_RekSai: {
     "ability": {
-        "desc": "현재 대상에게 <physicalDamage>@TotalDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 대상의 체력이 @HealthThreshold*100@% 이하라면 고정 피해를 입힙니다.<br><br>대상을 처치하면 대상을 통과해 1칸 이동하며 체력을 <scaleHealth>@HealAmount@ (%i:scaleAP%%i:scaleHealth%)</scaleHealth> 회복합니다.",
+        "desc": "Deal <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to the current target. If they are below @HealthThreshold*100@% Health, deal true damage instead.<br><br>If this kills the target, rip through them 1 hex and heal for <scaleHealth>@HealAmount@ (%i:scaleAP%%i:scaleHealth%)</scaleHealth>.",
         "icon": "ASSETS/Characters/RekSai/HUD/Icons2D/RekSai_E1.dds",
-        "name": "성난 이빨",
+        "name": "Furious Bite",
         "variables": [
             {
                 "name": "PercentOfAD",
@@ -2641,7 +2155,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_RekSai",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RekSai.TFT_Set9.tex",
-    "name": "렉사이",
+    "name": "Rek'Sai",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RekSai_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 45,
@@ -2657,16 +2171,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_RekSai/HUD/TFT9_RekSai_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "난동꾼",
-        "학살자"
+        "Void",
+        "Bruiser",
+        "Slayer"
     ]
 },
     TFT9_Renekton: {
     "ability": {
-        "desc": "주변 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 그리고 처음 적에 적중한 타격으로 <scaleHealth>@ModifiedInitialHeal@ (%i:scaleAP%)</scaleHealth>, 추가로 적중한 적 하나당 <scaleHealth>@ModifiedKickerHeal@ (%i:scaleAP%)</scaleHealth>만큼 체력을 회복합니다.",
+        "desc": "Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies. Heal <scaleHealth>@ModifiedInitialHeal@ (%i:scaleAP%)</scaleHealth> for the first enemy hit and another <scaleHealth>@ModifiedKickerHeal@ (%i:scaleAP%)</scaleHealth> for each additional one.",
         "icon": "ASSETS/Characters/Renekton/HUD/Icons2D/Renekton_Q.dds",
-        "name": "양떼 도륙",
+        "name": "Cull the Meek",
         "variables": [
             {
                 "name": "Damage",
@@ -2722,7 +2236,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Renekton",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Renekton.TFT_Set9.tex",
-    "name": "레넥톤",
+    "name": "Renekton",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Renekton_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 45,
@@ -2738,15 +2252,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Renekton/HUD/TFT9_Renekton_Square.TFT_Set9.tex",
     "traits": [
-        "슈리마",
-        "난동꾼"
+        "Shurima",
+        "Bruiser"
     ]
 },
     TFT9_Sejuani: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 아군이 <TFTKeyword>냉각</TFTKeyword>된 적을 공격할 때마다 <trueDamage>@HealthDamage@ (%i:scaleHealth%)</trueDamage>의 추가 고정 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> @ShieldDuration@초 동안 <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 그리고 주변 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @ShieldDuration@초 동안 <TFTKeyword>냉각</TFTKeyword>시킵니다.<br><br><tftitemrules><tftbold>냉각:</tftbold> 공격 속도를 30% 감소시킵니다.</tftitemrules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Whenever an ally attacks a <TFTKeyword>Chilled</TFTKeyword> enemy, they deal <trueDamage>@HealthDamage@ (%i:scaleHealth%)</trueDamage> bonus true damage.<br><br><spellActive>Active:</spellActive> Gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to nearby enemies and <TFTKeyword>Chill</TFTKeyword> them for @ShieldDuration@ seconds.<br><br><tftitemrules><tftbold>Chill:</tftbold> Reduce Attack Speed by 30%</tftitemrules>",
         "icon": "ASSETS/Characters/TFT9_Sejuani/HUD/Icons2D/TFT9_Sejuani_passive.TFT_Set9.dds",
-        "name": "혹한의 분노",
+        "name": "Fury of the North",
         "variables": [
             {
                 "name": "Shield",
@@ -2814,7 +2328,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Sejuani",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sejuani.TFT_Set9.tex",
-    "name": "세주아니",
+    "name": "Sejuani",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sejuani_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 60,
@@ -2830,84 +2344,144 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Sejuani/HUD/TFT9_Sejuani_Square.TFT_Set9.tex",
     "traits": [
-        "프렐요드",
-        "난동꾼"
+        "Freljord",
+        "Bruiser"
     ]
 },
-    TFT9_Senna: {
+    TFT9_Gangplank: {
     "ability": {
-        "desc": "가장 멀리 있는 적을 향해 거대한 광선을 발사해 적중하는 모든 적에게 <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 아군이 광선에 맞은 경우 @ShieldDuration@초 동안 <TFTBonus>@TotalShieldAmount@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다.",
-        "icon": "ASSETS/Characters/TFT9_Senna/HUD/Icons2D/TFT9_Senna_R.TFT_Set9.dds",
-        "name": "여명의 그림자",
+        "desc": "<ShowIf.TFT9_ReaverKing_Frontline><spellPassive>Cutlass Passive:</spellPassive> Gain <TFTBonus>@ReaverKingMeleeBonusResists@</TFTBonus> Armor and Magic Resist. Attacks ignite the target, dealing <trueDamage>@MeleePassiveTotalDamage@ (%i:scaleAD%)</trueDamage> true damage over @MeleePassiveDuration@ seconds.</ShowIf.TFT9_ReaverKing_Frontline><ShowIfNot.TFT9_ReaverKing_Frontline><spellPassive>Pistol Passive:</spellPassive> Gain @ReaverKingRangedBonusHexRange@ range. Attacks grant @ReaverKingRangedBonusMana@ bonus mana.</ShowIfNot.TFT9_ReaverKing_Frontline><br><br><spellActive>Active:</spellActive> Summon the Dreadway to sail across the board, crashing into the first enemy hit and dealing <magicDamage>@ModifiedActiveMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage in a 3-hex radius. Allies the Dreadway passes through or hits with the crash are empowered by citrus, gaining <scaleLevel>@ActiveAttackSpeed*100@%</scaleLevel> Attack Speed and immunity to crowd control for @ActiveAttackSpeedDuration@ seconds. ",
+        "icon": "ASSETS/Characters/Gangplank/HUD/Icons2D/3903_GangplankR3.dds",
+        "name": "The Dreadway",
         "variables": [
             {
-                "name": "ADRatio",
+                "name": "MeleePassiveADRatio",
                 "value": [
                     0,
-                    2.3499999046325684,
-                    2.5,
-                    20,
+                    3,
+                    3,
+                    25,
                     0,
                     0,
                     0
                 ]
             },
             {
-                "name": "ShieldAmount",
+                "name": "MeleePassiveDuration",
+                "value": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "ActiveMagicDamage",
                 "value": [
                     0,
-                    200,
-                    275,
-                    4000,
+                    450,
+                    675,
+                    9001,
                     0,
                     0,
                     0
                 ]
             },
             {
-                "name": "ShieldDuration",
+                "name": "ActiveAttackSpeed",
                 "value": [
-                    4,
-                    4,
-                    4,
-                    15,
-                    4,
-                    4,
-                    4
+                    0,
+                    0.3499999940395355,
+                    0.5,
+                    3,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "ActiveAttackSpeedDuration",
+                "value": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "ReaverKingMeleeBonusResists",
+                "value": [
+                    50,
+                    50,
+                    50,
+                    50,
+                    50,
+                    50,
+                    50
+                ]
+            },
+            {
+                "name": "ReaverKingRangedBonusHexRange",
+                "value": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "ReaverKingRangedBonusMana",
+                "value": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
                 ]
             }
         ]
     },
-    "apiName": "TFT9_Senna",
-    "characterName": "TFT9_Senna",
+    "apiName": "TFT9_Gangplank",
+    "characterName": "TFT9_Gangplank",
     "cost": 5,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Senna.TFT_Set9.tex",
-    "name": "세나",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Senna_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Gangplank.TFT_Set9_Stage2.tex",
+    "name": "Gangplank",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Gangplank_Mobile.TFT_Set9_Stage2.tex",
     "stats": {
         "armor": 30,
         "attackSpeed": 0.800000011920929,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 65,
-        "hp": 900,
-        "initialMana": 75,
+        "damage": 80,
+        "hp": 1000,
+        "initialMana": 90,
         "magicResist": 30,
-        "mana": 150,
-        "range": 4
+        "mana": 180,
+        "range": 1
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Senna/HUD/TFT9_Senna_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Gangplank/HUD/TFT9_Gangplank_Square.TFT_Set9_Stage2.tex",
     "traits": [
-        "그림자 군도",
-        "사수",
-        "구원자"
+        "Bilgewater",
+        "Gunner",
+        "Reaver King"
     ]
 },
     TFT9_Sion: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 사망 시 <scaleHealth>@ReviveHealthPct*100@%</scaleHealth>의 체력을 얻고 부활합니다. 부활 시 얻은 체력은 매초 최대 체력의 <scaleLevel>@DecayHealthPct*100@%</scaleLevel>만큼 감소합니다. 이때 사이온은 스킬을 쓸 수 없지만, 군중 제어기에 면역이 되고 공격 속도가 <TFTBonus>@ModifiedAttackSpeedPct@ (%i:scaleAP%)</TFTBonus> 증가합니다.<br><br><spellActive>사용 시:</spellActive> <TFTBonus>@DashRangeTooltip@ (%i:scaleRange%)</TFTBonus>칸 내 적들이 가장 많은 방향으로 돌진합니다. 부딪친 적은 <physicalDamage>@ModifiedDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입고 공중에 뜨며 <scaleLevel>@StunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>합니다.",
+        "desc": "<spellPassive>Passive:</spellPassive> Upon death, reanimate with <scaleHealth>@ReviveHealthPct*100@%</scaleHealth> Health, decaying at <scaleLevel>@DecayHealthPct*100@%</scaleLevel> maximum Health per second. Sion can no longer use his Ability, but is immune to crowd control and gains <br><TFTBonus>@ModifiedAttackSpeedPct@ (%i:scaleAP%)</TFTBonus> Attack Speed.<br><br><spellActive>Active:</spellActive> Charge towards the most enemies within <TFTBonus>@DashRangeTooltip@ (%i:scaleRange%)</TFTBonus> hexes. Deal <physicalDamage>@ModifiedDamage@ (%i:scaleAD%)</physicalDamage> physical damage to any enemies along the way and knock them up, <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/TFT9_Sion/HUD/Icons2D/TFT9_Sion_E.TFT_Set9.dds",
-        "name": "영광스러운 죽음",
+        "name": "Glory in Death",
         "variables": [
             {
                 "name": "ADPercent",
@@ -3011,7 +2585,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Sion",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sion.TFT_Set9.tex",
-    "name": "사이온",
+    "name": "Sion",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sion_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 65,
@@ -3027,15 +2601,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Sion/HUD/TFT9_Sion_Square.TFT_Set9.tex",
     "traits": [
-        "녹서스",
-        "난동꾼"
+        "Noxus",
+        "Bruiser"
     ]
 },
     TFT9_Sona: {
     "ability": {
-        "desc": "가장 큰 적 무리를 향해 소리의 파동을 발사해 적중한 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 아군이 파동에 맞으면 @Duration@초 동안 공격 속도가 <TFTBonus>@AttackSpeed@%</TFTBonus> 증가합니다.",
+        "desc": "Send a wave of sound at the largest clump of enemies and deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies hit. Allies hit by the wave gain <TFTBonus>@AttackSpeed@%</TFTBonus> Attack Speed for @Duration@ seconds.",
         "icon": "ASSETS/Characters/TFT9_Sona/HUD/Icons2D/TFT9_Sona_R.TFT_Set9.dds",
-        "name": "크레센도",
+        "name": "Crescendo",
         "variables": [
             {
                 "name": "MagicDamage",
@@ -3079,7 +2653,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Sona",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sona.TFT_Set9.tex",
-    "name": "소나",
+    "name": "Sona",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sona_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
@@ -3095,15 +2669,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Sona/HUD/TFT9_Sona_Square.TFT_Set9.tex",
     "traits": [
-        "데마시아",
-        "연쇄마법사"
+        "Demacia",
+        "Multicaster"
     ]
 },
     TFT9_Soraka: {
     "ability": {
-        "desc": "체력이 가장 낮은 아군의 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복시킵니다. 아군의 체력이 @EmpoweredHealThreshold*100@% 아래라면 추가로 <scaleHealth>@TooltipBonusHeal@ (%i:scaleAP%)</scaleHealth>만큼 회복시킵니다. <br><br>다음 @Duration@초 동안 @NumberOfStars@개의 별이 가까이 있는 적을 공격합니다. 각 별은 <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Heal the lowest health ally for <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth>. If the ally is below @EmpoweredHealThreshold*100@% Health, heal them for an additional <scaleHealth>@TooltipBonusHeal@ (%i:scaleAP%)</scaleHealth>. <br><br>Over the next @Duration@ seconds, @NumberOfStars@ stars hit the enemy closest to them. Each deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage.",
         "icon": "ASSETS/Characters/Soraka/HUD/Icons2D/Soraka_W.dds",
-        "name": "은하의 마력",
+        "name": "Astral Infusion",
         "variables": [
             {
                 "name": "Heal",
@@ -3183,7 +2757,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Soraka",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Soraka.TFT_Set9.tex",
-    "name": "소라카",
+    "name": "Soraka",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Soraka_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
@@ -3199,15 +2773,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Soraka/HUD/TFT9_Soraka_Square.TFT_Set9.tex",
     "traits": [
-        "타곤",
-        "기원자"
+        "Targon",
+        "Invoker"
     ]
 },
     TFT9_Swain: {
     "ability": {
-        "desc": "변신하여 최대 체력이 <scaleHealth>@ModifiedBonusHealth@ (%i:scaleAP%)</scaleHealth> 증가합니다. 변신 상태에서는 2칸 내 모든 적에게 매초 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>이미 변신했다면 최대 체력이 추가로 <scaleHealth>@ModifiedSecondaryBonusHealth@ (%i:scaleAP%)</scaleHealth> 증가하고 안에 있는 적에게 <magicDamage>@ModifiedSecondaryDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Transform and gain <scaleHealth>@ModifiedBonusHealth@ (%i:scaleAP%)</scaleHealth> max Health. While transformed, deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within 2 hexes every second.<br><br>If already transformed, gain an additional <scaleHealth>@ModifiedSecondaryBonusHealth@ (%i:scaleAP%)</scaleHealth> max Health and deal <magicDamage>@ModifiedSecondaryDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within.",
         "icon": "ASSETS/Characters/TFT9_Swain/HUD/Icons2D/TFT9_Swain_R.TFT_Set9.dds",
-        "name": "악의 불길",
+        "name": "Demonflare",
         "variables": [
             {
                 "name": "BuffDuration",
@@ -3275,7 +2849,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Swain",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Swain.TFT_Set9.tex",
-    "name": "스웨인",
+    "name": "Swain",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Swain_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 45,
@@ -3291,16 +2865,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Swain/HUD/TFT9_Swain_Square.TFT_Set9.tex",
     "traits": [
-        "녹서스",
-        "책략가",
-        "마법사"
+        "Noxus",
+        "Strategist",
+        "Sorcerer"
     ]
 },
     TFT9_Taric: {
     "ability": {
-        "desc": "@Duration@초 동안 <TFTBonus>@ModifiedShieldAmount@(%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 이 보호막은 주변 아군이 받는 피해의 @RedirectPercent*100@%를 흡수합니다.",
+        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @Duration@ seconds. It redirects @RedirectPercent*100@% of the damage received by adjacent allies.",
         "icon": "ASSETS/Characters/TFT9_Taric/HUD/Icons2D/TFT9_Taric_W.TFT_Set9.dds",
-        "name": "광휘",
+        "name": "Radiance",
         "variables": [
             {
                 "name": "ShieldAmount",
@@ -3344,7 +2918,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Taric",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Taric.TFT_Set9.tex",
-    "name": "타릭",
+    "name": "Taric",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Taric_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -3360,109 +2934,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Taric/HUD/TFT9_Taric_Square.TFT_Set9.tex",
     "traits": [
-        "타곤",
-        "요새",
-        "마법사"
-    ]
-},
-    TFT9_Teemo: {
-    "ability": {
-        "desc": "현재 대상을 향해 열 추적 폭발 버섯을 던집니다. 버섯은 폭발하며 1칸 내 적들에게 <TFTKeyword>상처</TFTKeyword> 효과를 적용하고 @Duration@초 동안 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>4성 업그레이드: 폭발 반경이 1칸 늘어납니다.<br><br><rules><tftbold>상처:</tftbold> 받은 체력 회복량이 33% 감소합니다.</rules>",
-        "icon": "ASSETS/Characters/TFT9_Teemo/HUD/Icons2D/TFT9_Teemo_R.TFT_Set9.dds",
-        "name": "유독성 함정",
-        "variables": [
-            {
-                "name": "Damage",
-                "value": [
-                    0,
-                    260,
-                    390,
-                    585,
-                    585,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "DetonationDelay",
-                "value": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5
-                ]
-            },
-            {
-                "name": "Duration",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "TickRate",
-                "value": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5
-                ]
-            },
-            {
-                "name": "HexRadius",
-                "value": [
-                    1,
-                    1,
-                    1,
-                    1,
-                    2,
-                    1,
-                    1
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Teemo",
-    "characterName": "TFT9_Teemo",
-    "cost": 2,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Teemo.TFT_Set9.tex",
-    "name": "티모",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Teemo_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 20,
-        "attackSpeed": 0.699999988079071,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 40,
-        "hp": 500,
-        "initialMana": 0,
-        "magicResist": 20,
-        "mana": 50,
-        "range": 4
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Teemo/HUD/TFT9_Teemo_Square.TFT_Set9.tex",
-    "traits": [
-        "요들",
-        "책략가",
-        "연쇄마법사"
+        "Targon",
+        "Bastion",
+        "Sorcerer"
     ]
 },
     TFT9_VelKoz: {
     "ability": {
-        "desc": "현재 대상을 향해 플라즈마 광선을 발사해 처음 적중하는 적에게 <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 이후 광선은 두 갈래로 갈라지며 적을 통과할 때마다 @FalloffPercent*100@% 감소된 피해를 입힙니다.",
+        "desc": "Fire a plasma bolt towards the current target that deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to the first enemy hit. It then splits in two, dealing @FalloffPercent*100@% less damage whenever it passes through an enemy.",
         "icon": "ASSETS/Characters/TFT9_VelKoz/HUD/Icons2D/TFT9_VelKoz_Q1.TFT_Set9.dds",
-        "name": "플라즈마 분열",
+        "name": "Plasma Fission",
         "variables": [
             {
                 "name": "MagicDamage",
@@ -3494,7 +2975,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_VelKoz",
     "cost": 3,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VelKoz.TFT_Set9.tex",
-    "name": "벨코즈",
+    "name": "Vel'Koz",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VelKoz_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -3510,16 +2991,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_VelKoz/HUD/TFT9_VelKoz_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "연쇄마법사",
-        "마법사"
+        "Void",
+        "Multicaster",
+        "Sorcerer"
     ]
 },
     TFT9_Warwick: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 공격 시 <scaleHealth>@ModifiedHealAmount@(%i:scaleAP%)</scaleHealth>의 체력을 회복합니다.<br><br><spellActive>사용 시:</spellActive> @Duration@초 동안 공격 속도가 @BonusAttackSpeed*100@% 증가합니다. 이후 주변 적을 <scaleLevel>@StunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다.",
+        "desc": "<spellPassive>Passive:</spellPassive> Attacks heal for <scaleHealth>@ModifiedHealAmount@ (%i:scaleAP%)</scaleHealth>.<br><br><spellActive>Active:</spellActive> Gain @BonusAttackSpeed*100@% Attack Speed for @Duration@ seconds. Then, <TFTKeyword>Stun</TFTKeyword> adjacent enemies for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/Warwick/HUD/Icons2D/WarwickP.dds",
-        "name": "원시의 포효",
+        "name": "Primal Howl",
         "variables": [
             {
                 "name": "HealAmount",
@@ -3575,7 +3056,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Warwick",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Warwick.TFT_Set9.tex",
-    "name": "워윅",
+    "name": "Warwick",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Warwick_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -3591,225 +3072,132 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Warwick/HUD/TFT9_Warwick_Square.TFT_Set9.tex",
     "traits": [
-        "자운",
-        "전쟁기계",
-        "도전자"
+        "Zaun",
+        "Juggernaut",
+        "Challenger"
     ]
 },
-    TFT9_Yasuo: {
+    TFT9_Nilah: {
     "ability": {
-        "desc": "<TFTBonus>@SpellRangeTooltip@</TFTBonus>칸 내 가장 멀리 있는 적에게 회오리바람을 날려 적중하는 모든 적을 공중에 띄우며 기절시킵니다. 그리고 대상에게 돌진해 검을 휘둘러 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다. 이후 대상을 아래로 내려찍으며 1칸 내 모든 적에게 <physicalDamage>@ModifiedAOEDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.<br><br>아이오니아 추가 효과: <TFTKeyword>모든 피해 흡혈</TFTKeyword> <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus><br><br><rules><tftbold>모든 피해 흡혈: 입힌 피해량의 일부만큼 체력을 회복합니다.</tftbold></rules>",
-        "icon": "ASSETS/Characters/TFT9_Yasuo/HUD/Icons2D/TFT9_Yasuo_R.TFT_Set9.dds",
-        "name": "최후의 숨결",
+        "desc": "<spellPassive>Passive:</spellPassive> Attacks strike in a cone, dealing <physicalDamage>@ModifiedCleaveDamage@ (%i:scaleAD%)</physicalDamage> physical damage to up to @CleaveTargets@ additional enemies. Every 3rd attack strikes in a line for <physicalDamage>@ModifiedEmpoweredDamage@ (%i:scaleAD%)</physicalDamage> physical damage and grants <TFTBonus>@AttackSpeed*100@%</TFTBonus> stacking Attack Speed.<br><br><spellActive>Active:</spellActive> Gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds and dash to a safe location.",
+        "icon": "ASSETS/Characters/Nilah/HUD/Icons2D/NilahQ.dds",
+        "name": "Formless Blade",
         "variables": [
             {
-                "name": "KnockupDuration",
+                "name": "CleaveTargets",
                 "value": [
-                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
+                ]
+            },
+            {
+                "name": "CleaveDamage",
+                "value": [
+                    75,
+                    0.75,
+                    0.75,
                     1,
-                    1,
-                    1,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "ADPercent",
-                "value": [
-                    0,
-                    5,
-                    5,
-                    15,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "BonusDamage",
-                "value": [
-                    0,
-                    55,
-                    85,
-                    300,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "HexRange",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "AttackCount",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "TornadoKnockupDuration",
-                "value": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
                     0.5,
                     0.5,
                     0.5
                 ]
             },
             {
-                "name": "TooltipIoniaBonus",
+                "name": "AttackSpeed",
                 "value": [
-                    15,
-                    15,
-                    15,
-                    15,
-                    15,
-                    15,
-                    15
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.4000000059604645,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224
                 ]
             },
             {
-                "name": "AOEADPercent",
+                "name": "DashRange",
                 "value": [
-                    2,
                     3,
                     3,
-                    7.5,
-                    2,
-                    2,
-                    2
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Yasuo",
-    "characterName": "TFT9_Yasuo",
-    "cost": 4,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Yasuo.TFT_Set9.tex",
-    "name": "야스오",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Yasuo_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 50,
-        "attackSpeed": 0.800000011920929,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 75,
-        "hp": 1000,
-        "initialMana": 50,
-        "magicResist": 50,
-        "mana": 110,
-        "range": 1
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Yasuo/HUD/TFT9_Yasuo_Square.TFT_Set9.tex",
-    "traits": [
-        "아이오니아",
-        "도전자"
-    ]
-},
-    TFT9_Zed: {
-    "ability": {
-        "desc": "<TFTBonus>@SpellRangeTooltip@(%i:scaleRange%)</TFTBonus>칸 내 가장 멀리 있는 적 위치에 그림자를 생성합니다. 그리고 제드와 그림자가 주변 적들을 베어 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다. <br><br>아이오니아 추가 효과: 치명타 확률 및 치명타 피해량 <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus>",
-        "icon": "ASSETS/Characters/TFT9_Zed/HUD/Icons2D/shadowninja_W2.TFT_Set9.dds",
-        "name": "살아있는 그림자",
-        "variables": [
-            {
-                "name": "DamagePercent",
-                "value": [
-                    0,
-                    1.399999976158142,
-                    1.399999976158142,
-                    1.5,
-                    2,
-                    2,
-                    2
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
                 ]
             },
             {
-                "name": "ShadowRange",
-                "value": [
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2
-                ]
-            },
-            {
-                "name": "BaseDamage",
+                "name": "ShieldAmount",
                 "value": [
                     0,
-                    25,
-                    40,
-                    50,
+                    250,
+                    375,
+                    700,
                     0,
                     0,
                     0
                 ]
             },
             {
-                "name": "TooltipIoniaBonus",
+                "name": "ShieldDuration",
                 "value": [
-                    15,
-                    15,
-                    15,
-                    15,
-                    15,
-                    15,
-                    15
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "EmpoweredLineDamage",
+                "value": [
+                    1.5,
+                    1.7000000476837158,
+                    1.75,
+                    3.75,
+                    1.5,
+                    1.5,
+                    1.5
                 ]
             }
         ]
     },
-    "apiName": "TFT9_Zed",
-    "characterName": "TFT9_Zed",
-    "cost": 2,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Zed.TFT_Set9.tex",
-    "name": "제드",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Zed_Mobile.TFT_Set9.tex",
+    "apiName": "TFT9_Nilah",
+    "characterName": "TFT9_Nilah",
+    "cost": 4,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nilah.TFT_Set9_Stage2.tex",
+    "name": "Nilah",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nilah_Mobile.TFT_Set9_Stage2.tex",
     "stats": {
-        "armor": 35,
-        "attackSpeed": 0.699999988079071,
+        "armor": 45,
+        "attackSpeed": 0.8500000238418579,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 55,
-        "hp": 600,
-        "initialMana": 0,
-        "magicResist": 35,
-        "mana": 70,
-        "range": 1
+        "damage": 75,
+        "hp": 950,
+        "initialMana": 20,
+        "magicResist": 45,
+        "mana": 60,
+        "range": 2
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Zed/HUD/TFT9_Zed_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Nilah/HUD/TFT9_Nilah_Square.TFT_Set9_Stage2.tex",
     "traits": [
-        "아이오니아",
-        "불한당",
-        "학살자"
+        "Bilgewater",
+        "Vanquisher"
     ]
 },
     TFT9_BaronNashor: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> @CastCadence@번 공격할 때마다 스킬을 시전한 후 세 가지 스킬 중 하나로 전환됩니다. <tftbonus>탐식의 이빨</tftbonus> (적에게 피해를 입히고 자신의 체력 회복) <tftbonus>공허 촉수</tftbonus> (여러 적에게 피해를 입히고 <TFTKeyword>기절</TFTKeyword>시킴)<br><br><spellActive>사용 시:</spellActive> 가장 큰 적 무리를 향해 3개의 산성 웅덩이를 생성해 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @DebuffDuration@초 동안 적들을 @TooltipShred@%만큼 <TFTKeyword>파쇄</TFTKeyword>시키고 <TFTKeyword>파열</TFTKeyword>시킵니다.<br><br><rules><tftbold>파쇄</tftbold>: 마법 저항력을 감소시킵니다.<br><tftbold>파열:</tftbold> 방어력이 감소합니다.</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Cast every @CastCadence@ attacks and cycle between 3 different Abilities: this, <tftbonus>Voracious Bite</tftbonus> (damage an enemy and heal), and <tftbonus>Void Tentacle</tftbonus> (damage and <TFTKeyword>Stun</TFTKeyword> a group).<br><br><spellActive>Active:</spellActive> Lob three pools of acid towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipShred@% <TFTKeyword>Shredding</TFTKeyword> and <TFTKeyword>Sundering</TFTKeyword> for @DebuffDuration@ seconds.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
         "icon": "ASSETS/Characters/TFT9_BaronNashor/HUD/TFT9_BaronNashor_Square.TFT_Set9.dds",
-        "name": "부식성 산",
+        "name": "Corrosive Acid",
         "variables": [
             {
                 "name": "Damage",
@@ -3865,7 +3253,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_BaronNashor",
     "cost": 8,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_BaronNashor.TFT_Set9.tex",
-    "name": "내셔 남작",
+    "name": "Baron Nashor",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_BaronNashor_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 150,
@@ -3893,7 +3281,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_AscendedSunDisc",
     "cost": 9,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_AscendedSunDisc.TFT_Set9.tex",
-    "name": "태양 원판",
+    "name": "Sun Disc",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_AscendedSunDisc_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -3912,9 +3300,9 @@ export const champion_season_9 = {
 },
     TFT9_Cassiopeia: {
     "ability": {
-        "desc": "현재 대상에게 <magicDamage>@ModifiedBaseDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @WoundDuration@초 동안 <TFTKeyword>상처</TFTKeyword>를 입힙니다. 이미 <TFTKeyword>상처</TFTKeyword>가 있다면 <magicDamage>@BonusDamage@(%i:scaleAP%)</magicDamage>의 추가 마법 피해를 입힙니다.<br><br><rules><tftbold>상처:</tftbold> 받은 체력 회복량이 33% 감소합니다.</rules>",
+        "desc": "Deal <magicDamage>@ModifiedBaseDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target and <TFTKeyword>Wound</TFTKeyword> them for @WoundDuration@ seconds. If they are already <TFTKeyword>Wounded</TFTKeyword>, deal <magicDamage>@BonusDamage@ (%i:scaleAP%)</magicDamage> bonus magic damage.<br><br><rules><tftbold>Wound:</tftbold> Reduce healing received by 33%</rules>",
         "icon": "ASSETS/Characters/Cassiopeia/HUD/Icons2D/Cassiopeia_E.dds",
-        "name": "쌍독니",
+        "name": "Twin Fang",
         "variables": [
             {
                 "name": "BaseDamage",
@@ -3970,7 +3358,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Cassiopeia",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Cassiopeia.TFT_Set9.tex",
-    "name": "카시오페아",
+    "name": "Cassiopeia",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Cassiopeia_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 20,
@@ -3986,16 +3374,16 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Cassiopeia/HUD/TFT9_Cassiopeia_Square.TFT_Set9.tex",
     "traits": [
-        "녹서스",
-        "슈리마",
-        "기원자"
+        "Noxus",
+        "Shurima",
+        "Invoker"
     ]
 },
     TFT9_RiftHerald: {
     "ability": {
-        "desc": "가장 멀리 있는 적을 향해 돌진해 처음 닿는 적에게 충돌합니다. 충돌 시 주변 적에게 <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @StunDuration@초 동안 기절시킵니다.",
+        "desc": "Charge toward the furthest enemy and crash into the first enemy hit. Deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies adjacent to the impact and Stun them for @StunDuration@ seconds.",
         "icon": "ASSETS/Characters/TFT9_RiftHerald/HUD/TFT9_RiftHerald_Square.TFT_Set9.dds",
-        "name": "공허 돌진",
+        "name": "Void Charge",
         "variables": [
             {
                 "name": "MagicDamage",
@@ -4027,7 +3415,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_RiftHerald",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RiftHerald.TFT_Set9.tex",
-    "name": "협곡의 전령",
+    "name": "Rift Herald",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RiftHerald_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 100,
@@ -4046,9 +3434,9 @@ export const champion_season_9 = {
 },
     TFT9_VoidRemora: {
     "ability": {
-        "desc": "@Duration@초 동안 <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 보호막이 파괴되면 주변 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. ",
+        "desc": "Gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield for @Duration@ seconds. When it expires, deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies. ",
         "icon": "ASSETS/Characters/TFT9_VoidRemora/HUD/TFT9_VoidRemora_Square.TFT_Set9.dds",
-        "name": "공허 보호막",
+        "name": "Void Shield",
         "variables": [
             {
                 "name": "Duration",
@@ -4092,7 +3480,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_VoidRemora",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VoidRemora.TFT_Set9.tex",
-    "name": "공허 빨판상어",
+    "name": "Void Remora",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VoidRemora_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -4111,9 +3499,9 @@ export const champion_season_9 = {
 },
     TFT9_HeimerdingerTurret: {
     "ability": {
-        "desc": "현재 대상에게 레이저 광선을 발사합니다. 광선은 관통당한 적에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Fire a laser beam at the current target. Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies it passes through.",
         "icon": "ASSETS/Characters/TFT9_HeimerdingerTurret/HUD/TFT9_HeimerdingerTurret_Square.TFT_Set9.dds",
-        "name": "H-28G 레이저 빔",
+        "name": "H-28G Laser Beam",
         "variables": [
             {
                 "name": "Damage",
@@ -4157,7 +3545,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_HeimerdingerTurret",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_HeimerdingerTurret.TFT_Set9.tex",
-    "name": "최첨단 포탑",
+    "name": "Apex Turret",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_HeimerdingerTurret_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 60,
@@ -4176,9 +3564,9 @@ export const champion_season_9 = {
 },
     TFT9_Vi: {
     "ability": {
-        "desc": "@ShieldDuration@초 동안 <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 그리고 현재 대상의 1칸 내 모든 적에게 <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입히고 @ArmorShredDuration@초 동안 @ArmorShredPercent*100@%만큼 <TFTKeyword>파열</TFTKeyword>시킵니다.<br><br><tftitemrules><tftbold>파열:</tftbold> 방어력이 감소합니다.</tftitemrules><br>",
+        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Deal <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies within 1 hex of the current target and @ArmorShredPercent*100@% <TFTKeyword>Sunder</TFTKeyword> them for @ArmorShredDuration@ seconds.<br><br><tftitemrules><tftbold>Sunder:</tftbold> Reduce Armor</tftitemrules><br>",
         "icon": "ASSETS/Characters/Vi/HUD/Icons2D/ViPassive.dds",
-        "name": "폭발 보호막",
+        "name": "Blast Shield",
         "variables": [
             {
                 "name": "ShieldAmount",
@@ -4246,7 +3634,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Vi",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Vi.TFT_Set9.tex",
-    "name": "바이",
+    "name": "Vi",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Vi_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -4262,83 +3650,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Vi/HUD/TFT9_Vi_Square.TFT_Set9.tex",
     "traits": [
-        "필트오버",
-        "난동꾼"
-    ]
-},
-    TFT9_Maokai: {
-    "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 적이 스킬을 쓸 때마다 <TFTBonus>@BonusManaOnCast@</TFTBonus>의 마나를 얻습니다.<br><br><spellActive>사용 시:</spellActive> 다음 기본 공격 시 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복합니다.",
-        "icon": "ASSETS/Characters/Maokai/HUD/Icons2D/Maokai_Passive.dds",
-        "name": "마법 흡수",
-        "variables": [
-            {
-                "name": "HealAmount",
-                "value": [
-                    200,
-                    220,
-                    260,
-                    300,
-                    400,
-                    450,
-                    500
-                ]
-            },
-            {
-                "name": "BonusManaOnCast",
-                "value": [
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5
-                ]
-            },
-            {
-                "name": "PassiveHexRange",
-                "value": [
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Maokai",
-    "characterName": "TFT9_Maokai",
-    "cost": 1,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Maokai.TFT_Set9.tex",
-    "name": "마오카이",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Maokai_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 40,
-        "attackSpeed": 0.5,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 60,
-        "hp": 700,
-        "initialMana": 50,
-        "magicResist": 40,
-        "mana": 125,
-        "range": 1
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Maokai/HUD/TFT9_Maokai_Square.TFT_Set9.tex",
-    "traits": [
-        "그림자 군도",
-        "요새"
+        "Piltover",
+        "Bruiser"
     ]
 },
     TFT9_Kayle: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 전략가가 레벨 업하면 새로운 기본 지속 효과를 얻습니다.<br><spellActive>1레벨:</spellActive> 기본 공격 시 <magicDamage>@ModifiedMagicDamage@(%i:scaleAP%)</magicDamage>의 추가 마법 피해를 입힙니다.<br><spellActive>@FirstAscensionLevel@레벨:</spellActive> 세 번 공격할 때마다 <magicDamage>@AscensionModifiedMagicDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @ShredDuration@초 동안 @ShredAmount@%의 <TFTKeyword>파쇄</TFTKeyword> 효과를 적용합니다.<br><spellActive>@SecondAscensionLevel@레벨:</spellActive> 기본 공격 시 파동이 항상 발사되며 사거리도 늘어납니다.<br><br><rules><tftbold>파쇄</tftbold>: 마법 저항력을 감소시킵니다.</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Gains new Passive effects as your Tactician levels up.<br><spellActive>Level 1:</spellActive> Attacks deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> bonus magic damage.<br><spellActive>Level @FirstAscensionLevel@:</spellActive> Every 3rd attack launches a wave that deals <magicDamage>@AscensionModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage and @ShredAmount@% <TFTKeyword>Shreds</TFTKeyword> enemies for @ShredDuration@ seconds.<br><spellActive>Level @SecondAscensionLevel@:</spellActive> Every attack launches a wave and they travel farther.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
         "icon": "ASSETS/Characters/Kayle/HUD/Icons2D/Kayle_P.dds",
-        "name": "거룩한 승천",
+        "name": "Divine Ascent",
         "variables": [
             {
                 "name": "Damage",
@@ -4418,7 +3738,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Kayle",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kayle.TFT_Set9.tex",
-    "name": "케일",
+    "name": "Kayle",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kayle_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 15,
@@ -4434,15 +3754,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Kayle/HUD/TFT9_Kayle_Square.TFT_Set9.tex",
     "traits": [
-        "데마시아",
-        "학살자"
+        "Demacia",
+        "Slayer"
     ]
 },
     TFT9_Samira: {
     "ability": {
-        "desc": "현재 대상을 향해 사격해 처음 적중하는 적에게 <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage>의 피해를 입히고 남은 전투 동안 방어력을 <TFTBonus>@ModifiedArmorShred@ (%i:scaleAP%)</TFTBonus> 감소시킵니다.",
+        "desc": "Shoot at the current target and deal <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> to the first enemy hit. Reduce their Armor by <TFTBonus>@ModifiedArmorShred@ (%i:scaleAP%)</TFTBonus> for the rest of combat.",
         "icon": "ASSETS/Characters/Samira/HUD/Icons2D/SamiraQ.dds",
-        "name": "천부적 재능",
+        "name": "Flair",
         "variables": [
             {
                 "name": "ADPercent",
@@ -4474,7 +3794,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Samira",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Samira.TFT_Set9.tex",
-    "name": "사미라",
+    "name": "Samira",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Samira_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 15,
@@ -4490,15 +3810,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Samira/HUD/TFT9_Samira_Square.TFT_Set9.tex",
     "traits": [
-        "녹서스",
-        "도전자"
+        "Noxus",
+        "Challenger"
     ]
 },
     TFT9_THex: {
     "ability": {
-        "desc": "T-헥스는 아직 충전 중으로 스킬을 사용할 수 없습니다. 동력이 @PowerRequirement@에 도달하면 <spellActive>마법공학 숨결</spellActive> 스킬을 얻습니다.<br><br><spellActive>마법공학 숨결:</spellActive> 마법 피해를 입히는 거대한 광선을 발사합니다.",
+        "desc": "T-Hex is still powering up and has no Ability. Once she reaches @PowerRequirement@ Power, gain <spellActive>Hextech Breath</spellActive>.<br><br><spellActive>Hextech Breath:</spellActive> Unleash a huge laser dealing magic damage.",
         "icon": "ASSETS/Characters/TFT9_THex/HUD/TFT9_THex_Square.TFT_Set9.dds",
-        "name": "충전 중",
+        "name": "Powering Up",
         "variables": [
             {
                 "name": "LingerDuration",
@@ -4542,7 +3862,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_THex",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_THex.TFT_Set9.tex",
-    "name": "T-헥스",
+    "name": "T-Hex",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_THex_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
@@ -4559,115 +3879,11 @@ export const champion_season_9 = {
     "tileIcon": "ASSETS/Characters/TFT9_THex/HUD/TFT9_THex_Square.TFT_Set9.tex",
     "traits": []
 },
-    TFT9_Urgot: {
-    "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 적이 공격 사거리 내에 들어올 때마다, 적 방향의 다리에서 대포를 발사해 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다. 우르곳에게는 6개의 다리가 달려 있으며, 각각 <scaleLevel>@Cooldown@</scaleLevel>초의 재사용 대기시간이 적용됩니다.<br><br><spellActive>사용 시:</spellActive> @ShieldDuration@초 동안 <TFTBonus>@ModifiedShieldAmount@(%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻고 현재 대상 뒤로 돌진합니다. 모든 다리의 재사용 대기시간이 초기화됩니다.",
-        "icon": "ASSETS/Characters/Urgot/HUD/Icons2D/Urgot_W.dds",
-        "name": "경멸",
-        "variables": [
-            {
-                "name": "Cooldown",
-                "value": [
-                    4,
-                    4,
-                    4,
-                    1,
-                    4,
-                    4,
-                    4
-                ]
-            },
-            {
-                "name": "PercentOfAttackDamage",
-                "value": [
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716
-                ]
-            },
-            {
-                "name": "BaseDamage",
-                "value": [
-                    100,
-                    40,
-                    60,
-                    500,
-                    400,
-                    400,
-                    400
-                ]
-            },
-            {
-                "name": "StunDuration",
-                "value": [
-                    1.5,
-                    1.5,
-                    1.5,
-                    1.5,
-                    1.5,
-                    1.5,
-                    1.5
-                ]
-            },
-            {
-                "name": "ShieldAmount",
-                "value": [
-                    0,
-                    350,
-                    450,
-                    1200,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "ShieldDuration",
-                "value": [
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT9_Urgot",
-    "characterName": "TFT9_Urgot",
-    "cost": 4,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Urgot.TFT_Set9.tex",
-    "name": "우르곳",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Urgot_Mobile.TFT_Set9.tex",
-    "stats": {
-        "armor": 60,
-        "attackSpeed": 0.699999988079071,
-        "critChance": 0.25,
-        "critMultiplier": 1.399999976158142,
-        "damage": 75,
-        "hp": 1000,
-        "initialMana": 40,
-        "magicResist": 60,
-        "mana": 100,
-        "range": 1
-    },
-    "tileIcon": "ASSETS/Characters/TFT9_Urgot/HUD/TFT9_Urgot_Square.TFT_Set9.tex",
-    "traits": [
-        "자운",
-        "백발백중"
-    ]
-},
     TFT9_Aphelios: {
     "ability": {
-        "desc": "가장 큰 적 무리를 향해 달빛 에너지를 발사해 @BlastSize@칸 내 모든 적에게 <physicalDamage>@TotalBlastDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. <br><br>이후 @ChakramDuration@초 동안 투척 무기 @BaseChakramNumber@개를 장착합니다(달빛 에너지에 맞은 적 하나당 투척 무기 1개씩 추가). 기본 공격 시 <physicalDamage>@TotalChakramDamage@(%i:scaleAD%)</physicalDamage> + 장착한 투척 무기 수에 비례한 추가 물리 피해를 입힙니다. 아펠리오스는 투척 무기 피해량의 <scaleHealth>@ModifiedChakramHealing@(%i:scaleAP%)</scaleHealth>만큼 체력을 회복합니다.",
+        "desc": "Fire a moon blast at the largest group of enemies that deals <physicalDamage>@TotalBlastDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies within @BlastSize@ hexes. <br><br>For @ChakramDuration@ seconds, equip @BaseChakramNumber@ Chakram, plus 1 more for each enemy hit by the blast. Attacks deal <physicalDamage>@TotalChakramDamage@ (%i:scaleAD%)</physicalDamage> bonus physical damage for each Chakram equipped. Aphelios heals for <scaleHealth>@ModifiedChakramHealing@ (%i:scaleAP%)</scaleHealth> of damage dealt by Chakrams.",
         "icon": "ASSETS/Characters/TFT9_Aphelios/HUD/Icons2D/TFT9_ApheliosR.TFT_Set9.dds",
-        "name": "월광포화",
+        "name": "Moonlight Vigil",
         "variables": [
             {
                 "name": "BlastPercentAD",
@@ -4759,7 +3975,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Aphelios",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aphelios.TFT_Set9.tex",
-    "name": "아펠리오스",
+    "name": "Aphelios",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aphelios_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
@@ -4775,131 +3991,107 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Aphelios/HUD/TFT9_Aphelios_Square.TFT_Set9.tex",
     "traits": [
-        "타곤",
-        "사수"
+        "Targon",
+        "Gunner"
     ]
 },
-    TFT9_Zeri: {
+    TFT9_Xayah: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 체력이 <TFTBonus>@ModifiedExecuteThreshold@ (%i:scaleAP%)</TFTBonus> 아래인 적을 처형합니다. <br><br><spellActive>사용 시:</spellActive> 다음 @OverchargeDuration@초 동안 기본 공격 시 연쇄 번개로 <scaleLevel>@EnemyCount@</scaleLevel>명의 적을 추가로 공격해 <physicalDamage>@TotalChainDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.",
-        "icon": "ASSETS/Characters/TFT9_Zeri/HUD/Icons2D/TFT9_ZeriR.TFT_Set9.dds",
-        "name": "돌진",
+        "desc": "Summon <scaleLevel>@NumFeathers@</scaleLevel> feathers that converge on and pierce the current target, dealing <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage. Each feather removes <TFTBonus>@ArmorShred@</TFTBonus> Armor from the first target they hit until the end of combat.<br><br>Ionia Bonus: Attacks restore an additional %i:scaleMana% @TooltipIoniaBonus@ Mana",
+        "icon": "ASSETS/Characters/TFT9_Xayah/HUD/Icons2D/TFT9_XayahQ.TFT_Set9.dds",
+        "name": "Featherstrike",
         "variables": [
             {
-                "name": "NumBullets",
-                "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "ADRatioPerBullet",
-                "value": [
-                    0.3400000035762787,
-                    0.3400000035762787,
-                    0.3400000035762787,
-                    0.3400000035762787,
-                    0.3400000035762787,
-                    0.3400000035762787,
-                    0.3400000035762787
-                ]
-            },
-            {
-                "name": "OverchargeDuration",
+                "name": "NumFeathers",
                 "value": [
                     9,
-                    8,
-                    8,
-                    15,
-                    15,
+                    7,
+                    7,
+                    12,
+                    9,
                     9,
                     9
                 ]
             },
             {
-                "name": "OverchargeChainRatio",
+                "name": "PercentADPerFeather",
                 "value": [
-                    0.4000000059604645,
-                    0.44999998807907104,
-                    0.44999998807907104,
-                    1,
-                    0.4000000059604645,
-                    0.4000000059604645,
-                    0.4000000059604645
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929
                 ]
             },
             {
-                "name": "ExecuteThresholdBase",
+                "name": "BonusDamagePerFeather",
                 "value": [
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066
+                    0,
+                    15,
+                    25,
+                    60,
+                    0,
+                    0,
+                    0
                 ]
             },
             {
-                "name": "EnemyCount",
+                "name": "ArmorShred",
                 "value": [
-                    3,
-                    3,
-                    3,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6
+                ]
+            },
+            {
+                "name": "TooltipIoniaBonus",
+                "value": [
                     5,
-                    3,
-                    3,
-                    3
-                ]
-            },
-            {
-                "name": "ExecuteThresholdAP",
-                "value": [
-                    0.03999999910593033,
-                    0.03999999910593033,
-                    0.03999999910593033,
-                    0.03999999910593033,
-                    0.03999999910593033,
-                    0.03999999910593033,
-                    0.03999999910593033
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5
                 ]
             }
         ]
     },
-    "apiName": "TFT9_Zeri",
-    "characterName": "TFT9_Zeri",
+    "apiName": "TFT9_Xayah",
+    "characterName": "TFT9_Xayah",
     "cost": 4,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Zeri.TFT_Set9.tex",
-    "name": "제리",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Zeri_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Xayah.TFT_Set9.tex",
+    "name": "Xayah",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Xayah_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 25,
-        "attackSpeed": 0.800000011920929,
+        "attackSpeed": 0.75,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 65,
         "hp": 750,
-        "initialMana": 0,
+        "initialMana": 30,
         "magicResist": 25,
-        "mana": 50,
+        "mana": 110,
         "range": 4
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Zeri/HUD/TFT9_Zeri_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Xayah/HUD/TFT9_Xayah_Square.TFT_Set9.tex",
     "traits": [
-        "자운",
-        "사수"
+        "Ionia",
+        "Vanquisher"
     ]
 },
     TFT9_Galio: {
     "ability": {
-        "desc": "받는 피해량이 @DamageResist*100@% 감소하고 @Duration@초 동안 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복합니다. 이후에 주변 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Reduce damage taken by @DamageResist*100@% and heal for <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> over @Duration@ seconds. After, deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies.",
         "icon": "ASSETS/Characters/TFT9_Galio/HUD/Icons2D/TFT9_Galio_W.TFT_Set9.dds",
-        "name": "듀란드의 방패",
+        "name": "Shield of Durand",
         "variables": [
             {
                 "name": "DamageResist",
@@ -4967,7 +4159,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Galio",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Galio.TFT_Set9.tex",
-    "name": "갈리오",
+    "name": "Galio",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Galio_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 45,
@@ -4983,71 +4175,83 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Galio/HUD/TFT9_Galio_Square.TFT_Set9.tex",
     "traits": [
-        "데마시아",
-        "기원자"
+        "Demacia",
+        "Invoker"
     ]
 },
-    TFT9_Kalista: {
+    TFT9_MissFortune: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 기본 공격 시 대상을 창으로 꿰뚫습니다. 창을 뽑으면 <trueDamage>@ModifiedDamage@ (%i:scaleAP%)</trueDamage>의 고정 피해를 입힙니다. 칼리스타는 대상을 처치할 수 있을 때 창을 모조리 뽑습니다.<br><br><spellActive>사용 시:</spellActive> 현재 대상을 @NumSpears@개의 창으로 꿰뚫습니다.",
-        "icon": "ASSETS/Characters/Kalista/HUD/Icons2D/Kalista_E.dds",
-        "name": "꿰뚫어 찢기",
+        "desc": "Call down an X-shaped rain of bullets, destroying @ShieldReavePercent*100@% of your target's shields and dealing <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage. For @ShieldReaveDuration@ seconds, enemies hit have incoming shields reduced by @ShieldReavePercent*100@%.",
+        "icon": "ASSETS/Characters/MissFortune/HUD/Icons2D/MissFortune_E.dds",
+        "name": "X Marks the Spot",
         "variables": [
             {
-                "name": "Damage",
+                "name": "MagicDamage",
                 "value": [
-                    16,
-                    18,
-                    27,
-                    45,
-                    320,
-                    640,
-                    1280
+                    0,
+                    225,
+                    340,
+                    550,
+                    0,
+                    0,
+                    0
                 ]
             },
             {
-                "name": "NumSpears",
+                "name": "ShieldReavePercent",
                 "value": [
-                    6,
-                    6,
-                    6,
-                    6,
-                    6,
-                    6,
-                    6
+                    0,
+                    0.3499999940395355,
+                    0.3499999940395355,
+                    0.3499999940395355,
+                    0.3499999940395355,
+                    0.3499999940395355,
+                    0.3499999940395355
+                ]
+            },
+            {
+                "name": "ShieldReaveDuration",
+                "value": [
+                    0,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5
                 ]
             }
         ]
     },
-    "apiName": "TFT9_Kalista",
-    "characterName": "TFT9_Kalista",
+    "apiName": "TFT9_MissFortune",
+    "characterName": "TFT9_MissFortune",
     "cost": 3,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kalista.TFT_Set9.tex",
-    "name": "칼리스타",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kalista_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_MissFortune.TFT_Set9_Stage2.tex",
+    "name": "Miss Fortune",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_MissFortune_Mobile.TFT_Set9_Stage2.tex",
     "stats": {
         "armor": 25,
-        "attackSpeed": 0.8500000238418579,
+        "attackSpeed": 0.699999988079071,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 45,
+        "damage": 50,
         "hp": 650,
-        "initialMana": 0,
+        "initialMana": 10,
         "magicResist": 25,
-        "mana": 80,
+        "mana": 50,
         "range": 4
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Kalista/HUD/TFT9_Kalista_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_MissFortune/HUD/TFT9_MissFortune_Square.TFT_Set9_Stage2.tex",
     "traits": [
-        "그림자 군도",
-        "도전자"
+        "Bilgewater",
+        "Strategist"
     ]
 },
     TFT9_Nasus: {
     "ability": {
-        "desc": "가장 가까운 적 <scaleLevel>@NumEnemies@</scaleLevel>명으로부터 <TFTBonus>@ModifiedDuration@(%i:scaleAP%)</TFTBonus>초 동안 <scaleLevel>@PercentHealthSteal*100@%</scaleLevel>의 최대 체력, <TFTBonus>@PercentADSteal*100@%</TFTBonus>의 공격력, <scaleLevel>@FlatResistanceSteal@</scaleLevel>의 방어력, <scaleLevel>@FlatResistanceSteal@</scaleLevel>의 마법 저항력을 훔칩니다.<br><br>강화 상태에서는 3회 공격할 때마다 <physicalDamage>@EmpoweredDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.",
+        "desc": "Steal <scaleLevel>@PercentHealthSteal*100@%</scaleLevel> maximum Health, <TFTBonus>@PercentADSteal*100@%</TFTBonus> Attack Damage, <scaleLevel>@FlatResistanceSteal@</scaleLevel> Armor, and <scaleLevel>@FlatResistanceSteal@</scaleLevel> Magic Resist from the nearest <scaleLevel>@NumEnemies@</scaleLevel> enemies for <TFTBonus>@ModifiedDuration@ (%i:scaleAP%)</TFTBonus> seconds.<br><br>While empowered, every third attack deals <physicalDamage>@EmpoweredDamage@ (%i:scaleAD%)</physicalDamage> physical damage.",
         "icon": "ASSETS/Characters/TFT9_Nasus/HUD/Icons2D/TFT9_Nasus_Passive.TFT_Set9.dds",
-        "name": "영혼의 포식자",
+        "name": "Soul Eater",
         "variables": [
             {
                 "name": "PercentHealthSteal",
@@ -5127,7 +4331,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Nasus",
     "cost": 4,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nasus.TFT_Set9.tex",
-    "name": "나서스",
+    "name": "Nasus",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nasus_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -5143,15 +4347,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Nasus/HUD/TFT9_Nasus_Square.TFT_Set9.tex",
     "traits": [
-        "슈리마",
-        "전쟁기계"
+        "Shurima",
+        "Juggernaut"
     ]
 },
     TFT9_Malzahar: {
     "ability": {
-        "desc": "현재 대상 근처에 2개의 차원문을 열어 보호막을 @PercentShieldDestruction*100@% 파괴하고 차원문 사이의 모든 적에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+        "desc": "Open two portals near the current target. Destroy @PercentShieldDestruction*100@% of Shields and deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to all enemies caught between the portals.",
         "icon": "ASSETS/Characters/TFT9_Malzahar/HUD/Icons2D/TFT9_Malzahar_Q.TFT_Set9.dds",
-        "name": "공허의 부름",
+        "name": "Call of the Void",
         "variables": [
             {
                 "name": "Damage",
@@ -5183,7 +4387,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Malzahar",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Malzahar.TFT_Set9.tex",
-    "name": "말자하",
+    "name": "Malzahar",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Malzahar_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 15,
@@ -5199,15 +4403,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Malzahar/HUD/TFT9_Malzahar_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "마법사"
+        "Void",
+        "Sorcerer"
     ]
 },
     TFT9_Taliyah: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> 적이 공중에 뜨거나 뒤로 밀릴 때마다 바위를 던져 처음 맞은 적에게 <magicDamage>@ModifiedBoulderDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> 현재 대상에게 <magicDamage>@ModifiedSpellDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 공중에 띄웁니다. 대상은 @KnockupDuration@초간 <TFTKeyword>기절</TFTKeyword>합니다.",
+        "desc": "<spellPassive>Passive:</spellPassive> Whenever an enemy is knocked up or back by anything, throw a boulder towards them. It deals <magicDamage>@ModifiedBoulderDamage@ (%i:scaleAP%)</magicDamage> magic damage to the first enemy hit.<br><br><spellActive>Active:</spellActive> Deal <magicDamage>@ModifiedSpellDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target and knock them up, <TFTKeyword>Stunning</TFTKeyword> them for @KnockupDuration@ seconds.",
         "icon": "ASSETS/Characters/TFT9_Taliyah/HUD/Icons2D/TFT9_Taliyah_W.TFT_Set9.dds",
-        "name": "지각변동",
+        "name": "Seismic Shove",
         "variables": [
             {
                 "name": "KnockupDuration",
@@ -5251,7 +4455,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Taliyah",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Taliyah.TFT_Set9.tex",
-    "name": "탈리야",
+    "name": "Taliyah",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Taliyah_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 20,
@@ -5267,22 +4471,22 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Taliyah/HUD/TFT9_Taliyah_Square.TFT_Set9.tex",
     "traits": [
-        "슈리마",
-        "연쇄마법사"
+        "Shurima",
+        "Multicaster"
     ]
 },
     TFT9_Ryze: {
     "ability": {
-        "desc": "대기석에서 가장 비용이 높은 아군 유닛 아래에 밴들 시티로 이어지는 차원문을 생성합니다. 잠시 후, 해당 아군은 @ModifiedBonusMana@(%i:scaleAP%)의 추가 마나를 얻고 약간 작아진 상태로 전장에 등장합니다.<br><br>대기석에 유닛이 없다면, 라이즈가 높은 단계의 무작위 유닛을 대신 소환합니다.",
+        "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons a random high tier unit instead.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 밴들 시티",
+        "name": "Realm Warp: Bandle City",
         "variables": []
     },
     "apiName": "TFT9_Ryze",
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -5298,15 +4502,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.tex",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_Sett: {
     "ability": {
-        "desc": "양쪽의 적을 붙잡아 서로 부딪치게 한 다음 공중에 띄웁니다. 부딪친 적들은 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입고 <scaleLevel>@StunDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>합니다. <br><br>적이 한 명만 붙잡힌 경우 피해량과 <TFTKeyword>기절</TFTKeyword> 지속시간이 @SoloBonus*100@% 증가합니다.<br><br>아이오니아 추가 효과: 최대 체력 <scaleHealth>+@TooltipIoniaBonus@</scaleHealth>",
+        "desc": "Grab an enemy from either side and slam them together, knocking them up. Deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Stuns</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds. <br><br>If only one enemy is grabbed, the damage and <TFTKeyword>Stun</TFTKeyword> duration are increased by @SoloBonus*100@%.<br><br>Ionia Bonus: <scaleHealth>+@TooltipIoniaBonus@</scaleHealth> max Health",
         "icon": "ASSETS/Characters/Sett/HUD/Icons2D/Sett_Q.dds",
-        "name": "안면 강타",
+        "name": "Facebreaker",
         "variables": [
             {
                 "name": "Damage",
@@ -5362,7 +4566,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Sett",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sett.TFT_Set9.tex",
-    "name": "세트",
+    "name": "Sett",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sett_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
@@ -5378,15 +4582,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Sett/HUD/TFT9_Sett_Square.TFT_Set9.tex",
     "traits": [
-        "아이오니아",
-        "전쟁기계"
+        "Ionia",
+        "Juggernaut"
     ]
 },
     TFT9_Jhin: {
     "ability": {
-        "desc": "현재 대상을 향해 총을 조준한 뒤 일직선상으로 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입히는 총알을 발사합니다. 총알은 대상에 적중할 때마다 피해량이 @FalloffPercent*100@%씩 감소합니다.<br><br>아이오니아 추가 효과: 공격력 <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus>",
+        "desc": "Take aim at the current target and deal <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage to enemies in a line; each hit reduces damage by @FalloffPercent*100@%.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus> Attack Damage",
         "icon": "ASSETS/Characters/Jhin/HUD/Icons2D/Jhin_R.dds",
-        "name": "커튼 콜",
+        "name": "Curtain Call",
         "variables": [
             {
                 "name": "PercentAttackDamage",
@@ -5466,7 +4670,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Jhin",
     "cost": 1,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Jhin.TFT_Set9.tex",
-    "name": "진",
+    "name": "Jhin",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Jhin_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 14,
@@ -5482,23 +4686,35 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Jhin/HUD/TFT9_Jhin_Square.TFT_Set9.tex",
     "traits": [
-        "아이오니아",
-        "토벌자"
+        "Ionia",
+        "Vanquisher"
     ]
 },
-    TFT9_Viego: {
+    TFT9_Illaoi: {
     "ability": {
-        "desc": "현재 대상에게 <magicDamage>@ModifiedStabDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 이후 전투가 끝날 때까지 비에고의 기본 공격이 <magicDamage>@ModifiedStackingDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 추가로 입힙니다. 이 효과는 중첩됩니다.<br><br><rules>(현재 추가 효과: 마법 피해 +@TFTUnitProperty.:TFT9_ViegoBonusDamage@)</rules>",
-        "icon": "ASSETS/Characters/Viego/HUD/Icons2D/Viego_Passive.dds",
-        "name": "몰락한 왕의 검",
+        "desc": "Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target and link souls for @Duration@ seconds. While linked, heal for <scaleHealth>@PercentHealing*100@%</scaleHealth> of all damage taken by the target.",
+        "icon": "ASSETS/Characters/Illaoi/HUD/Icons2D/Illaoi_W.dds",
+        "name": "Harsh Lesson",
         "variables": [
             {
-                "name": "StabDamage",
+                "name": "MagicDamage",
                 "value": [
                     0,
-                    110,
-                    165,
-                    250,
+                    220,
+                    330,
+                    500,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "PercentHealing",
+                "value": [
+                    0,
+                    0.25,
+                    0.30000001192092896,
+                    0.4000000059604645,
                     0,
                     0,
                     0
@@ -5507,58 +4723,46 @@ export const champion_season_9 = {
             {
                 "name": "Duration",
                 "value": [
-                    60,
-                    60,
-                    60,
-                    60,
-                    60,
-                    60,
-                    60
-                ]
-            },
-            {
-                "name": "StackingDamage",
-                "value": [
-                    0,
-                    20,
-                    30,
-                    45,
-                    0,
-                    0,
-                    0
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5
                 ]
             }
         ]
     },
-    "apiName": "TFT9_Viego",
-    "characterName": "TFT9_Viego",
+    "apiName": "TFT9_Illaoi",
+    "characterName": "TFT9_Illaoi",
     "cost": 1,
-    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Viego.TFT_Set9.tex",
-    "name": "비에고",
-    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Viego_Mobile.TFT_Set9.tex",
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Illaoi.TFT_Set9_Stage2.tex",
+    "name": "Illaoi",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Illaoi_Mobile.TFT_Set9_Stage2.tex",
     "stats": {
-        "armor": 30,
-        "attackSpeed": 0.75,
+        "armor": 40,
+        "attackSpeed": 0.550000011920929,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 45,
-        "hp": 600,
-        "initialMana": 0,
-        "magicResist": 30,
-        "mana": 50,
+        "damage": 60,
+        "hp": 700,
+        "initialMana": 40,
+        "magicResist": 40,
+        "mana": 80,
         "range": 1
     },
-    "tileIcon": "ASSETS/Characters/TFT9_Viego/HUD/TFT9_Viego_Square.TFT_Set9.tex",
+    "tileIcon": "ASSETS/Characters/TFT9_Illaoi/HUD/TFT9_Illaoi_Square.TFT_Set9_Stage2.tex",
     "traits": [
-        "그림자 군도",
-        "불한당"
+        "Bilgewater",
+        "Bastion"
     ]
 },
     TFT9_Kassadin: {
     "ability": {
-        "desc": "@ShieldDuration@초 동안 <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 그리고 원뿔 범위 내의 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 <scaleLevel>@DisarmDuration@</scaleLevel>초 동안 <TFTKeyword>무장 해제</TFTKeyword>시킵니다.<br><br><tftitemrules><tftbold>무장 해제:</tftbold> 이동 또는 기본 공격을 할 수 없지만, 스킬 시전은 가능합니다.</tftitemrules>",
+        "desc": "Gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies in a cone and <TFTKeyword>Disarm</TFTKeyword> them for <scaleLevel>@DisarmDuration@</scaleLevel> seconds.<br><br><tftitemrules><tftbold>Disarm:</tftbold> Cannot move or attack, but CAN cast spells</tftitemrules>",
         "icon": "ASSETS/Characters/Kassadin/HUD/Icons2D/Kassadin_E.dds",
-        "name": "힘의 파동",
+        "name": "Force Pulse",
         "variables": [
             {
                 "name": "Damage",
@@ -5614,7 +4818,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Kassadin",
     "cost": 2,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kassadin.TFT_Set9.tex",
-    "name": "카사딘",
+    "name": "Kassadin",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Kassadin_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 45,
@@ -5630,8 +4834,8 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Kassadin/HUD/TFT9_Kassadin_Square.TFT_Set9.tex",
     "traits": [
-        "공허",
-        "요새"
+        "Void",
+        "Bastion"
     ]
 },
     TFT9_NoxianFlag: {
@@ -5645,7 +4849,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_NoxianFlag",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_NoxianFlag.TFT_Set9.dds",
-    "name": "녹서스의 깃발",
+    "name": "Noxian Banner",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_NoxianFlag_Mobile.TFT_Set9.dds",
     "stats": {
         "armor": null,
@@ -5673,7 +4877,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_SLIME_Crab",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_SLIME_Crab.TFT_Set9.dds",
-    "name": "끈적 게",
+    "name": "SLIME_Crab",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_SLIME_Crab_Mobile.TFT_Set9.dds",
     "stats": {
         "armor": 10,
@@ -5692,9 +4896,9 @@ export const champion_season_9 = {
 },
     TFT9_RyzeDemacia: {
     "ability": {
-        "desc": "데마시아로 이어지는 차원문을 생성해 @PortalDuration@초 동안 아군을 보호합니다. 구역 내 있는 아군에게 <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 부여합니다. 차원문을 벗어나는 아군은 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복합니다.<br><br>차원문이 사라지면 안에 있던 적들이 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입습니다.<br>",
+        "desc": "Create a portal to Demacia that protects allies for @PortalDuration@ seconds. Allies within the zone gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield. If an ally leaves the safety of the portal, they are healed for <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth>.<br><br>When the portal expires, enemies within are dealt <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage.<br>",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 데마시아",
+        "name": "Realm Warp: Demacia",
         "variables": [
             {
                 "name": "Shield",
@@ -5750,7 +4954,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -5766,15 +4970,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeBandleCity: {
     "ability": {
-        "desc": "대기석에서 가장 비용이 높은 아군 유닛 아래에 밴들 시티로 이어지는 차원문을 생성합니다. 잠시 후, 해당 아군은 @ModifiedBonusMana@(%i:scaleAP%)의 추가 마나를 얻고 약간 작아진 상태로 전장에 등장합니다.<br><br>대기석에 유닛이 없다면, 라이즈가 높은 단계의 무작위 유닛을 대신 소환합니다.",
+        "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons a random high tier unit instead.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 밴들 시티",
+        "name": "Realm Warp: Bandle City",
         "variables": [
             {
                 "name": "BonusMana",
@@ -5830,7 +5034,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -5846,15 +5050,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeFreljord: {
     "ability": {
-        "desc": "적 무리 아래에 @PortalDuration@초 동안 프렐요드로 이어지는 차원문을 생성합니다. 이후 냉기의 바람이 불어 2칸 내 모든 적에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 만년 서리 효과를 적용해 <TFTKeyword>냉각</TFTKeyword> 상태로 만듭니다.<br><br>이미 만년 서리가 적용된 적은 지속시간 동안 기절합니다.<br><br><tftitemrules><tftbold>냉각:</tftbold> 공격 속도를 @AttackSpeedSlow*100@% 감소시킵니다.</tftitemrules>",
+        "desc": "Create a portal to the Freljord under a random group of enemies for @PortalDuration@ seconds. The freezing winds deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within two hexes over the duration and apply Permafrost, a permanent <TFTKeyword>Chill</TFTKeyword>.<br><br>If enemies are already affected by Permafrost, they are instead Stunned for the duration.<br><br><tftitemrules><tftbold>Chill:</tftbold> Reduce Attack Speed by @AttackSpeedSlow*100@%</tftitemrules>",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 프렐요드",
+        "name": "Realm Warp: Freljord",
         "variables": [
             {
                 "name": "Damage",
@@ -5898,7 +5102,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -5914,15 +5118,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeIonia: {
     "ability": {
-        "desc": "전장 가운데에 아이오니아로 이어지는 차원문을 생성하고 가까운 유닛 <scaleLevel>@NumUnits@</scaleLevel>명에게 영향을 미치는 영혼의 나무를 생성합니다. 아군은 @BuffDuration@초 동안 <TFTBonus>@BonusAttackSpeed*100@%</TFTBonus>의 공격 속도를 얻고 <scaleHealth>@ModifiedHeal@(%i:scaleAP%)</scaleHealth>만큼 체력을 회복합니다. 적들은 춤을 추기 시작하며 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입고 <scaleLevel>@StunDuration@</scaleLevel>초 동안 기절합니다.",
+        "desc": "Create a portal to Ionia in the center of the battlefield, summoning forth a Spirit Tree that affects the <scaleLevel>@NumUnits@</scaleLevel> closest units. Allies gain <TFTBonus>@BonusAttackSpeed*100@%</TFTBonus> Attack Speed for @BuffDuration@ seconds and are healed for <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> over the duration. Enemies dance, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and Stunning them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 아이오니아",
+        "name": "Realm Warp: Ionia",
         "variables": [
             {
                 "name": "NumUnits",
@@ -6002,7 +5206,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6018,15 +5222,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeNoxus: {
     "ability": {
-        "desc": "녹서스로 이어지는 차원문을 생성합니다. 차원문에서 무기와 방어구가 쏟아져 나와 빈 아이템 칸이 있는 아군들에게 <scaleLevel>@NumItems@</scaleLevel>개의 완성 아이템을 장착시키고 무작위 적들에게 도끼 <scaleLevel>@NumAxes@</scaleLevel>개를 던져 각각 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>아이템 장착 칸이 모두 찼을 경우 무기 대신 피해량이 @DamageAmp*100@% 증가합니다. 이 효과는 중첩되며 전투가 끝날 때까지 유지됩니다.",
+        "desc": "Create a portal to Noxus that spews out a torrent of weapons and armor, granting <scaleLevel>@NumItems@</scaleLevel> completed items to random allies with open slots, and throwing <scaleLevel>@NumAxes@</scaleLevel> axes towards random enemies that deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage each.<br><br>If an ally would recieve an item while all slots are full, they instead gain a stacking @DamageAmp*100@% damage increase for the rest of combat.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 녹서스",
+        "name": "Realm Warp: Noxus",
         "variables": [
             {
                 "name": "NumItems",
@@ -6082,7 +5286,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6098,15 +5302,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzePiltover: {
     "ability": {
-        "desc": "필트오버로 이어지는 차원문을 생성합니다. 차원문은 가장 큰 적 무리를 향해 집행자의 수류탄을 발사합니다. 수류탄은 2칸 내 적들에게 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 <scaleLevel>@AreaDuration@</scaleLevel>초 동안 해당 영역을 봉쇄합니다. 대상은 봉쇄된 영역을 벗어날 수 없으며, 영역 내 다른 적들 역시 <scaleLevel>@PercentSharedDamage*100@%</scaleLevel>의 피해를 입습니다.",
+        "desc": "Create a portal to Piltover that launches an enforcer grenade towards the largest clump of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within two hexes and creating a containment area for <scaleLevel>@AreaDuration@</scaleLevel> seconds. Enemies are unable to leave the area, and <scaleLevel>@PercentSharedDamage*100@%</scaleLevel> of the damage dealt to them is also dealt to all other enemies within.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 필트오버",
+        "name": "Realm Warp: Piltover",
         "variables": [
             {
                 "name": "Damage",
@@ -6150,7 +5354,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6166,15 +5370,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeShadowIsles: {
     "ability": {
-        "desc": "그림자 군도에서 되찾도록 현재 체력이 가장 낮은 아군 @NumAllies@명의 영혼에 표식을 남깁니다. 해당 아군은 사망 후 최대 체력의 <scaleHealth>@ModifiedHealthOnReturn@(%i:scaleAP%)</scaleHealth>만큼 지닌 채로 전장에 복귀합니다.<br><br>살아있는 모든 아군이 이미 표식을 가지고 있다면 라이즈는 대신 사망한 아군을 부활시킵니다.<br><br> 라이즈는 자신을 부활시킬 수 없습니다.",
+        "desc": "Mark the @NumAllies@ ally's soul(s) with the lowest current health to be reclaimed by the Shadow Isles. After they die, they return to the battlefield with <scaleHealth>@ModifiedHealthOnReturn@ (%i:scaleAP%)</scaleHealth> of their maximum Health.<br><br>If all living allies are already marked, Ryze instead resurrects a deceased ally.<br><br> Ryze cannot resurrect himself.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 그림자 군도",
+        "name": "Realm Warp: Shadow Isles",
         "variables": [
             {
                 "name": "PercentHealthOnReturn",
@@ -6206,7 +5410,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6222,15 +5426,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeShurima: {
     "ability": {
-        "desc": "슈리마로 이어지는 차원문을 생성해 이리저리 돌아다니는 거대한 모래바람을 소환합니다. 모래바람은 닿는 적들에게 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 공중에 띄워 올려 <scaleLevel>@KnockupDuration@</scaleLevel>초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다.<br><br>모래바람은 이동하면서 일정 확률로 땅에 묻힌 보물과 골드를 파헤칩니다.",
+        "desc": "Create a portal to Shurima, summoning a roaming sand tornado that deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies hit and knocks them up, <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@KnockupDuration@</scaleLevel> second(s).<br><br>The tornado has a chance to unearth buried treasures and gold as it travels.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 슈리마",
+        "name": "Realm Warp: Shurima",
         "variables": [
             {
                 "name": "Damage",
@@ -6322,7 +5526,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6338,15 +5542,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeTargon: {
     "ability": {
-        "desc": "타곤 산 상공에 차원문을 생성해 대상을 소환합니다. 몇 초 후, 대상은 유성이 되어 가장 큰 적 무리에 떨어지며 적들에게 대상 최대 체력의 <magicDamage>@ModifiedPercentMaxHealth@(%i:scaleAP%)</magicDamage>에 해당하는 마법 피해를 입힙니다. 낙하점 중심에 있는 적들이 잠시 공중에 띄워집니다.<br><br>대상이 마지막 적일 경우 하늘에서 떨어지지 않습니다.",
+        "desc": "Create a portal to the skies above Mount Targon that beckons the current target. After a few seconds, they descend from the heavens as a meteor towards the largest group of enemies, dealing <magicDamage>@ModifiedPercentMaxHealth@ (%i:scaleAP%)</magicDamage> of the initial target's maximum Health as magic damage. Enemies in the epicenter are briefly knocked up.<br><br>If the target is the only enemy remaining, they never descend.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 타곤",
+        "name": "Realm Warp: Targon",
         "variables": [
             {
                 "name": "PercentMaxHealth",
@@ -6414,7 +5618,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6430,15 +5634,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT9_RyzeZaun: {
     "ability": {
-        "desc": "자운으로 이어지는 <scaleLevel>@NumPortals@</scaleLevel>개의 차원문을 생성해 용병을 불러 주변 적을 공격합니다. <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 또한 <TFTKeyword>상처</TFTKeyword>를 입히며 @TooltipShredPercent@%의 <TFTKeyword>파쇄</TFTKeyword> 및 @TooltipShredPercent@%의 <TFTKeyword>파열</TFTKeyword> 효과를 @DebuffDuration@초 동안 적용합니다. 보유한 골드가 많을수록 차원문이 더욱 강력해집니다.<br><br><spellPassive>@Breakpoint1Gold@골드:</spellPassive> 차원문 +@Breakpoint1BonusPortals@개. 1칸 내 적들에게 @SplashDamagePercent*100@%의 피해를 입히는 로켓 발사<br><spellPassive>@Breakpoint2Gold@골드:</spellPassive> 차원문 개수 두 배. 보유한 골드 @GoldPerPortal@당 차원문 개수 +@Breakpoint2BonusPortalsPerGold@<br><br><rules><tftbold>상처:</tftbold> 체력 회복량이 50% 감소합니다.<br><tftbold>파쇄</tftbold>: 마법 저항력을 감소시킵니다.<br><tftbold>파열:</tftbold> 방어력이 감소합니다.</rules>",
+        "desc": "Create <scaleLevel>@NumPortals@</scaleLevel> portals to Zaun, causing hired guns to fire at nearby enemies. Deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Wounds</TFTKeyword>, @TooltipShredPercent@% <TFTKeyword>Shreds</TFTKeyword>, and @TooltipShredPercent@% <TFTKeyword>Sunders</TFTKeyword> for @DebuffDuration@ seconds. The more gold you have, the more powerful the portals become.<br><br><spellPassive>@Breakpoint1Gold@ Gold:</spellPassive> +@Breakpoint1BonusPortals@ portal. Portals fire a rocket that deals @SplashDamagePercent*100@% damage in a one-hex radius.<br><spellPassive>@Breakpoint2Gold@ Gold:</spellPassive> Double the portals. Summon @Breakpoint2BonusPortalsPerGold@ additional portals for every @GoldPerPortal@ Gold more.<br><br><rules><tftbold>Wound:</tftbold> Reduce healing received by 50%<br><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
-        "name": "공간 왜곡: 자운",
+        "name": "Realm Warp: Zaun",
         "variables": [
             {
                 "name": "NumPortals",
@@ -6566,7 +5770,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_Ryze",
     "cost": 5,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
-    "name": "라이즈",
+    "name": "Ryze",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 30,
@@ -6582,15 +5786,15 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
     "traits": [
-        "방랑자",
-        "기원자"
+        "Wanderer",
+        "Invoker"
     ]
 },
     TFT6_MercenaryChest: {
     "ability": {
-        "desc": "이 상자에는 지금까지 모은 모든 전리품이 쌓여있습니다. 플레이어와의 전투에서 승리해 상자를 여세요!",
+        "desc": "This chest stores all of the accumulated loot you've collected. Win a combat against a player to open it!",
         "icon": "ASSETS/Characters/TFT6_MercenaryChest/HUD/Icons2D/TFT6_MercenaryChest_EyeOfTheStorm.dds",
-        "name": "용병 상자",
+        "name": "Mercenary Chest",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -6610,7 +5814,7 @@ export const champion_season_9 = {
     "characterName": "TFT6_MercenaryChest",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT6_MercenaryChest.dds",
-    "name": "용병 상자",
+    "name": "Mercenary Chest",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT6_MercenaryChest_Mobile.dds",
     "stats": {
         "armor": 0,
@@ -6638,7 +5842,7 @@ export const champion_season_9 = {
     "characterName": "TFT9_VoidTotem",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VoidTotem.TFT_Set9.dds",
-    "name": "공허 토템",
+    "name": "Void Totem",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VoidTotem_Mobile.TFT_Set9.dds",
     "stats": {
         "armor": 0,
@@ -6657,16 +5861,16 @@ export const champion_season_9 = {
 },
     TFT9_VoidEggBaron: {
     "ability": {
-        "desc": "<spellPassive>기본 지속 효과:</spellPassive> @CastCadence@번 공격할 때마다 스킬을 시전한 후 세 가지 스킬 중 하나로 전환됩니다. <tftbonus>탐식의 이빨</tftbonus> (적에게 피해를 입히고 자신의 체력 회복) <tftbonus>공허 촉수</tftbonus> (여러 적에게 피해를 입히고 <TFTKeyword>기절</TFTKeyword>시킴)<br><br><spellActive>사용 시:</spellActive> 가장 큰 적 무리를 향해 3개의 산성 웅덩이를 생성해 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @DebuffDuration@초 동안 적들을 @TooltipShred@%만큼 <TFTKeyword>파쇄</TFTKeyword>시키고 <TFTKeyword>파열</TFTKeyword>시킵니다.<br><br><rules><tftbold>파쇄</tftbold>: 마법 저항력을 감소시킵니다.<br><tftbold>파열:</tftbold> 방어력이 감소합니다.</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Cast every @CastCadence@ attacks and cycle between 3 different Abilities: this, <tftbonus>Voracious Bite</tftbonus> (damage an enemy and heal), and <tftbonus>Void Tentacle</tftbonus> (damage and <TFTKeyword>Stun</TFTKeyword> a group).<br><br><spellActive>Active:</spellActive> Lob three pools of acid towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipShred@% <TFTKeyword>Shredding</TFTKeyword> and <TFTKeyword>Sundering</TFTKeyword> for @DebuffDuration@ seconds.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
         "icon": "ASSETS/Characters/TFT9_BaronNashor/HUD/TFT9_BaronNashor_Square.TFT_Set9.dds",
-        "name": "부식성 산",
+        "name": "Corrosive Acid",
         "variables": []
     },
     "apiName": "TFT9_VoidEggBaron",
     "characterName": "TFT9_VoidEgg",
     "cost": 8,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_BaronNashor.TFT_Set9.tex",
-    "name": "내셔 남작",
+    "name": "Baron Nashor",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_BaronNashor_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 200,
@@ -6685,16 +5889,16 @@ export const champion_season_9 = {
 },
     TFT9_VoidEggHerald: {
     "ability": {
-        "desc": "가장 멀리 있는 적을 향해 돌진해 처음 닿는 적에게 충돌합니다. 충돌 시 주변 적에게 <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @StunDuration@초 동안 기절시킵니다.",
+        "desc": "Charge toward the furthest enemy and crash into the first enemy hit. Deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies adjacent to the impact and Stun them for @StunDuration@ seconds.",
         "icon": "ASSETS/Characters/TFT9_RiftHerald/HUD/TFT9_RiftHerald_Square.TFT_Set9.dds",
-        "name": "공허 돌진",
+        "name": "Void Charge",
         "variables": []
     },
     "apiName": "TFT9_VoidEggHerald",
     "characterName": "TFT9_VoidEgg",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RiftHerald.TFT_Set9.tex",
-    "name": "협곡의 전령",
+    "name": "Rift Herald",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RiftHerald_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 100,
@@ -6713,16 +5917,16 @@ export const champion_season_9 = {
 },
     TFT9_VoidEggRemora: {
     "ability": {
-        "desc": "@Duration@초 동안 <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus>의 피해를 흡수하는 보호막을 얻습니다. 보호막이 파괴되면 주변 적들에게 <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. ",
+        "desc": "Gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield for @Duration@ seconds. When it expires, deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies. ",
         "icon": "ASSETS/Characters/TFT9_VoidRemora/HUD/TFT9_VoidRemora_Square.TFT_Set9.dds",
-        "name": "공허 보호막",
+        "name": "Void Shield",
         "variables": []
     },
     "apiName": "TFT9_VoidEggRemora",
     "characterName": "TFT9_VoidEgg",
     "cost": 11,
     "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VoidRemora.TFT_Set9.tex",
-    "name": "공허 빨판상어",
+    "name": "Void Remora",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_VoidRemora_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 40,
@@ -6738,5 +5942,997 @@ export const champion_season_9 = {
     },
     "tileIcon": "ASSETS/Characters/TFT9_VoidRemora/HUD/TFT9_VoidRemora_Square.TFT_Set9.tex",
     "traits": []
+},
+    TFT9_Naafiri: {
+    "ability": {
+        "desc": "<spellPassive>Passive:</spellPassive> Gain <TFTBonus>@ModifiedOmnivamp@ (%i:scaleAP%)</TFTBonus> <TFTKeyword>Omnivamp</TFTKeyword>. <br><br><spellActive>Active:</spellActive> Deal <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage. <br><br>Darkin Dagger: After casting, summon packmates that attack the first enemy hit for a total of <physicalDamage>@TotalPackmateDamage@ (%i:scaleAD%)</physicalDamage>.<br><br><rules><tftbold>Omnivamp:</tftbold> Heal for percentage of damage dealt</rules>",
+        "icon": "ASSETS/Characters/Naafiri/HUD/Icons2D/Icons_Naafiri_E.Naafiri.dds",
+        "name": "Eviscerate",
+        "variables": [
+            {
+                "name": "ADRatio",
+                "value": [
+                    1.2000000476837158,
+                    1.4500000476837158,
+                    1.5499999523162842,
+                    1.649999976158142,
+                    1.2000000476837158,
+                    1.2000000476837158,
+                    1.2000000476837158
+                ]
+            },
+            {
+                "name": "NumPackmates",
+                "value": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "TotalPackmateADRatio",
+                "value": [
+                    1.7999999523162842,
+                    1.899999976158142,
+                    1.9500000476837158,
+                    2,
+                    1.7999999523162842,
+                    1.7999999523162842,
+                    1.7999999523162842
+                ]
+            },
+            {
+                "name": "PackmateHealing",
+                "value": [
+                    75,
+                    75,
+                    75,
+                    75,
+                    75,
+                    75,
+                    75
+                ]
+            },
+            {
+                "name": "DaggerOmnivamp",
+                "value": [
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Naafiri",
+    "characterName": "TFT9_Naafiri",
+    "cost": 2,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Naafiri.TFT_Set9_Stage2.tex",
+    "name": "Naafiri",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Naafiri_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 40,
+        "attackSpeed": 0.75,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 60,
+        "hp": 750,
+        "initialMana": 0,
+        "magicResist": 40,
+        "mana": 50,
+        "range": 1
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Naafiri/HUD/TFT9_Naafiri_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Darkin",
+        "Shurima",
+        "Challenger"
+    ]
+},
+    TFT9_Fiora: {
+    "ability": {
+        "desc": "Become untargetable and strike the current target @NumStrikes@ times. Each strike deals <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage and <trueDamage>@ModifiedBonusDamage@ (%i:scaleAP%)</trueDamage> true damage. Heal for <scaleHealth>@PercentHealing*100@%</scaleHealth> of the total damage dealt.<br><br>If the target dies, change targets to the nearest enemy.",
+        "icon": "ASSETS/Characters/Fiora/HUD/Icons2D/Fiora_R.dds",
+        "name": "Blade Waltz",
+        "variables": [
+            {
+                "name": "PercentAD",
+                "value": [
+                    1.5499999523162842,
+                    1.5,
+                    1.5,
+                    2.5,
+                    1.5499999523162842,
+                    1.5499999523162842,
+                    1.5499999523162842
+                ]
+            },
+            {
+                "name": "BonusTrueDamage",
+                "value": [
+                    75,
+                    60,
+                    90,
+                    270,
+                    400,
+                    400,
+                    400
+                ]
+            },
+            {
+                "name": "PercentHealing",
+                "value": [
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224
+                ]
+            },
+            {
+                "name": "NumStrikes",
+                "value": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Fiora",
+    "characterName": "TFT9_Fiora",
+    "cost": 4,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Fiora.TFT_Set9_Stage2.tex",
+    "name": "Fiora",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Fiora_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 40,
+        "attackSpeed": 0.8999999761581421,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 75,
+        "hp": 850,
+        "initialMana": 70,
+        "magicResist": 40,
+        "mana": 160,
+        "range": 1
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Fiora/HUD/TFT9_Fiora_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Demacia",
+        "Challenger"
+    ]
+},
+    TFT9_Mordekaiser: {
+    "ability": {
+        "desc": "<spellPassive>Passive:</spellPassive> Attacks deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> bonus magic damage, increased to <magicDamage>@ModifiedRealmDamage@ (%i:scaleAP%)</magicDamage> while God of Death is active.<br><br><spellActive>Active:</spellActive> Gain <TFTBonus>@ModifiedShield@ (%i:scaleHealth%)</TFTBonus> Shield and 1 range for <TFTBonus>@Duration@</TFTBonus> seconds. Killing enemies in this state steals <TFTBonus>@PercentStatSteal*100@%</TFTBonus> of their Health, Attack Damage, Ability Power, Armor, and Magic Resistance until combat ends.",
+        "icon": "ASSETS/Characters/Mordekaiser/HUD/Icons2D/MordekaiserR.dds",
+        "name": "God of Death",
+        "variables": [
+            {
+                "name": "BonusDamage",
+                "value": [
+                    100,
+                    100,
+                    150,
+                    375,
+                    500,
+                    600,
+                    700
+                ]
+            },
+            {
+                "name": "RealmBonusDamage",
+                "value": [
+                    100,
+                    250,
+                    375,
+                    900,
+                    100,
+                    100,
+                    100
+                ]
+            },
+            {
+                "name": "Duration",
+                "value": [
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5
+                ]
+            },
+            {
+                "name": "PercentHealthShield",
+                "value": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645
+                ]
+            },
+            {
+                "name": "PercentStatSteal",
+                "value": [
+                    0.10000000149011612,
+                    0.05999999865889549,
+                    0.05999999865889549,
+                    0.15000000596046448,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Mordekaiser",
+    "characterName": "TFT9_Mordekaiser",
+    "cost": 4,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Mordekaiser.TFT_Set9_Stage2.tex",
+    "name": "Mordekaiser",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Mordekaiser_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 50,
+        "attackSpeed": 0.550000011920929,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 70,
+        "hp": 1000,
+        "initialMana": 30,
+        "magicResist": 50,
+        "mana": 80,
+        "range": 1
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Mordekaiser/HUD/TFT9_Mordekaiser_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Noxus",
+        "Slayer"
+    ]
+},
+    TFT9_Milio: {
+    "ability": {
+        "desc": "Kick a ball at the current target that deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Stuns</TFTKeyword> for @Duration@ seconds. The ball bounces to the closest enemy behind the target, dealing <magicDamage>@ModifiedDamageAOE@ (%i:scaleAP%)</magicDamage> magic damage on impact and <magicDamage>@ModifiedSplashDamage@ (%i:scaleAP%)</magicDamage> magic damage to adjacent enemies.",
+        "icon": "ASSETS/Characters/Milio/HUD/Icons2D/Milio_Q.Milio.dds",
+        "name": "Ultra Mega Fire Kick!!!",
+        "variables": [
+            {
+                "name": "MagicDamage",
+                "value": [
+                    0,
+                    160,
+                    240,
+                    360,
+                    240,
+                    240,
+                    240
+                ]
+            },
+            {
+                "name": "Duration",
+                "value": [
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5
+                ]
+            },
+            {
+                "name": "MagicDamageAOE",
+                "value": [
+                    0,
+                    170,
+                    250,
+                    380,
+                    160,
+                    160,
+                    160
+                ]
+            },
+            {
+                "name": "SplashDamage",
+                "value": [
+                    0,
+                    85,
+                    125,
+                    190,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Milio",
+    "characterName": "TFT9_Milio",
+    "cost": 1,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Milio.TFT_Set9_Stage2.tex",
+    "name": "Milio",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Milio_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 20,
+        "attackSpeed": 0.699999988079071,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 40,
+        "hp": 500,
+        "initialMana": 20,
+        "magicResist": 20,
+        "mana": 80,
+        "range": 4
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Milio/HUD/TFT9_Milio_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Ixtal",
+        "Invoker"
+    ]
+},
+    TFT9_Qiyana: {
+    "ability": {
+        "desc": "Dash to strike enemies in a line and deal <physicalDamage>@ModifiedDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage, <TFTKeyword>Stunning</TFTKeyword> and knocking up the first target hit for @PrimaryStunDuration@ seconds and all other targets for @SecondaryStunDuration@ seconds.",
+        "icon": "ASSETS/Characters/Qiyana/HUD/Icons2D/Qiyana_R.dds",
+        "name": "Supreme Display of Talent",
+        "variables": [
+            {
+                "name": "BaseDamage",
+                "value": [
+                    0,
+                    2.549999952316284,
+                    2.549999952316284,
+                    2.700000047683716,
+                    3,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "AbilityScaleDamage",
+                "value": [
+                    0,
+                    40,
+                    60,
+                    90,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "PrimaryStunDuration",
+                "value": [
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5
+                ]
+            },
+            {
+                "name": "SecondaryStunDuration",
+                "value": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Qiyana",
+    "characterName": "TFT9_Qiyana",
+    "cost": 2,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Qiyana.TFT_Set9_Stage2.tex",
+    "name": "Qiyana",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Qiyana_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 35,
+        "attackSpeed": 0.75,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 55,
+        "hp": 700,
+        "initialMana": 20,
+        "magicResist": 35,
+        "mana": 80,
+        "range": 1
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Qiyana/HUD/TFT9_Qiyana_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Ixtal",
+        "Slayer",
+        "Rogue"
+    ]
+},
+    TFT9_Neeko: {
+    "ability": {
+        "desc": "Leap towards the current target and gain <TFTBonus>@ModifiedShield@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Slam down after a brief delay, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage>  magic damage to enemies within two hexes.<br><br><br><br>",
+        "icon": "ASSETS/Characters/Neeko/HUD/Icons2D/Neeko_R.dds",
+        "name": "Pop Blossom",
+        "variables": [
+            {
+                "name": "Shield",
+                "value": [
+                    0,
+                    225,
+                    350,
+                    475,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "ShieldDuration",
+                "value": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "Damage",
+                "value": [
+                    50,
+                    270,
+                    410,
+                    650,
+                    250,
+                    300,
+                    350
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Neeko",
+    "characterName": "TFT9_Neeko",
+    "cost": 3,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Neeko.TFT_Set9_Stage2.tex",
+    "name": "Neeko",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Neeko_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 45,
+        "attackSpeed": 0.6499999761581421,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 50,
+        "hp": 800,
+        "initialMana": 50,
+        "magicResist": 45,
+        "mana": 120,
+        "range": 2
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Neeko/HUD/TFT9_Neeko_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Ixtal",
+        "Bastion"
+    ]
+},
+    TFT9_Graves: {
+    "ability": {
+        "desc": "Launch a smoke grenade at the current target. It explodes on impact, dealing <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage to adjacent enemies, leaving behind a smoke cloud that <TFTKeyword>Chills</TFTKeyword> for <scaleLevel>@CCDuration@</scaleLevel> seconds.<br><br><rules>Chill: Reduce Attack Speed by @TooltipChillPercent@%</rules><br>",
+        "icon": "ASSETS/Characters/Graves/HUD/Icons2D/GravesSmokeGrenade.dds",
+        "name": "Smoke Grenade",
+        "variables": [
+            {
+                "name": "PercentAttackDamage",
+                "value": [
+                    0,
+                    2.200000047683716,
+                    2.200000047683716,
+                    2.299999952316284,
+                    375,
+                    375,
+                    375
+                ]
+            },
+            {
+                "name": "AbilityScaleDamage",
+                "value": [
+                    0,
+                    30,
+                    45,
+                    60,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "CCDuration",
+                "value": [
+                    1,
+                    3,
+                    3.5,
+                    4,
+                    4,
+                    4,
+                    4
+                ]
+            },
+            {
+                "name": "TooltipChillPercent",
+                "value": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_Graves",
+    "characterName": "TFT9_Graves",
+    "cost": 1,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Graves.TFT_Set9_Stage2.tex",
+    "name": "Graves",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Graves_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 40,
+        "attackSpeed": 0.6499999761581421,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 55,
+        "hp": 700,
+        "initialMana": 30,
+        "magicResist": 40,
+        "mana": 80,
+        "range": 1
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Graves/HUD/TFT9_Graves_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Bilgewater",
+        "Gunner",
+        "Rogue"
+    ]
+},
+    TFT9_TwistedFate: {
+    "ability": {
+        "desc": "Throw a hand of cards at the current target that deal <magicDamage>@ModifiedInitialMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage. After @Delay@ seconds the cards explode, dealing <magicDamage>@ModifiedDelayedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to nearby enemies.",
+        "icon": "ASSETS/Characters/TFT9_TwistedFate/HUD/Cardmaster_RapidToss.TFT_Set9_Stage2.dds",
+        "name": "Stacked Deck",
+        "variables": [
+            {
+                "name": "InitialMagicDamage",
+                "value": [
+                    175,
+                    165,
+                    250,
+                    375,
+                    335,
+                    375,
+                    415
+                ]
+            },
+            {
+                "name": "DelayedMagicDamage",
+                "value": [
+                    175,
+                    210,
+                    315,
+                    490,
+                    175,
+                    175,
+                    175
+                ]
+            },
+            {
+                "name": "Delay",
+                "value": [
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5,
+                    1.5
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_TwistedFate",
+    "characterName": "TFT9_TwistedFate",
+    "cost": 2,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_TwistedFate.TFT_Set9_Stage2.tex",
+    "name": "Twisted Fate",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_TwistedFate_Mobile.TFT_Set9_Stage2.tex",
+    "stats": {
+        "armor": 20,
+        "attackSpeed": 0.699999988079071,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 40,
+        "hp": 550,
+        "initialMana": 20,
+        "magicResist": 20,
+        "mana": 70,
+        "range": 4
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_TwistedFate/HUD/TFT9_TwistedFate_Square.TFT_Set9_Stage2.tex",
+    "traits": [
+        "Bilgewater",
+        "Multicaster"
+    ]
+},
+    TFT9_Aatrox: {
+    "ability": {
+        "desc": "Transform for @Duration@ seconds, converting @ADPerASConversion*100@% of bonus Attack Speed to Attack Damage. While transformed, attacks deal <physicalDamage>@GreatswordDamage@ (%i:scaleAD%)</physicalDamage> physical damage in an area.<br><br>Darkin Blade: Gain <scaleHealth>@DarkinHealth@</scaleHealth> Health and <TFTBonus>@ModifiedOmnivamp@ (%i:scaleAP%)</TFTBonus> <TFTKeyword>Omnivamp</TFTKeyword>. If another unit holds this weapon for at least @DarkinReviveTime@ seconds, Aatrox will revive upon their death.  <br><br><rules><tftbold>Omnivamp:</tftbold> Heal for percentage of damage dealt</rules>",
+        "icon": "ASSETS/Characters/TFT9_Aatrox/HUD/Icons2D/TFT9_Aatrox_R.TFT_Set9.dds",
+        "name": "World Ender",
+        "variables": [
+            {
+                "name": "Duration",
+                "value": [
+                    10,
+                    12,
+                    12,
+                    30,
+                    10,
+                    10,
+                    10
+                ]
+            },
+            {
+                "name": "DarkinOmnivamp",
+                "value": [
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448
+                ]
+            },
+            {
+                "name": "GreatswordADRatio",
+                "value": [
+                    0,
+                    2.75,
+                    2.75,
+                    25,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "ADPerASConversion",
+                "value": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929
+                ]
+            },
+            {
+                "name": "MovementSpeed",
+                "value": [
+                    700,
+                    700,
+                    700,
+                    700,
+                    700,
+                    700,
+                    700
+                ]
+            },
+            {
+                "name": "DarkinHealth",
+                "value": [
+                    350,
+                    350,
+                    350,
+                    350,
+                    350,
+                    350,
+                    350
+                ]
+            },
+            {
+                "name": "DarkinReviveTime",
+                "value": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9b_Aatrox",
+    "characterName": "TFT9b_Aatrox",
+    "cost": 5,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aatrox.TFT_Set9.tex",
+    "name": "Aatrox",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aatrox_Mobile.TFT_Set9.tex",
+    "stats": {
+        "armor": 60,
+        "attackSpeed": 0.800000011920929,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 80,
+        "hp": 900,
+        "initialMana": 0,
+        "magicResist": 60,
+        "mana": 50,
+        "range": 1
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Aatrox/HUD/TFT9_Aatrox_Square.TFT_Set9.tex",
+    "traits": [
+        "Darkin",
+        "Slayer",
+        "Juggernaut"
+    ]
+},
+    TFT9_RyzeBilgewater: {
+    "ability": {
+        "desc": "Create a portal to Bilgewater, summoning a giant treasure chest to fall on the largest cluster of enemies that deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage. The size of this chest is increased by <TFTBonus>@PercentScalar*100@%</TFTBonus> for every <TFTBonus>@PerGoldScalar@</TFTBonus> gold you have.<br><br>Each enemy hit has a chance to knock gold or other treasures out of the chest, and that chance doubles if the chest kills the enemy.",
+        "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
+        "name": "Realm Warp: Bilgewater",
+        "variables": [
+            {
+                "name": "Damage",
+                "value": [
+                    0,
+                    300,
+                    450,
+                    7777,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "PercentScalar",
+                "value": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
+                ]
+            },
+            {
+                "name": "PerGoldScalar",
+                "value": [
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
+                ]
+            },
+            {
+                "name": "BaseLootPercent",
+                "value": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    0.07500000298023224,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "KillLootPercent",
+                "value": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.15000000596046448,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "BaseGoldPercent",
+                "value": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.15000000596046448,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "KillGoldPercent",
+                "value": [
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.30000001192092896,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "MinGold",
+                "value": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "MaxGold",
+                "value": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_RyzeBilgewater",
+    "characterName": "TFT9_Ryze",
+    "cost": 5,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
+    "name": "Ryze",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
+    "stats": {
+        "armor": 30,
+        "attackSpeed": 0.8500000238418579,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 50,
+        "hp": 1111,
+        "initialMana": 30,
+        "magicResist": 30,
+        "mana": 100,
+        "range": 4
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
+    "traits": [
+        "Wanderer",
+        "Invoker"
+    ]
+},
+    TFT9_RyzeIxtal: {
+    "ability": {
+        "desc": "Create a portal to Ixtal, coating the ground around the current target in a thicket of vines. After a brief delay, deal <magicDamage>@TotalDamage@ (%i:scaleArmor% %i:scaleMR%)</magicDamage> magic damage to enemies within and <TFTKeyword>Stun</TFTKeyword> enemies at the epicenter for <TFTBonus>@StunDuration@</TFTBonus> seconds with a knockup.<br><br>Allies within are wrapped in Barkskin, granting <scaleLevel>@ModifiedArmor@ (%i:scaleArmor%)</scaleLevel> Armor and <scaleLevel>@ModifiedMR@ (%i:scaleMR%)</scaleLevel> Magic Resistance for <TFTBonus>@ModifiedBarkskinDuration@ (%i:scaleAP%)</TFTBonus> seconds.",
+        "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
+        "name": "Realm Warp: Ixtal",
+        "variables": [
+            {
+                "name": "ArmorScalar",
+                "value": [
+                    1.5,
+                    1.850000023841858,
+                    2.8499999046325684,
+                    15,
+                    1.5,
+                    1.5,
+                    1.5
+                ]
+            },
+            {
+                "name": "MRScalar",
+                "value": [
+                    1.5,
+                    1.850000023841858,
+                    2.8499999046325684,
+                    15,
+                    1.5,
+                    1.5,
+                    1.5
+                ]
+            },
+            {
+                "name": "StunDuration",
+                "value": [
+                    2,
+                    2,
+                    2,
+                    10,
+                    2,
+                    2,
+                    2
+                ]
+            },
+            {
+                "name": "BarkskinDuration",
+                "value": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ]
+            },
+            {
+                "name": "BarskinDefenceScalar",
+                "value": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "apiName": "TFT9_RyzeIxtal",
+    "characterName": "TFT9_Ryze",
+    "cost": 5,
+    "icon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze.TFT_Set9.tex",
+    "name": "Ryze",
+    "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ryze_Mobile.TFT_Set9.tex",
+    "stats": {
+        "armor": 50,
+        "attackSpeed": 0.8500000238418579,
+        "critChance": 0.25,
+        "critMultiplier": 1.399999976158142,
+        "damage": 50,
+        "hp": 1111,
+        "initialMana": 60,
+        "magicResist": 50,
+        "mana": 120,
+        "range": 2
+    },
+    "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
+    "traits": [
+        "Wanderer",
+        "Invoker"
+    ]
 }
   }

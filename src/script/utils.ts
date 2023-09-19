@@ -1,5 +1,8 @@
 import fs from 'fs';
 
+/**
+ * Make a directory and write a file
+ */
 export const writeFile = (path: string, content: string) =>
   new Promise((resolve, reject) => {
     const directory = path.split('/').slice(0, -1).join('/');

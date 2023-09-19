@@ -1,6 +1,6 @@
 {
   "name": "tft-utils",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "tft team-builder",
   "keywords": [
     "tft",
@@ -43,7 +43,7 @@
     "lib"
   ],
   "scripts": {
-    "parse": "ts-node src/script/index.ts",
+    "parse": "ts-node src/script/execute.ts",
     "storybook": "storybook dev -p 6006",
     "build-rollup": "rollup -c",
     "build": "rimraf lib && npm run build-rollup",

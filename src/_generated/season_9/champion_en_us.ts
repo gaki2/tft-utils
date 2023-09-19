@@ -1,4 +1,4 @@
-export const champion_9 = {
+export const champion_season_9 = {
     TFT_Voidspawn: {
     "ability": {
         "desc": "The Voidspawn gains bonus Health and Attack Damage based on the current Stage. ",

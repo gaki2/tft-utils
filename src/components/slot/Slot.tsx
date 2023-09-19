@@ -1,16 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BoardController } from '../board/controller/BoardController';
 import { SlotData } from '../board/model/BoardModel';
-import { SlotIndex } from '../../types/types';
-import { Season } from '../../_generated/types/seasonType';
-import { LanguageType } from '../../script/config';
-import { getChampionDisplayName, getCost } from '../../_generated/getter';
+import { SlotIndex } from '../../types/board';
+import { Season } from '../../types/seasonType';
+import { LanguageType } from '../../types/config';
+import { getChampionDisplayName, getCost } from '../../getter';
 import { throttle } from '../../utils/throttle';
 import { Popover } from '../../utils/popover/Popover';
 import { SlotPopup } from './popup_view/SlotPopup';
 import styled from 'styled-components';
-import { StarLevel } from './star/StarLevel';
 import {S3} from "../../environments/urls";
+import {Label} from "./label/Label";
 
 type SlotProps = {
   initialSlotData: SlotData | null;
@@ -66,7 +66,7 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
       setSlotData(newState.slots[slotIdx]);
     });
 
-    function onDragStart(e: DragEvent) {
+    function onDragStart() {
       setIsOpend(false);
       BoardController.getInstance().notifyDragStart(boardId, slotIdx);
     }
@@ -114,11 +114,11 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
   return (
     <>
       <Wrapper draggable={Boolean(slotData)} ref={wrapperRef} onClick={() => setIsOpend(true)}>
-        {slotData && <StyledStarLevel forthStar={false} />}
         <Border cost={cost}>
           <ImageDiv ref={imageDivRef} championName={slotData?.name} season={season} />
+          {/*{Boolean(slotData) && <Label rule={'sub_tank'} lang={language} />}*/}
+          {Boolean(slotData) && <ChampionName>{championDisplayName}</ChampionName>}
         </Border>
-        <ChampionName>{championDisplayName}</ChampionName>
       </Wrapper>
       {slotData && isOpened && (
         <Popover
@@ -134,8 +134,6 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
   );
 };
 
-const StyledStarLevel = styled(StarLevel)``;
-
 const Wrapper = styled.div`
   --initial_bg: transparent;
 
@@ -143,12 +141,6 @@ const Wrapper = styled.div`
   height: 100%;
   position: relative;
   background-color: var(--initial_bg);
-
-  :hover {
-    ${StyledStarLevel} {
-      visibility: visible;
-    }
-  }
 `;
 
 const Border = styled.div<{ cost: number | undefined | null }>`
@@ -158,7 +150,7 @@ const Border = styled.div<{ cost: number | undefined | null }>`
   --4_cost_border: rgb(196, 64, 218);
   --5_cost_border: rgb(255, 185, 59);
 
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;

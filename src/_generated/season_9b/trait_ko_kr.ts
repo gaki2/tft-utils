@@ -1,4 +1,4 @@
-export const trait_season_9 = {
+export const trait_season_9b = {
     'Set9_Bastion': {
     "apiName": "Set9_Bastion",
     "desc": "요새 챔피언이 방어력과 마법 저항력을 얻습니다. 이 효과는 전투 시작 후 @Duration@초 동안 @BonusPercent*100@%만큼 증가합니다.<br><br><expandRow>(@MinUnits@) %i:scaleArmor% +@BonusArmor@, %i:scaleMR% +@BonusArmor@</expandRow>",
@@ -52,7 +52,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Bastion.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Bastion.TFT_Set9.png",
     "name": "요새"
 },
     'Set9_Sorcerer': {
@@ -104,7 +104,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_3_Sorcerer.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_3_Sorcerer.png",
     "name": "마법사"
 },
     'Set9_BandleCity': {
@@ -140,7 +140,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_6_Yordle.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_6_Yordle.png",
     "name": "요들"
 },
     'Set9_Deadeye': {
@@ -175,7 +175,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Deadeye.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Deadeye.TFT_Set9.png",
     "name": "백발백중"
 },
     'Set9_Void': {
@@ -210,7 +210,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Void.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Void.TFT_Set9.png",
     "name": "공허"
 },
     'Set9_Demacia': {
@@ -254,7 +254,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Demacia.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Demacia.TFT_Set9.png",
     "name": "데마시아"
 },
     'Set9_Rogue': {
@@ -288,7 +288,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Rogue.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Rogue.TFT_Set9.png",
     "name": "불한당"
 },
     'Set9_Slayer': {
@@ -326,7 +326,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_4_Slayer.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_4_Slayer.png",
     "name": "학살자"
 },
     'Set9_Preserver': {
@@ -378,8 +378,22 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Preserver.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Preserver.TFT_Set9.png",
     "name": "기원자"
+},
+    'Set9_ReaverKing': {
+    "apiName": "Set9_ReaverKing",
+    "desc": "갱플랭크가 전방 2열에서는 해적검 기본 지속 효과, 후방 2열에서는 권총 기본 지속 효과를 사용합니다.<br>",
+    "effects": [
+        {
+            "maxUnits": 1,
+            "minUnits": 1,
+            "style": 4,
+            "variables": {}
+        }
+    ],
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_ReaverKing.TFT_Set9_Stage2.png",
+    "name": "해적왕"
 },
     'Set9_Bruiser': {
     "apiName": "Set9_Bruiser",
@@ -413,7 +427,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_6_Bruiser.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_6_Bruiser.png",
     "name": "난동꾼"
 },
     'Set9_Noxus': {
@@ -465,7 +479,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Noxus.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Noxus.TFT_Set9.png",
     "name": "녹서스"
 },
     'Set9_Shurima': {
@@ -529,7 +543,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Shurima.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Shurima.TFT_Set9.png",
     "name": "슈리마"
 },
     'Set9_Strategist': {
@@ -577,7 +591,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Strategist.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Strategist.TFT_Set9.png",
     "name": "책략가"
 },
     'Set9_Redeemer': {
@@ -593,7 +607,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Mistwalker.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Mistwalker.TFT_Set9.png",
     "name": "구원자"
 },
     'Set9_Piltover': {
@@ -619,7 +633,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Piltover.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Piltover.TFT_Set9.png",
     "name": "필트오버"
 },
     'Set9_Multicaster': {
@@ -645,7 +659,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Multicaster.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Multicaster.TFT_Set9.png",
     "name": "연쇄마법사"
 },
     'Set9_Marksman': {
@@ -680,7 +694,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Gunner.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Gunner.TFT_Set9.png",
     "name": "사수"
 },
     'Set9_Empress': {
@@ -699,7 +713,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Empress.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Empress.TFT_Set9.png",
     "name": "여제"
 },
     'Set9_ShadowIsles': {
@@ -743,8 +757,112 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_ShadowIsles.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_ShadowIsles.TFT_Set9.png",
     "name": "그림자 군도"
+},
+    'Set9_Ixtal': {
+    "apiName": "Set9_Ixtal",
+    "desc": "게임마다 다른 추가 효과를 주는 원소 칸을 얻습니다.",
+    "effects": [
+        {
+            "maxUnits": 2,
+            "minUnits": 2,
+            "style": 1,
+            "variables": {
+                "{1747ea01}": 30,
+                "{29203c52}": 2,
+                "{2bd71d58}": 15,
+                "{3d8449b6}": 1,
+                "{49ce4789}": 40,
+                "{51a1ea16}": 2,
+                "{5e5f92cb}": 5,
+                "{6792336d}": 0.30000001192092896,
+                "{70d53416}": 4,
+                "{760a61fb}": 0.10000000149011612,
+                "{7eec9e2d}": 4,
+                "{81d8e625}": 650,
+                "{8d6e1b33}": 0.4000000059604645,
+                "{979ecb53}": 40,
+                "{9f4e602e}": 1,
+                "{a1db7675}": 1,
+                "{a97d218b}": 8,
+                "{ae36654b}": 0.30000001192092896,
+                "{ba6b2861}": 2,
+                "{c27ef179}": 3,
+                "{cca4fcbd}": 0.6000000238418579,
+                "{d3e4ed52}": 1,
+                "{dd25bb1b}": 2,
+                "{ddc6604f}": 6,
+                "{fafacd08}": 0.20000000298023224
+            }
+        },
+        {
+            "maxUnits": 3,
+            "minUnits": 3,
+            "style": 4,
+            "variables": {
+                "{1747ea01}": 30,
+                "{29203c52}": 2,
+                "{2bd71d58}": 15,
+                "{3d8449b6}": 1,
+                "{49ce4789}": 40,
+                "{51a1ea16}": 2,
+                "{5e5f92cb}": 5,
+                "{6792336d}": 0.30000001192092896,
+                "{70d53416}": 4,
+                "{760a61fb}": 0.10000000149011612,
+                "{7eec9e2d}": 4,
+                "{81d8e625}": 650,
+                "{8d6e1b33}": 0.4000000059604645,
+                "{979ecb53}": 40,
+                "{9f4e602e}": 2,
+                "{a1db7675}": 1,
+                "{a97d218b}": 8,
+                "{ae36654b}": 0.30000001192092896,
+                "{ba6b2861}": 2,
+                "{c27ef179}": 3,
+                "{cca4fcbd}": 0.6000000238418579,
+                "{d3e4ed52}": 1,
+                "{dd25bb1b}": 2,
+                "{ddc6604f}": 6,
+                "{fafacd08}": 0.20000000298023224
+            }
+        },
+        {
+            "maxUnits": 25000,
+            "minUnits": 4,
+            "style": 4,
+            "variables": {
+                "{1747ea01}": 30,
+                "{29203c52}": 2,
+                "{2bd71d58}": 15,
+                "{3d8449b6}": 1,
+                "{49ce4789}": 40,
+                "{51a1ea16}": 2,
+                "{5e5f92cb}": 5,
+                "{6792336d}": 0.30000001192092896,
+                "{70d53416}": 4,
+                "{760a61fb}": 0.10000000149011612,
+                "{7eec9e2d}": 4,
+                "{81d8e625}": 650,
+                "{8d6e1b33}": 0.4000000059604645,
+                "{979ecb53}": 40,
+                "{9f4e602e}": 2,
+                "{a1db7675}": 1,
+                "{a97d218b}": 8,
+                "{ae36654b}": 0.30000001192092896,
+                "{ba6b2861}": 2,
+                "{c27ef179}": 3,
+                "{cca4fcbd}": 0.6000000238418579,
+                "{d3e4ed52}": 1,
+                "{dd25bb1b}": 2,
+                "{ddc6604f}": 6,
+                "{fafacd08}": 0.20000000298023224
+            }
+        }
+    ],
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Ixtal.TFT_Set9_Stage2.png",
+    "name": "이쉬탈"
 },
     'Set9_Freljord': {
     "apiName": "Set9_Freljord",
@@ -775,8 +893,64 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Freljord.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Freljord.TFT_Set9.png",
     "name": "프렐요드"
+},
+    'Set9b_Bilgewater': {
+    "apiName": "Set9b_Bilgewater",
+    "desc": "빌지워터 유닛의 기본 공격과 스킬이 적에게 표식을 남깁니다. 표식은 빌지워터 유닛이 적에게 입힌 피해의 일정 비율을 저장합니다.<br><br>표식이 남은 적은 @BarrageInterval@초 후 포탄에 맞으며 기본 피해+저장된 피해만큼 <physicalDamage>물리 피해</physicalDamage>를 입습니다.<br><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage>+입힌 피해량의 @DamagePercent@%</row><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage>+입힌 피해량의 @DamagePercent@%</row><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage>+입힌 피해량의 @DamagePercent@%</row><br><row>(@MinUnits@) <physicalDamage>@Damage@</physicalDamage>+입힌 피해량의 @DamagePercent@%, 주변 적이 입는 피해는 포탄 피해량의 @SplashPercent@%</row>",
+    "effects": [
+        {
+            "maxUnits": 4,
+            "minUnits": 3,
+            "style": 1,
+            "variables": {
+                "Damage": 165,
+                "DamagePercent": 35,
+                "{2aa4373f}": "null",
+                "{2aeb6df5}": 1,
+                "{9377f46a}": 1.5
+            }
+        },
+        {
+            "maxUnits": 6,
+            "minUnits": 5,
+            "style": 3,
+            "variables": {
+                "Damage": 250,
+                "DamagePercent": 50,
+                "{2aa4373f}": "null",
+                "{2aeb6df5}": 2,
+                "{9377f46a}": 1.5
+            }
+        },
+        {
+            "maxUnits": 8,
+            "minUnits": 7,
+            "style": 4,
+            "variables": {
+                "Damage": 400,
+                "DamagePercent": 90,
+                "{2aa4373f}": "null",
+                "{2aeb6df5}": 3,
+                "{9377f46a}": 1.5
+            }
+        },
+        {
+            "maxUnits": 25000,
+            "minUnits": 9,
+            "style": 5,
+            "variables": {
+                "Damage": 650,
+                "DamagePercent": 125,
+                "{2aa4373f}": 50,
+                "{2aeb6df5}": 4,
+                "{9377f46a}": 1.5
+            }
+        }
+    ],
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Bilgewater.TFT_Set9_Stage2.png",
+    "name": "빌지워터"
 },
     'Set9_Targon': {
     "apiName": "Set9_Targon",
@@ -807,26 +981,8 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Targon.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Targon.TFT_Set9.png",
     "name": "타곤"
-},
-    'Set9_Darkin': {
-    "apiName": "Set9_Darkin",
-    "desc": "아트록스 또는 다르킨의 검 장착 유닛이 사망하면 다르킨의 검이 가장 가까운 아군 챔피언에게 옮겨 가 @BonusHealth@의 체력과 @BonusOmnivamp*100@%의 모든 피해 흡혈을 부여합니다.<br><br>챔피언에게 옮겨 가고 @RespawnTimer@초 후 해당 챔피언이 사망하면 아트록스가 부활합니다.",
-    "effects": [
-        {
-            "maxUnits": 25000,
-            "minUnits": 1,
-            "style": 4,
-            "variables": {
-                "BonusHealth": 350,
-                "BonusOmnivamp": 0.15000000596046448,
-                "{ad17ba74}": 4
-            }
-        }
-    ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Darkin.TFT_Set9.png",
-    "name": "다르킨"
 },
     'Set9_Wanderer': {
     "apiName": "Set9_Wanderer",
@@ -839,7 +995,7 @@ export const trait_season_9 = {
             "variables": {}
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Wanderer.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Wanderer.TFT_Set9.png",
     "name": "방랑자"
 },
     'Set9_Zaun': {
@@ -874,7 +1030,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Zaun.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Zaun.TFT_Set9.png",
     "name": "자운"
 },
     'Set9b_Vanquisher': {
@@ -909,7 +1065,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Vanquisher.TFT_Set9_Stage2.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Vanquisher.TFT_Set9_Stage2.png",
     "name": "토벌자"
 },
     'Set9_Armorclad': {
@@ -947,7 +1103,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Juggernaut.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Juggernaut.TFT_Set9.png",
     "name": "전쟁기계"
 },
     'Set9_Technogenius': {
@@ -965,7 +1121,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Technogenius.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Technogenius.TFT_Set9.png",
     "name": "발명의 대가"
 },
     'Set9_Challenger': {
@@ -1013,8 +1169,32 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_6_Challenger.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_6_Challenger.png",
     "name": "도전자"
+},
+    'Set9b_Darkin': {
+    "apiName": "Set9b_Darkin",
+    "desc": "<row>(@MinUnits@) 다르킨은 무기의 지배를 받으며, 죽으면 무기가 가장 가까이 있는 아군을 사로잡아 무기의 힘 부여</row><br><row>(@MinUnits@) 무기의 힘 @WeaponEffectBonus*100@% 강화</row><br><br><rules>무기의 힘은 각 다르킨의 스킬 툴팁에 나와 있습니다.</rules>",
+    "effects": [
+        {
+            "maxUnits": 1,
+            "minUnits": 1,
+            "style": 1,
+            "variables": {
+                "{9bbbc81f}": "null"
+            }
+        },
+        {
+            "maxUnits": 25000,
+            "minUnits": 2,
+            "style": 4,
+            "variables": {
+                "{9bbbc81f}": 0.5
+            }
+        }
+    ],
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Darkin.TFT_Set9.png",
+    "name": "다르킨"
 },
     'Set9_Ionia': {
     "apiName": "Set9_Ionia",
@@ -1090,7 +1270,7 @@ export const trait_season_9 = {
             }
         }
     ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Ionia.TFT_Set9.png",
+    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Trait_Icon_9_Ionia.TFT_Set9.png",
     "name": "아이오니아"
 }
   }

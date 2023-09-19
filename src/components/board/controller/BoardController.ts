@@ -1,5 +1,5 @@
 import { BoardModel, BoardParams, BoardStateListener } from '../model/BoardModel';
-import { SlotIndex } from '../../../types/types';
+import { SlotIndex } from '../../../types/board';
 
 export class BoardController {
   private static _instance: BoardController;
