@@ -51,7 +51,7 @@ const Wrapper = styled.span<{rule?: Rule}>`
   color: var(--font_color);
   white-space: nowrap;
   text-align: center;
-  font-size: 13px;
+  font-size: var(--font-size);
   border-radius: 4px;
 `;
 
