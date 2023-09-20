@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BoardController } from '../board/controller/BoardController';
-import { SlotData } from '../board/model/BoardModel';
+import { SlotData } from '../board/model/Board';
 import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';

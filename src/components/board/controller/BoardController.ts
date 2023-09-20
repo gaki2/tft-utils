@@ -1,10 +1,10 @@
-import { BoardModel, BoardParams, BoardStateListener } from '../model/BoardModel';
+import { Board, ChampionData, slotsStateListener } from '../model/Board';
 import { SlotIndex } from '../../../types/board';
 
 export class BoardController {
   private static _instance: BoardController;
-  private board: BoardModel;
-  private boardList: BoardModel[] = [];
+  private board: Board;
+  private boardList: Board[] = [];
 
   constructor() {
     //
@@ -17,8 +17,8 @@ export class BoardController {
     return this._instance;
   }
 
-  public createBoard(initialData?: BoardParams[]) {
-    this.board = new BoardModel(initialData);
+  public createBoard(initialData?: ChampionData[]) {
+    this.board = new Board(initialData);
     this.boardList.push(this.board);
     return {
       board: this.board,
@@ -36,14 +36,14 @@ export class BoardController {
     return board?.getSlotData(slotIdx);
   }
 
-  public addStateListener(boardId: number, listener: BoardStateListener) {
+  public addStateListener(boardId: number, listener: slotsStateListener) {
     const board = this.boardList.find((board) => board.getId() === boardId);
-    board?.addStateListener(listener);
+    board?.addSlotsStateListener(listener);
   }
 
   public notifyDragStart(boardId: number, slotIdx: SlotIndex) {
     const board = this.boardList.find((board) => board.getId() === boardId);
-    board?.notifyDragStart(slotIdx);
+    board?.updateDragState(slotIdx);
   }
 
   public notifyDragEnd(boardId: number) {
