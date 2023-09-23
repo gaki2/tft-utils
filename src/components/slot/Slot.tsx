@@ -1,6 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { BoardController } from '../board/controller/BoardController';
-import { SlotData } from '../board/model/BoardModel';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Board, SlotData } from '../board/class/Board';
 import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
@@ -9,13 +8,13 @@ import { throttle } from '../../utils/throttle';
 import { Popover } from '../../utils/popover/Popover';
 import { SlotPopup } from './popup_view/SlotPopup';
 import styled from 'styled-components';
-import {S3} from "../../environments/urls";
-import {Label} from "./label/Label";
+import { S3 } from '../../environments/urls';
+import { Label } from './label/Label';
 
 type SlotProps = {
-  initialSlotData: SlotData | null;
+  board: Board;
+  slotData: SlotData | null;
   slotIdx: SlotIndex;
-  boardId: number;
   season: Season;
   language: LanguageType;
 };
@@ -27,10 +26,9 @@ type Dimension = {
   height: number;
 };
 
-export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: SlotProps) => {
+const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const imageDivRef = useRef<HTMLDivElement>(null);
-  const [slotData, setSlotData] = useState<SlotData | null>(initialSlotData);
   const cost = useMemo(() => (slotData ? getCost(slotData.name, season) : null), [slotData]);
   const championDisplayName = useMemo(() => {
     if (slotData) {
@@ -38,7 +36,7 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
     }
     return '';
   }, [slotData, language]);
-  const [isOpened, setIsOpend] = useState(false);
+  const [isOpened, setIsOpened] = useState(false);
   const [dimension, setDimension] = useState<Dimension | null>(null);
 
   useEffect(() => {
@@ -61,72 +59,63 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
     }
   }, [slotData]);
 
-  useEffect(() => {
-    BoardController.getInstance().addStateListener(boardId, (newState) => {
-      setSlotData(newState.slots[slotIdx]);
+  const onDragStart = () => {
+    setIsOpened(false);
+    board.updateDragState({
+      isDragging: true,
+      draggingSlotIdx: slotIdx,
     });
+  };
 
-    function onDragStart() {
-      setIsOpend(false);
-      BoardController.getInstance().notifyDragStart(boardId, slotIdx);
+  const onDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    if (board.getState().isDragging) {
+      wrapperRef.current?.setAttribute('backgroundColor', '#6497af');
+      imageDivRef.current?.classList.add('isOver');
+      board.updateDragState({
+        dragoverSlotIdx: slotIdx,
+      });
     }
+  };
 
-    function onDragOver(e: DragEvent) {
-      e.preventDefault();
-      if (BoardController.getInstance().getState(boardId)?.dragState.isDragging) {
-        wrapperRef.current?.setAttribute('backgroundColor', '#6497af');
-        imageDivRef.current?.classList.add('isOver');
-        BoardController.getInstance().setMousePosition({ slotIdx, boardId });
-      }
-    }
-
-    function onDragLeave() {
-      if (BoardController.getInstance().getState(boardId)?.dragState.isDragging) {
-        wrapperRef.current?.setAttribute('backgroundColor', 'transparent');
-        imageDivRef.current?.classList.remove('isOver');
-        BoardController.getInstance().setMousePosition({ slotIdx: null, boardId });
-      }
-    }
-
-    function onDrop() {
-      BoardController.getInstance().notifyDragEnd(boardId);
-      // imageDivRef.current?.classList.remove('isOver');
+  const onDragLeave = () => {
+    if (board.getState().isDragging) {
       wrapperRef.current?.setAttribute('backgroundColor', 'transparent');
+      imageDivRef.current?.classList.remove('isOver');
+      board.updateDragState({
+        dragoverSlotIdx: null,
+      });
     }
+  };
 
-    if (wrapperRef.current) {
-      wrapperRef.current.addEventListener('dragstart', onDragStart);
-      wrapperRef.current.addEventListener('dragover', onDragOver);
-      wrapperRef.current.addEventListener('dragleave', onDragLeave);
-      wrapperRef.current.addEventListener('drop', onDrop);
-    }
-
-    return () => {
-      if (wrapperRef.current) {
-        wrapperRef.current.removeEventListener('dragstart', onDragStart);
-        wrapperRef.current.removeEventListener('dragover', onDragOver);
-        wrapperRef.current.removeEventListener('dragleave', onDragLeave);
-        wrapperRef.current.removeEventListener('drop', onDrop);
-      }
-    };
-  }, []);
+  const onDrop = () => {
+    board.swap();
+    wrapperRef.current?.setAttribute('backgroundColor', 'transparent');
+  };
 
   return (
     <>
-      <Wrapper draggable={Boolean(slotData)} ref={wrapperRef} onClick={() => setIsOpend(true)}>
-        <Border cost={cost}>
-          <ImageDiv ref={imageDivRef} championName={slotData?.name} season={season} />
+      <StyledWrapper
+        draggable={Boolean(slotData)}
+        ref={wrapperRef}
+        onClick={() => setIsOpened(true)}
+        onDragStart={onDragStart}
+        onDragOver={onDragOver}
+        onDragLeave={onDragLeave}
+        onDrop={onDrop}>
+        <StyledBorder cost={cost}>
+          <StyledImageDiv ref={imageDivRef} championName={slotData?.name} season={season} />
           {/*{Boolean(slotData) && <Label rule={'sub_tank'} lang={language} />}*/}
-          {Boolean(slotData) && <ChampionName>{championDisplayName}</ChampionName>}
-        </Border>
-      </Wrapper>
+          {Boolean(slotData) && <StyledChampionName>{championDisplayName}</StyledChampionName>}
+        </StyledBorder>
+      </StyledWrapper>
       {slotData && isOpened && (
         <Popover
           parentTop={dimension?.top ?? 0}
           parentLeft={dimension?.left ?? 0}
           parentWidth={dimension?.width ?? 0}
           parentHeight={dimension?.height ?? 0}
-          closePopover={() => setIsOpend(false)}>
+          closePopover={() => setIsOpened(false)}>
           <SlotPopup championName={slotData?.name} season={season} language={language} />
         </Popover>
       )}
@@ -134,8 +123,11 @@ export const Slot = ({ initialSlotData, slotIdx, boardId, season, language }: Sl
   );
 };
 
+export const MemoizedSlot = React.memo(Slot, (prevProps, nextProps) => {
+  return prevProps.slotData === nextProps.slotData;
+});
 
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   --initial_bg: transparent;
 
   width: 100%;
@@ -144,7 +136,7 @@ const Wrapper = styled.div`
   background-color: var(--initial_bg);
 `;
 
-const Border = styled.div<{ cost: number | undefined | null }>`
+const StyledBorder = styled.div<{ cost: number | undefined | null }>`
   --1_cost_border: rgb(128, 128, 128);
   --2_cost_border: rgb(17, 178, 136);
   --3_cost_border: rgb(32, 122, 199);
@@ -161,7 +153,7 @@ const Border = styled.div<{ cost: number | undefined | null }>`
   background-color: ${({ cost }) => (cost ? `var(--${cost}_cost_border)` : '#000')};
 `;
 
-const ImageDiv = styled.div<{ championName: string | undefined; season: Season }>`
+const StyledImageDiv = styled.div<{ championName: string | undefined; season: Season }>`
   &.isOver {
     background-color: #6497af;
   }
@@ -174,7 +166,7 @@ const ImageDiv = styled.div<{ championName: string | undefined; season: Season }
   cursor: ${({ championName }) => (championName ? 'pointer' : 'default')};
 `;
 
-const ChampionName = styled.span`
+const StyledChampionName = styled.span`
   position: absolute;
   right: 0;
   left: 0;

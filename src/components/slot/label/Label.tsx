@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {LanguageType} from "../../../types";
-
-export type Rule = 'main_dps' | 'sub_dps' | 'main_tank' | 'sub_tank'
+import {Rule} from "../../board/class/Board";
 
 type LabelProps = {
   rule?: Rule;
