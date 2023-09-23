@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Board, ChampionData } from './Board';
+import { Board } from './Board';
+import { ChampionData } from './class/Board';
 
 const meta = {
   title: 'Example/Board',
@@ -15,15 +16,22 @@ type Story = StoryObj<typeof meta>;
 const MOCK_DATA: ChampionData[] = [
   {
     position: {
-      row: 3,
-      col: 4,
+      row: 2,
+      col: 1,
     },
-    champion: 'TFT9_Gangplank',
+    name: 'TFT9_Tristana',
+  },
+  {
+    position: {
+      row: 2,
+      col: 2,
+    },
+    name: 'TFT9_Jhin',
   },
 ];
 
 const Boards = () => {
-  return <Board champions={MOCK_DATA} season={'season_9b'} language={'ko_kr'} />;
+  return <Board champions={MOCK_DATA} season={'season_9'} language={'ko_kr'} />;
 };
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
