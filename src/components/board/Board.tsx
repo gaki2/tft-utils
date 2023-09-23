@@ -1,24 +1,33 @@
-import { MemoizedSlot } from '../slot/Slot';
-import { SlotIndex } from '../../types/board';
+import { useMemo } from 'react';
+import { Slot } from '../slot/Slot';
+import { Position, SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
+import { ChampionName } from '../../types/championType';
+import { BoardController } from './controller/BoardController';
 import styled from 'styled-components';
-import { ChampionData } from './class/Board';
-import {useBoard} from "./useBoard";
 
 export type BuilderProps = { champions: ChampionData[]; season: Season; language?: LanguageType };
 
+export type ChampionData = {
+  position: Position;
+  champion: ChampionName;
+};
+
 export const Board = ({ champions, season, language = 'ko_kr' }: BuilderProps) => {
-  const {board} = useBoard(champions);
+  const { board, boardId } = useMemo(
+    () => BoardController.getInstance().createBoard(champions),
+    []
+  );
 
   return (
     <Wrapper>
-      {board.getAllSlots().map((slotData, idx) => (
-        <MemoizedSlot
+      {board.getAllSlots().map((_, idx) => (
+        <Slot
           key={idx}
-          board={board}
-          slotData={slotData}
+          initialSlotData={_}
           slotIdx={idx as SlotIndex}
+          boardId={boardId}
           season={season}
           language={language}
         />

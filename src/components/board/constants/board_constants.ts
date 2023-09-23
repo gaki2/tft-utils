@@ -1,0 +1,3 @@
+export const BOARD_ROW_COUNT = 4;
+export const BOARD_COL_COUNT = 7;
+export const BOARD_SLOT_COUNT = BOARD_ROW_COUNT * BOARD_COL_COUNT;
