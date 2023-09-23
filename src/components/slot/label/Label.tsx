@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {LanguageType} from "../../../types";
-import {Rule} from "../../board/model/Board";
+import {Rule} from "../../board/class/Board";
 
 type LabelProps = {
   rule?: Rule;

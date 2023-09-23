@@ -68,12 +68,6 @@ export class Board {
     return row * BOARD_COL_COUNT + col;
   }
 
-  private swap(slot1: number, slot2: number) {
-    const temp = this.state.slots[slot1];
-    this.state.slots[slot1] = this.state.slots[slot2];
-    this.state.slots[slot2] = temp;
-  }
-
   public getState() {
     return this.state;
   }
@@ -109,7 +103,13 @@ export class Board {
     }
   }
 
-  public notifyDragEnd() {
+  private _swap(slot1: number, slot2: number) {
+    const temp = this.state.slots[slot1];
+    this.state.slots[slot1] = this.state.slots[slot2];
+    this.state.slots[slot2] = temp;
+  }
+
+  public swap() {
     if (!this.state.isDragging || this.state.draggingSlotIdx === null) {
       console.error(`Fail to swap champion: dragState is not valid (isDragging: ${this.state.isDragging}, draggingSlotIdx: ${this.state.draggingSlotIdx})`);
       return ;
@@ -120,7 +120,7 @@ export class Board {
       return ;
     }
 
-    this.swap(this.state.draggingSlotIdx, this.state.dragoverSlotIdx);
+    this._swap(this.state.draggingSlotIdx, this.state.dragoverSlotIdx);
     this.state.isDragging = false;
     this.state.draggingSlotIdx = null;
     this.state.dragoverSlotIdx = null;
