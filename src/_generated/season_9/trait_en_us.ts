@@ -8,8 +8,8 @@ export const trait_season_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusArmor": 20,
-                "BonusMR": 20,
+                "BonusArmor": 25,
+                "BonusMR": 25,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -20,8 +20,8 @@ export const trait_season_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "BonusArmor": 40,
-                "BonusMR": 40,
+                "BonusArmor": 55,
+                "BonusMR": 55,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -32,8 +32,8 @@ export const trait_season_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "BonusArmor": 65,
-                "BonusMR": 65,
+                "BonusArmor": 100,
+                "BonusMR": 100,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -42,10 +42,10 @@ export const trait_season_9 = {
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 4,
+            "style": 5,
             "variables": {
-                "BonusArmor": 125,
-                "BonusMR": 125,
+                "BonusArmor": 240,
+                "BonusMR": 240,
                 "Duration": 10,
                 "{09b7d38c}": 2,
                 "{b44c0eed}": 1
@@ -64,10 +64,10 @@ export const trait_season_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusAP": 25,
-                "HealthPct": 0.07000000029802322,
                 "{08335318}": 1,
-                "{a34f32df}": 3
+                "{6266505a}": 0.10000000149011612,
+                "{a34f32df}": 3,
+                "{d49caf5d}": 25
             }
         },
         {
@@ -75,10 +75,10 @@ export const trait_season_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "BonusAP": 45,
-                "HealthPct": 0.10000000149011612,
                 "{08335318}": 1,
-                "{a34f32df}": 3
+                "{6266505a}": 0.10000000149011612,
+                "{a34f32df}": 3,
+                "{d49caf5d}": 50
             }
         },
         {
@@ -86,21 +86,21 @@ export const trait_season_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "BonusAP": 80,
-                "HealthPct": 0.11999999731779099,
                 "{08335318}": 2,
-                "{a34f32df}": 3
+                "{6266505a}": 0.11999999731779099,
+                "{a34f32df}": 3,
+                "{d49caf5d}": 80
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 4,
+            "style": 5,
             "variables": {
-                "BonusAP": 125,
-                "HealthPct": 0.15000000596046448,
                 "{08335318}": 2,
-                "{a34f32df}": 3
+                "{6266505a}": 0.20000000298023224,
+                "{a34f32df}": 3,
+                "{d49caf5d}": 120
             }
         }
     ],
@@ -117,11 +117,11 @@ export const trait_season_9 = {
             "style": 1,
             "variables": {
                 "BonusAttackSpeed": 0.10000000149011612,
-                "DodgeChance": 100,
-                "DodgeDuration": 2,
-                "ManaReduction": 15,
                 "{25ec78e1}": 1,
+                "{7ccd3647}": 15,
+                "{852a9a90}": 2,
                 "{c235f1f1}": 0.5,
+                "{c4b5579c}": 100,
                 "{eae1472b}": 1
             }
         },
@@ -131,11 +131,11 @@ export const trait_season_9 = {
             "style": 4,
             "variables": {
                 "BonusAttackSpeed": 0.10000000149011612,
-                "DodgeChance": 100,
-                "DodgeDuration": 2,
-                "ManaReduction": 15,
                 "{25ec78e1}": 2,
+                "{7ccd3647}": 15,
+                "{852a9a90}": 2,
                 "{c235f1f1}": 0.5,
+                "{c4b5579c}": 100,
                 "{eae1472b}": 2
             }
         }
@@ -203,7 +203,7 @@ export const trait_season_9 = {
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 4,
+            "style": 5,
             "variables": {
                 "{1eb1d2ae}": 0.25,
                 "{a4dcb3da}": 0.4000000059604645
@@ -215,7 +215,7 @@ export const trait_season_9 = {
 },
     'Set9_Demacia': {
     "apiName": "Set9_Demacia",
-    "desc": "Your strongest Demacians become Elite and equip a Radiant item each combat. Elites grant Armor and Magic Resist to themselves and adjacent allies, but this does not stack.<br><br><row>(@MinUnits@) @NumElites@ Elite, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><br><rules>Radiant items are stronger versions of full items.</rules>",
+    "desc": "Your strongest Demacians become Elite and equip a random Radiant item each combat. Elites grant Armor and Magic Resist to themselves and adjacent allies, but this does not stack.<br><br><row>(@MinUnits@) @NumElites@ Elite, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><br><rules>Radiant items are stronger versions of full items.</rules>",
     "effects": [
         {
             "maxUnits": 4,
@@ -232,7 +232,7 @@ export const trait_season_9 = {
             "style": 3,
             "variables": {
                 "{a750b59f}": 2,
-                "{bd072701}": 15
+                "{bd072701}": 25
             }
         },
         {
@@ -241,7 +241,7 @@ export const trait_season_9 = {
             "style": 4,
             "variables": {
                 "{a750b59f}": 3,
-                "{bd072701}": 35
+                "{bd072701}": 60
             }
         },
         {
@@ -249,8 +249,8 @@ export const trait_season_9 = {
             "minUnits": 9,
             "style": 5,
             "variables": {
-                "{a750b59f}": 6,
-                "{bd072701}": 150
+                "{a750b59f}": 5,
+                "{bd072701}": 125
             }
         }
     ],
@@ -259,19 +259,19 @@ export const trait_season_9 = {
 },
     'Set9_Rogue': {
     "apiName": "Set9_Rogue",
-    "desc": "<row>(@MinUnits@) When a Rogue falls below @HealthThreshold*100@% Health, they briefly become untargetable and dash to an enemy within @HexRange@ hexes (preferring enemy backline).</row><br><row>(@MinUnits@) And a Rogue's damage bleeds their target for @BleedPct*100@% bonus magic damage over @BleedDuration@ seconds.</row>",
+    "desc": "<row>(@MinUnits@) When a Rogue falls below @HealthThreshold*100@% Health, they briefly become untargetable and dash to an enemy within @HexRange@ hexes (preferring enemy backline).</row><br><row>(@MinUnits@) Additionally, a Rogue's first attack on an enemy bleeds them for @BleedMaxHealthPct*100@% of their max Health as magic damage over @BleedDuration@ seconds.</row>",
     "effects": [
         {
             "maxUnits": 3,
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BleedDuration": "null",
                 "DamageReduction": 100,
                 "HealthThreshold": 0.5,
-                "HexRange": 4,
-                "StealthDuration": 1.5,
-                "{fdaf3546}": "null"
+                "{0bc5955f}": "null",
+                "{77df45b0}": "null",
+                "{9b1e8f37}": 4,
+                "{b1442c34}": 1.5
             }
         },
         {
@@ -279,12 +279,12 @@ export const trait_season_9 = {
             "minUnits": 4,
             "style": 4,
             "variables": {
-                "BleedDuration": 2.5,
                 "DamageReduction": 100,
                 "HealthThreshold": 0.5,
-                "HexRange": 4,
-                "StealthDuration": 1.5,
-                "{fdaf3546}": 0.699999988079071
+                "{0bc5955f}": 5,
+                "{77df45b0}": 0.5,
+                "{9b1e8f37}": 4,
+                "{b1442c34}": 1.5
             }
         }
     ],
@@ -296,33 +296,53 @@ export const trait_season_9 = {
     "desc": "Slayers gain @Omnivamp@% Omnivamp.<br><br>Slayers deal bonus damage, doubled against units below @HealthThreshold*100@% Health.<br><br><expandRow>(@MinUnits@) +@BonusDamageBase@% bonus damage</expandRow>",
     "effects": [
         {
-            "maxUnits": 3,
+            "maxUnits": 2,
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusDamageBase": 6,
+                "BonusDamageBase": 5,
                 "HealthThreshold": 0.6600000262260437,
-                "Omnivamp": 12
+                "{ad16f688}": 12
             }
         },
         {
-            "maxUnits": 5,
+            "maxUnits": 3,
+            "minUnits": 3,
+            "style": 3,
+            "variables": {
+                "BonusDamageBase": 10,
+                "HealthThreshold": 0.6600000262260437,
+                "{ad16f688}": 12
+            }
+        },
+        {
+            "maxUnits": 4,
             "minUnits": 4,
             "style": 3,
             "variables": {
                 "BonusDamageBase": 20,
                 "HealthThreshold": 0.6600000262260437,
-                "Omnivamp": 12
+                "{ad16f688}": 12
+            }
+        },
+        {
+            "maxUnits": 5,
+            "minUnits": 5,
+            "style": 4,
+            "variables": {
+                "BonusDamageBase": 30,
+                "HealthThreshold": 0.6600000262260437,
+                "{ad16f688}": 12
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 6,
-            "style": 4,
+            "style": 5,
             "variables": {
                 "BonusDamageBase": 40,
                 "HealthThreshold": 0.6600000262260437,
-                "Omnivamp": 12
+                "{ad16f688}": 12
             }
         }
     ],
@@ -331,16 +351,15 @@ export const trait_season_9 = {
 },
     'Set9_Preserver': {
     "apiName": "Set9_Preserver",
-    "desc": "Every @TickRate@ seconds, your units gain Mana.<br><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all</row><br><row>(@MinUnits@) Additional @SelfBonusMana@ to Invokers</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all, additional @SelfBonusMana@ to Invokers</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all, and start with an additional @TeamAP@ Ability Power</row><br>",
+    "desc": "Every @TickRate@ seconds, your units gain Mana.<br><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana%</row><br><row>(@MinUnits@) Additional @SelfBonusMana@ to Invokers</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all, additional @SelfBonusMana@ to Invokers</row><br>",
     "effects": [
         {
             "maxUnits": 3,
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "TickRate": 3,
-                "{2098e1a5}": "null",
                 "{2af5ed55}": "null",
+                "{471b1a16}": 3,
                 "{dd3e2f2b}": 5
             }
         },
@@ -349,32 +368,19 @@ export const trait_season_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "TickRate": 3,
-                "{2098e1a5}": "null",
                 "{2af5ed55}": 15,
+                "{471b1a16}": 3,
                 "{dd3e2f2b}": 5
             }
         },
         {
-            "maxUnits": 7,
+            "maxUnits": 25000,
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "TickRate": 3,
-                "{2098e1a5}": "null",
                 "{2af5ed55}": 15,
-                "{dd3e2f2b}": 15
-            }
-        },
-        {
-            "maxUnits": 25000,
-            "minUnits": 8,
-            "style": 4,
-            "variables": {
-                "TickRate": 3,
-                "{2098e1a5}": 30,
-                "{2af5ed55}": "null",
-                "{dd3e2f2b}": 40
+                "{471b1a16}": 3,
+                "{dd3e2f2b}": 20
             }
         }
     ],
@@ -390,8 +396,8 @@ export const trait_season_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusPercentHealth": 0.10000000149011612,
-                "{392edb65}": 100
+                "{392edb65}": 100,
+                "{a92bb347}": 0.10000000149011612
             }
         },
         {
@@ -399,8 +405,8 @@ export const trait_season_9 = {
             "minUnits": 4,
             "style": 3,
             "variables": {
-                "BonusPercentHealth": 0.44999998807907104,
-                "{392edb65}": 100
+                "{392edb65}": 100,
+                "{a92bb347}": 0.4000000059604645
             }
         },
         {
@@ -408,8 +414,8 @@ export const trait_season_9 = {
             "minUnits": 6,
             "style": 4,
             "variables": {
-                "BonusPercentHealth": 0.800000011920929,
-                "{392edb65}": 100
+                "{392edb65}": 100,
+                "{a92bb347}": 0.699999988079071
             }
         }
     ],
@@ -421,36 +427,25 @@ export const trait_season_9 = {
     "desc": "Noxus champions gain Health, Ability Power and Attack Damage. This is increased by @BonusRatio*100@% for each different opponent that either you have conquered in combat or is dead.<br><br><expandRow>(@MinUnits@) @Health@ %i:scaleHealth%, @AP@ %i:scaleAP%, @AD@% %i:scaleAD%</expandRow><br><br><TFTTrackerLabel>Conquered bonus: @TFTUnitProperty.trait:TFT9_Trait_ConquerorBonus@% / @BonusRatio*700@%</TFTTrackerLabel>",
     "effects": [
         {
-            "maxUnits": 4,
+            "maxUnits": 5,
             "minUnits": 3,
             "style": 1,
             "variables": {
-                "AD": 16,
-                "AP": 16,
-                "BonusRatio": 0.05000000074505806,
-                "Health": 160
-            }
-        },
-        {
-            "maxUnits": 6,
-            "minUnits": 5,
-            "style": 3,
-            "variables": {
-                "AD": 30,
-                "AP": 30,
-                "BonusRatio": 0.05000000074505806,
-                "Health": 300
+                "AD": 17,
+                "AP": 17,
+                "Health": 170,
+                "{d04ae9af}": 0.05000000074505806
             }
         },
         {
             "maxUnits": 8,
-            "minUnits": 7,
+            "minUnits": 6,
             "style": 4,
             "variables": {
-                "AD": 45,
-                "AP": 45,
-                "BonusRatio": 0.05000000074505806,
-                "Health": 450
+                "AD": 34,
+                "AP": 34,
+                "Health": 340,
+                "{d04ae9af}": 0.05000000074505806
             }
         },
         {
@@ -458,10 +453,10 @@ export const trait_season_9 = {
             "minUnits": 9,
             "style": 5,
             "variables": {
-                "AD": 75,
-                "AP": 75,
-                "BonusRatio": 0.05000000074505806,
-                "Health": 750
+                "AD": 60,
+                "AP": 60,
+                "Health": 600,
+                "{d04ae9af}": 0.05000000074505806
             }
         }
     ],
@@ -470,16 +465,16 @@ export const trait_season_9 = {
 },
     'Set9_Shurima': {
     "apiName": "Set9_Shurima",
-    "desc": "Every @PulsePeriod@ seconds, Shurimans heal @HealthRegen*100@% maximum Health. After @SecondsToAscend@ seconds, select Shurimans Ascend and gain @BonusHealthPercent*100@% maximum Health and @BonusASPercent*100@% Attack Speed.<br><br><row>(@MinUnits@) The strongest Shuriman Ascends</row><br><row>(@MinUnits@) All Shurimans Ascend. +@AscensionStrengthBoost*100@% Ascension bonus</row><br><row>(@MinUnits@) Instead, Ascend at combat start. +@AscensionStrengthBoost*100@% Ascension bonus</row><br><row>(@MinUnits@) Ascend twice, at combat start and after @SecondsToAscend@ seconds. +@AscensionStrengthBoost*100@% Ascension bonus</row>",
+    "desc": "Every @PulsePeriod@ seconds, Shurimans heal @HealthRegen*100@% maximum Health. After @SecondsToAscend@ seconds, select Shurimans Ascend and gain @BonusHealthPercent*100@% maximum Health and @BonusASPercent*100@% Attack Speed.<br><br><row>(@MinUnits@) The strongest Shuriman Ascends</row><br><row>(@MinUnits@) All Shurimans Ascend</row><br><row>(@MinUnits@) Instead, Ascend at combat start. +@AscensionStrengthBoost*100@% Ascension bonus</row><br><row>(@MinUnits@) Ascend twice, at combat start and after @SecondsToAscend@ seconds. +@AscensionStrengthBoost*100@% Ascension bonus</row>",
     "effects": [
         {
-            "maxUnits": 3,
-            "minUnits": 2,
+            "maxUnits": 4,
+            "minUnits": 3,
             "style": 1,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.30000001192092896,
-                "{31128603}": 0.20000000298023224,
+                "{255e11cd}": 0.44999998807907104,
+                "{31128603}": 0.30000001192092896,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
                 "{98193878}": "null",
@@ -487,30 +482,30 @@ export const trait_season_9 = {
             }
         },
         {
-            "maxUnits": 5,
-            "minUnits": 4,
+            "maxUnits": 6,
+            "minUnits": 5,
             "style": 3,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.30000001192092896,
-                "{31128603}": 0.20000000298023224,
+                "{255e11cd}": 0.44999998807907104,
+                "{31128603}": 0.30000001192092896,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
-                "{98193878}": 0.15000000596046448,
+                "{98193878}": "null",
                 "{e3dc0fc2}": 2
             }
         },
         {
             "maxUnits": 8,
-            "minUnits": 6,
+            "minUnits": 7,
             "style": 4,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.30000001192092896,
-                "{31128603}": 0.20000000298023224,
+                "{255e11cd}": 0.44999998807907104,
+                "{31128603}": 0.30000001192092896,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
-                "{98193878}": 0.44999998807907104,
+                "{98193878}": 0.20000000298023224,
                 "{e3dc0fc2}": 2
             }
         },
@@ -520,11 +515,11 @@ export const trait_season_9 = {
             "style": 5,
             "variables": {
                 "HealthRegen": 0.05000000074505806,
-                "{255e11cd}": 0.30000001192092896,
-                "{31128603}": 0.20000000298023224,
+                "{255e11cd}": 0.44999998807907104,
+                "{31128603}": 0.30000001192092896,
                 "{473e51f7}": 4,
                 "{975a6fed}": 8,
-                "{98193878}": 0.75,
+                "{98193878}": 0.25,
                 "{e3dc0fc2}": 2
             }
         }
@@ -534,16 +529,16 @@ export const trait_season_9 = {
 },
     'Set9_Strategist': {
     "apiName": "Set9_Strategist",
-    "desc": "<spellPassive>Combat start:</spellPassive> Allies in the front 2 rows gain a Shield for @ShieldDuration@ seconds. Allies in the back 2 rows gain Ability Power.<br><br><expandRow>(@MinUnits@) @ShieldHP@ Shield; @BonusAP@ %i:scaleAP%</expandRow><br>",
+    "desc": "<spellPassive>Combat Start:</spellPassive> Allies in the front 2 rows gain a Shield for @ShieldDuration@ seconds. Allies in the back 2 rows gain Ability Power.<br><br><expandRow>(@MinUnits@) @ShieldHP@ Shield; @BonusAP@ %i:scaleAP%</expandRow><br>",
     "effects": [
         {
             "maxUnits": 2,
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "BonusAP": 15,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 250
+                "{9d0939e8}": 200,
+                "{d49caf5d}": 15
             }
         },
         {
@@ -551,9 +546,9 @@ export const trait_season_9 = {
             "minUnits": 3,
             "style": 3,
             "variables": {
-                "BonusAP": 25,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 400
+                "{9d0939e8}": 350,
+                "{d49caf5d}": 25
             }
         },
         {
@@ -561,19 +556,19 @@ export const trait_season_9 = {
             "minUnits": 4,
             "style": 4,
             "variables": {
-                "BonusAP": 40,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 600
+                "{9d0939e8}": 500,
+                "{d49caf5d}": 40
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 5,
-            "style": 4,
+            "style": 5,
             "variables": {
-                "BonusAP": 60,
                 "ShieldDuration": 15,
-                "{9d0939e8}": 900
+                "{9d0939e8}": 800,
+                "{d49caf5d}": 60
             }
         }
     ],
@@ -589,7 +584,7 @@ export const trait_season_9 = {
             "minUnits": 1,
             "style": 4,
             "variables": {
-                "AttackSpeed": 0.05999999865889549
+                "AttackSpeed": 0.07999999821186066
             }
         }
     ],
@@ -658,7 +653,7 @@ export const trait_season_9 = {
             "style": 1,
             "variables": {
                 "MaxStacks": 8,
-                "PercentAD": 6
+                "{df3d2f5f}": 6
             }
         },
         {
@@ -667,16 +662,16 @@ export const trait_season_9 = {
             "style": 4,
             "variables": {
                 "MaxStacks": 8,
-                "PercentAD": 14
+                "{df3d2f5f}": 11
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 6,
-            "style": 4,
+            "style": 5,
             "variables": {
                 "MaxStacks": 8,
-                "PercentAD": 25
+                "{df3d2f5f}": 20
             }
         }
     ],
@@ -692,10 +687,10 @@ export const trait_season_9 = {
             "minUnits": 1,
             "style": 4,
             "variables": {
-                "HexRange": 2,
                 "PercentHealthHeal": 0.20000000298023224,
                 "{0b0b3c63}": 0.5,
-                "{1ec4c4d2}": 0.10000000149011612
+                "{1ec4c4d2}": 0.10000000149011612,
+                "{9b1e8f37}": 2
             }
         }
     ],
@@ -712,10 +707,10 @@ export const trait_season_9 = {
             "style": 1,
             "variables": {
                 "Duration": 15,
-                "ManaRegen": 6,
-                "MaxHealthShield": 45,
-                "TickRate": 1,
-                "{0f5e9c98}": 10
+                "{0f5e9c98}": 10,
+                "{471b1a16}": 1,
+                "{4e39b1d2}": 40,
+                "{d8f646f3}": 5
             }
         },
         {
@@ -724,10 +719,10 @@ export const trait_season_9 = {
             "style": 4,
             "variables": {
                 "Duration": 15,
-                "ManaRegen": 12,
-                "MaxHealthShield": 80,
-                "TickRate": 1,
-                "{0f5e9c98}": 10
+                "{0f5e9c98}": 10,
+                "{471b1a16}": 1,
+                "{4e39b1d2}": 80,
+                "{d8f646f3}": 12
             }
         },
         {
@@ -736,10 +731,10 @@ export const trait_season_9 = {
             "style": 5,
             "variables": {
                 "Duration": 15,
-                "ManaRegen": 18,
-                "MaxHealthShield": 115,
-                "TickRate": 1,
-                "{0f5e9c98}": 10
+                "{0f5e9c98}": 10,
+                "{471b1a16}": 1,
+                "{4e39b1d2}": 125,
+                "{d8f646f3}": 20
             }
         }
     ],
@@ -748,7 +743,7 @@ export const trait_season_9 = {
 },
     'Set9_Freljord': {
     "apiName": "Set9_Freljord",
-    "desc": "After @DelayTime@ seconds, an ice storm strikes the battlefield. Enemies take a percentage of their max Health as true damage and gain debuffs.<br><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are @ShredSunder@% <TFTKeyword>Sundered</TFTKeyword> and <TFTKeyword>Shredded</TFTKeyword></row> for @Duration@ seconds<br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are also <TFTKeyword>Stunned</TFTKeyword> for @StunDuration@ seconds</row><br><br><rules><tftbold>Sunder</tftbold>: Reduce Armor<br><tftbold>Shred</tftbold>: Reduce Magic Resist</rules>",
+    "desc": "After @DelayTime@ seconds, an ice storm strikes the battlefield. Enemies take a percentage of their maximum Health as true damage and gain debuffs.<br><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are @ShredSunder@% <TFTKeyword>Sundered</TFTKeyword> and <TFTKeyword>Shredded</TFTKeyword></row> for @Duration@ seconds<br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are also @Reave@% <TFTKeyword>Mana Reaved</TFTKeyword></row><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are also stunned for @StunDuration@ seconds</row><br><br><rules><tftbold>Sunder</tftbold>: Reduce Armor<br><tftbold>Shred</tftbold>: Reduce Magic Resist<br><tftbold>Mana Reave</tftbold>: Increase max Mana until the next cast</rules>",
     "effects": [
         {
             "maxUnits": 2,
@@ -756,22 +751,34 @@ export const trait_season_9 = {
             "style": 1,
             "variables": {
                 "Duration": 10,
-                "PercentHealthDamage": 8,
-                "{14adee04}": 30,
+                "PercentHealthDamage": 5,
+                "{14adee04}": 40,
                 "{17f82fb1}": 8,
                 "{81ce23cf}": 1
             }
         },
         {
-            "maxUnits": 25000,
+            "maxUnits": 3,
             "minUnits": 3,
             "style": 4,
+            "variables": {
+                "Duration": 10,
+                "PercentHealthDamage": 10,
+                "{17f82fb1}": 8,
+                "{5e31469e}": 30,
+                "{81ce23cf}": 2
+            }
+        },
+        {
+            "maxUnits": 25000,
+            "minUnits": 4,
+            "style": 5,
             "variables": {
                 "Duration": 10,
                 "PercentHealthDamage": 15,
                 "StunDuration": 1.5,
                 "{17f82fb1}": 8,
-                "{81ce23cf}": 2
+                "{81ce23cf}": 3
             }
         }
     ],
@@ -787,7 +794,7 @@ export const trait_season_9 = {
             "minUnits": 2,
             "style": 1,
             "variables": {
-                "HealShieldIncrease": 0.18000000715255737
+                "{0b39c7c2}": 0.20000000298023224
             }
         },
         {
@@ -795,15 +802,15 @@ export const trait_season_9 = {
             "minUnits": 3,
             "style": 4,
             "variables": {
-                "HealShieldIncrease": 0.3499999940395355
+                "{0b39c7c2}": 0.4000000059604645
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 4,
-            "style": 4,
+            "style": 5,
             "variables": {
-                "HealShieldIncrease": 0.550000011920929
+                "{0b39c7c2}": 0.699999988079071
             }
         }
     ],
@@ -819,8 +826,8 @@ export const trait_season_9 = {
             "minUnits": 1,
             "style": 4,
             "variables": {
-                "BonusHealth": 350,
-                "BonusOmnivamp": 0.15000000596046448,
+                "BonusHealth": 400,
+                "{8bdcd88d}": 0.15000000596046448,
                 "{ad17ba74}": 4
             }
         }
@@ -830,7 +837,7 @@ export const trait_season_9 = {
 },
     'Set9_Wanderer': {
     "apiName": "Set9_Wanderer",
-    "desc": "Ryze's ability changes depending on the Region Portal players voted for at the start of the game.",
+    "desc": "Ryze's spell changes depending on the Region Portal players voted for at the start of the game.",
     "effects": [
         {
             "maxUnits": 25000,
@@ -844,7 +851,7 @@ export const trait_season_9 = {
 },
     'Set9_Zaun': {
     "apiName": "Set9_Zaun",
-    "desc": "Zaun champions create random chem-mods that only they can use. Champions can be modded once, and mods can be removed by benching or selling the champion.<br><br><row>(@MinUnits@) Gain 1 chem-mod</row><br><row>(@MinUnits@) Gain 2 chem-mods and Overcharge them</row><br><row>(@MinUnits@) Gain 5 chem-mods and Overcharge them</row><br>",
+    "desc": "Zaun champions create random chem-mods that only they can use. Champions can be modded once, and mods can only be removed by selling the champion.<br><br><row>(@MinUnits@) Gain 1 chem-mod</row><br><row>(@MinUnits@) Gain 2 chem-mods </row><br><row>(@MinUnits@) Gain 3 chem-mods and Overcharge them</row><br>",
     "effects": [
         {
             "maxUnits": 3,
@@ -861,56 +868,21 @@ export const trait_season_9 = {
             "style": 4,
             "variables": {
                 "{05b87026}": 2,
-                "{dbf68e4f}": 1
+                "{dbf68e4f}": "null"
             }
         },
         {
             "maxUnits": 25000,
             "minUnits": 6,
-            "style": 4,
+            "style": 5,
             "variables": {
-                "{05b87026}": 5,
+                "{05b87026}": 3,
                 "{dbf68e4f}": 1
             }
         }
     ],
     "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Zaun.TFT_Set9.png",
     "name": "Zaun"
-},
-    'Set9b_Vanquisher': {
-    "apiName": "Set9b_Vanquisher",
-    "desc": "Damage from Vanquisher Abilities can critically strike. Vanquishers gain bonus Critical Strike Chance and Critical Strike Damage.<br><br><expandRow>(@MinUnits@) @BaseCritChance@% %i:scaleCrit% , @CritDmg@% %i:scaleCritMult%</expandRow><br>",
-    "effects": [
-        {
-            "maxUnits": 3,
-            "minUnits": 2,
-            "style": 1,
-            "variables": {
-                "{c4441218}": 15,
-                "{ecb9c76f}": 10
-            }
-        },
-        {
-            "maxUnits": 5,
-            "minUnits": 4,
-            "style": 4,
-            "variables": {
-                "{c4441218}": 35,
-                "{ecb9c76f}": 25
-            }
-        },
-        {
-            "maxUnits": 25000,
-            "minUnits": 6,
-            "style": 4,
-            "variables": {
-                "{c4441218}": 55,
-                "{ecb9c76f}": 40
-            }
-        }
-    ],
-    "icon": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Trait_Icon_9_Vanquisher.TFT_Set9_Stage2.png",
-    "name": "Vanquisher"
 },
     'Set9_Armorclad': {
     "apiName": "Set9_Armorclad",
@@ -1005,7 +977,7 @@ export const trait_season_9 = {
         {
             "maxUnits": 25000,
             "minUnits": 8,
-            "style": 4,
+            "style": 5,
             "variables": {
                 "BonusAS": 140,
                 "{17cfa971}": 2.5,
@@ -1026,18 +998,17 @@ export const trait_season_9 = {
             "style": 1,
             "variables": {
                 "Mana": 20,
-                "{18bfc1ac}": 8,
+                "{18bfc1ac}": 10,
                 "{1b8cd16a}": 20,
                 "{27b17444}": 25,
                 "{3076bc18}": 4,
                 "{3fc62f6f}": 2,
                 "{4df03474}": 200,
                 "{53912082}": 1,
-                "{7d34708f}": 5,
                 "{b9a6ee1b}": 15,
                 "{c5f948bd}": 1,
                 "{eb0c521b}": 15,
-                "{ed124bdb}": 25,
+                "{ed124bdb}": 20,
                 "{f2474447}": 1,
                 "{f6b4b588}": 3,
                 "{f809601e}": 33
@@ -1049,18 +1020,17 @@ export const trait_season_9 = {
             "style": 4,
             "variables": {
                 "Mana": 20,
-                "{18bfc1ac}": 16,
+                "{18bfc1ac}": 20,
                 "{1b8cd16a}": 40,
                 "{27b17444}": 50,
                 "{3076bc18}": 4,
                 "{3fc62f6f}": 2,
                 "{4df03474}": 400,
                 "{53912082}": 1,
-                "{7d34708f}": 10,
                 "{b9a6ee1b}": 30,
                 "{c5f948bd}": 2,
                 "{eb0c521b}": 30,
-                "{ed124bdb}": 50,
+                "{ed124bdb}": 40,
                 "{f2474447}": 2,
                 "{f6b4b588}": 6,
                 "{f809601e}": 66
@@ -1072,21 +1042,20 @@ export const trait_season_9 = {
             "style": 5,
             "variables": {
                 "Mana": 20,
-                "{18bfc1ac}": 34.20000076293945,
-                "{1b8cd16a}": 76,
-                "{27b17444}": 95,
+                "{18bfc1ac}": 32.5,
+                "{1b8cd16a}": 65,
+                "{27b17444}": 81.25,
                 "{3076bc18}": 4,
                 "{3fc62f6f}": 2,
-                "{4df03474}": 760,
+                "{4df03474}": 650,
                 "{53912082}": 1,
-                "{7d34708f}": 19,
-                "{b9a6ee1b}": 57,
-                "{c5f948bd}": 4,
-                "{eb0c521b}": 57,
-                "{ed124bdb}": 95,
-                "{f2474447}": 3.799999952316284,
-                "{f6b4b588}": 11.399999618530273,
-                "{f809601e}": 125.4000015258789
+                "{b9a6ee1b}": 146.25,
+                "{c5f948bd}": 3,
+                "{eb0c521b}": 48.75,
+                "{ed124bdb}": 65,
+                "{f2474447}": 3.25,
+                "{f6b4b588}": 10,
+                "{f809601e}": 107.25
             }
         }
     ],

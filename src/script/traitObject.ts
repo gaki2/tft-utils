@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { LANGUAGES, LanguageType, SEASONS } from '../types/config';
+import { LanguageType } from '../types/config';
 import { writeFile } from './utils';
-import {S3} from "../environments/urls";
-import {Season} from "../types/seasonType";
-import {SEASON_SET_DATA_IDX_MAP} from "./shared";
+import { S3 } from '../environments/urls';
+import { Season } from '../types/seasonType';
+import { SEASON_SET_DATA_IDX_MAP } from './shared';
 
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
@@ -37,9 +37,9 @@ const createObject = (
   }`;
 };
 
-const championTrait = (lang: LanguageType, season: Season) =>
+export const championTrait = (lang: LanguageType, season: Season) =>
   new Promise((resolve, reject) => {
-    const file = fs.readFileSync(`${jsonDir}/tft_data_${lang}.json`, 'utf8');
+    const file = fs.readFileSync(`${jsonDir}/${season}/tft_data_${lang}.json`, 'utf8');
     const object = JSON.parse(file);
 
     const traits = object['setData'][SEASON_SET_DATA_IDX_MAP[season]]['traits'];
@@ -50,14 +50,3 @@ const championTrait = (lang: LanguageType, season: Season) =>
       .then(() => resolve(''))
       .catch((err) => reject(err));
   });
-
-export const execute = () => {
-  const promise = [];
-  for (const lang of LANGUAGES) {
-    for (const season of SEASONS) {
-      promise.push(championTrait(lang, season));
-    }
-  }
-
-  return Promise.all(promise);
-};

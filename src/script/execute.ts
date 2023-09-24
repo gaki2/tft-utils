@@ -1,15 +1,23 @@
-import { execute as createJson } from './fetchCdragonJson';
-import { execute as createTraitObject } from '../script/traitObject';
-import { execute as createChampionObject } from '../script/championObject';
+import { fetchJson } from './fetchCdragonJson';
+import { championTrait } from '../script/traitObject';
+import { championTemplate } from '../script/championObject';
+import { LANGUAGES, LanguageType, SEASONS } from '../types/config';
+import { Season } from '../types';
 
-const execute = async () => {
-  try {
-    await createJson();
-    await createChampionObject();
-    await createTraitObject();
-  } catch (err) {
-    console.error(err);
-  }
+const createData = async (season: Season, lang: LanguageType) => {
+  await fetchJson(lang, season);
+  await championTemplate(lang, season);
+  await championTrait(lang, season);
 };
 
-void execute();
+const createAllData = async () => {
+  const promises = [];
+  for (const lang of LANGUAGES) {
+    for (const season of SEASONS) {
+      promises.push(createData(season, lang));
+    }
+  }
+  return Promise.all(promises);
+};
+
+createAllData();
