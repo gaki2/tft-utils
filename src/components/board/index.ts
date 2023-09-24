@@ -1,1 +1,1 @@
-export { Board } from './Board';
+export { Board, BoardProps } from './Board';
