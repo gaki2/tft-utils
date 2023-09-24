@@ -2,6 +2,13 @@
   "name": "tft-utils",
   "version": "0.1.5",
   "description": "tft team-builder",
+  "scripts": {
+    "parse": "ts-node src/script/execute.ts",
+    "storybook": "storybook dev -p 6006",
+    "build-rollup": "rollup -c",
+    "build": "rimraf lib && npm run build-rollup",
+    "prepublishOnly": "npm run parse && npm run build"
+  },
   "keywords": [
     "tft",
     "league of legends",
@@ -41,13 +48,6 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "parse": "ts-node src/script/execute.ts",
-    "storybook": "storybook dev -p 6006",
-    "build-rollup": "rollup -c",
-    "build": "rimraf lib && npm run build-rollup",
-    "prepublishOnly": "npm run parse && npm run build"
-  },
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.22.10",

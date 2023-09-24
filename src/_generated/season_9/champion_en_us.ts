@@ -180,9 +180,9 @@ export const champion_season_9 = {
 },
     TFT_ArmoryKeyOrnn: {
     "ability": {
-        "desc": "Drag this to the Shop to open an Armory full of Artifact items! You will have 30 seconds to choose.",
+        "desc": "Drag this to the Shop to open an Armory full of Artifacts crafted by Ornn! You will have 30 seconds to choose.",
         "icon": "ASSETS/Characters/TFT_ArmoryKeyOrnn/HUD/TFT_ArmoryKeyOrnn_Square.TFT_DoubleUp_Assist_Update.tex",
-        "name": "Artifact Item Anvil",
+        "name": "Ornn Item Anvil",
         "variables": [
             {
                 "name": "RoundsToHatch",
@@ -202,7 +202,7 @@ export const champion_season_9 = {
     "characterName": "TFT_ArmoryKeyOrnn",
     "cost": 8,
     "icon": null,
-    "name": "Artifact Item Anvil",
+    "name": "Ornn Item Anvil",
     "squareIcon": null,
     "stats": {
         "armor": 10,
@@ -217,47 +217,6 @@ export const champion_season_9 = {
         "range": 0
     },
     "tileIcon": "ASSETS/Characters/TFT_ArmoryKeyOrnn/HUD/TFT_ArmoryKeyOrnn_Square.TFT_DoubleUp_Assist_Update.tex",
-    "traits": []
-},
-    TFT_ArmoryKeySupport: {
-    "ability": {
-        "desc": "Drag this to the Shop to open an Armory full of Support items! You will have 30 seconds to choose.",
-        "icon": "ASSETS/Characters/TFT_ArmoryKeySupport/HUD/TFT_ArmoryKeySupport_Square.TFT_9_5_ItemUpdate.tex",
-        "name": "Support item anvil",
-        "variables": [
-            {
-                "name": "RoundsToHatch",
-                "value": [
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2,
-                    2
-                ]
-            }
-        ]
-    },
-    "apiName": "TFT_ArmoryKeySupport",
-    "characterName": "TFT_ArmoryKeySupport",
-    "cost": 8,
-    "icon": null,
-    "name": "Support item anvil",
-    "squareIcon": null,
-    "stats": {
-        "armor": 10,
-        "attackSpeed": 1,
-        "critChance": null,
-        "critMultiplier": 0,
-        "damage": null,
-        "hp": 10,
-        "initialMana": 0,
-        "magicResist": 10,
-        "mana": 100,
-        "range": 0
-    },
-    "tileIcon": "ASSETS/Characters/TFT_ArmoryKeySupport/HUD/TFT_ArmoryKeySupport_Square.TFT_9_5_ItemUpdate.tex",
     "traits": []
 },
     TFT9_Tristana: {
@@ -478,8 +437,8 @@ export const champion_season_9 = {
                 "name": "Duration",
                 "value": [
                     10,
-                    12,
-                    12,
+                    10,
+                    10,
                     30,
                     10,
                     10,
@@ -489,13 +448,13 @@ export const champion_season_9 = {
             {
                 "name": "Omnivamp",
                 "value": [
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.15000000596046448
                 ]
             },
             {
@@ -548,7 +507,7 @@ export const champion_season_9 = {
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 80,
-        "hp": 900,
+        "hp": 1100,
         "initialMana": 0,
         "magicResist": 70,
         "mana": 50,
@@ -563,7 +522,7 @@ export const champion_season_9 = {
 },
     TFT9_Ahri: {
     "ability": {
-        "desc": "Steal essence from enemies around the current target, dealing <magicDamage>@ModifiedEssenceDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipReave@% <TFTKeyword>Mana Reaving</TFTKeyword> them. <br><br>Every <scaleLevel>@ActualBoomTooltip@</scaleLevel> casts, unleash a wave that deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to all enemies hit. This deals <magicDamage>@EssenceStolenMultiplier*100@%</magicDamage> more damage to enemies whose essence has been stolen.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@</TFTBonus> Mana per second<br><br><rules><tftbold>Mana Reave</tftbold>: Increase max Mana until the next cast</rules>",
+        "desc": "Steal essence from enemies around the current target, dealing <magicDamage>@ModifiedEssenceDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Mana Reaving</TFTKeyword> them. <br><br>Every <scaleLevel>@ActualBoomTooltip@</scaleLevel> casts, unleash a wave that deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to all enemies hit. This deals <magicDamage>@EssenceStolenMultiplier*100@%</magicDamage> more damage to enemies whose essence has been stolen.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@</TFTBonus> Mana per second<br><br><rules><tftbold>Mana Reave</tftbold>: Increase max Mana by 35% until the next cast</rules>",
         "icon": "ASSETS/Characters/TFT9_Ahri/HUD/Icons2D/Icons_TFT9_Ahri_R.TFT_Set9.dds",
         "name": "Essence Thief",
         "variables": [
@@ -571,9 +530,9 @@ export const champion_season_9 = {
                 "name": "MagicDamage",
                 "value": [
                     0,
-                    230,
-                    350,
-                    1888,
+                    250,
+                    375,
+                    3000,
                     0,
                     0,
                     0
@@ -583,8 +542,8 @@ export const champion_season_9 = {
                 "name": "EssenceDamage",
                 "value": [
                     0,
-                    90,
-                    135,
+                    100,
+                    150,
                     1000,
                     0,
                     0,
@@ -630,13 +589,13 @@ export const champion_season_9 = {
             {
                 "name": "TooltipReave",
                 "value": [
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
                 ]
             }
         ]
@@ -755,9 +714,9 @@ export const champion_season_9 = {
                 "name": "ADPercent",
                 "value": [
                     0,
+                    1.5,
+                    1.5,
                     1.600000023841858,
-                    1.649999976158142,
-                    1.75,
                     0,
                     0,
                     0
@@ -821,20 +780,20 @@ export const champion_season_9 = {
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Ashe_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 20,
-        "attackSpeed": 0.75,
+        "attackSpeed": 0.699999988079071,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 55,
+        "damage": 50,
         "hp": 600,
-        "initialMana": 20,
+        "initialMana": 30,
         "magicResist": 20,
-        "mana": 70,
-        "range": 6
+        "mana": 60,
+        "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ashe/HUD/TFT9_Ashe_Square.TFT_Set9.tex",
     "traits": [
         "Freljord",
-        "Vanquisher"
+        "Deadeye"
     ]
 },
     TFT9_Azir: {
@@ -849,7 +808,7 @@ export const champion_season_9 = {
                     35,
                     100,
                     150,
-                    500,
+                    550,
                     500,
                     500,
                     500
@@ -950,13 +909,13 @@ export const champion_season_9 = {
             {
                 "name": "PercentAD",
                 "value": [
-                    0.6499999761581421,
-                    0.6499999761581421,
-                    0.6499999761581421,
-                    0.6499999761581421,
-                    0.6499999761581421,
-                    0.6499999761581421,
-                    0.6499999761581421
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579
                 ]
             },
             {
@@ -974,25 +933,13 @@ export const champion_season_9 = {
             {
                 "name": "BonusFlatDamage",
                 "value": [
-                    15,
-                    18,
+                    20,
+                    20,
                     30,
                     50,
                     60,
                     70,
                     80
-                ]
-            },
-            {
-                "name": "StrikesPer100BonusAS",
-                "value": [
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5
                 ]
             }
         ]
@@ -1030,22 +977,22 @@ export const champion_season_9 = {
             {
                 "name": "PercentMaximumHealthDamage",
                 "value": [
-                    0.15000000596046448,
-                    0.15000000596046448,
-                    0.15000000596046448,
-                    0.15000000596046448,
-                    0.15000000596046448,
-                    0.15000000596046448,
-                    0.15000000596046448
+                    0.11999999731779099,
+                    0.11999999731779099,
+                    0.11999999731779099,
+                    0.11999999731779099,
+                    0.11999999731779099,
+                    0.11999999731779099,
+                    0.11999999731779099
                 ]
             },
             {
                 "name": "BonusDamage",
                 "value": [
                     140,
-                    270,
-                    370,
-                    500,
+                    250,
+                    335,
+                    450,
                     380,
                     440,
                     500
@@ -1076,11 +1023,11 @@ export const champion_season_9 = {
         "attackSpeed": 0.5,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 65,
+        "damage": 50,
         "hp": 700,
-        "initialMana": 20,
+        "initialMana": 30,
         "magicResist": 30,
-        "mana": 80,
+        "mana": 90,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_ChoGath/HUD/TFT9_ChoGath_Square.TFT_Set9.tex",
@@ -1098,13 +1045,13 @@ export const champion_season_9 = {
             {
                 "name": "AttackDamagePercent",
                 "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
+                    3.5,
+                    3.5,
+                    3.5,
+                    3.5,
+                    3.5,
+                    3.5,
+                    3.5
                 ]
             },
             {
@@ -1123,9 +1070,9 @@ export const champion_season_9 = {
                 "name": "AbilityScaleDamage",
                 "value": [
                     100,
-                    55,
-                    80,
-                    110,
+                    100,
+                    120,
+                    150,
                     100,
                     100,
                     100
@@ -1153,10 +1100,10 @@ export const champion_season_9 = {
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Darius_Mobile.TFT_Set9.tex",
     "stats": {
         "armor": 50,
-        "attackSpeed": 0.699999988079071,
+        "attackSpeed": 0.75,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 60,
+        "damage": 70,
         "hp": 750,
         "initialMana": 30,
         "magicResist": 50,
@@ -1166,8 +1113,7 @@ export const champion_season_9 = {
     "tileIcon": "ASSETS/Characters/TFT9_Darius/HUD/TFT9_Darius_Square.TFT_Set9.tex",
     "traits": [
         "Noxus",
-        "Juggernaut",
-        "Vanquisher"
+        "Juggernaut"
     ]
 },
     TFT9_Ekko: {
@@ -1180,9 +1126,9 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    270,
-                    405,
-                    610,
+                    290,
+                    435,
+                    710,
                     0,
                     0,
                     0
@@ -1285,8 +1231,8 @@ export const champion_season_9 = {
                 "name": "DamagePerTick",
                 "value": [
                     15,
-                    0.800000011920929,
-                    0.8199999928474426,
+                    0.75,
+                    0.75,
                     0.8500000238418579,
                     115,
                     140,
@@ -1437,7 +1383,7 @@ export const champion_season_9 = {
 },
     TFT9_Heimerdinger: {
     "ability": {
-        "desc": "Hurl a grenade towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies in a large area and <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
+        "desc": "Hurl a grenade towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies in a large area and Stunning them for <scaleLevel>@StunDuration@</scaleLevel> seconds.<br><br>4-Star Upgrade: YES YES YES, IT WORKS!!!",
         "icon": "ASSETS/Characters/TFT9_Heimerdinger/HUD/Icons2D/TFT9_Heimerdinger_E1.TFT_Set9.dds",
         "name": "CH-3X Lightning Grenade",
         "variables": [
@@ -1488,12 +1434,13 @@ export const champion_season_9 = {
     "tileIcon": "ASSETS/Characters/TFT9_Heimerdinger/HUD/TFT9_Heimerdinger_Square.TFT_Set9.tex",
     "traits": [
         "Piltover",
+        "Yordle",
         "Technogenius"
     ]
 },
     TFT9_JarvanIV: {
     "ability": {
-        "desc": "Leap on a nearby enemy. Deal <magicDamage>@TotalDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within @HexRadius@ hexes and <TFTKeyword>Stun</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
+        "desc": "Leap on a nearby enemy. Deal <magicDamage>@TotalDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within @HexRadius@ hexes and Stun them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/TFT9_JarvanIV/HUD/Icons2D/TFT9_JarvanIV_Cataclysm.TFT_Set9.dds",
         "name": "Cataclysm",
         "variables": [
@@ -1573,7 +1520,7 @@ export const champion_season_9 = {
 },
     TFT9_Jayce: {
     "ability": {
-        "desc": "Grant <TFTBonus>@ModifiedEnhancedAttackSpeed@ (%i:scaleAP%)</TFTBonus> Attack Speed to Jayce and <TFTBonus>@ModifiedPercentAttackSpeed@ (%i:scaleAP%)</TFTBonus> to the allies on his left and right for @Duration@ seconds. Fire a blast at the current target that explodes on the first enemy hit. It deals <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies near the blast.",
+        "desc": "Grant <TFTBonus>@ModifiedPercentAttackSpeed@ (%i:scaleAP%)</TFTBonus> Attack Speed to Jayce and allies on his left and right for @Duration@ seconds. Fire a blast at the current target that explodes on the first enemy hit. It deals <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies near the blast.",
         "icon": "ASSETS/Characters/TFT9_Jayce/HUD/Icons2D/TFT9_Jayce_ShotBlast.TFT_Set9.dds",
         "name": "Acceleration Blast",
         "variables": [
@@ -1581,9 +1528,9 @@ export const champion_season_9 = {
                 "name": "PercentAttackSpeed",
                 "value": [
                     0.5,
-                    0.15000000596046448,
-                    0.15000000596046448,
-                    0.15000000596046448,
+                    0.20000000298023224,
+                    0.25,
+                    0.30000001192092896,
                     0.5,
                     0.5,
                     0.5
@@ -1605,9 +1552,9 @@ export const champion_season_9 = {
                 "name": "PercentAttackDamage",
                 "value": [
                     0,
-                    2.75,
-                    2.75,
-                    2.950000047683716,
+                    2.4000000953674316,
+                    2.4000000953674316,
+                    2.5,
                     0,
                     0,
                     0
@@ -1629,21 +1576,9 @@ export const champion_season_9 = {
                 "name": "TooltipPercentAttackDamage",
                 "value": [
                     0,
-                    275,
-                    275,
-                    295,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "SelfAttackSpeed",
-                "value": [
-                    0.30000001192092896,
-                    0.30000001192092896,
-                    0.4000000059604645,
-                    0.5,
+                    240,
+                    240,
+                    250,
                     0,
                     0,
                     0
@@ -1664,9 +1599,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 65,
         "hp": 700,
-        "initialMana": 30,
+        "initialMana": 40,
         "magicResist": 25,
-        "mana": 80,
+        "mana": 120,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Jayce/HUD/TFT9_Jayce_Square.TFT_Set9.tex",
@@ -1710,7 +1645,7 @@ export const champion_season_9 = {
                 "value": [
                     0,
                     1.5,
-                    1.5499999523162842,
+                    1.5,
                     1.600000023841858,
                     0,
                     0,
@@ -1721,9 +1656,9 @@ export const champion_season_9 = {
                 "name": "AbilityScaleDamage",
                 "value": [
                     20,
+                    10,
                     15,
-                    20,
-                    35,
+                    25,
                     20,
                     20,
                     20
@@ -1756,9 +1691,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 55,
         "hp": 600,
-        "initialMana": 10,
+        "initialMana": 0,
         "magicResist": 20,
-        "mana": 70,
+        "mana": 75,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Jinx/HUD/TFT9_Jinx_Square.TFT_Set9.tex",
@@ -1824,9 +1759,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 45,
         "hp": 850,
-        "initialMana": 40,
+        "initialMana": 30,
         "magicResist": 35,
-        "mana": 120,
+        "mana": 125,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_KaiSa/HUD/TFT9_KaiSa_Square.TFT_Set9.tex",
@@ -1913,9 +1848,9 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    145,
-                    220,
-                    350,
+                    130,
+                    195,
+                    320,
                     0,
                     0,
                     0
@@ -2004,13 +1939,13 @@ export const champion_season_9 = {
             {
                 "name": "AttackSpeedPercent",
                 "value": [
+                    0.550000011920929,
                     0.6000000238418579,
                     0.6499999761581421,
                     0.699999988079071,
                     0.75,
                     0.800000011920929,
-                    0.8500000238418579,
-                    0.8999999761581421
+                    0.8500000238418579
                 ]
             },
             {
@@ -2054,7 +1989,7 @@ export const champion_season_9 = {
 },
     TFT9_KSante: {
     "ability": {
-        "desc": "Heal for <scaleHealth>@HealAmount@ (%i:scaleHealth%)</scaleHealth>, then knock up the current target before smashing them to the edge of the battlefield. Deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Stun</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds. Deal <magicDamage>@CollisionDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies the target collides with and <TFTKeyword>Stun</TFTKeyword> them for <scaleLevel>@SecondaryStunDuration@</scaleLevel> seconds.<br><br>If the target can't be pushed back any further, knock them off the battlefield. Otherwise, chase after them.",
+        "desc": "Knock up the current target before smashing them to the edge of the battlefield. Deal <br><magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and Stun them for <scaleLevel>@StunDuration@</scaleLevel> seconds. Deal <magicDamage>@CollisionDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies the target collides with and Stun them for <scaleLevel>@SecondaryStunDuration@</scaleLevel> second.<br><br>If the target can't be pushed back any further, knock them off the battlefield. Otherwise, K'Sante will chase after them.",
         "icon": "ASSETS/Characters/TFT9_KSante/HUD/Icons2D/Icons_TFT9_KSante_R2.TFT_Set9.dds",
         "name": "All Out Strike",
         "variables": [
@@ -2105,18 +2040,6 @@ export const champion_season_9 = {
                     0.5,
                     0.5
                 ]
-            },
-            {
-                "name": "PercentHealthHeal",
-                "value": [
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612,
-                    0.10000000149011612
-                ]
             }
         ]
     },
@@ -2127,15 +2050,15 @@ export const champion_season_9 = {
     "name": "K'Sante",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_KSante_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 50,
+        "armor": 60,
         "attackSpeed": 0.699999988079071,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 60,
         "hp": 1000,
         "initialMana": 0,
-        "magicResist": 50,
-        "mana": 70,
+        "magicResist": 60,
+        "mana": 60,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_KSante/HUD/TFT9_KSante_Square.TFT_Set9.tex",
@@ -2349,9 +2272,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 40,
         "hp": 500,
-        "initialMana": 40,
+        "initialMana": 50,
         "magicResist": 15,
-        "mana": 90,
+        "mana": 100,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Orianna/HUD/TFT9_Orianna_Square.TFT_Set9.tex",
@@ -2362,7 +2285,7 @@ export const champion_season_9 = {
 },
     TFT9_Poppy: {
     "ability": {
-        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target.",
+        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @ShieldDuration@ seconds. Deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target.<br><br>4-Star Upgrade: Knock the target into the largest clump of enemies, dealing <magicDamage>@PercentHealthDamage@%</magicDamage> of the target's max Health as magic damage to the target and <magicDamage>@CollisionDamagePercent@%</magicDamage> of that amount to the clump. Stun them for @StunDuration@ second.",
         "icon": "ASSETS/Characters/TFT9_Poppy/HUD/Icons2D/TFT9_Poppy_Q.TFT_Set9.dds",
         "name": "Steadfast Hammer",
         "variables": [
@@ -2370,9 +2293,9 @@ export const champion_season_9 = {
                 "name": "ShieldAmount",
                 "value": [
                     120,
-                    250,
-                    325,
-                    400,
+                    310,
+                    330,
+                    350,
                     350,
                     400,
                     400
@@ -2381,13 +2304,13 @@ export const champion_season_9 = {
             {
                 "name": "ShieldDuration",
                 "value": [
-                    4,
-                    4,
-                    4,
-                    4,
-                    4,
-                    4,
-                    4
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3
                 ]
             },
             {
@@ -2463,15 +2386,16 @@ export const champion_season_9 = {
         "attackSpeed": 0.550000011920929,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 55,
-        "hp": 700,
-        "initialMana": 30,
+        "damage": 45,
+        "hp": 600,
+        "initialMana": 90,
         "magicResist": 40,
-        "mana": 90,
+        "mana": 150,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_Poppy/HUD/TFT9_Poppy_Square.TFT_Set9.tex",
     "traits": [
+        "Yordle",
         "Demacia",
         "Bastion"
     ]
@@ -2498,9 +2422,9 @@ export const champion_season_9 = {
                 "name": "AllyShieldAmount",
                 "value": [
                     0,
-                    225,
                     275,
-                    1500,
+                    350,
+                    2000,
                     0,
                     0,
                     0
@@ -2510,8 +2434,8 @@ export const champion_season_9 = {
                 "name": "SelfShieldAmount",
                 "value": [
                     0,
-                    300,
-                    400,
+                    350,
+                    450,
                     2000,
                     0,
                     0,
@@ -2557,13 +2481,13 @@ export const champion_season_9 = {
             {
                 "name": "TooltipIoniaBonus",
                 "value": [
-                    8,
-                    8,
-                    8,
-                    8,
-                    8,
-                    8,
-                    8
+                    10,
+                    10,
+                    10,
+                    10,
+                    10,
+                    10,
+                    10
                 ]
             }
         ]
@@ -2581,9 +2505,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 60,
         "hp": 1000,
-        "initialMana": 90,
+        "initialMana": 70,
         "magicResist": 60,
-        "mana": 170,
+        "mana": 140,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_Shen/HUD/TFT9_Shen_Square.TFT_Set9.tex",
@@ -2595,20 +2519,20 @@ export const champion_season_9 = {
 },
     TFT9_RekSai: {
     "ability": {
-        "desc": "Deal <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to the current target. If they are below @HealthThreshold*100@% Health, deal true damage instead.<br><br>If this kills the target, rip through them 1 hex and heal for <scaleHealth>@HealAmount@ (%i:scaleAP%%i:scaleHealth%)</scaleHealth>.",
+        "desc": "Deal <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage> physical damage to the current target. If they are below @HealthThreshold*100@% Health, deal <br><trueDamage>@TooltipExecuteDamage@ (%i:scaleAD%%i:scaleAP%)</trueDamage> true damage instead.<br><br>If this kills the target, rip through them 1 hex and heal for <scaleHealth>@HealAmount@ (%i:scaleAP%%i:scaleHealth%)</scaleHealth>.",
         "icon": "ASSETS/Characters/RekSai/HUD/Icons2D/RekSai_E1.dds",
         "name": "Furious Bite",
         "variables": [
             {
                 "name": "PercentOfAD",
                 "value": [
-                    2.6500000953674316,
-                    2.9000000953674316,
-                    2.9000000953674316,
-                    3,
-                    2.6500000953674316,
-                    2.6500000953674316,
-                    2.6500000953674316
+                    2.5,
+                    3.1500000953674316,
+                    3.1500000953674316,
+                    3.1500000953674316,
+                    4.5,
+                    5,
+                    5.5
                 ]
             },
             {
@@ -2626,13 +2550,25 @@ export const champion_season_9 = {
             {
                 "name": "HealthThreshold",
                 "value": [
-                    0.6600000262260437,
-                    0.6600000262260437,
-                    0.6600000262260437,
-                    0.6600000262260437,
-                    0.6600000262260437,
-                    0.6600000262260437,
-                    0.6600000262260437
+                    0.699999988079071,
+                    0.699999988079071,
+                    0.699999988079071,
+                    0.699999988079071,
+                    0.699999988079071,
+                    0.699999988079071,
+                    0.699999988079071
+                ]
+            },
+            {
+                "name": "EmpoweredDamageAmp",
+                "value": [
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224
                 ]
             }
         ]
@@ -2644,22 +2580,21 @@ export const champion_season_9 = {
     "name": "Rek'Sai",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_RekSai_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 45,
-        "attackSpeed": 0.75,
+        "armor": 40,
+        "attackSpeed": 0.699999988079071,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 60,
+        "damage": 65,
         "hp": 800,
         "initialMana": 30,
-        "magicResist": 45,
+        "magicResist": 40,
         "mana": 75,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_RekSai/HUD/TFT9_RekSai_Square.TFT_Set9.tex",
     "traits": [
         "Void",
-        "Bruiser",
-        "Slayer"
+        "Bruiser"
     ]
 },
     TFT9_Renekton: {
@@ -2730,10 +2665,10 @@ export const champion_season_9 = {
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 50,
-        "hp": 650,
+        "hp": 600,
         "initialMana": 50,
         "magicResist": 45,
-        "mana": 110,
+        "mana": 120,
         "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT9_Renekton/HUD/TFT9_Renekton_Square.TFT_Set9.tex",
@@ -2822,7 +2757,7 @@ export const champion_season_9 = {
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 60,
-        "hp": 1100,
+        "hp": 1000,
         "initialMana": 60,
         "magicResist": 60,
         "mana": 120,
@@ -2844,8 +2779,8 @@ export const champion_season_9 = {
                 "name": "ADRatio",
                 "value": [
                     0,
-                    2.3499999046325684,
-                    2.5,
+                    1.899999976158142,
+                    2,
                     20,
                     0,
                     0,
@@ -2856,8 +2791,8 @@ export const champion_season_9 = {
                 "name": "ShieldAmount",
                 "value": [
                     0,
-                    200,
-                    275,
+                    250,
+                    325,
                     4000,
                     0,
                     0,
@@ -2905,7 +2840,7 @@ export const champion_season_9 = {
 },
     TFT9_Sion: {
     "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Upon death, reanimate with <scaleHealth>@ReviveHealthPct*100@%</scaleHealth> Health, decaying at <scaleLevel>@DecayHealthPct*100@%</scaleLevel> maximum Health per second. Sion can no longer use his Ability, but is immune to crowd control and gains <br><TFTBonus>@ModifiedAttackSpeedPct@ (%i:scaleAP%)</TFTBonus> Attack Speed.<br><br><spellActive>Active:</spellActive> Charge towards the most enemies within <TFTBonus>@DashRangeTooltip@ (%i:scaleRange%)</TFTBonus> hexes. Deal <physicalDamage>@ModifiedDamage@ (%i:scaleAD%)</physicalDamage> physical damage to any enemies along the way and knock them up, <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
+        "desc": "<spellPassive>Passive:</spellPassive> Upon death, reanimate with <scaleHealth>@ReviveHealthPct*100@%</scaleHealth> Health, decaying at <scaleLevel>@DecayHealthPct*100@%</scaleLevel> maximum Health per second. Sion can no longer use his Ability, but is immune to crowd control and gains <br><TFTBonus>@ModifiedAttackSpeedPct@ (%i:scaleAP%)</TFTBonus> Attack Speed.<br><br><spellActive>Active:</spellActive> Charge towards the most enemies within <TFTBonus>@DashRangeTooltip@ (%i:scaleRange%)</TFTBonus> hexes. Deal <physicalDamage>@ModifiedDamage@ (%i:scaleAD%)</physicalDamage> physical damage to any enemies along the way and knock them up, Stunning them for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/TFT9_Sion/HUD/Icons2D/TFT9_Sion_E.TFT_Set9.dds",
         "name": "Glory in Death",
         "variables": [
@@ -2949,8 +2884,8 @@ export const champion_season_9 = {
                 "name": "DecayHealthPct",
                 "value": [
                     0,
-                    0.20000000298023224,
-                    0.12999999523162842,
+                    0.15000000596046448,
+                    0.10000000149011612,
                     0,
                     0,
                     0,
@@ -3014,14 +2949,14 @@ export const champion_season_9 = {
     "name": "Sion",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Sion_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 65,
+        "armor": 60,
         "attackSpeed": 0.6000000238418579,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 70,
-        "hp": 900,
+        "hp": 1000,
         "initialMana": 70,
-        "magicResist": 65,
+        "magicResist": 60,
         "mana": 160,
         "range": 1
     },
@@ -3053,9 +2988,9 @@ export const champion_season_9 = {
                 "name": "AttackSpeed",
                 "value": [
                     0,
+                    30,
                     35,
                     40,
-                    45,
                     0,
                     0,
                     0
@@ -3145,9 +3080,9 @@ export const champion_season_9 = {
                 "name": "MagicDamage",
                 "value": [
                     60,
-                    115,
-                    165,
-                    260,
+                    125,
+                    185,
+                    290,
                     60,
                     60,
                     60
@@ -3205,7 +3140,7 @@ export const champion_season_9 = {
 },
     TFT9_Swain: {
     "ability": {
-        "desc": "Transform and gain <scaleHealth>@ModifiedBonusHealth@ (%i:scaleAP%)</scaleHealth> max Health. While transformed, deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within 2 hexes every second.<br><br>If already transformed, gain an additional <scaleHealth>@ModifiedSecondaryBonusHealth@ (%i:scaleAP%)</scaleHealth> max Health and deal <magicDamage>@ModifiedSecondaryDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within.",
+        "desc": "Transform and gain <scaleHealth>@ModifiedBonusHealth@ (%i:scaleAP%)</scaleHealth> max Health for @BuffDuration@ seconds. While transformed, deal <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies within 2 hexes every second.",
         "icon": "ASSETS/Characters/TFT9_Swain/HUD/Icons2D/TFT9_Swain_R.TFT_Set9.dds",
         "name": "Demonflare",
         "variables": [
@@ -3222,51 +3157,27 @@ export const champion_season_9 = {
                 ]
             },
             {
-                "name": "BonusMaxHealth",
-                "value": [
-                    200,
-                    325,
-                    375,
-                    550,
-                    500,
-                    575,
-                    650
-                ]
-            },
-            {
                 "name": "DamagePerTick",
                 "value": [
                     0,
-                    25,
-                    40,
-                    60,
+                    35,
+                    50,
+                    75,
                     160,
                     200,
                     240
                 ]
             },
             {
-                "name": "SecondaryBonusMaxHealth",
+                "name": "BonusMaxHealth",
                 "value": [
                     200,
-                    225,
-                    260,
-                    385,
-                    200,
-                    200,
-                    200
-                ]
-            },
-            {
-                "name": "SecondaryDamage",
-                "value": [
-                    20,
-                    100,
-                    160,
-                    300,
-                    20,
-                    20,
-                    20
+                    450,
+                    500,
+                    550,
+                    500,
+                    575,
+                    650
                 ]
             }
         ]
@@ -3278,15 +3189,15 @@ export const champion_season_9 = {
     "name": "Swain",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Swain_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 45,
+        "armor": 50,
         "attackSpeed": 0.6499999761581421,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 45,
         "hp": 800,
-        "initialMana": 60,
-        "magicResist": 45,
-        "mana": 135,
+        "initialMana": 30,
+        "magicResist": 50,
+        "mana": 70,
         "range": 2
     },
     "tileIcon": "ASSETS/Characters/TFT9_Swain/HUD/TFT9_Swain_Square.TFT_Set9.tex",
@@ -3298,7 +3209,7 @@ export const champion_season_9 = {
 },
     TFT9_Taric: {
     "ability": {
-        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @Duration@ seconds. It redirects @RedirectPercent*100@% of the damage received by adjacent allies.",
+        "desc": "Gain <TFTBonus>@ModifiedShieldAmount@ (%i:scaleAP%)</TFTBonus> Shield for @Duration@ seconds. It absorbs damage received by adjacent allies.",
         "icon": "ASSETS/Characters/TFT9_Taric/HUD/Icons2D/TFT9_Taric_W.TFT_Set9.dds",
         "name": "Radiance",
         "variables": [
@@ -3306,9 +3217,9 @@ export const champion_season_9 = {
                 "name": "ShieldAmount",
                 "value": [
                     0,
-                    500,
-                    580,
-                    680,
+                    550,
+                    650,
+                    750,
                     0,
                     0,
                     0
@@ -3324,18 +3235,6 @@ export const champion_season_9 = {
                     4,
                     4,
                     4
-                ]
-            },
-            {
-                "name": "RedirectPercent",
-                "value": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5
                 ]
             }
         ]
@@ -3375,10 +3274,10 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    260,
-                    390,
-                    585,
-                    585,
+                    200,
+                    350,
+                    535,
+                    535,
                     0,
                     0
                 ]
@@ -3468,9 +3367,9 @@ export const champion_season_9 = {
                 "name": "MagicDamage",
                 "value": [
                     0,
-                    250,
-                    375,
-                    600,
+                    210,
+                    315,
+                    520,
                     0,
                     0,
                     0
@@ -3517,7 +3416,7 @@ export const champion_season_9 = {
 },
     TFT9_Warwick: {
     "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Attacks heal for <scaleHealth>@ModifiedHealAmount@ (%i:scaleAP%)</scaleHealth>.<br><br><spellActive>Active:</spellActive> Gain @BonusAttackSpeed*100@% Attack Speed for @Duration@ seconds. Then, <TFTKeyword>Stun</TFTKeyword> adjacent enemies for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
+        "desc": "<spellPassive>Passive:</spellPassive> Attacks heal for <scaleHealth>@ModifiedHealAmount@ (%i:scaleAP%)</scaleHealth>.<br><br><spellActive>Active:</spellActive> Increase the Passive healing by <scaleHealth>@IncreaseHealRatio*100@%</scaleHealth> for @Duration@ seconds. Then, Stun adjacent enemies for <scaleLevel>@StunDuration@</scaleLevel> seconds.",
         "icon": "ASSETS/Characters/Warwick/HUD/Icons2D/WarwickP.dds",
         "name": "Primal Howl",
         "variables": [
@@ -3558,15 +3457,15 @@ export const champion_season_9 = {
                 ]
             },
             {
-                "name": "BonusAttackSpeed",
+                "name": "IncreaseHealRatio",
                 "value": [
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1,
-                    1
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
                 ]
             }
         ]
@@ -3598,7 +3497,7 @@ export const champion_season_9 = {
 },
     TFT9_Yasuo: {
     "ability": {
-        "desc": "Send a whirlwind at the furthest enemy within <TFTBonus>@SpellRangeTooltip@</TFTBonus> hexes, knocking up and Stunning all enemies hit. Dash to and slash the original target, dealing <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage to them. Slam them into the ground and deal <physicalDamage>@ModifiedAOEDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies within 1 hex.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus> <TFTKeyword>Omnivamp</TFTKeyword><br><br><rules><tftbold>Omnivamp: Heal for percentage of damage dealt</tftbold></rules>",
+        "desc": "Send a whirlwind at the furthest enemy within <TFTBonus>@SpellRangeTooltip@ (%i:scaleRange%)</TFTBonus> hexes, knocking up and Stunning all enemies hit. Dash to and slash the original target, dealing <physicalDamage>@TotalDamage@ (%i:scaleAD%%i:scaleAP%)</physicalDamage> physical damage to them. Slam them into the ground and deal <physicalDamage>@ModifiedAOEDamage@ (%i:scaleAD%)</physicalDamage> physical damage to enemies within 1 hex.<br><br>Ionia Bonus: <TFTBonus>+@TooltipIoniaBonus@%</TFTBonus> <TFTKeyword>Omnivamp</TFTKeyword><br><br><rules><tftbold>Omnivamp: Heal for percentage of damage dealt</tftbold></rules>",
         "icon": "ASSETS/Characters/TFT9_Yasuo/HUD/Icons2D/TFT9_Yasuo_R.TFT_Set9.dds",
         "name": "Last Breath",
         "variables": [
@@ -3618,8 +3517,8 @@ export const champion_season_9 = {
                 "name": "ADPercent",
                 "value": [
                     0,
-                    5,
-                    5,
+                    4.75,
+                    4.75,
                     15,
                     0,
                     0,
@@ -3630,8 +3529,8 @@ export const champion_season_9 = {
                 "name": "BonusDamage",
                 "value": [
                     0,
-                    55,
-                    85,
+                    50,
+                    75,
                     300,
                     0,
                     0,
@@ -3641,13 +3540,13 @@ export const champion_season_9 = {
             {
                 "name": "HexRange",
                 "value": [
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3,
-                    3
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
                 ]
             },
             {
@@ -3712,7 +3611,7 @@ export const champion_season_9 = {
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 75,
-        "hp": 1000,
+        "hp": 950,
         "initialMana": 50,
         "magicResist": 50,
         "mana": 110,
@@ -3807,7 +3706,7 @@ export const champion_season_9 = {
 },
     TFT9_BaronNashor: {
     "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Cast every @CastCadence@ attacks and cycle between 3 different Abilities: this, <tftbonus>Voracious Bite</tftbonus> (damage an enemy and heal), and <tftbonus>Void Tentacle</tftbonus> (damage and <TFTKeyword>Stun</TFTKeyword> a group).<br><br><spellActive>Active:</spellActive> Lob three pools of acid towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipShred@% <TFTKeyword>Shredding</TFTKeyword> and <TFTKeyword>Sundering</TFTKeyword> for @DebuffDuration@ seconds.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Cast every @CastCadence@ attacks and cycle between 3 different Abilities: this, <tftbonus>Voracious Bite</tftbonus> (damage an enemy and heal), and <tftbonus>Void Tentacle</tftbonus> (damage and Stun a group).<br><br><spellActive>Active:</spellActive> Lob three pools of acid towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipShred@% <TFTKeyword>Shredding</TFTKeyword> and <TFTKeyword>Sundering</TFTKeyword> for @DebuffDuration@ seconds.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
         "icon": "ASSETS/Characters/TFT9_BaronNashor/HUD/TFT9_BaronNashor_Square.TFT_Set9.dds",
         "name": "Corrosive Acid",
         "variables": [
@@ -3826,13 +3725,13 @@ export const champion_season_9 = {
             {
                 "name": "TooltipShred",
                 "value": [
-                    40,
-                    40,
-                    40,
-                    40,
-                    40,
-                    40,
-                    40
+                    60,
+                    60,
+                    60,
+                    60,
+                    60,
+                    60,
+                    60
                 ]
             },
             {
@@ -4184,9 +4083,9 @@ export const champion_season_9 = {
                 "name": "ShieldAmount",
                 "value": [
                     0,
+                    325,
                     350,
                     400,
-                    450,
                     0,
                     0,
                     0
@@ -4207,13 +4106,13 @@ export const champion_season_9 = {
             {
                 "name": "ArmorShredPercent",
                 "value": [
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224,
-                    0.20000000298023224
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645
                 ]
             },
             {
@@ -4231,13 +4130,13 @@ export const champion_season_9 = {
             {
                 "name": "ADPercent",
                 "value": [
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
                 ]
             }
         ]
@@ -4336,7 +4235,7 @@ export const champion_season_9 = {
 },
     TFT9_Kayle: {
     "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Gains new Passive effects as your Tactician levels up.<br><spellActive>Level 1:</spellActive> Attacks deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> bonus magic damage.<br><spellActive>Level @FirstAscensionLevel@:</spellActive> Every 3rd attack launches a wave that deals <magicDamage>@AscensionModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage and @ShredAmount@% <TFTKeyword>Shreds</TFTKeyword> enemies for @ShredDuration@ seconds.<br><spellActive>Level @SecondAscensionLevel@:</spellActive> Every attack launches a wave and they travel farther.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Gains new Passive effects as your Tactician levels up.<br><spellActive>Level 1:</spellActive> Attacks deal <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> bonus magic damage.<br><spellActive>Level @FirstAscensionLevel@:</spellActive> Every 3rd attack launches a wave that deals <magicDamage>@ModifiedMagicDamage@ (%i:scaleAP%)</magicDamage> magic damage and @ShredAmount@% <TFTKeyword>Shreds</TFTKeyword> enemies for @ShredDuration@ seconds.<br><spellActive>Level @SecondAscensionLevel@:</spellActive> Every attack launches a wave and they travel farther.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist</rules>",
         "icon": "ASSETS/Characters/Kayle/HUD/Icons2D/Kayle_P.dds",
         "name": "Divine Ascent",
         "variables": [
@@ -4344,9 +4243,9 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    30,
-                    45,
-                    70,
+                    33,
+                    44,
+                    66,
                     0,
                     0,
                     0
@@ -4355,13 +4254,13 @@ export const champion_season_9 = {
             {
                 "name": "ShredAmount",
                 "value": [
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20
+                    40,
+                    40,
+                    40,
+                    40,
+                    40,
+                    40,
+                    40
                 ]
             },
             {
@@ -4399,18 +4298,6 @@ export const champion_season_9 = {
                     3,
                     3
                 ]
-            },
-            {
-                "name": "AscensionDamage",
-                "value": [
-                    0,
-                    30,
-                    40,
-                    60,
-                    0,
-                    0,
-                    0
-                ]
             }
         ]
     },
@@ -4447,22 +4334,22 @@ export const champion_season_9 = {
             {
                 "name": "ADPercent",
                 "value": [
-                    2.0999999046325684,
-                    1.899999976158142,
-                    1.899999976158142,
-                    2,
-                    2.0999999046325684,
-                    2.0999999046325684,
-                    2.0999999046325684
+                    1.75,
+                    1.75,
+                    1.75,
+                    1.75,
+                    1.75,
+                    1.75,
+                    1.75
                 ]
             },
             {
                 "name": "ArmorShred",
                 "value": [
                     0,
-                    10,
-                    15,
                     20,
+                    25,
+                    30,
                     20,
                     25,
                     30
@@ -4580,13 +4467,13 @@ export const champion_season_9 = {
             {
                 "name": "PercentOfAttackDamage",
                 "value": [
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716,
-                    2.200000047683716
+                    2.5,
+                    2.5,
+                    2.5,
+                    2.5,
+                    2.5,
+                    2.5,
+                    2.5
                 ]
             },
             {
@@ -4617,8 +4504,8 @@ export const champion_season_9 = {
                 "name": "ShieldAmount",
                 "value": [
                     0,
-                    350,
-                    450,
+                    400,
+                    500,
                     1200,
                     0,
                     0,
@@ -4673,9 +4560,9 @@ export const champion_season_9 = {
                 "name": "BlastPercentAD",
                 "value": [
                     1.7999999523162842,
-                    2.25,
-                    2.25,
-                    5,
+                    2,
+                    2,
+                    5.5,
                     2.200000047683716,
                     2.299999952316284,
                     2.4000000953674316
@@ -4697,9 +4584,9 @@ export const champion_season_9 = {
                 "name": "ChakramPercentAD",
                 "value": [
                     0.10000000149011612,
-                    0.05000000074505806,
-                    0.05000000074505806,
-                    0.15000000596046448,
+                    0.07999999821186066,
+                    0.07999999821186066,
+                    0.30000001192092896,
                     0.10000000149011612,
                     0.10000000149011612,
                     0.10000000149011612
@@ -4708,13 +4595,13 @@ export const champion_season_9 = {
             {
                 "name": "ChakramHealing",
                 "value": [
-                    0.75,
-                    0.75,
-                    0.75,
-                    0.75,
-                    0.75,
-                    0.75,
-                    0.75
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
                 ]
             },
             {
@@ -4762,21 +4649,21 @@ export const champion_season_9 = {
     "name": "Aphelios",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Aphelios_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 25,
-        "attackSpeed": 0.75,
+        "armor": 30,
+        "attackSpeed": 0.800000011920929,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
-        "damage": 60,
+        "damage": 65,
         "hp": 750,
-        "initialMana": 50,
-        "magicResist": 25,
-        "mana": 100,
+        "initialMana": 70,
+        "magicResist": 30,
+        "mana": 140,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Aphelios/HUD/TFT9_Aphelios_Square.TFT_Set9.tex",
     "traits": [
         "Targon",
-        "Gunner"
+        "Deadeye"
     ]
 },
     TFT9_Zeri: {
@@ -4813,8 +4700,8 @@ export const champion_season_9 = {
                 "name": "OverchargeDuration",
                 "value": [
                     9,
-                    8,
-                    8,
+                    9,
+                    9,
                     15,
                     15,
                     9,
@@ -4825,8 +4712,8 @@ export const champion_season_9 = {
                 "name": "OverchargeChainRatio",
                 "value": [
                     0.4000000059604645,
-                    0.44999998807907104,
-                    0.44999998807907104,
+                    0.5,
+                    0.5,
                     1,
                     0.4000000059604645,
                     0.4000000059604645,
@@ -4905,9 +4792,9 @@ export const champion_season_9 = {
                 "name": "DamageResist",
                 "value": [
                     0.20000000298023224,
-                    0.25,
-                    0.25,
-                    0.3499999940395355,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.30000001192092896,
                     0.20000000298023224,
                     0.20000000298023224,
                     0.20000000298023224
@@ -4916,22 +4803,22 @@ export const champion_season_9 = {
             {
                 "name": "Duration",
                 "value": [
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5,
-                    2.5
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
                 ]
             },
             {
                 "name": "Heal",
                 "value": [
                     0,
-                    300,
                     350,
                     400,
+                    450,
                     0,
                     0,
                     0
@@ -4997,9 +4884,9 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     16,
-                    18,
-                    27,
-                    45,
+                    16,
+                    24,
+                    40,
                     320,
                     640,
                     1280
@@ -5064,22 +4951,22 @@ export const champion_season_9 = {
             {
                 "name": "PercentADSteal",
                 "value": [
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066,
-                    0.07999999821186066
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
                 ]
             },
             {
                 "name": "FlatResistanceSteal",
                 "value": [
                     3,
-                    4,
-                    4,
-                    20,
+                    5,
+                    5,
+                    30,
                     7,
                     8,
                     9
@@ -5101,8 +4988,8 @@ export const champion_season_9 = {
                 "name": "EmpoweredDamagePct",
                 "value": [
                     3.5,
-                    3.799999952316284,
-                    3.799999952316284,
+                    3.5,
+                    3.5,
                     7,
                     3.5,
                     3.5,
@@ -5115,7 +5002,7 @@ export const champion_season_9 = {
                     3,
                     4,
                     5,
-                    7,
+                    9,
                     7,
                     8,
                     9
@@ -5130,14 +5017,14 @@ export const champion_season_9 = {
     "name": "Nasus",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Nasus_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 50,
-        "attackSpeed": 0.699999988079071,
+        "armor": 60,
+        "attackSpeed": 0.6000000238418579,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 60,
         "hp": 1000,
         "initialMana": 70,
-        "magicResist": 50,
+        "magicResist": 60,
         "mana": 150,
         "range": 1
     },
@@ -5157,9 +5044,9 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     0,
-                    220,
-                    330,
-                    500,
+                    185,
+                    280,
+                    420,
                     12000,
                     12000,
                     12000
@@ -5205,7 +5092,7 @@ export const champion_season_9 = {
 },
     TFT9_Taliyah: {
     "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Whenever an enemy is knocked up or back by anything, throw a boulder towards them. It deals <magicDamage>@ModifiedBoulderDamage@ (%i:scaleAP%)</magicDamage> magic damage to the first enemy hit.<br><br><spellActive>Active:</spellActive> Deal <magicDamage>@ModifiedSpellDamage@ (%i:scaleAP%)</magicDamage> magic damage to the current target and knock them up, <TFTKeyword>Stunning</TFTKeyword> them for @KnockupDuration@ seconds.",
+        "desc": "<spellPassive>Passive:</spellPassive> Whenever an enemy is knocked up or back by anything, throw a boulder towards them. It deals <magicDamage>@ModifiedBoulderDamage@ (%i:scaleAP%)</magicDamage> magic damage to the first enemy hit.<br><br><spellActive>Active:</spellActive> Deal <magicDamage>@ModifiedSpellDamage@ (%i:scaleAP%)</magicDamage> magic damage to your target and knock them up, Stunning them for @KnockupDuration@ seconds.",
         "icon": "ASSETS/Characters/TFT9_Taliyah/HUD/Icons2D/TFT9_Taliyah_W.TFT_Set9.dds",
         "name": "Seismic Shove",
         "variables": [
@@ -5225,9 +5112,9 @@ export const champion_season_9 = {
                 "name": "SpellDamage",
                 "value": [
                     100,
-                    180,
-                    270,
-                    410,
+                    150,
+                    225,
+                    350,
                     100,
                     100,
                     100
@@ -5237,9 +5124,9 @@ export const champion_season_9 = {
                 "name": "BoulderDamage",
                 "value": [
                     100,
-                    110,
-                    160,
-                    240,
+                    125,
+                    190,
+                    290,
                     100,
                     100,
                     100
@@ -5260,7 +5147,7 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 40,
         "hp": 550,
-        "initialMana": 20,
+        "initialMana": 0,
         "magicResist": 20,
         "mana": 60,
         "range": 4
@@ -5273,7 +5160,7 @@ export const champion_season_9 = {
 },
     TFT9_Ryze: {
     "ability": {
-        "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons a random high tier unit instead.",
+        "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons random a high tier unit instead.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
         "name": "Realm Warp: Bandle City",
         "variables": []
@@ -5304,7 +5191,7 @@ export const champion_season_9 = {
 },
     TFT9_Sett: {
     "ability": {
-        "desc": "Grab an enemy from either side and slam them together, knocking them up. Deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Stuns</TFTKeyword> them for <scaleLevel>@StunDuration@</scaleLevel> seconds. <br><br>If only one enemy is grabbed, the damage and <TFTKeyword>Stun</TFTKeyword> duration are increased by @SoloBonus*100@%.<br><br>Ionia Bonus: <scaleHealth>+@TooltipIoniaBonus@</scaleHealth> max Health",
+        "desc": "Grab an enemy from either side and slam them together, knocking them up. Deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and Stuns them for <scaleLevel>@StunDuration@</scaleLevel> seconds. <br><br>If only one enemy is grabbed, the damage and Stun duration are increased by @SoloBonus*100@%.<br><br>Ionia Bonus: <scaleHealth>+@TooltipIoniaBonus@</scaleHealth> maximum Health",
         "icon": "ASSETS/Characters/Sett/HUD/Icons2D/Sett_Q.dds",
         "name": "Facebreaker",
         "variables": [
@@ -5415,13 +5302,13 @@ export const champion_season_9 = {
             {
                 "name": "TooltipIoniaBonus",
                 "value": [
-                    25,
-                    25,
-                    25,
-                    25,
-                    25,
-                    25,
-                    25
+                    20,
+                    20,
+                    20,
+                    20,
+                    20,
+                    20,
+                    20
                 ]
             },
             {
@@ -5477,13 +5364,13 @@ export const champion_season_9 = {
         "hp": 504,
         "initialMana": 44,
         "magicResist": 14,
-        "mana": 124,
-        "range": 5
+        "mana": 144,
+        "range": 3
     },
     "tileIcon": "ASSETS/Characters/TFT9_Jhin/HUD/TFT9_Jhin_Square.TFT_Set9.tex",
     "traits": [
         "Ionia",
-        "Vanquisher"
+        "Deadeye"
     ]
 },
     TFT9_Viego: {
@@ -5537,14 +5424,14 @@ export const champion_season_9 = {
     "name": "Viego",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT9_Viego_Mobile.TFT_Set9.tex",
     "stats": {
-        "armor": 30,
+        "armor": 25,
         "attackSpeed": 0.75,
         "critChance": 0.25,
         "critMultiplier": 1.399999976158142,
         "damage": 45,
         "hp": 600,
         "initialMana": 0,
-        "magicResist": 30,
+        "magicResist": 25,
         "mana": 50,
         "range": 1
     },
@@ -5772,7 +5659,7 @@ export const champion_season_9 = {
 },
     TFT9_RyzeBandleCity: {
     "ability": {
-        "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons a random high tier unit instead.",
+        "desc": "Create a portal to Bandle City under the most expensive unit on your bench. They are summoned to the battlefield with @ModifiedBonusMana@ (%i:scaleAP%) bonus Mana and are...slightly smaller?<br><br>If there are no units left on your bench, Ryze summons random a high tier unit instead.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
         "name": "Realm Warp: Bandle City",
         "variables": [
@@ -5807,18 +5694,6 @@ export const champion_season_9 = {
                     0.4000000059604645,
                     0.30000001192092896,
                     0,
-                    0,
-                    0,
-                    0
-                ]
-            },
-            {
-                "name": "BaseStarLevelSummon",
-                "value": [
-                    0,
-                    1,
-                    1,
-                    3,
                     0,
                     0,
                     0
@@ -5953,7 +5828,7 @@ export const champion_season_9 = {
                 "value": [
                     200,
                     400,
-                    500,
+                    600,
                     3000,
                     1000,
                     1200,
@@ -5990,7 +5865,7 @@ export const champion_season_9 = {
                     150,
                     175,
                     275,
-                    1500,
+                    3500,
                     0,
                     0,
                     0
@@ -6011,9 +5886,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 50,
         "hp": 1111,
-        "initialMana": 50,
+        "initialMana": 60,
         "magicResist": 30,
-        "mana": 125,
+        "mana": 120,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
@@ -6125,7 +6000,7 @@ export const champion_season_9 = {
                 "value": [
                     0.15000000596046448,
                     0.15000000596046448,
-                    0.30000001192092896,
+                    0.20000000298023224,
                     5,
                     0.3499999940395355,
                     0.4000000059604645,
@@ -6228,7 +6103,7 @@ export const champion_season_9 = {
 },
     TFT9_RyzeShurima: {
     "ability": {
-        "desc": "Create a portal to Shurima, summoning a roaming sand tornado that deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies hit and knocks them up, <TFTKeyword>Stunning</TFTKeyword> them for <scaleLevel>@KnockupDuration@</scaleLevel> second(s).<br><br>The tornado has a chance to unearth buried treasures and gold as it travels.",
+        "desc": "Create a portal to Shurima, summoning a sand tornado that travels across the battlefield, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage to enemies hit and knocking them up, Stunning them for <scaleLevel>@KnockupDuration@</scaleLevel> second.<br><br>The tornado has a chance to unearth buried treasures and gold as it travels.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
         "name": "Realm Warp: Shurima",
         "variables": [
@@ -6344,7 +6219,7 @@ export const champion_season_9 = {
 },
     TFT9_RyzeTargon: {
     "ability": {
-        "desc": "Create a portal to the skies above Mount Targon that beckons the current target. After a few seconds, they descend from the heavens as a meteor towards the largest group of enemies, dealing <magicDamage>@ModifiedPercentMaxHealth@ (%i:scaleAP%)</magicDamage> of the initial target's maximum Health as magic damage. Enemies in the epicenter are briefly knocked up.<br><br>If the target is the only enemy remaining, they never descend.",
+        "desc": "Create a portal to the skies above Mount Targon that beckons the current target. After a few seconds, they descend from the heavens as a meteor towards the largest group of enemies, dealing <magicDamage>@ModifiedPercentMaxHealth@ (%i:scaleAP%)</magicDamage> of the the initial target's maximum Health as magic damage. Enemies in the epicenter are briefly knocked up.<br><br>If the target is the only enemy remaining, they never descend.",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
         "name": "Realm Warp: Targon",
         "variables": [
@@ -6353,7 +6228,7 @@ export const champion_season_9 = {
                 "value": [
                     0.20000000298023224,
                     0.18000000715255737,
-                    0.30000001192092896,
+                    0.25,
                     1,
                     0.6000000238418579,
                     0.699999988079071,
@@ -6423,7 +6298,7 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 50,
         "hp": 1111,
-        "initialMana": 30,
+        "initialMana": 10,
         "magicResist": 30,
         "mana": 100,
         "range": 4
@@ -6436,7 +6311,7 @@ export const champion_season_9 = {
 },
     TFT9_RyzeZaun: {
     "ability": {
-        "desc": "Create <scaleLevel>@NumPortals@</scaleLevel> portals to Zaun, causing hired guns to fire at nearby enemies. Deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Wounds</TFTKeyword>, @TooltipShredPercent@% <TFTKeyword>Shreds</TFTKeyword>, and @TooltipShredPercent@% <TFTKeyword>Sunders</TFTKeyword> for @DebuffDuration@ seconds. The more gold you have, the more powerful the portals become.<br><br><spellPassive>@Breakpoint1Gold@ Gold:</spellPassive> +@Breakpoint1BonusPortals@ portal. Portals fire a rocket that deals @SplashDamagePercent*100@% damage in a one-hex radius.<br><spellPassive>@Breakpoint2Gold@ Gold:</spellPassive> Double the portals. Summon @Breakpoint2BonusPortalsPerGold@ additional portals for every @GoldPerPortal@ Gold more.<br><br><rules><tftbold>Wound:</tftbold> Reduce healing received by 50%<br><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
+        "desc": "Create <scaleLevel>@NumPortals@</scaleLevel> portals to Zaun, causing hired guns to fire at nearby enemies. Deals <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and <TFTKeyword>Wounds</TFTKeyword>, 40% <TFTKeyword>Shreds</TFTKeyword>, and 40% <TFTKeyword>Sunders</TFTKeyword> for @DebuffDuration@ seconds. The more gold you have, the more powerful the portals become.<br><br><spellPassive>@Breakpoint1Gold@ Gold:</spellPassive> +@Breakpoint1BonusPortals@ portal. Portals fire a rocket that deals @SplashDamagePercent*100@% damage in a one-hex radius.<br><spellPassive>@Breakpoint2Gold@ Gold:</spellPassive> Double the portals. Summon @Breakpoint2BonusPortalsPerGold@ additional portals for every @GoldPerPortal@ Gold more.<br><br><rules><tftbold>Wound:</tftbold> Reduce healing received by 50%<br><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
         "icon": "ASSETS/Characters/TFT9_Ryze/HUD/Icons2D/TFT9_Ryze_R.TFT_Set9.dds",
         "name": "Realm Warp: Zaun",
         "variables": [
@@ -6456,8 +6331,8 @@ export const champion_season_9 = {
                 "name": "Damage",
                 "value": [
                     100,
-                    125,
-                    230,
+                    110,
+                    200,
                     2006,
                     500,
                     600,
@@ -6547,18 +6422,6 @@ export const champion_season_9 = {
                     20,
                     20
                 ]
-            },
-            {
-                "name": "TooltipShredPercent",
-                "value": [
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20
-                ]
             }
         ]
     },
@@ -6575,9 +6438,9 @@ export const champion_season_9 = {
         "critMultiplier": 1.399999976158142,
         "damage": 50,
         "hp": 1111,
-        "initialMana": 40,
+        "initialMana": 50,
         "magicResist": 30,
-        "mana": 100,
+        "mana": 90,
         "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT9_Ryze/HUD/TFT9_Ryze_Square.TFT_Set9.dds",
@@ -6657,7 +6520,7 @@ export const champion_season_9 = {
 },
     TFT9_VoidEggBaron: {
     "ability": {
-        "desc": "<spellPassive>Passive:</spellPassive> Cast every @CastCadence@ attacks and cycle between 3 different Abilities: this, <tftbonus>Voracious Bite</tftbonus> (damage an enemy and heal), and <tftbonus>Void Tentacle</tftbonus> (damage and <TFTKeyword>Stun</TFTKeyword> a group).<br><br><spellActive>Active:</spellActive> Lob three pools of acid towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipShred@% <TFTKeyword>Shredding</TFTKeyword> and <TFTKeyword>Sundering</TFTKeyword> for @DebuffDuration@ seconds.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
+        "desc": "<spellPassive>Passive:</spellPassive> Cast every @CastCadence@ attacks and cycle between 3 different Abilities: this, <tftbonus>Voracious Bite</tftbonus> (damage an enemy and heal), and <tftbonus>Void Tentacle</tftbonus> (damage and Stun a group).<br><br><spellActive>Active:</spellActive> Lob three pools of acid towards the largest group of enemies, dealing <magicDamage>@ModifiedDamage@ (%i:scaleAP%)</magicDamage> magic damage and @TooltipShred@% <TFTKeyword>Shredding</TFTKeyword> and <TFTKeyword>Sundering</TFTKeyword> for @DebuffDuration@ seconds.<br><br><rules><tftbold>Shred:</tftbold> Reduce Magic Resist<br><tftbold>Sunder:</tftbold> Reduce Armor</rules>",
         "icon": "ASSETS/Characters/TFT9_BaronNashor/HUD/TFT9_BaronNashor_Square.TFT_Set9.dds",
         "name": "Corrosive Acid",
         "variables": []
