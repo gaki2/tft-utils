@@ -4,12 +4,12 @@ import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
 import styled from 'styled-components';
 import { ChampionData } from './class/Board';
-import {useBoard} from "./useBoard";
+import { useBoard } from './useBoard';
 
-export type BuilderProps = { champions: ChampionData[]; season: Season; language?: LanguageType };
+export type BoardProps = { champions: ChampionData[]; season: Season; language?: LanguageType };
 
-export const Board = ({ champions, season, language = 'ko_kr' }: BuilderProps) => {
-  const {board} = useBoard(champions);
+export const Board = ({ champions, season, language = 'ko_kr' }: BoardProps) => {
+  const { board } = useBoard(champions);
 
   return (
     <Wrapper>
@@ -62,7 +62,7 @@ const Wrapper = styled.div`
   & * {
     box-sizing: border-box;
   }
-  
+
   @media (max-width: 768px) {
     --font-scale: 0.7;
     --slot-width: 44px;
