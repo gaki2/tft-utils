@@ -9,44 +9,48 @@ import { SEASON_SET_DATA_IDX_MAP } from './shared';
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
 
+export interface TraitData {
+  apiName: string;
+  name: string;
+  url: string;
+}
+
+class Trait implements TraitData {
+  constructor(public apiName: string, public name: string, public url: string) {}
+}
+
 /**
- * trait_{lang}.ts 파일의 icon 속성을 실제 아이콘 이미지의 Path 로 만듦
+ *
+ * @example
+ * TFT9_targon => targon
  */
-const parseIconPath = (path: string, season: Season) => {
-  const splitPath = path.split('/');
-  const fileName = splitPath[splitPath.length - 1];
-  return `${S3}/${season}/traits/${fileName.replace('tex', 'png')}`;
-};
+function handleApiName(_apiName: string) {
+  return _apiName.split('_')[1];
+}
 
-const createObject = (
-  name: string,
-  values: { apiName: string; icon: string }[],
-  season: Season
-) => {
-  return `export const ${name} = {
-    ${values
-      .map(
-        (value) =>
-          `'${value.apiName}': ${JSON.stringify(
-            Object.assign(value, { icon: parseIconPath(value.icon, season) }),
-            null,
-            4
-          )}`
-      )
-      .join(',\n    ')}
-  }`;
-};
+export async function createTraits(lang: LanguageType, season: Season) {
+  const rawContent = fs.readFileSync(`${jsonDir}/${season}/tft_data_${lang}.json`, 'utf8');
+  const jsObject = JSON.parse(rawContent);
+  const traits = jsObject['setData'][SEASON_SET_DATA_IDX_MAP[season]]['traits'] as TraitData[];
 
-export const championTrait = (lang: LanguageType, season: Season) =>
-  new Promise((resolve, reject) => {
-    const file = fs.readFileSync(`${jsonDir}/${season}/tft_data_${lang}.json`, 'utf8');
-    const object = JSON.parse(file);
+  const traitsObject: { [key: string]: Trait } = {};
+  const traitNamesForType = new Set();
 
-    const traits = object['setData'][SEASON_SET_DATA_IDX_MAP[season]]['traits'];
-    writeFile(
-      `${outDir}/${season}/trait_${lang}.ts`,
-      createObject(`trait_${season}`, traits, season)
-    )
-      .then(() => resolve(''))
-      .catch((err) => reject(err));
-  });
+  for (let i = 0; i < traits.length; i++) {
+    const { name: _name, apiName: _apiName } = traits[i];
+    const name = _name.replace('<br>', '');
+    traitNamesForType.add(name);
+    const apiName = handleApiName(_apiName);
+    const url = `${S3}/${season}/traits/${apiName}.png`;
+    const trait = new Trait(apiName, name, url);
+
+    traitsObject[apiName] = trait;
+  }
+  const ret = `export const trait_${season} = ${JSON.stringify(traitsObject, null, 4)};
+export type Trait_${season}_${lang} = ${Array.from(traitNamesForType)
+    .map((trait) => `"${trait}"`)
+    .join(' | ')}
+`;
+
+  await writeFile(`${outDir}/${season}/trait_${lang}.ts`, ret);
+}

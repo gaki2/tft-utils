@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Board } from './Board';
-import { ChampionData } from './class/Board';
+import { ChampionNode } from './class/Board';
 
 const meta = {
   title: 'Example/Board',
@@ -13,7 +13,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const MOCK_DATA: ChampionData[] = [
+const MOCK_DATA: ChampionNode[] = [
   {
     position: {
       row: 2,

@@ -12,9 +12,14 @@ const seasonVersionMap = {
   season_9b: '13.18',
 };
 
+const LangMap = {
+  ko: 'ko_kr',
+  en: 'en_us',
+};
+
 export const fetchJson = (language: LanguageType, season: Season) => {
   const version = seasonVersionMap[season];
-  const filePath = `https://raw.communitydragon.org/${version}/cdragon/tft/${language}.json`;
+  const filePath = `https://raw.communitydragon.org/${version}/cdragon/tft/${LangMap[language]}.json`;
   const output = `${outDir}/${season}/tft_data_${language}.json`;
 
   return new Promise((resolve, reject) => {

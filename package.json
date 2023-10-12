@@ -126,5 +126,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "react-tooltip": "^5.21.5"
   }
 }

@@ -1,35 +1,24 @@
-import { Position, SlotIndex } from '../../../types/board';
-import { ChampionName } from '../../../types/championType';
+import { Position } from '../../../types/board';
+import { ChampionData, ChampionName } from '../../../types/champion';
+import { getChampionData } from '../../../getter';
+import { LanguageType, Season } from '../../../types';
 
 export const BOARD_ROW_COUNT = 4;
 export const BOARD_COL_COUNT = 7;
 export const BOARD_SLOT_COUNT = BOARD_ROW_COUNT * BOARD_COL_COUNT;
 
 export type StarLevel = 0 | 1 | 2 | 3 | 4;
-export type Rule = 'main_dps' | 'sub_dps' | 'main_tank' | 'sub_tank'
+export type Rule = 'main_dps' | 'sub_dps' | 'main_tank' | 'sub_tank';
 
-export type ChampionData = {
+export type ChampionNode = {
   position: Position;
   name: ChampionName;
 };
 
-export type DragState = {
-  isDragging: boolean;
-  /**
-   * 만약 드래그 중이라면, 현재 드래그중인 슬롯의 인덱스이다.
-   */
-  slotIdx: SlotIndex | null;
-  overSlotIdx: SlotIndex | null;
-};
-
 export type SlotData = {
-  name: ChampionName;
+  championData: ChampionData;
   rule?: Rule;
   starLevel?: StarLevel;
-};
-
-export type BoardMeta = {
-  dragState: DragState;
 };
 
 export type BoardModelState = {
@@ -48,12 +37,14 @@ export class Board {
   private state: BoardModelState;
   private slotsStateListener: slotsStateListener;
 
-  public constructor(championDataList: ChampionData[]) {
-    const slots = Array(BOARD_SLOT_COUNT).fill(null);
-    championDataList.forEach((championData) =>
-      slots[this.convertRowColToIdx(championData.position)] = { name: championData.name })
+  public constructor(championDataList: ChampionNode[], season: Season, lang: LanguageType) {
+    const slots: (SlotData | null)[] = Array(BOARD_SLOT_COUNT).fill(null);
+    championDataList.forEach((data) => {
+      const championData = getChampionData(data.name, season, lang);
+      slots[this.convertRowColToIdx(data.position)] = { championData };
+    });
 
-    this.state = {slots, isDragging: false, draggingSlotIdx: null, dragoverSlotIdx: null};
+    this.state = { slots, isDragging: false, draggingSlotIdx: null, dragoverSlotIdx: null };
   }
 
   private convertRowColToIdx(position: Position): number {
@@ -91,7 +82,11 @@ export class Board {
     return this.state.slots[slotIdx];
   }
 
-  public updateDragState({isDragging, draggingSlotIdx, dragoverSlotIdx}: Partial<Pick<BoardModelState, 'isDragging' | 'draggingSlotIdx' | 'dragoverSlotIdx'>>) {
+  public updateDragState({
+    isDragging,
+    draggingSlotIdx,
+    dragoverSlotIdx,
+  }: Partial<Pick<BoardModelState, 'isDragging' | 'draggingSlotIdx' | 'dragoverSlotIdx'>>) {
     if (isDragging !== undefined) {
       this.state.isDragging = isDragging;
     }
@@ -111,13 +106,17 @@ export class Board {
 
   public swap() {
     if (!this.state.isDragging || this.state.draggingSlotIdx === null) {
-      console.error(`Fail to swap champion: dragState is not valid (isDragging: ${this.state.isDragging}, draggingSlotIdx: ${this.state.draggingSlotIdx})`);
-      return ;
+      console.error(
+        `Fail to swap champion: dragState is not valid (isDragging: ${this.state.isDragging}, draggingSlotIdx: ${this.state.draggingSlotIdx})`
+      );
+      return;
     }
 
     if (this.state.dragoverSlotIdx === null) {
-      console.error(`Fail to swap champion: dragState is not valid (draggingSlotIdx: ${this.state.draggingSlotIdx})`);
-      return ;
+      console.error(
+        `Fail to swap champion: dragState is not valid (draggingSlotIdx: ${this.state.draggingSlotIdx})`
+      );
+      return;
     }
 
     this._swap(this.state.draggingSlotIdx, this.state.dragoverSlotIdx);
