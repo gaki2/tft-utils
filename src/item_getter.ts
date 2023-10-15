@@ -22,11 +22,12 @@ export const getItems = (season: Season, lang: LanguageType) => {
 };
 
 export const getItemData = ({ name, season, lang }: ItemGetterProps) => {
-  const defaultItemData = {
+  const defaultItemData: ItemData = {
     apiName: 'no-matched-item',
     name: 'no-matched-item',
     composition: [],
     url: '',
+    desc: '',
   };
   const items = getItems(season, lang);
 

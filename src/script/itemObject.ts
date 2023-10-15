@@ -3,6 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import { S3 } from '../environments/urls';
 import { writeFile } from '../utils/file';
+import { convertKeysToUpperCase, isEmptyObject } from '../utils/my_lodash';
 
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
@@ -54,8 +55,12 @@ export async function createItems(lang: LanguageType, season: Season) {
       continue;
     }
 
-    const { name: _name, composition, desc, effects } = target;
-    const name = _name.replace('<br>', '');
+    const { name: originalName, composition, desc: original_desc, effects } = target;
+    const name = cleanBrTag(originalName);
+    const desc = replaceVariables(
+      cleanAngleBracket(cleanPercent(cleanZWSP(original_desc))),
+      effects
+    );
 
     /** 가끔 name 이 빈 문자열인 것이 있으므로, 이것들을 없애준다. */
     if (name === '') {
@@ -64,7 +69,6 @@ export async function createItems(lang: LanguageType, season: Season) {
 
     itemNamesForType.add(name);
     const itemData = new Item(id, name, composition, url, desc);
-
     itemObject[id] = itemData;
   }
   /**
@@ -77,3 +81,37 @@ export type Item_${season}_${lang} = ${Array.from(itemNamesForType)
   `;
   await writeFile(`${outDir}/${season}/items_${lang}.ts`, ret);
 }
+
+const cleanBrTag = (str: string) => {
+  return str.replace(/<br>/g, '');
+};
+
+/**
+ * <br> 태그를 제외한 <~~~>, </~~~> 형태의 태그를 제거함.
+ */
+const cleanAngleBracket = (str: string) => {
+  return str.replace(/<(?!br>)[^>]*>/g, '');
+};
+
+const replaceVariables = (input: string, effects: any) => {
+  if (isEmptyObject(effects)) return input;
+  convertKeysToUpperCase(effects);
+  return input.replace(/@(\w+)(\*[\d]+)?@/g, function (match, p1, p2) {
+    const value = effects[p1.toUpperCase()];
+    if (value !== undefined) {
+      return p2 ? value * parseFloat(p2.slice(1)) : value;
+    }
+    return match;
+  });
+};
+
+/**
+ * '%i: ~~~~ %' 형태의 값을 제거해준다.
+ */
+const cleanPercent = (str: string) => {
+  return str.replace(/%i:[^%]*%/g, '');
+};
+
+const cleanZWSP = (str: string) => {
+  return str.replace(/\u200B/g, '');
+};
