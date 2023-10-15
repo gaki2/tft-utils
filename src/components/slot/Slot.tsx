@@ -1,15 +1,13 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Board, SlotData } from '../board/class/Board';
 import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
-import { getChampionDisplayName, getCost } from '../../getter';
 import { throttle } from '../../utils/throttle';
 import { Popover } from '../../utils/popover/Popover';
 import { SlotPopup } from './popup_view/SlotPopup';
 import styled from 'styled-components';
-import { S3 } from '../../environments/urls';
-import { Label } from './label/Label';
+import { ChampionName } from '../../types';
 
 type SlotProps = {
   board: Board;
@@ -29,13 +27,6 @@ type Dimension = {
 const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const imageDivRef = useRef<HTMLDivElement>(null);
-  const cost = useMemo(() => (slotData ? getCost(slotData.name, season) : null), [slotData]);
-  const championDisplayName = useMemo(() => {
-    if (slotData) {
-      return getChampionDisplayName(slotData.name, season, language);
-    }
-    return '';
-  }, [slotData, language]);
   const [isOpened, setIsOpened] = useState(false);
   const [dimension, setDimension] = useState<Dimension | null>(null);
 
@@ -103,10 +94,12 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
         onDragOver={onDragOver}
         onDragLeave={onDragLeave}
         onDrop={onDrop}>
-        <StyledBorder cost={cost}>
-          <StyledImageDiv ref={imageDivRef} championName={slotData?.name} season={season} />
+        <StyledBorder cost={slotData?.championData?.cost}>
+          <StyledImageDiv ref={imageDivRef} url={slotData?.championData?.url ?? ''} />
           {/*{Boolean(slotData) && <Label rule={'sub_tank'} lang={language} />}*/}
-          {Boolean(slotData) && <StyledChampionName>{championDisplayName}</StyledChampionName>}
+          {Boolean(slotData) && (
+            <StyledChampionName>{slotData?.championData?.name}</StyledChampionName>
+          )}
         </StyledBorder>
       </StyledWrapper>
       {slotData && isOpened && (
@@ -116,7 +109,11 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
           parentWidth={dimension?.width ?? 0}
           parentHeight={dimension?.height ?? 0}
           closePopover={() => setIsOpened(false)}>
-          <SlotPopup championName={slotData?.name} season={season} language={language} />
+          <SlotPopup
+            championName={slotData?.championData?.apiName as ChampionName}
+            season={season}
+            language={language}
+          />
         </Popover>
       )}
     </>
@@ -153,7 +150,7 @@ const StyledBorder = styled.div<{ cost: number | undefined | null }>`
   background-color: ${({ cost }) => (cost ? `var(--${cost}_cost_border)` : '#000')};
 `;
 
-const StyledImageDiv = styled.div<{ championName: string | undefined; season: Season }>`
+const StyledImageDiv = styled.div<{ url: string }>`
   &.isOver {
     background-color: #6497af;
   }
@@ -161,9 +158,8 @@ const StyledImageDiv = styled.div<{ championName: string | undefined; season: Se
   height: 100%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: #fff 50% / cover no-repeat;
-  background-image: ${({ championName, season }) =>
-    championName ? `url(${S3}/${season}/champions/${championName}.png)` : ''};
-  cursor: ${({ championName }) => (championName ? 'pointer' : 'default')};
+  background-image: ${({ url }) => `url(${url})`};
+  cursor: ${({ url }) => (Boolean(url) ? 'pointer' : 'default')};
 `;
 
 const StyledChampionName = styled.span`

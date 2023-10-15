@@ -1,13 +1,7 @@
+import { TraitData } from '../../../script/traitObject';
+
 type TraitsViewProps = {
-  traits:
-    | null
-    | {
-        apiName: string;
-        desc: string;
-        effects: { maxUnits: number; minUnits: number; style: number; variables: {} }[];
-        icon: string;
-        name: string;
-      }[];
+  traits: TraitData[];
 };
 
 export const TraitsView = ({ traits }: TraitsViewProps) => {
@@ -25,8 +19,9 @@ export const TraitsView = ({ traits }: TraitsViewProps) => {
       {traits?.map((trait) => (
         <div style={{ display: 'flex', gap: '8px' }} key={trait.name}>
           <div
+            title={trait.name}
             style={{
-              backgroundImage: `url(${trait.icon ?? ''})`,
+              backgroundImage: `url(${trait.url ?? ''})`,
               width: '20px',
               height: '20px',
               backgroundSize: 'contain',

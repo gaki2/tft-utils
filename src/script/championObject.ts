@@ -4,39 +4,62 @@ import { LanguageType } from '../types/config';
 import { writeFile } from './utils';
 import { Season } from '../types/seasonType';
 import { SEASON_SET_DATA_IDX_MAP } from './shared';
+import { S3 } from '../environments/urls';
+import { ChampionData } from '../types/champion';
 
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
 
-const createObject = (name: string, values: { apiName: string }[]) => {
-  return `export const ${name} = {
-    ${values
-      .map((value) => `${handleException(value.apiName)}: ${JSON.stringify(value, null, 4)}`)
-      .join(',\n    ')}
-  }`;
+class Champion implements ChampionData {
+  constructor(
+    public name: string,
+    public apiName: string,
+    public url: string,
+    public cost: number,
+    public traits: string[]
+  ) {}
+}
+
+/**
+ * @example
+ * handleException('TFT9_Zeus') // 'Zeus'
+ */
+const handleApiName = (_apiName: string) => {
+  return _apiName.split('_')[1];
 };
 
-export const championTemplate = (lang: LanguageType, season: Season) =>
-  new Promise((resolve, reject) => {
-    const file = fs.readFileSync(`${jsonDir}/${season}/tft_data_${lang}.json`, 'utf8');
+export async function createChampions(lang: LanguageType, season: Season) {
+  const rawContent = fs.readFileSync(`${jsonDir}/${season}/tft_data_${lang}.json`, 'utf8');
+  const championsDataFromRiotPortal = fs.readFileSync(
+    `${jsonDir}/${season}/tft_champions_${lang}.json`,
+    'utf8'
+  );
 
-    const object = JSON.parse(file);
-    writeFile(
-      `${outDir}/${season}/champion_${lang}.ts`,
-      createObject(
-        `champion_${season}`,
-        object['setData'][SEASON_SET_DATA_IDX_MAP[season]]['champions']
-      )
-    )
-      .then(() => {
-        resolve('');
-      })
-      .catch((err) => reject(err));
-  });
+  const allDataObject =
+    JSON.parse(rawContent)['setData'][SEASON_SET_DATA_IDX_MAP[season]]['champions'];
+  const championsDataObject = JSON.parse(championsDataFromRiotPortal)['data'];
 
-const handleException = (apiName: string) => {
-  if (apiName === 'TFT9b_Aatrox') {
-    return 'TFT9_Aatrox';
+  const championsData: { id: string; tier: number; name: string }[] = [];
+
+  for (const key of Object.keys(championsDataObject)) {
+    const { id, tier, name } = championsDataObject[key];
+    championsData.push({ id, tier, name });
   }
-  return apiName;
-};
+
+  const championsObject: { [key: string]: Champion } = {};
+  for (let i = 0; i < championsData.length; i++) {
+    const { id, tier, name } = championsData[i];
+
+    const targetChampion = allDataObject.find(
+      (object: { apiName: string }) => object.apiName === id
+    );
+    const { traits } = targetChampion;
+    const apiName = handleApiName(id);
+    const url = `${S3}/${season}/champions/${apiName}.png`;
+    const champion = new Champion(name, id, url, tier, traits);
+
+    championsObject[id] = champion;
+  }
+  const ret = `export const champion_${season} = ${JSON.stringify(championsObject, null, 4)};`;
+  await writeFile(`${outDir}/${season}/champion_${lang}.ts`, ret);
+}

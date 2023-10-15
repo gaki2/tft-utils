@@ -3,13 +3,13 @@ import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
 import styled from 'styled-components';
-import { ChampionData } from './class/Board';
+import { ChampionNode } from './class/Board';
 import { useBoard } from './useBoard';
 
-export type BoardProps = { champions: ChampionData[]; season: Season; language?: LanguageType };
+export type BoardProps = { champions: ChampionNode[]; season: Season; language?: LanguageType };
 
-export const Board = ({ champions, season, language = 'ko_kr' }: BoardProps) => {
-  const { board } = useBoard(champions);
+export const Board = ({ champions, season, language = 'ko' }: BoardProps) => {
+  const { board } = useBoard(champions, season, language);
 
   return (
     <Wrapper>

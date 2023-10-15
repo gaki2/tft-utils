@@ -1,12 +1,12 @@
 import { Season } from '../../../types/seasonType';
 import { useMemo } from 'react';
-import { ChampionName } from '../../../types/championType';
+import { ChampionName } from '../../../types/champion';
 import { getChampionDisplayName, getChampionTraits, getCost } from '../../../getter';
 import { ChampionImageView } from './ChampionImageView';
 import { TraitsView } from './TraitsView';
 import { CostView } from './CostView';
-import {S3} from "../../../environments/urls";
-import {LanguageType} from "../../../types/config";
+import { S3 } from '../../../environments/urls';
+import { LanguageType } from '../../../types/config';
 
 type SlotPopupProps = {
   championName: ChampionName;
@@ -50,7 +50,7 @@ export const SlotPopup = ({ championName, season, language }: SlotPopupProps) =>
           championImageUrl={championImageUrl}
           championDisplayName={championDisplayName}
         />
-        <TraitsView traits={traits} />
+        <TraitsView traits={traits!} />
         <CostView championCost={championCost} />
       </div>
     </div>
