@@ -33,7 +33,7 @@ function replaceVariables(input: string, effects: any) {
   return input.replace(/@(\w+)(\*[\d]+)?@/g, function (match, p1, p2) {
     const value = effects[p1.toUpperCase()];
     if (value !== undefined) {
-      return p2 ? value * parseFloat(p2.slice(1)) : value;
+      return p2 ? (value * parseFloat(p2.slice(1))).toFixed(0) : value;
     }
     return match;
   });

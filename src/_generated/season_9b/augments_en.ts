@@ -103,7 +103,7 @@ export const augments_season_9b = {
     },
     "TFT7_Augment_ScopedWeapons1": {
         "apiName": "TFT7_Augment_ScopedWeapons1",
-        "description": "Your units that start combat in the back 2 rows gain +2 Attack Range and 15.000000596046448% Attack Speed.",
+        "description": "Your units that start combat in the back 2 rows gain +2 Attack Range and 15% Attack Speed.",
         "name": "Scoped Weapons",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/ScopedWeapons2.png"
     },
@@ -379,7 +379,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Idealism": {
         "apiName": "TFT9_Augment_Idealism",
-        "description": "Gain a Hand of Justice. Champions holding Hand of Justice deal 11.999999731779099% increased damage.",
+        "description": "Gain a Hand of Justice. Champions holding Hand of Justice deal 12% increased damage.",
         "name": "Idealism",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Idealism-II.TFT_Set9.png"
     },
@@ -727,7 +727,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Contagion": {
         "apiName": "TFT9_Augment_Contagion",
-        "description": "Combat start: Infect the highest Health enemy, causing them to take 18.000000715255737% more damage. Every 5 seconds or on death, the infection spreads to 2 nearby enemies.",
+        "description": "Combat start: Infect the highest Health enemy, causing them to take 18% more damage. Every 5 seconds or on death, the infection spreads to 2 nearby enemies.",
         "name": "Contagion",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Contagion-II.TFT_Set9.png"
     },
@@ -937,19 +937,19 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_AirspeedVelocity1": {
         "apiName": "TFT9_Augment_AirspeedVelocity1",
-        "description": "Your units without items equipped gain 30.000001192092896% Attack Speed.",
+        "description": "Your units without items equipped gain 30% Attack Speed.",
         "name": "Unburdened I",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Unladen-Airspeed-Velocity-I.TFT_Set9.png"
     },
     "TFT9_Augment_AirspeedVelocity2": {
         "apiName": "TFT9_Augment_AirspeedVelocity2",
-        "description": "Your units without items equipped gain 55.000001192092896% Attack Speed.",
+        "description": "Your units without items equipped gain 55% Attack Speed.",
         "name": "Unburdened II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Unladen-Airspeed-Velocity-II.TFT_Set9.png"
     },
     "TFT9_Augment_DemaciaPetriciteShackles": {
         "apiName": "TFT9_Augment_DemaciaPetriciteShackles",
-        "description": "Your Demacians deal 15.000000596046448% more damage, increased to 21.99999988079071% against Noxians and enemies with 100 or more maximum Mana. Gain 3 Demacians.",
+        "description": "Your Demacians deal 15% more damage, increased to 22% against Noxians and enemies with 100 or more maximum Mana. Gain 3 Demacians.",
         "name": "Petricite Shackles",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Petricite-Shackles-II.TFT_Set9.png"
     },
@@ -1009,13 +1009,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_DravenSpoilsOfWar2": {
         "apiName": "TFT9_Augment_DravenSpoilsOfWar2",
-        "description": "When you kill an enemy unit, there's a 30.000001192092896% chance to drop loot.",
+        "description": "When you kill an enemy unit, there's a 30% chance to drop loot.",
         "name": "Spoils of War II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-II.TFT_Set9.png"
     },
     "TFT9_Augment_DravenSpoilsOfWar3": {
         "apiName": "TFT9_Augment_DravenSpoilsOfWar3",
-        "description": "When you kill an enemy unit, there's a 40.00000059604645% chance to drop loot.",
+        "description": "When you kill an enemy unit, there's a 40% chance to drop loot.",
         "name": "Spoils of War III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-III.TFT_Set9.png"
     },
@@ -1231,7 +1231,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Commander_WellEarnedComforts3": {
         "apiName": "TFT9_Augment_Commander_WellEarnedComforts3",
-        "description": "Your units gain 120 Health and 7.999999821186066% Attack Speed for each item equipped.",
+        "description": "Your units gain 120 Health and 8% Attack Speed for each item equipped.",
         "name": "Well-Earned Comforts III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Well-Earned-Comforts-III.TFT_Set9.png"
     },
@@ -1285,13 +1285,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_DangerousToGoAlone": {
         "apiName": "TFT9_Augment_DangerousToGoAlone",
-        "description": "When a unit dies, they pass a temporary copy of one of their items to the nearest ally with open slots and shield them for 40.00000059604645% of their maximum Health.",
+        "description": "When a unit dies, they pass a temporary copy of one of their items to the nearest ally with open slots and shield them for 40% of their maximum Health.",
         "name": "Parting Gifts",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/It_s-Dangerous-to-Go-Alone-II.TFT_Set9.png"
     },
     "TFT9_Augment_GunnerSpiritOfTheDuelist": {
         "apiName": "TFT9_Augment_GunnerSpiritOfTheDuelist",
-        "description": "Your Gunner units gain 7.999999821186066% Attack Speed, plus 1.9999999552965164% per Gunner stack. Gain 2 Gunners.",
+        "description": "Your Gunner units gain 8% Attack Speed, plus 2% per Gunner stack. Gain 2 Gunners.",
         "name": "Dueling Gunners",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spirit-of-the-Duelist-II.TFT_Set9.png"
     },
@@ -1333,7 +1333,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_SettTheBoss": {
         "apiName": "TFT9_Augment_SettTheBoss",
-        "description": "Gain a Sett. The first time your strongest Sett falls below 60.00000238418579% Health, he takes a break to do sit-ups. Each sit-up heals him 10.000000149011612% of his max Health and grants 44.999998807907104% Attack Speed and Ability Power.",
+        "description": "Gain a Sett. The first time your strongest Sett falls below 60% Health, he takes a break to do sit-ups. Each sit-up heals him 10% of his max Health and grants 45% Attack Speed and Ability Power.",
         "name": "The Boss",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/The-Boss-II.png"
     },
@@ -1351,13 +1351,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_TargonStaffOfFlowingWaters": {
         "apiName": "TFT9_Augment_TargonStaffOfFlowingWaters",
-        "description": "While you have the Targon trait activated, your units gain 34.99999940395355% Attack Speed for 4 seconds after being healed or shielded. Gain 2 Targonians.",
+        "description": "While you have the Targon trait activated, your units gain 35% Attack Speed for 4 seconds after being healed or shielded. Gain 2 Targonians.",
         "name": "Stellacorn's Blessing",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Staff-of-Flowing-Waters-II.TFT_Set9.png"
     },
     "TFT9_Augment_StrategistTacticalSuperiority": {
         "apiName": "TFT9_Augment_StrategistTacticalSuperiority",
-        "description": "Your champions gain 3.999999910593033% Attack Damage and Ability Power for each of their active traits, doubled when you field a Strategist. Gain 2 Strategists.",
+        "description": "Your champions gain 4% Attack Damage and Ability Power for each of their active traits, doubled when you field a Strategist. Gain 2 Strategists.",
         "name": "Tactical Superiority",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Tactical-Superiority-II.TFT_Set9.png"
     },
@@ -1369,13 +1369,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_AllNatural": {
         "apiName": "TFT9_Augment_AllNatural",
-        "description": "Your champions with no items equipped gain 120 Health and heal for 0.9999999776482582% of their max Health each second.",
+        "description": "Your champions with no items equipped gain 120 Health and heal for 1% of their max Health each second.",
         "name": "All Natural I",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/All-Natural-I.TFT_Set9.png"
     },
     "TFT9_Augment_AllNatural2": {
         "apiName": "TFT9_Augment_AllNatural2",
-        "description": "Your champions with no items equipped gain 150 Health and heal for 1.9999999552965164% of their max Health each second.",
+        "description": "Your champions with no items equipped gain 150 Health and heal for 2% of their max Health each second.",
         "name": "All Natural II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/All-Natural-II.TFT_Set9.png"
     },
@@ -1405,13 +1405,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_PiltoverShimmeringInventors": {
         "apiName": "TFT9_Augment_PiltoverShimmeringInventors",
-        "description": "Your Piltover units deal 7.000000029802322% more damage for every 10 gold you have (max: 34.99999940395355%), and have a 33.000001311302185% chance to drop 1 gold at round start. Gain an Ekko.",
+        "description": "Your Piltover units deal 7% more damage for every 10 gold you have (max: 35%), and have a 33% chance to drop 1 gold at round start. Gain an Ekko.",
         "name": "Shimmering Inventors",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Shimmering-Inventors-II.TFT_Set9.png"
     },
     "TFT9_Augment_GalioCarry": {
         "apiName": "TFT9_Augment_GalioCarry",
-        "description": "Gain a Galio. Your strongest Galio's ability gets larger with each cast, and enemies hit take magic damage equal to 11.999999731779099% of his max Health each second.",
+        "description": "Gain a Galio. Your strongest Galio's ability gets larger with each cast, and enemies hit take magic damage equal to 12% of his max Health each second.",
         "name": "Winds of War",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Winds-of-War-II.TFT_Set9.png"
     },
@@ -1423,13 +1423,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_SwainCarry": {
         "apiName": "TFT9_Augment_SwainCarry",
-        "description": "Gain a Swain. Your strongest Swain deals 2.9999999329447746% increased damage per 100 max Health.",
+        "description": "Gain a Swain. Your strongest Swain deals 3% increased damage per 100 max Health.",
         "name": "Demonflare",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Demonflare-II.TFT_Set9.png"
     },
     "TFT9_Augment_RogueVampiricBlades": {
         "apiName": "TFT9_Augment_RogueVampiricBlades",
-        "description": "Your units gain 10.000000149011612% Omnivamp. Your Rogues gain 20.000000298023224% instead. Gain 2 Rogues.",
+        "description": "Your units gain 10% Omnivamp. Your Rogues gain 20% instead. Gain 2 Rogues.",
         "name": "Vampiric Blades",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Vampiric-Blades-II.TFT_Set9.png"
     },
@@ -1459,19 +1459,19 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_IoniaSentinelsSpirit": {
         "apiName": "TFT9_Augment_IoniaSentinelsSpirit",
-        "description": "While in spirit form, your Ionians gain 10.000000149011612% Attack Speed and shield themselves for 15.000000596046448% of their maximum Health. Gain 2 Ionians.",
+        "description": "While in spirit form, your Ionians gain 10% Attack Speed and shield themselves for 15% of their maximum Health. Gain 2 Ionians.",
         "name": "Sentinel's Spirit",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Final-Breath-II.TFT_Set9.png"
     },
     "TFT9_Augment_JuggernautCantStopMe": {
         "apiName": "TFT9_Augment_JuggernautCantStopMe",
-        "description": "Your Juggernauts deal 10.000000149011612% more damage, increased to 20.000000298023224% for the rest of combat when they fall below 50% Health.  Gain 2 Juggernauts.",
+        "description": "Your Juggernauts deal 10% more damage, increased to 20% for the rest of combat when they fall below 50% Health.  Gain 2 Juggernauts.",
         "name": "Adrenaline Rush",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Can_t-Stop-Me-II.TFT_Set9.png"
     },
     "TFT9_Augment_BastionMorningLight": {
         "apiName": "TFT9_Augment_BastionMorningLight",
-        "description": "When your Bastion units drop below 50% Health, they heal for 40.00000059604645% of their maximum Health over 4 seconds. Gain 2 Bastion units.",
+        "description": "When your Bastion units drop below 50% Health, they heal for 40% of their maximum Health over 4 seconds. Gain 2 Bastion units.",
         "name": "Morning Light",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Morninig-Light-II.TFT_Set9.png"
     },
@@ -1489,7 +1489,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_BruiserTitanicStrength": {
         "apiName": "TFT9_Augment_BruiserTitanicStrength",
-        "description": "Bruisers gain increased Attack Damage equal to 1.4999999664723873% of their maximum Health. Gain 2 Bruisers.",
+        "description": "Bruisers gain increased Attack Damage equal to 1% of their maximum Health. Gain 2 Bruisers.",
         "name": "Titanic Strength",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Titanic-Strength-II.png"
     },
@@ -1639,13 +1639,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Legend_DravenSpoilsOfWar2": {
         "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar2",
-        "description": "When you kill an enemy unit, there's a 30.000001192092896% chance to drop loot.",
+        "description": "When you kill an enemy unit, there's a 30% chance to drop loot.",
         "name": "Spoils of War II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-II.TFT_Set9.png"
     },
     "TFT9_Augment_Legend_DravenSpoilsOfWar3": {
         "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar3",
-        "description": "When you kill an enemy unit, there's a 40.00000059604645% chance to drop loot.",
+        "description": "When you kill an enemy unit, there's a 40% chance to drop loot.",
         "name": "Spoils of War III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-III.TFT_Set9.png"
     },
@@ -1873,7 +1873,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_OneHundredDuckSizedHorses": {
         "apiName": "TFT9_Augment_OneHundredDuckSizedHorses",
-        "description": "Gain +3 maximum team size, but your units can only hold 1 item and their total health is reduced by 20.000000298023224%. Gain 6 gold.",
+        "description": "Gain +3 maximum team size, but your units can only hold 1 item and their total health is reduced by 20%. Gain 6 gold.",
         "name": "Endless Hordes",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/100-Duck-Sized-Horses-III.TFT_Set9.png"
     },
@@ -1921,7 +1921,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_OneHundredDuckSizedHorsesPlus": {
         "apiName": "TFT9_Augment_OneHundredDuckSizedHorsesPlus",
-        "description": "Gain +3 maximum team size, but your units can only hold 1 item and their total health is reduced by 20.000000298023224%. Gain 9 gold.",
+        "description": "Gain +3 maximum team size, but your units can only hold 1 item and their total health is reduced by 20%. Gain 9 gold.",
         "name": "Endless Hordes +",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/100-Duck-Sized-Horses-III.TFT_Set9.png"
     },
@@ -1969,13 +1969,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_IxtalRejuvenatingFlames": {
         "apiName": "TFT9_Augment_IxtalRejuvenatingFlames",
-        "description": "Allies heal for 10.000000149011612% of their max Health every 5 seconds. Allies that started combat in an elemental hex heal for @EnhancedRegen*100@% instead. Gain 2 Ixtal champions.",
+        "description": "Allies heal for 10% of their max Health every 5 seconds. Allies that started combat in an elemental hex heal for @EnhancedRegen*100@% instead. Gain 2 Ixtal champions.",
         "name": "Rejuvenating Flames",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Rejuvenating-Flames-II.TFT_Set9_Stage2.png"
     },
     "TFT9_Augment_VanquisherStolenVitality": {
         "apiName": "TFT9_Augment_VanquisherStolenVitality",
-        "description": "When your Vanquisher's attacks and Abilities critically strike, they heal the ally with the most missing Health by 2.500000037252903% of that ally's max Health. Gain 2 Vanquishers.",
+        "description": "When your Vanquisher's attacks and Abilities critically strike, they heal the ally with the most missing Health by 3% of that ally's max Health. Gain 2 Vanquishers.",
         "name": "Stolen Vitality",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Stolen-Vitality-II.TFT_Set9_Stage2.png"
     },

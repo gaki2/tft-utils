@@ -103,7 +103,7 @@ export const augments_season_9b = {
     },
     "TFT7_Augment_ScopedWeapons1": {
         "apiName": "TFT7_Augment_ScopedWeapons1",
-        "description": "후방 2열에서 전투를 시작하는 아군 유닛의 공격 속도가 15.000000596046448% 증가하고 공격 사거리가 2칸 늘어납니다.",
+        "description": "후방 2열에서 전투를 시작하는 아군 유닛의 공격 속도가 15% 증가하고 공격 사거리가 2칸 늘어납니다.",
         "name": "조준경 부착",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/ScopedWeapons2.png"
     },
@@ -379,7 +379,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Idealism": {
         "apiName": "TFT9_Augment_Idealism",
-        "description": "정의의 손길을 획득합니다. 정의의 손길을 장착한 유닛의 피해량이 11.999999731779099% 증가합니다.",
+        "description": "정의의 손길을 획득합니다. 정의의 손길을 장착한 유닛의 피해량이 12% 증가합니다.",
         "name": "이상주의",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Idealism-II.TFT_Set9.png"
     },
@@ -727,7 +727,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Contagion": {
         "apiName": "TFT9_Augment_Contagion",
-        "description": "전투 시작: 체력이 가장 높은 적을 감염시켜 받는 피해를 18.000000715255737% 증가시킵니다. 감염은 5초가 지날 때마다 또는 적이 사망 시 주변 2명의 유닛에게 전염됩니다.",
+        "description": "전투 시작: 체력이 가장 높은 적을 감염시켜 받는 피해를 18% 증가시킵니다. 감염은 5초가 지날 때마다 또는 적이 사망 시 주변 2명의 유닛에게 전염됩니다.",
         "name": "전염",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Contagion-II.TFT_Set9.png"
     },
@@ -937,19 +937,19 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_AirspeedVelocity1": {
         "apiName": "TFT9_Augment_AirspeedVelocity1",
-        "description": "아이템이 없는 아군 유닛이 30.000001192092896%의 공격 속도를 얻습니다.",
+        "description": "아이템이 없는 아군 유닛이 30%의 공격 속도를 얻습니다.",
         "name": "가벼운 몸 I",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Unladen-Airspeed-Velocity-I.TFT_Set9.png"
     },
     "TFT9_Augment_AirspeedVelocity2": {
         "apiName": "TFT9_Augment_AirspeedVelocity2",
-        "description": "아이템이 없는 아군 유닛이 55.000001192092896%의 공격 속도를 얻습니다.",
+        "description": "아이템이 없는 아군 유닛이 55%의 공격 속도를 얻습니다.",
         "name": "가벼운 몸 II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Unladen-Airspeed-Velocity-II.TFT_Set9.png"
     },
     "TFT9_Augment_DemaciaPetriciteShackles": {
         "apiName": "TFT9_Augment_DemaciaPetriciteShackles",
-        "description": "아군 데마시아 유닛의 피해량이 15.000000596046448% 증가합니다. 녹서스 유닛 및 최대 마나가 100 이상인 적에게는 피해 증가량이 21.99999988079071%까지 상승합니다. 데마시아 유닛 3명을 획득합니다.",
+        "description": "아군 데마시아 유닛의 피해량이 15% 증가합니다. 녹서스 유닛 및 최대 마나가 100 이상인 적에게는 피해 증가량이 22%까지 상승합니다. 데마시아 유닛 3명을 획득합니다.",
         "name": "페트리사이트 사슬",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Petricite-Shackles-II.TFT_Set9.png"
     },
@@ -1009,13 +1009,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_DravenSpoilsOfWar2": {
         "apiName": "TFT9_Augment_DravenSpoilsOfWar2",
-        "description": "적 유닛을 처치하면 30.000001192092896% 확률로 전리품을 획득합니다.",
+        "description": "적 유닛을 처치하면 30% 확률로 전리품을 획득합니다.",
         "name": "전리품 II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-II.TFT_Set9.png"
     },
     "TFT9_Augment_DravenSpoilsOfWar3": {
         "apiName": "TFT9_Augment_DravenSpoilsOfWar3",
-        "description": "적 유닛을 처치하면 40.00000059604645% 확률로 전리품을 획득합니다.",
+        "description": "적 유닛을 처치하면 40% 확률로 전리품을 획득합니다.",
         "name": "전리품 III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-III.TFT_Set9.png"
     },
@@ -1231,7 +1231,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Commander_WellEarnedComforts3": {
         "apiName": "TFT9_Augment_Commander_WellEarnedComforts3",
-        "description": "아군 유닛이 장착한 아이템 하나당 120의 체력과 7.999999821186066%의 공격 속도를 얻습니다.",
+        "description": "아군 유닛이 장착한 아이템 하나당 120의 체력과 8%의 공격 속도를 얻습니다.",
         "name": "정당한 보상 III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Well-Earned-Comforts-III.TFT_Set9.png"
     },
@@ -1285,13 +1285,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_DangerousToGoAlone": {
         "apiName": "TFT9_Augment_DangerousToGoAlone",
-        "description": "유닛이 사망하면 아이템 중 하나를 복사해 빈 아이템 칸이 있는 가장 가까운 아군에게 임시로 장착시키고 최대 체력의 40.00000059604645%만큼 피해를 흡수하는 보호막을 씌웁니다.",
+        "description": "유닛이 사망하면 아이템 중 하나를 복사해 빈 아이템 칸이 있는 가장 가까운 아군에게 임시로 장착시키고 최대 체력의 40%만큼 피해를 흡수하는 보호막을 씌웁니다.",
         "name": "작별 선물",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/It_s-Dangerous-to-Go-Alone-II.TFT_Set9.png"
     },
     "TFT9_Augment_GunnerSpiritOfTheDuelist": {
         "apiName": "TFT9_Augment_GunnerSpiritOfTheDuelist",
-        "description": "아군 사수 유닛들의 공격 속도가 7.999999821186066%+사수 중첩 하나당 1.9999999552965164% 증가합니다. 사수 유닛 2명을 획득합니다.",
+        "description": "아군 사수 유닛들의 공격 속도가 8%+사수 중첩 하나당 2% 증가합니다. 사수 유닛 2명을 획득합니다.",
         "name": "결투하는 사수",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spirit-of-the-Duelist-II.TFT_Set9.png"
     },
@@ -1333,7 +1333,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_SettTheBoss": {
         "apiName": "TFT9_Augment_SettTheBoss",
-        "description": "세트를 획득합니다. 팀에서 가장 강한 아군 세트의 체력이 처음으로 60.00000238418579% 아래로 떨어지면 전투에서 벗어나 윗몸일으키기를 합니다. 윗몸일으키기를 할 때마다 최대 체력의 10.000000149011612%를 회복하고 공격 속도와 주문력이 44.999998807907104% 증가합니다.",
+        "description": "세트를 획득합니다. 팀에서 가장 강한 아군 세트의 체력이 처음으로 60% 아래로 떨어지면 전투에서 벗어나 윗몸일으키기를 합니다. 윗몸일으키기를 할 때마다 최대 체력의 10%를 회복하고 공격 속도와 주문력이 45% 증가합니다.",
         "name": "우두머리",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/The-Boss-II.png"
     },
@@ -1351,13 +1351,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_TargonStaffOfFlowingWaters": {
         "apiName": "TFT9_Augment_TargonStaffOfFlowingWaters",
-        "description": "타곤 문장을 활성화한 동안 아군 유닛이 회복 또는 보호막 효과를 받으면 4초 동안 공격 속도가 34.99999940395355% 증가합니다. 타곤 유닛 2명을 획득합니다.",
+        "description": "타곤 문장을 활성화한 동안 아군 유닛이 회복 또는 보호막 효과를 받으면 4초 동안 공격 속도가 35% 증가합니다. 타곤 유닛 2명을 획득합니다.",
         "name": "스텔라콘의 축복",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Staff-of-Flowing-Waters-II.TFT_Set9.png"
     },
     "TFT9_Augment_StrategistTacticalSuperiority": {
         "apiName": "TFT9_Augment_StrategistTacticalSuperiority",
-        "description": "아군 유닛의 특성을 활성화할 때마다 해당 유닛들의 공격력 및 주문력이 3.999999910593033% 증가합니다. 책략가를 배치하면 두 배로 증가합니다. 책략가 유닛 2명을 획득합니다.",
+        "description": "아군 유닛의 특성을 활성화할 때마다 해당 유닛들의 공격력 및 주문력이 4% 증가합니다. 책략가를 배치하면 두 배로 증가합니다. 책략가 유닛 2명을 획득합니다.",
         "name": "전술적 우위",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Tactical-Superiority-II.TFT_Set9.png"
     },
@@ -1369,13 +1369,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_AllNatural": {
         "apiName": "TFT9_Augment_AllNatural",
-        "description": "아이템이 없는 아군 챔피언이 120의 체력을 얻고 매초 최대 체력의 0.9999999776482582%만큼 회복합니다.",
+        "description": "아이템이 없는 아군 챔피언이 120의 체력을 얻고 매초 최대 체력의 1%만큼 회복합니다.",
         "name": "타고난 체력 I",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/All-Natural-I.TFT_Set9.png"
     },
     "TFT9_Augment_AllNatural2": {
         "apiName": "TFT9_Augment_AllNatural2",
-        "description": "아이템이 없는 아군 챔피언이 150의 체력을 얻고 매초 최대 체력의 1.9999999552965164%만큼 회복합니다.",
+        "description": "아이템이 없는 아군 챔피언이 150의 체력을 얻고 매초 최대 체력의 2%만큼 회복합니다.",
         "name": "타고난 체력 II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/All-Natural-II.TFT_Set9.png"
     },
@@ -1405,13 +1405,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_PiltoverShimmeringInventors": {
         "apiName": "TFT9_Augment_PiltoverShimmeringInventors",
-        "description": "아군 필트오버 유닛이 보유한 골드 10당 7.000000029802322%(최대 34.99999940395355%)의 추가 피해를 입히고 라운드 시작 시 33.000001311302185%의 확률로 1골드를 획득합니다. 에코를 획득합니다.",
+        "description": "아군 필트오버 유닛이 보유한 골드 10당 7%(최대 35%)의 추가 피해를 입히고 라운드 시작 시 33%의 확률로 1골드를 획득합니다. 에코를 획득합니다.",
         "name": "빛나는 발명가",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Shimmering-Inventors-II.TFT_Set9.png"
     },
     "TFT9_Augment_GalioCarry": {
         "apiName": "TFT9_Augment_GalioCarry",
-        "description": "갈리오를 획득합니다. 팀에서 가장 강한 아군 갈리오의 스킬이 사용할수록 거대해지고 적이 매초 최대 체력의 11.999999731779099%에 해당하는 마법 피해를 입습니다.",
+        "description": "갈리오를 획득합니다. 팀에서 가장 강한 아군 갈리오의 스킬이 사용할수록 거대해지고 적이 매초 최대 체력의 12%에 해당하는 마법 피해를 입습니다.",
         "name": "전장의 돌풍",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Winds-of-War-II.TFT_Set9.png"
     },
@@ -1423,13 +1423,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_SwainCarry": {
         "apiName": "TFT9_Augment_SwainCarry",
-        "description": "스웨인을 획득합니다. 팀에서 가장 강한 아군 스웨인이 최대 체력 100당 2.9999999329447746% 더 많은 피해를 가합니다.",
+        "description": "스웨인을 획득합니다. 팀에서 가장 강한 아군 스웨인이 최대 체력 100당 3% 더 많은 피해를 가합니다.",
         "name": "악의 불길",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Demonflare-II.TFT_Set9.png"
     },
     "TFT9_Augment_RogueVampiricBlades": {
         "apiName": "TFT9_Augment_RogueVampiricBlades",
-        "description": "아군이 모든 피해 흡혈 10.000000149011612%를 얻습니다. 아군 불한당 유닛은 20.000000298023224%를 얻습니다. 불한당 유닛 2명을 획득합니다.",
+        "description": "아군이 모든 피해 흡혈 10%를 얻습니다. 아군 불한당 유닛은 20%를 얻습니다. 불한당 유닛 2명을 획득합니다.",
         "name": "흡혈의 검",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Vampiric-Blades-II.TFT_Set9.png"
     },
@@ -1459,19 +1459,19 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_IoniaSentinelsSpirit": {
         "apiName": "TFT9_Augment_IoniaSentinelsSpirit",
-        "description": "혼령 형태일 때 아군 아이오니아 유닛의 공격 속도가 10.000000149011612% 증가하고 최대 체력의 15.000000596046448%만큼 피해를 흡수하는 보호막을 얻습니다. 아이오니아 유닛 2명을 획득합니다.",
+        "description": "혼령 형태일 때 아군 아이오니아 유닛의 공격 속도가 10% 증가하고 최대 체력의 15%만큼 피해를 흡수하는 보호막을 얻습니다. 아이오니아 유닛 2명을 획득합니다.",
         "name": "감시자 혼령",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Final-Breath-II.TFT_Set9.png"
     },
     "TFT9_Augment_JuggernautCantStopMe": {
         "apiName": "TFT9_Augment_JuggernautCantStopMe",
-        "description": "아군 전쟁기계 유닛이 10.000000149011612% 더 많은 피해를 입힙니다. 이 효과는 체력이 50% 아래로 떨어지면 20.000000298023224%까지 상승합니다. 전쟁기계 유닛 2명을 획득합니다.",
+        "description": "아군 전쟁기계 유닛이 10% 더 많은 피해를 입힙니다. 이 효과는 체력이 50% 아래로 떨어지면 20%까지 상승합니다. 전쟁기계 유닛 2명을 획득합니다.",
         "name": "아드레날린 분출",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Can_t-Stop-Me-II.TFT_Set9.png"
     },
     "TFT9_Augment_BastionMorningLight": {
         "apiName": "TFT9_Augment_BastionMorningLight",
-        "description": "요새 유닛의 체력이 50% 아래로 떨어지면 4초 동안 최대 체력의 40.00000059604645%만큼 회복합니다. 요새 유닛 2명을 획득합니다.",
+        "description": "요새 유닛의 체력이 50% 아래로 떨어지면 4초 동안 최대 체력의 40%만큼 회복합니다. 요새 유닛 2명을 획득합니다.",
         "name": "여명의 광채",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Morninig-Light-II.TFT_Set9.png"
     },
@@ -1489,7 +1489,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_BruiserTitanicStrength": {
         "apiName": "TFT9_Augment_BruiserTitanicStrength",
-        "description": "난동꾼이 최대 체력의 1.4999999664723873%에 해당하는 공격력을 얻습니다. 난동꾼 유닛 2명을 획득합니다.",
+        "description": "난동꾼이 최대 체력의 1%에 해당하는 공격력을 얻습니다. 난동꾼 유닛 2명을 획득합니다.",
         "name": "거대한 힘",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Titanic-Strength-II.png"
     },
@@ -1639,13 +1639,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_Legend_DravenSpoilsOfWar2": {
         "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar2",
-        "description": "적 유닛을 처치하면 30.000001192092896% 확률로 전리품을 획득합니다.",
+        "description": "적 유닛을 처치하면 30% 확률로 전리품을 획득합니다.",
         "name": "전리품 II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-II.TFT_Set9.png"
     },
     "TFT9_Augment_Legend_DravenSpoilsOfWar3": {
         "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar3",
-        "description": "적 유닛을 처치하면 40.00000059604645% 확률로 전리품을 획득합니다.",
+        "description": "적 유닛을 처치하면 40% 확률로 전리품을 획득합니다.",
         "name": "전리품 III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Spoils-Of-War-Legend-III.TFT_Set9.png"
     },
@@ -1873,7 +1873,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_OneHundredDuckSizedHorses": {
         "apiName": "TFT9_Augment_OneHundredDuckSizedHorses",
-        "description": "최대 팀 규모가 3 증가하지만, 유닛이 1개의 아이템만 소지할 수 있고 유닛의 최대 체력이 20.000000298023224% 감소합니다. 6골드를 획득합니다.",
+        "description": "최대 팀 규모가 3 증가하지만, 유닛이 1개의 아이템만 소지할 수 있고 유닛의 최대 체력이 20% 감소합니다. 6골드를 획득합니다.",
         "name": "천군만마",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/100-Duck-Sized-Horses-III.TFT_Set9.png"
     },
@@ -1921,7 +1921,7 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_OneHundredDuckSizedHorsesPlus": {
         "apiName": "TFT9_Augment_OneHundredDuckSizedHorsesPlus",
-        "description": "최대 팀 규모가 3 증가하지만, 유닛이 1개의 아이템만 소지할 수 있고 유닛의 최대 체력이 20.000000298023224% 감소합니다. 9골드를 획득합니다.",
+        "description": "최대 팀 규모가 3 증가하지만, 유닛이 1개의 아이템만 소지할 수 있고 유닛의 최대 체력이 20% 감소합니다. 9골드를 획득합니다.",
         "name": "천군만마 +",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/100-Duck-Sized-Horses-III.TFT_Set9.png"
     },
@@ -1969,13 +1969,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_IxtalRejuvenatingFlames": {
         "apiName": "TFT9_Augment_IxtalRejuvenatingFlames",
-        "description": "아군이 5초마다 최대 체력의 10.000000149011612%만큼 체력을 회복합니다. 원소 칸에서 전투를 시작한 아군은 최대 체력의 @EnhancedRegen*100@%만큼 회복합니다. 이쉬탈 챔피언을 2명 획득합니다.",
+        "description": "아군이 5초마다 최대 체력의 10%만큼 체력을 회복합니다. 원소 칸에서 전투를 시작한 아군은 최대 체력의 @EnhancedRegen*100@%만큼 회복합니다. 이쉬탈 챔피언을 2명 획득합니다.",
         "name": "생명의 불꽃",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Rejuvenating-Flames-II.TFT_Set9_Stage2.png"
     },
     "TFT9_Augment_VanquisherStolenVitality": {
         "apiName": "TFT9_Augment_VanquisherStolenVitality",
-        "description": "토벌자의 기본 공격이나 스킬이 치명타로 적중하면 체력을 가장 많이 잃은 아군이 최대 체력의 2.500000037252903%만큼 회복합니다. 토벌자 2명을 획득합니다.",
+        "description": "토벌자의 기본 공격이나 스킬이 치명타로 적중하면 체력을 가장 많이 잃은 아군이 최대 체력의 3%만큼 회복합니다. 토벌자 2명을 획득합니다.",
         "name": "빼앗긴 생명력",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Stolen-Vitality-II.TFT_Set9_Stage2.png"
     },

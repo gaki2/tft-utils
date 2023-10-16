@@ -103,7 +103,7 @@ export const augments_season_9 = {
     },
     "TFT7_Augment_ScopedWeapons1": {
         "apiName": "TFT7_Augment_ScopedWeapons1",
-        "description": "Your units that start combat in the back 2 rows gain +@HexRangeIncrease@ Attack Range and 15.000000596046448% Attack Speed.",
+        "description": "Your units that start combat in the back 2 rows gain +@HexRangeIncrease@ Attack Range and 15% Attack Speed.",
         "name": "Scoped Weapons",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/ScopedWeapons2.png"
     },
@@ -385,7 +385,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_Idealism": {
         "apiName": "TFT9_Augment_Idealism",
-        "description": "Gain a Hand of Justice. Champions holding Hand of Justice deal 12.999999523162842% increased damage.",
+        "description": "Gain a Hand of Justice. Champions holding Hand of Justice deal 13% increased damage.",
         "name": "Idealism",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Idealism-II.TFT_Set9.png"
     },
@@ -757,7 +757,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_Contagion": {
         "apiName": "TFT9_Augment_Contagion",
-        "description": "Combat start: Infect the highest Health enemy, causing them to take 20.000000298023224% more damage. Every @SpreadTimer@ seconds or on death, the infection spreads to @SpreadTargets@ nearby enemies.",
+        "description": "Combat start: Infect the highest Health enemy, causing them to take 20% more damage. Every @SpreadTimer@ seconds or on death, the infection spreads to @SpreadTargets@ nearby enemies.",
         "name": "Contagion",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Contagion-II.TFT_Set9.png"
     },
@@ -967,19 +967,19 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_AirspeedVelocity1": {
         "apiName": "TFT9_Augment_AirspeedVelocity1",
-        "description": "Your units without items equipped gain 30.000001192092896% Attack Speed.",
+        "description": "Your units without items equipped gain 30% Attack Speed.",
         "name": "Unburdened I",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Unladen-Airspeed-Velocity-I.TFT_Set9.png"
     },
     "TFT9_Augment_AirspeedVelocity2": {
         "apiName": "TFT9_Augment_AirspeedVelocity2",
-        "description": "Your units without items equipped gain 55.000001192092896% Attack Speed.",
+        "description": "Your units without items equipped gain 55% Attack Speed.",
         "name": "Unburdened II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Unladen-Airspeed-Velocity-II.TFT_Set9.png"
     },
     "TFT9_Augment_DemaciaPetriciteShackles": {
         "apiName": "TFT9_Augment_DemaciaPetriciteShackles",
-        "description": "Your Demacians deal 15.000000596046448% more damage, increased to 30.000001192092896% against Noxians and enemies with @ManaThreshold@ or more maximum Mana. Gain 3 Demacians.",
+        "description": "Your Demacians deal 15% more damage, increased to 30% against Noxians and enemies with @ManaThreshold@ or more maximum Mana. Gain 3 Demacians.",
         "name": "Petricite Shackles",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Petricite-Shackles-II.TFT_Set9.png"
     },
@@ -997,7 +997,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_FreljordGlacialBreeze": {
         "apiName": "TFT9_Augment_FreljordGlacialBreeze",
-        "description": "When your Freljordian Storm strikes, your units are shielded for 15.000000596046448% of their maximum Health and gain 7.999999821186066% Attack Speed. Gain 2 Freljord units.",
+        "description": "When your Freljordian Storm strikes, your units are shielded for 15% of their maximum Health and gain 8% Attack Speed. Gain 2 Freljord units.",
         "name": "Glacial Breeze",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Glacial-Breeze-II.TFT_Set9.png"
     },
@@ -1273,7 +1273,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_Commander_WellEarnedComforts3": {
         "apiName": "TFT9_Augment_Commander_WellEarnedComforts3",
-        "description": "Your units gain 120 Health and 7.999999821186066% Attack Speed for each item equipped.",
+        "description": "Your units gain 120 Health and 8% Attack Speed for each item equipped.",
         "name": "Well-Earned Comforts III",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Well-Earned-Comforts-III.TFT_Set9.png"
     },
@@ -1327,7 +1327,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_DangerousToGoAlone": {
         "apiName": "TFT9_Augment_DangerousToGoAlone",
-        "description": "When a unit dies, they pass a temporary copy of one of their items to the nearest ally with open slots and shield them for 40.00000059604645% of their maximum Health.",
+        "description": "When a unit dies, they pass a temporary copy of one of their items to the nearest ally with open slots and shield them for 40% of their maximum Health.",
         "name": "Parting Gifts",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/It_s-Dangerous-to-Go-Alone-II.TFT_Set9.png"
     },
@@ -1345,7 +1345,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_GunnerSpiritOfTheDuelist": {
         "apiName": "TFT9_Augment_GunnerSpiritOfTheDuelist",
-        "description": "Your Gunner units gain 5.000000074505806% Attack Speed, plus @StackingAS*100@% per Gunner stack. Gain 2 Gunners.",
+        "description": "Your Gunner units gain 5% Attack Speed, plus @StackingAS*100@% per Gunner stack. Gain 2 Gunners.",
         "name": "Dueling Gunners",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Spirit-of-the-Duelist-II.TFT_Set9.png"
     },
@@ -1393,7 +1393,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_SettTheBoss": {
         "apiName": "TFT9_Augment_SettTheBoss",
-        "description": "Gain a Sett. The first time your strongest Sett falls below @Threshold*100@% Health, he takes a break to do sit-ups. Each sit-up heals him 10.000000149011612% of his max Health and grants @AttackSpeedRatio*100@% Attack Speed and Ability Power.",
+        "description": "Gain a Sett. The first time your strongest Sett falls below @Threshold*100@% Health, he takes a break to do sit-ups. Each sit-up heals him 10% of his max Health and grants @AttackSpeedRatio*100@% Attack Speed and Ability Power.",
         "name": "The Boss",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/The-Boss-II.png"
     },
@@ -1411,13 +1411,13 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_TargonStaffOfFlowingWaters": {
         "apiName": "TFT9_Augment_TargonStaffOfFlowingWaters",
-        "description": "While you have the Targon trait activated, your units gain 44.999998807907104% Attack Speed for 4 seconds after being healed or shielded. Gain 2 Targonians.",
+        "description": "While you have the Targon trait activated, your units gain 45% Attack Speed for 4 seconds after being healed or shielded. Gain 2 Targonians.",
         "name": "Stellacorn's Blessing",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Staff-of-Flowing-Waters-II.TFT_Set9.png"
     },
     "TFT9_Augment_StrategistTacticalSuperiority": {
         "apiName": "TFT9_Augment_StrategistTacticalSuperiority",
-        "description": "Your champions gain 5.000000074505806% Attack Damage and Ability Power for each of their active traits, doubled when you field a Strategist. Gain 2 Strategists.",
+        "description": "Your champions gain 5% Attack Damage and Ability Power for each of their active traits, doubled when you field a Strategist. Gain 2 Strategists.",
         "name": "Tactical Superiority",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Tactical-Superiority-II.TFT_Set9.png"
     },
@@ -1429,13 +1429,13 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_AllNatural": {
         "apiName": "TFT9_Augment_AllNatural",
-        "description": "Your champions with no items equipped gain 120 Health and heal for 0.9999999776482582% of their max Health each second.",
+        "description": "Your champions with no items equipped gain 120 Health and heal for 1% of their max Health each second.",
         "name": "All Natural I",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/All-Natural-I.TFT_Set9.png"
     },
     "TFT9_Augment_AllNatural2": {
         "apiName": "TFT9_Augment_AllNatural2",
-        "description": "Your champions with no items equipped gain 150 Health and heal for 1.9999999552965164% of their max Health each second.",
+        "description": "Your champions with no items equipped gain 150 Health and heal for 2% of their max Health each second.",
         "name": "All Natural II",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/All-Natural-II.TFT_Set9.png"
     },
@@ -1465,13 +1465,13 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_PiltoverShimmeringInventors": {
         "apiName": "TFT9_Augment_PiltoverShimmeringInventors",
-        "description": "Your Piltover units gain 7.999999821186066% Attack Speed for every @GoldThreshold@ gold you have (max: @ASCap*100@%), and have a @GoldChance*100@% chance to drop 1 gold at round start. Gain an Ekko.",
+        "description": "Your Piltover units gain 8% Attack Speed for every @GoldThreshold@ gold you have (max: @ASCap*100@%), and have a @GoldChance*100@% chance to drop 1 gold at round start. Gain an Ekko.",
         "name": "Shimmering Inventors",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Shimmering-Inventors-II.TFT_Set9.png"
     },
     "TFT9_Augment_GalioCarry": {
         "apiName": "TFT9_Augment_GalioCarry",
-        "description": "Gain a Galio. Your strongest Galio's spell is larger, and enemies hit take magic damage equal to 7.999999821186066% of his max Health each second.",
+        "description": "Gain a Galio. Your strongest Galio's spell is larger, and enemies hit take magic damage equal to 8% of his max Health each second.",
         "name": "Winds of War",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Winds-of-War-II.TFT_Set9.png"
     },
@@ -1483,7 +1483,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_SwainCarry": {
         "apiName": "TFT9_Augment_SwainCarry",
-        "description": "Gain a Swain. Your strongest Swain deals 3.999999910593033% increased damage per 100 max Health.",
+        "description": "Gain a Swain. Your strongest Swain deals 4% increased damage per 100 max Health.",
         "name": "Demonflare",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Demonflare-II.TFT_Set9.png"
     },
@@ -1501,7 +1501,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_DeadeyeSuppressingFire": {
         "apiName": "TFT9_Augment_DeadeyeSuppressingFire",
-        "description": "The target of your Deadeye units' shared attack deals 34.99999940395355% reduced damage for 8 seconds. Gain 2 Deadeyes.",
+        "description": "The target of your Deadeye units' shared attack deals 35% reduced damage for 8 seconds. Gain 2 Deadeyes.",
         "name": "Suppressing Fire",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Hail-of-Bullets-II.TFT_Set9.png"
     },
@@ -1531,7 +1531,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_IoniaSentinelsSpirit": {
         "apiName": "TFT9_Augment_IoniaSentinelsSpirit",
-        "description": "While in spirit form, your Ionians gain 15.000000596046448% Attack Speed and shield themselves for 15.000000596046448% of their maximum Health. Gain 3 Ionians.",
+        "description": "While in spirit form, your Ionians gain 15% Attack Speed and shield themselves for 15% of their maximum Health. Gain 3 Ionians.",
         "name": "Sentinel's Spirit",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Final-Breath-II.TFT_Set9.png"
     },
@@ -1543,7 +1543,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_BastionMorningLight": {
         "apiName": "TFT9_Augment_BastionMorningLight",
-        "description": "When your Bastion units drop below 50% Health, they heal for 40.00000059604645% of their maximum Health over 4 seconds. Gain 2 Bastion units.",
+        "description": "When your Bastion units drop below 50% Health, they heal for 40% of their maximum Health over 4 seconds. Gain 2 Bastion units.",
         "name": "Morning Light",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Morninig-Light-II.TFT_Set9.png"
     },
@@ -1561,7 +1561,7 @@ export const augments_season_9 = {
     },
     "TFT9_Augment_BruiserTitanicStrength": {
         "apiName": "TFT9_Augment_BruiserTitanicStrength",
-        "description": "Bruisers gain increased Attack Damage equal to 1.4999999664723873% of their maximum Health. Gain 2 Bruisers.",
+        "description": "Bruisers gain increased Attack Damage equal to 1% of their maximum Health. Gain 2 Bruisers.",
         "name": "Titanic Strength",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/augments/Titanic-Strength-II.png"
     },
