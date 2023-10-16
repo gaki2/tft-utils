@@ -11,7 +11,7 @@ export const items_season_9 = {
         "name": "B.F. Sword",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT_Item_BFSword.png",
-        "desc": " +10.000000149011612% Attack Damage"
+        "desc": " +10% Attack Damage"
     },
     "TFT_Item_Bloodthirster": {
         "apiName": "TFT_Item_Bloodthirster",
@@ -850,7 +850,7 @@ export const items_season_9 = {
         "name": "Trickster's Glass",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT9_Item_OrnnTrickstersGlass.png",
-        "desc": "Summon a clone with 70% maximum Health and 20.000000298023224% increased maximum Mana. You cannot equip items to the clone.<br><br>The clone benefits from active traits<br><br>[Unique - only 1 per champion]<br>"
+        "desc": "Summon a clone with 70% maximum Health and 20% increased maximum Mana. You cannot equip items to the clone.<br><br>The clone benefits from active traits<br><br>[Unique - only 1 per champion]<br>"
     },
     "TFT9_Item_OrnnDeathfireGrasp": {
         "apiName": "TFT9_Item_OrnnDeathfireGrasp",
@@ -1196,7 +1196,7 @@ export const items_season_9 = {
         "name": "Goldinator",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT9_HeimerUpgrade_Goldification.png",
-        "desc": "Apex Turret's damage executes enemies under 11.999999731779099% Health. Executions have a @GoldChance@% chance to turn enemies into gold.<br><br>1 Count: @GoldAmount1@ gold<br>2 Count: @GoldAmount2@ gold<br>3 Count: @GoldAmount3@ gold"
+        "desc": "Apex Turret's damage executes enemies under 12% Health. Executions have a @GoldChance@% chance to turn enemies into gold.<br><br>1 Count: @GoldAmount1@ gold<br>2 Count: @GoldAmount2@ gold<br>3 Count: @GoldAmount3@ gold"
     },
     "TFT9_HeimerUpgrade_SelfRepair": {
         "apiName": "TFT9_HeimerUpgrade_SelfRepair",

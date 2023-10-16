@@ -12,6 +12,12 @@ type ItemGetterProps = {
   lang: LanguageType;
 };
 
+type ItemGetterPropsApiName = {
+  apiName: string;
+  season: Season;
+  lang: LanguageType;
+};
+
 export const getItems = (season: Season, lang: LanguageType) => {
   switch (season) {
     case 'season_9':
@@ -21,6 +27,10 @@ export const getItems = (season: Season, lang: LanguageType) => {
   }
 };
 
+/**
+ * name 을 통해서 ItemData 를 가져옵니다.
+ * @param name 아이템 이름 (ex: '피바라기', '음전자 망토' ...)
+ */
 export const getItemData = ({ name, season, lang }: ItemGetterProps) => {
   const defaultItemData: ItemData = {
     apiName: 'no-matched-item',
@@ -38,4 +48,21 @@ export const getItemData = ({ name, season, lang }: ItemGetterProps) => {
   }
 
   return defaultItemData;
+};
+
+export const getItemDataByApiName = ({ apiName, season, lang }: ItemGetterPropsApiName) => {
+  const defaultItemData: ItemData = {
+    apiName: 'no-matched-item',
+    name: 'no-matched-item',
+    composition: [],
+    url: '',
+    desc: '',
+  };
+
+  const items = getItems(season, lang);
+  if (!items[apiName]) {
+    throw Error(`${apiName} is not Valid Api Name!`);
+  }
+
+  return items[apiName];
 };

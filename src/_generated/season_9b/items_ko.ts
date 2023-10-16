@@ -11,7 +11,7 @@ export const items_season_9b = {
         "name": "B.F. 대검",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_BFSword.png",
-        "desc": "공격력 +10.000000149011612%"
+        "desc": "공격력 +10%"
     },
     "TFT_Item_Bloodthirster": {
         "apiName": "TFT_Item_Bloodthirster",
@@ -149,7 +149,7 @@ export const items_season_9b = {
             "TFT_Item_SparringGloves"
         ],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_UnstableConcoction.png",
-        "desc": "2가지 효과 획득:공격력 15.000000596046448%, 주문력 15모든 피해 흡혈 15%<br><br>라운드마다 위 효과 중 1개 무작위로 두 배 증가<br><br>모든 피해 흡혈: 입힌 피해의 일부만큼 체력 회복"
+        "desc": "2가지 효과 획득:공격력 15%, 주문력 15모든 피해 흡혈 15%<br><br>라운드마다 위 효과 중 1개 무작위로 두 배 증가<br><br>모든 피해 흡혈: 입힌 피해의 일부만큼 체력 회복"
     },
     "TFT_Item_HextechGunblade": {
         "apiName": "TFT_Item_HextechGunblade",
@@ -294,7 +294,7 @@ export const items_season_9b = {
             "TFT_Item_RecurveBow"
         ],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_RapidFireCannon.png",
-        "desc": "11.999999731779099%의 추가 피해<br><br>공격 사거리  1칸 증가"
+        "desc": "12%의 추가 피해<br><br>공격 사거리  1칸 증가"
     },
     "TFT_Item_RecurveBow": {
         "apiName": "TFT_Item_RecurveBow",
@@ -392,7 +392,7 @@ export const items_season_9b = {
             "TFT_Item_RecurveBow"
         ],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_TitansResolve.png",
-        "desc": "공격하거나 피해를 받으면 공격력 1.9999999552965164%, 주문력 1.9999999552965164 증가 (최대 25회 중첩)  <br><br>최대 중첩 시 방어력 20 및 마법 저항력 20 획득"
+        "desc": "공격하거나 피해를 받으면 공격력 2%, 주문력 2 증가 (최대 25회 중첩)  <br><br>최대 중첩 시 방어력 20 및 마법 저항력 20 획득"
     },
     "TFT_Item_WarmogsArmor": {
         "apiName": "TFT_Item_WarmogsArmor",
@@ -633,7 +633,7 @@ export const items_season_9b = {
         "name": "고속 광자포",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT5_Item_RapidFirecannonRadiant.png",
-        "desc": "20.000000298023224%의 추가 피해<br><br>공격 사거리  2칸 증가"
+        "desc": "20%의 추가 피해<br><br>공격 사거리  2칸 증가"
     },
     "TFT5_Item_ThiefsGlovesRadiant": {
         "apiName": "TFT5_Item_ThiefsGlovesRadiant",
@@ -647,7 +647,7 @@ export const items_season_9b = {
         "name": "장미가시 조끼",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT5_Item_BrambleVestRadiant.png",
-        "desc": "받는 치명타 공격의 추가 피해 69.9999988079071% 무효화. 기본 공격에 맞을 경우 인접한 모든 적에게 125/175/225 의 마법 피해<br><br>재사용 대기 시간: 2초"
+        "desc": "받는 치명타 공격의 추가 피해 70% 무효화. 기본 공격에 맞을 경우 인접한 모든 적에게 125/175/225 의 마법 피해<br><br>재사용 대기 시간: 2초"
     },
     "TFT5_Item_RunaansHurricaneRadiant": {
         "apiName": "TFT5_Item_RunaansHurricaneRadiant",
@@ -682,7 +682,7 @@ export const items_season_9b = {
         "name": "거인의 맹세",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT5_Item_TitansResolveRadiant.png",
-        "desc": "공격하거나 피해를 받으면 공격력 2.9999999329447746% 및 주문력 3 획득 (최대 25회 중첩)<br><br>최대 중첩 시 방어력 50 및 마법 저항력 50 획득"
+        "desc": "공격하거나 피해를 받으면 공격력 3% 및 주문력 3 획득 (최대 25회 중첩)<br><br>최대 중첩 시 방어력 50 및 마법 저항력 50 획득"
     },
     "TFT5_Item_ArchangelsStaffRadiant": {
         "apiName": "TFT5_Item_ArchangelsStaffRadiant",
@@ -724,14 +724,14 @@ export const items_season_9b = {
         "name": "쓸데없이 큰 보석",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT7_Item_ShimmerscaleHeartOfGold.png",
-        "desc": "전투 시작 후 장착 유닛이 15초 동안 생존하면 생존한 아군 2명당  1골드를 획득하고 생존한 아군들이 30.000001192092896%의 추가 피해를 입힘<br><br>[지원 아이템]"
+        "desc": "전투 시작 후 장착 유닛이 15초 동안 생존하면 생존한 아군 2명당  1골드를 획득하고 생존한 아군들이 30%의 추가 피해를 입힘<br><br>[지원 아이템]"
     },
     "TFT7_Item_ShimmerscaleGoldmancersStaff": {
         "apiName": "TFT7_Item_ShimmerscaleGoldmancersStaff",
         "name": "황금술사의 지팡이",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT7_Item_ShimmerscaleGoldmancersStaff.png",
-        "desc": "보유한  골드당 주문력  1 획득하고(최대  30골드) 적을 처치할 때마다 40.00000059604645% 확률로  2골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 주문력  1 획득하고(최대  30골드) 적을 처치할 때마다 40% 확률로  2골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
     },
     "TFT_Consumable_ChampionDuplicator_III": {
         "apiName": "TFT_Consumable_ChampionDuplicator_III",
@@ -752,14 +752,14 @@ export const items_season_9b = {
         "name": "속임수 거울",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Item_OrnnTrickstersGlass.png",
-        "desc": "장착 유닛의 분신 소환. 분신은 70%의 최대 체력, +30.000001192092896%의 최대 마나를 가지며 아이템 장착 불가<br><br>분신에게도 특성 효과 적용<br><br>[고유 - 중복 적용 불가]<br>"
+        "desc": "장착 유닛의 분신 소환. 분신은 70%의 최대 체력, +30%의 최대 마나를 가지며 아이템 장착 불가<br><br>분신에게도 특성 효과 적용<br><br>[고유 - 중복 적용 불가]<br>"
     },
     "TFT9_Item_OrnnDeathfireGrasp": {
         "apiName": "TFT9_Item_OrnnDeathfireGrasp",
         "name": "죽음불꽃 손아귀",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Item_OrnnDeathfireGrasp.png",
-        "desc": "전투 시작: 현재 대상에게 대상 최대 체력의 20.000000298023224%에 해당하는 마법 피해<br><br>다음 10초 동안 피해량 25% 증가. 이 아이템으로 공격한 대상에게 입히는 피해가 34.99999940395355%으로 증가<br><br>[고유 - 중복 적용 불가]"
+        "desc": "전투 시작: 현재 대상에게 대상 최대 체력의 20%에 해당하는 마법 피해<br><br>다음 10초 동안 피해량 25% 증가. 이 아이템으로 공격한 대상에게 입히는 피해가 35%으로 증가<br><br>[고유 - 중복 적용 불가]"
     },
     "TFT9_Item_OrnnHorizonFocus": {
         "apiName": "TFT9_Item_OrnnHorizonFocus",
@@ -1027,7 +1027,7 @@ export const items_season_9b = {
         "name": "마법공학 외골격",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_ChemtankMod.png",
-        "desc": "개조: 입히는 피해가 11.999999731779099% 증가합니다. 받는 피해가 11.999999731779099% 감소합니다. 5초마다 최대 체력의 15.000000596046448%만큼 체력을 회복합니다. <br><br>과충전: 군중 제어 효과에 면역이며 체력 회복량이 최대 체력의 25%까지 증가합니다.<br>"
+        "desc": "개조: 입히는 피해가 12% 증가합니다. 받는 피해가 12% 감소합니다. 5초마다 최대 체력의 15%만큼 체력을 회복합니다. <br><br>과충전: 군중 제어 효과에 면역이며 체력 회복량이 최대 체력의 25%까지 증가합니다.<br>"
     },
     "TFT9_Item_SorcererEmblem": {
         "apiName": "TFT9_Item_SorcererEmblem",
@@ -1044,14 +1044,14 @@ export const items_season_9b = {
         "name": "시머 주사기",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_BloodRageMod.png",
-        "desc": "개조: 공격 속도가 34.99999940395355% 증가합니다. 체력이 처음으로 1까지 떨어지면 추가 공격 속도가 100% 증가하며 최대 체력의 34.99999940395355%만큼 회복합니다.<br><br>과충전: 추가 공격 속도가 200% 증가하며 최대 체력의 80.0000011920929%만큼 회복합니다."
+        "desc": "개조: 공격 속도가 35% 증가합니다. 체력이 처음으로 1까지 떨어지면 추가 공격 속도가 100% 증가하며 최대 체력의 35%만큼 회복합니다.<br><br>과충전: 추가 공격 속도가 200% 증가하며 최대 체력의 80%만큼 회복합니다."
     },
     "TFT9_Consumable_Chempunk_AdaptiveImplantMod": {
         "apiName": "TFT9_Consumable_Chempunk_AdaptiveImplantMod",
         "name": "적응형 이식물",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_AdaptiveImplantMod.png",
-        "desc": "개조: 체력이 50%보다 많을 때는 30.000001192092896% 추가 공격력과 주문력, 적을 때는 30.000001192092896%의 모든 피해 흡혈을 얻습니다.  <br><br>과충전: 항상 2가지 효과를 모두 얻으며 효과가 50% 강화됩니다.<br><br>모든 피해 흡혈: 입힌 피해량의 일부만큼 체력을 회복합니다."
+        "desc": "개조: 체력이 50%보다 많을 때는 30% 추가 공격력과 주문력, 적을 때는 30%의 모든 피해 흡혈을 얻습니다.  <br><br>과충전: 항상 2가지 효과를 모두 얻으며 효과가 50% 강화됩니다.<br><br>모든 피해 흡혈: 입힌 피해량의 일부만큼 체력을 회복합니다."
     },
     "TFT9_Item_ZaunEmblem": {
         "apiName": "TFT9_Item_ZaunEmblem",
@@ -1207,7 +1207,7 @@ export const items_season_9b = {
         "name": "골디네이터",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_HeimerUpgrade_Goldification.png",
-        "desc": "최첨단 포탑이 체력이 11.999999731779099% 아래인 적을 처형합니다. 처형 시 100% 확률로 적이 골드로 변합니다.<br><br>1단계: 1골드<br>2단계: 2골드<br>3단계: 4골드"
+        "desc": "최첨단 포탑이 체력이 12% 아래인 적을 처형합니다. 처형 시 100% 확률로 적이 골드로 변합니다.<br><br>1단계: 1골드<br>2단계: 2골드<br>3단계: 4골드"
     },
     "TFT9_HeimerUpgrade_SelfRepair": {
         "apiName": "TFT9_HeimerUpgrade_SelfRepair",
@@ -1249,21 +1249,21 @@ export const items_season_9b = {
         "name": "불안정한 화공 탱크",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_UnstableChemtankMod.png",
-        "desc": "개조: 최대 체력이 30.000001192092896% 증가하고 사망 시 폭발하여 2칸 내 적들에게 자신 최대 체력의 25%에 해당하는 마법 피해를 입힙니다. <br><br>과충전: 폭발 반경이 3칸 늘어납니다."
+        "desc": "개조: 최대 체력이 30% 증가하고 사망 시 폭발하여 2칸 내 적들에게 자신 최대 체력의 25%에 해당하는 마법 피해를 입힙니다. <br><br>과충전: 폭발 반경이 3칸 늘어납니다."
     },
     "TFT9_Consumable_Chempunk_RoboticArmMod": {
         "apiName": "TFT9_Consumable_Chempunk_RoboticArmMod",
         "name": "로봇 팔",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_RoboticArmMod.png",
-        "desc": "개조: 기본 공격 시 40.00000059604645% 확률로 1회 추가로 공격합니다. <br><br>과충전: 기본 공격과 스킬 사용 시 공격력의 25%만큼 추가 고정 피해를 입힙니다. "
+        "desc": "개조: 기본 공격 시 40% 확률로 1회 추가로 공격합니다. <br><br>과충전: 기본 공격과 스킬 사용 시 공격력의 25%만큼 추가 고정 피해를 입힙니다. "
     },
     "TFT9_Consumable_Chempunk_VirulentBiowareMod": {
         "apiName": "TFT9_Consumable_Chempunk_VirulentBiowareMod",
         "name": "맹독성 생물체",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_VirulentBiowareMod.png",
-        "desc": "개조: 스킬을 사용한 후 3초 동안 피해를 입히면 대상과 주변 1칸 내 모든 적에게 전염병을 퍼트립니다. 전염병에 걸리면 5초 동안 받는 피해가 18.000000715255737% 증가합니다.<br><br>과충전: 전염병의 지속시간이 10초로 늘어나고 대상 최대 체력의 3.500000014901161%에 해당하는 마법 피해를 매초 입힙니다. "
+        "desc": "개조: 스킬을 사용한 후 3초 동안 피해를 입히면 대상과 주변 1칸 내 모든 적에게 전염병을 퍼트립니다. 전염병에 걸리면 5초 동안 받는 피해가 18% 증가합니다.<br><br>과충전: 전염병의 지속시간이 10초로 늘어나고 대상 최대 체력의 4%에 해당하는 마법 피해를 매초 입힙니다. "
     },
     "TFT9_Item_ShadowIslesEmblem": {
         "apiName": "TFT9_Item_ShadowIslesEmblem",
