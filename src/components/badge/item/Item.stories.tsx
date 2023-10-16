@@ -20,7 +20,7 @@ const ItemView = ({ itemNames, season }: { itemNames: ItemName[]; season: Season
   return (
     <Wrapper>
       {itemNames.map((name) => (
-        <Item key={name} name={name} season={season} />
+        <Item key={name} itemName={name} season={season} />
       ))}
     </Wrapper>
   );
