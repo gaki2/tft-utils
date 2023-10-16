@@ -3,7 +3,7 @@ import { ItemMap } from '../../../types/item';
 import { getItemData, getItemDataByApiName } from '../../../item_getter';
 import styled from 'styled-components';
 import { CSSProperties, useMemo } from 'react';
-import { ReactTooltip } from '../../../utils/components/ReactTooltip';
+import { TFT_Tooltip } from '../../../utils/components/TFT_Tooltip';
 
 export type ItemProps<T extends Season> = {
   season: T;
@@ -14,8 +14,8 @@ export type ItemProps<T extends Season> = {
 let id = 0;
 
 export const Item = <T extends Season>({ season, itemName, lang = 'ko' }: ItemProps<T>) => {
-  const { url, name, desc, composition } = getItemData({ season, lang, name: itemName });
-  const tooltipId = useMemo(() => `${name}-${++id}`, [name]);
+  const { url, name, desc, composition, apiName } = getItemData({ season, lang, name: itemName });
+  const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   const compositionDataUrls: string[] = useMemo(() => {
     if (composition && composition.length > 0) {
@@ -36,25 +36,16 @@ export const Item = <T extends Season>({ season, itemName, lang = 'ko' }: ItemPr
       <Wrapper data-tooltip-id={tooltipId}>
         <Img src={url} alt={name}></Img>
       </Wrapper>
-      <ReactTooltip id={tooltipId} style={tooltipStyle}>
-        {/*itemData.desc 라는 문자열에 있는 <br> 을 렌더링하기 위해서 dangerouslySetInnerHTML 을 사용했다. */}
-        {/*<PTag dangerouslySetInnerHTML={{ __html: itemData.desc }}></PTag>*/}
-        <TooltipWrapper>
-          <TooltipTitle>
-            <TooltipTitleImg src={url} alt={name} />
-            <TooltipTitleText>{name}</TooltipTitleText>
-          </TooltipTitle>
-          <Divider />
-          <TooltipDescription dangerouslySetInnerHTML={{ __html: desc }} />
-          <Divider hidden={compositionDataUrls.length === 0} />
-          <TooltipCompositionWrapper hidden={compositionDataUrls.length === 0}>
-            <TooltipCompositionTitle>{'조합: '}</TooltipCompositionTitle>
-            {compositionDataUrls.map((url, index) => (
-              <TooltipCompositionImg key={index} src={url} alt={name} />
-            ))}
-          </TooltipCompositionWrapper>
-        </TooltipWrapper>
-      </ReactTooltip>
+      <TFT_Tooltip
+        id={tooltipId}
+        title={name}
+        titleImgUrl={url}
+        bodyText={desc}
+        hideFooter={compositionDataUrls.length === 0}
+        footerText={'조합 :'}
+        footerImgUrls={compositionDataUrls}
+        tooltipProps={{ style: tooltipStyle }}
+      />
     </>
   );
 };
@@ -77,7 +68,6 @@ const TooltipWrapper = styled.div`
   --img-width: 32px;
   --img-height: 32px;
   --font-color: #fff;
-  --devider-color: rgba(221, 221, 221, 0.9);
   --composition-img-width: 24px;
   --composition-img-height: 24px;
 

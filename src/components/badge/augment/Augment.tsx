@@ -2,6 +2,8 @@ import { LanguageType, Season } from '../../../types';
 import styled from 'styled-components';
 import { AugmentMap } from '../../../types/augment';
 import { getAugmentData } from '../../../augment_getter';
+import { TFT_Tooltip } from '../../../utils/components/TFT_Tooltip';
+import { useMemo } from 'react';
 
 export type AugmentProps<T extends Season> = {
   season: T;
@@ -9,13 +11,19 @@ export type AugmentProps<T extends Season> = {
   lang?: LanguageType;
 };
 
+let id = 0;
+
 export const Augment = <T extends Season>({ season, name, lang = 'ko' }: AugmentProps<T>) => {
-  const augmentData = getAugmentData({ season, lang, name });
+  const { apiName, name: augName, url, description } = getAugmentData({ season, lang, name });
+  const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   return (
-    <Wrapper>
-      <Img src={augmentData.url} alt={augmentData.name}></Img>
-    </Wrapper>
+    <>
+      <Wrapper lang={lang} data-tooltip-id={tooltipId}>
+        <Img src={url} alt={augName}></Img>
+      </Wrapper>
+      <TFT_Tooltip id={tooltipId} title={augName} titleImgUrl={url} bodyText={description} />
+    </>
   );
 };
 
@@ -30,4 +38,19 @@ const Img = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
+`;
+
+const TooltipWrapper = styled.div`
+  --width: 320px;
+  --img-width: 32px;
+  --img-height: 32px;
+  --font-color: #fff;
+
+  max-width: var(--width);
+`;
+
+const TooltipTitleImg = styled.img`
+  width: var(--img-width);
+  height: var(--img-height);
+  object-fit: cover;
 `;
