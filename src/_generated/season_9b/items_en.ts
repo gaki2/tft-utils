@@ -11,7 +11,7 @@ export const items_season_9b = {
         "name": "B.F. Sword",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_BFSword.png",
-        "desc": " +10.000000149011612% Attack Damage"
+        "desc": " +10% Attack Damage"
     },
     "TFT_Item_Bloodthirster": {
         "apiName": "TFT_Item_Bloodthirster",
@@ -149,7 +149,7 @@ export const items_season_9b = {
             "TFT_Item_SparringGloves"
         ],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_UnstableConcoction.png",
-        "desc": "Gain 2 effects:15.000000596046448% Attack Damage and 15 Ability Power.15% Omnivamp.<br><br>Each round, randomly double 1 of these effects.<br><br>Omnivamp: heal for some of damage dealt"
+        "desc": "Gain 2 effects:15% Attack Damage and 15 Ability Power.15% Omnivamp.<br><br>Each round, randomly double 1 of these effects.<br><br>Omnivamp: heal for some of damage dealt"
     },
     "TFT_Item_HextechGunblade": {
         "apiName": "TFT_Item_HextechGunblade",
@@ -294,7 +294,7 @@ export const items_season_9b = {
             "TFT_Item_RecurveBow"
         ],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_RapidFireCannon.png",
-        "desc": "Deal 11.999999731779099% bonus damage.<br><br>Gain  1 bonus Attack Range."
+        "desc": "Deal 12% bonus damage.<br><br>Gain  1 bonus Attack Range."
     },
     "TFT_Item_RecurveBow": {
         "apiName": "TFT_Item_RecurveBow",
@@ -392,7 +392,7 @@ export const items_season_9b = {
             "TFT_Item_RecurveBow"
         ],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT_Item_TitansResolve.png",
-        "desc": "Gain 1.9999999552965164% Attack Damage and 1.9999999552965164 Ability Power when attacking or taking damage, stacking up to 25 times.  <br><br>At full stacks, gain 20 Armor and 20 Magic Resist."
+        "desc": "Gain 2% Attack Damage and 2 Ability Power when attacking or taking damage, stacking up to 25 times.  <br><br>At full stacks, gain 20 Armor and 20 Magic Resist."
     },
     "TFT_Item_WarmogsArmor": {
         "apiName": "TFT_Item_WarmogsArmor",
@@ -633,7 +633,7 @@ export const items_season_9b = {
         "name": "Rapid Lightcannon",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT5_Item_RapidFirecannonRadiant.png",
-        "desc": "Deal 20.000000298023224% bonus damage.<br><br>Gain  2 bonus Attack Range."
+        "desc": "Deal 20% bonus damage.<br><br>Gain  2 bonus Attack Range."
     },
     "TFT5_Item_ThiefsGlovesRadiant": {
         "apiName": "TFT5_Item_ThiefsGlovesRadiant",
@@ -647,7 +647,7 @@ export const items_season_9b = {
         "name": "Rosethorn Vest",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT5_Item_BrambleVestRadiant.png",
-        "desc": "Negates 69.9999988079071% bonus damage from incoming critical strikes. When struck by any attack, deal 125/175/225  magic damage to all adjacent enemies.<br><br>Cooldown: 2 seconds"
+        "desc": "Negates 70% bonus damage from incoming critical strikes. When struck by any attack, deal 125/175/225  magic damage to all adjacent enemies.<br><br>Cooldown: 2 seconds"
     },
     "TFT5_Item_RunaansHurricaneRadiant": {
         "apiName": "TFT5_Item_RunaansHurricaneRadiant",
@@ -682,7 +682,7 @@ export const items_season_9b = {
         "name": "Titan's Vow",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT5_Item_TitansResolveRadiant.png",
-        "desc": "Gain 2.9999999329447746% Attack Damage and 3 Ability Power when attacking or taking damage, stacking up to 25 times.<br><br>At full stacks, gain 50 Armor and 50 Magic Resist."
+        "desc": "Gain 3% Attack Damage and 3 Ability Power when attacking or taking damage, stacking up to 25 times.<br><br>At full stacks, gain 50 Armor and 50 Magic Resist."
     },
     "TFT5_Item_ArchangelsStaffRadiant": {
         "apiName": "TFT5_Item_ArchangelsStaffRadiant",
@@ -724,14 +724,14 @@ export const items_season_9b = {
         "name": "Needlessly Big Gem",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT7_Item_ShimmerscaleHeartOfGold.png",
-        "desc": "If the holder is alive after 15 seconds of combat, gain  1 gold per 2 living allies and grant living allies 30.000001192092896% bonus damage.<br><br>[Support item]"
+        "desc": "If the holder is alive after 15 seconds of combat, gain  1 gold per 2 living allies and grant living allies 30% bonus damage.<br><br>[Support item]"
     },
     "TFT7_Item_ShimmerscaleGoldmancersStaff": {
         "apiName": "TFT7_Item_ShimmerscaleGoldmancersStaff",
         "name": "Goldmancer's Staff",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT7_Item_ShimmerscaleGoldmancersStaff.png",
-        "desc": "Grant  1 Ability Power per  gold in your bank (up to  30 gold) and a 40.00000059604645% chance to drop  2 gold on enemy kill.<br><br>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "Grant  1 Ability Power per  gold in your bank (up to  30 gold) and a 40% chance to drop  2 gold on enemy kill.<br><br>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
     },
     "TFT_Consumable_ChampionDuplicator_III": {
         "apiName": "TFT_Consumable_ChampionDuplicator_III",
@@ -752,14 +752,14 @@ export const items_season_9b = {
         "name": "Trickster's Glass",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Item_OrnnTrickstersGlass.png",
-        "desc": "Summon a clone with 70% max Health and +30.000001192092896% max Mana. You cannot equip items to the clone.<br><br>The clone benefits from active traits<br><br>[Unique - only 1 per champion]<br>"
+        "desc": "Summon a clone with 70% max Health and +30% max Mana. You cannot equip items to the clone.<br><br>The clone benefits from active traits<br><br>[Unique - only 1 per champion]<br>"
     },
     "TFT9_Item_OrnnDeathfireGrasp": {
         "apiName": "TFT9_Item_OrnnDeathfireGrasp",
         "name": "Deathfire Grasp",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Item_OrnnDeathfireGrasp.png",
-        "desc": "Combat start: Blast the current target for 20.000000298023224% of their max Health as magic damage.<br><br>For the next 10 seconds, deal 25% more damage. Damage dealt to the blasted target is increased to 34.99999940395355%.<br><br>[Unique - only 1 per champion]"
+        "desc": "Combat start: Blast the current target for 20% of their max Health as magic damage.<br><br>For the next 10 seconds, deal 25% more damage. Damage dealt to the blasted target is increased to 35%.<br><br>[Unique - only 1 per champion]"
     },
     "TFT9_Item_OrnnHorizonFocus": {
         "apiName": "TFT9_Item_OrnnHorizonFocus",
@@ -1027,7 +1027,7 @@ export const items_season_9b = {
         "name": "Hextech Exoskeleton",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_ChemtankMod.png",
-        "desc": "Mod: Deal 11.999999731779099% more damage. Take 11.999999731779099% less damage. Every 5 seconds, heal for 15.000000596046448% maximum Health. <br><br>Overcharge: You are immune to crowd control, and the heal is increased to 25% maximum Health.<br>"
+        "desc": "Mod: Deal 12% more damage. Take 12% less damage. Every 5 seconds, heal for 15% maximum Health. <br><br>Overcharge: You are immune to crowd control, and the heal is increased to 25% maximum Health.<br>"
     },
     "TFT9_Item_SorcererEmblem": {
         "apiName": "TFT9_Item_SorcererEmblem",
@@ -1044,14 +1044,14 @@ export const items_season_9b = {
         "name": "Shimmer Injector",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_BloodRageMod.png",
-        "desc": "Mod: Gain 34.99999940395355% Attack Speed. The first time you would be reduced to 1 Health, increase the Attack Speed bonus by 100% and heal for 34.99999940395355% maximum Health.<br><br>Overcharge: Instead increase the Attack Speed bonus by 200% and heal for 80.0000011920929% maximum Health."
+        "desc": "Mod: Gain 35% Attack Speed. The first time you would be reduced to 1 Health, increase the Attack Speed bonus by 100% and heal for 35% maximum Health.<br><br>Overcharge: Instead increase the Attack Speed bonus by 200% and heal for 80% maximum Health."
     },
     "TFT9_Consumable_Chempunk_AdaptiveImplantMod": {
         "apiName": "TFT9_Consumable_Chempunk_AdaptiveImplantMod",
         "name": "Adaptive Implant",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_AdaptiveImplantMod.png",
-        "desc": "Mod: While above 50% Health, gain 30.000001192092896% Attack Damage and Ability Power. While below, gain 30.000001192092896% Omnivamp.  <br><br>Overcharge: Always gain both effects, and their power is increased by 50%.<br><br>Omnivamp: Heal for percentage of damage dealt"
+        "desc": "Mod: While above 50% Health, gain 30% Attack Damage and Ability Power. While below, gain 30% Omnivamp.  <br><br>Overcharge: Always gain both effects, and their power is increased by 50%.<br><br>Omnivamp: Heal for percentage of damage dealt"
     },
     "TFT9_Item_ZaunEmblem": {
         "apiName": "TFT9_Item_ZaunEmblem",
@@ -1207,7 +1207,7 @@ export const items_season_9b = {
         "name": "Goldinator",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_HeimerUpgrade_Goldification.png",
-        "desc": "Apex Turret's damage executes enemies under 11.999999731779099% Health. Executions have a 100% chance to turn enemies into gold.<br><br>1 Count: 1 gold<br>2 Count: 2 gold<br>3 Count: 4 gold"
+        "desc": "Apex Turret's damage executes enemies under 12% Health. Executions have a 100% chance to turn enemies into gold.<br><br>1 Count: 1 gold<br>2 Count: 2 gold<br>3 Count: 4 gold"
     },
     "TFT9_HeimerUpgrade_SelfRepair": {
         "apiName": "TFT9_HeimerUpgrade_SelfRepair",
@@ -1249,21 +1249,21 @@ export const items_season_9b = {
         "name": "Unstable Chemtank",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_UnstableChemtankMod.png",
-        "desc": "Mod: Gain 30.000001192092896% maximum Health and explode on death, dealing 25% of your maximum Health as magic damage to enemies within 2 hexes. <br><br>Overcharge: Explosion radius is increased to 3 hexes."
+        "desc": "Mod: Gain 30% maximum Health and explode on death, dealing 25% of your maximum Health as magic damage to enemies within 2 hexes. <br><br>Overcharge: Explosion radius is increased to 3 hexes."
     },
     "TFT9_Consumable_Chempunk_RoboticArmMod": {
         "apiName": "TFT9_Consumable_Chempunk_RoboticArmMod",
         "name": "Robotic Arm",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_RoboticArmMod.png",
-        "desc": "Mod: Attacks have a 40.00000059604645% chance to trigger 1 additional attack. <br><br>Overcharge: Attacks and abilities deal 25% Attack Damage as bonus true damage. "
+        "desc": "Mod: Attacks have a 40% chance to trigger 1 additional attack. <br><br>Overcharge: Attacks and abilities deal 25% Attack Damage as bonus true damage. "
     },
     "TFT9_Consumable_Chempunk_VirulentBiowareMod": {
         "apiName": "TFT9_Consumable_Chempunk_VirulentBiowareMod",
         "name": "Virulent Bioware",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/items/TFT9_Consumable_Chempunk_VirulentBiowareMod.png",
-        "desc": "Mod: For 3 seconds after ability cast, dealing damage applies a plague causing the target and enemies within 1 hex to take 18.000000715255737% more damage for 5 seconds.<br><br>Overcharge: Plague duration increases to 10 seconds and plague deals 3.500000014901161% of the target's maximum Health per second as magic damage. "
+        "desc": "Mod: For 3 seconds after ability cast, dealing damage applies a plague causing the target and enemies within 1 hex to take 18% more damage for 5 seconds.<br><br>Overcharge: Plague duration increases to 10 seconds and plague deals 4% of the target's maximum Health per second as magic damage. "
     },
     "TFT9_Item_ShadowIslesEmblem": {
         "apiName": "TFT9_Item_ShadowIslesEmblem",

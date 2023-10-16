@@ -93,13 +93,16 @@ const cleanAngleBracket = (str: string) => {
   return str.replace(/<(?!br>)[^>]*>/g, '');
 };
 
+/**
+ * @~~~@ 형태의 변수를 실제 값으로 치환해준다.
+ */
 const replaceVariables = (input: string, effects: any) => {
   if (isEmptyObject(effects)) return input;
   convertKeysToUpperCase(effects);
   return input.replace(/@(\w+)(\*[\d]+)?@/g, function (match, p1, p2) {
     const value = effects[p1.toUpperCase()];
     if (value !== undefined) {
-      return p2 ? value * parseFloat(p2.slice(1)) : value;
+      return p2 ? (value * parseFloat(p2.slice(1))).toFixed(0) : value;
     }
     return match;
   });

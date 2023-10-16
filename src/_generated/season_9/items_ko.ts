@@ -11,7 +11,7 @@ export const items_season_9 = {
         "name": "B.F. 대검",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT_Item_BFSword.png",
-        "desc": "공격력 +10.000000149011612%"
+        "desc": "공격력 +10%"
     },
     "TFT_Item_Bloodthirster": {
         "apiName": "TFT_Item_Bloodthirster",
@@ -850,7 +850,7 @@ export const items_season_9 = {
         "name": "속임수 거울",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT9_Item_OrnnTrickstersGlass.png",
-        "desc": "장착 유닛의 분신을 소환합니다. 분신은 70%의 최대 체력과 20.000000298023224% 증가된 최대 마나를 지니고 있으며, 아이템을 장착할 수 없습니다.<br><br>분신에게도 특성 효과가 적용됩니다.<br><br>[고유 - 중복 적용 불가]<br>"
+        "desc": "장착 유닛의 분신을 소환합니다. 분신은 70%의 최대 체력과 20% 증가된 최대 마나를 지니고 있으며, 아이템을 장착할 수 없습니다.<br><br>분신에게도 특성 효과가 적용됩니다.<br><br>[고유 - 중복 적용 불가]<br>"
     },
     "TFT9_Item_OrnnDeathfireGrasp": {
         "apiName": "TFT9_Item_OrnnDeathfireGrasp",
@@ -1196,7 +1196,7 @@ export const items_season_9 = {
         "name": "골디네이터",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT9_HeimerUpgrade_Goldification.png",
-        "desc": "최첨단 포탑이 체력이 11.999999731779099% 아래인 적을 처형합니다. 처형 시 @GoldChance@% 확률로 적이 골드로 변합니다.<br><br>1단계: @GoldAmount1@골드<br>2단계: @GoldAmount2@골드<br>3단계: @GoldAmount3@골드"
+        "desc": "최첨단 포탑이 체력이 12% 아래인 적을 처형합니다. 처형 시 @GoldChance@% 확률로 적이 골드로 변합니다.<br><br>1단계: @GoldAmount1@골드<br>2단계: @GoldAmount2@골드<br>3단계: @GoldAmount3@골드"
     },
     "TFT9_HeimerUpgrade_SelfRepair": {
         "apiName": "TFT9_HeimerUpgrade_SelfRepair",
