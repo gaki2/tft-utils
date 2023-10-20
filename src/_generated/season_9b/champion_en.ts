@@ -40,7 +40,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_BelVeth": {
-        "name": "Bel'Veth",
+        "name": "BelVeth",
         "apiName": "TFT9_BelVeth",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/BelVeth.png",
         "cost": 5,
@@ -50,7 +50,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_ChoGath": {
-        "name": "Cho'Gath",
+        "name": "ChoGath",
         "apiName": "TFT9_ChoGath",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/ChoGath.png",
         "cost": 1,
@@ -102,7 +102,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_JarvanIV": {
-        "name": "Jarvan IV",
+        "name": "Jarvan_IV",
         "apiName": "TFT9_JarvanIV",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/JarvanIV.png",
         "cost": 4,
@@ -132,7 +132,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_KaiSa": {
-        "name": "Kai'Sa",
+        "name": "KaiSa",
         "apiName": "TFT9_KaiSa",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/KaiSa.png",
         "cost": 4,
@@ -162,7 +162,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_KSante": {
-        "name": "K'Sante",
+        "name": "KSante",
         "apiName": "TFT9_KSante",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/KSante.png",
         "cost": 5,
@@ -223,7 +223,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_RekSai": {
-        "name": "Rek'Sai",
+        "name": "RekSai",
         "apiName": "TFT9_RekSai",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/RekSai.png",
         "cost": 3,
@@ -317,7 +317,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_VelKoz": {
-        "name": "Vel'Koz",
+        "name": "VelKoz",
         "apiName": "TFT9_VelKoz",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/VelKoz.png",
         "cost": 3,
@@ -420,7 +420,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_MissFortune": {
-        "name": "Miss Fortune",
+        "name": "Miss_Fortune",
         "apiName": "TFT9_MissFortune",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/MissFortune.png",
         "cost": 3,
@@ -683,7 +683,7 @@ export const champion_season_9b = {
         ]
     },
     "TFT9_TwistedFate": {
-        "name": "Twisted Fate",
+        "name": "Twisted_Fate",
         "apiName": "TFT9_TwistedFate",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/champions/TwistedFate.png",
         "cost": 2,
@@ -724,3 +724,5 @@ export const champion_season_9b = {
         ]
     }
 };
+export type Champion_season_9b_en = 'Irelia' | 'Ahri' | 'Ashe' | 'Azir' | 'BelVeth' | 'ChoGath' | 'Darius' | 'Ekko' | 'Quinn' | 'Heimerdinger' | 'Jarvan_IV' | 'Jayce' | 'Jinx' | 'KaiSa' | 'Karma' | 'Katarina' | 'KSante' | 'Nautilus' | 'Silco' | 'Orianna' | 'Poppy' | 'Shen' | 'RekSai' | 'Renekton' | 'Sejuani' | 'Gangplank' | 'Sion' | 'Sona' | 'Soraka' | 'Swain' | 'Taric' | 'VelKoz' | 'Warwick' | 'Nilah' | 'Cassiopeia' | 'Vi' | 'Kayle' | 'Samira' | 'Aphelios' | 'Xayah' | 'Galio' | 'Miss_Fortune' | 'Nasus' | 'Malzahar' | 'Taliyah' | 'Ryze' | 'Sett' | 'Jhin' | 'Illaoi' | 'Kassadin' | 'Naafiri' | 'Fiora' | 'Mordekaiser' | 'Milio' | 'Qiyana' | 'Neeko' | 'Graves' | 'Twisted_Fate' | 'Aatrox';
+  

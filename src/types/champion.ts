@@ -1,5 +1,7 @@
-import { champion_season_9 } from '../_generated/season_9/champion_en';
-import { champion_season_9b } from '../_generated/season_9b/champion_en';
+import { Champion_season_9_en } from '../_generated/season_9/champion_en';
+import { Champion_season_9b_en } from '../_generated/season_9b/champion_en';
+import { Champion_season_9_ko } from '../_generated/season_9/champion_ko';
+import { Champion_season_9b_ko } from '../_generated/season_9b/champion_ko';
 
 /**
  * Board.tsx, Borad Model 에서 사용됩니다.
@@ -14,7 +16,13 @@ export type ChampionData = {
   traits: string[];
 };
 
-export type ChampionName = keyof typeof champion_season_9 | keyof typeof champion_season_9b;
+export type ChampionName =
+  | Champion_season_9_ko
+  | Champion_season_9b_ko
+  | Champion_season_9_en
+  | Champion_season_9b_en;
 
-export type ChampionName_9 = keyof typeof champion_season_9;
-export type ChampionName_9b = keyof typeof champion_season_9b;
+export type ChampionNameMap = {
+  season_9: Champion_season_9_ko | Champion_season_9_en;
+  season_9b: Champion_season_9b_ko | Champion_season_9b_en;
+};

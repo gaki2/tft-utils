@@ -40,7 +40,11 @@ export async function createChampions(lang: LanguageType, season: Season) {
   const championsDataObject = JSON.parse(championsDataFromRiotPortal)['data'];
 
   const championsData: { id: string; tier: number; name: string }[] = [];
-
+  /**
+   * 챔피언 이름들로 타입을 만든다.
+   * ex) type Champion = '이렐리아' | '가렌' ...
+   */
+  const championNamesForType = new Set();
   for (const key of Object.keys(championsDataObject)) {
     const { id, tier, name } = championsDataObject[key];
     championsData.push({ id, tier, name });
@@ -48,8 +52,8 @@ export async function createChampions(lang: LanguageType, season: Season) {
 
   const championsObject: { [key: string]: Champion } = {};
   for (let i = 0; i < championsData.length; i++) {
-    const { id, tier, name } = championsData[i];
-
+    const { id, tier, name: _name } = championsData[i];
+    const name = removeQuote(replaceSpaceToUnderscore(_name));
     const targetChampion = allDataObject.find(
       (object: { apiName: string }) => object.apiName === id
     );
@@ -57,9 +61,28 @@ export async function createChampions(lang: LanguageType, season: Season) {
     const apiName = handleApiName(id);
     const url = `${S3}/${season}/champions/${apiName}.png`;
     const champion = new Champion(name, id, url, tier, traits);
-
+    championNamesForType.add(name);
     championsObject[id] = champion;
   }
-  const ret = `export const champion_${season} = ${JSON.stringify(championsObject, null, 4)};`;
+  const ret = `export const champion_${season} = ${JSON.stringify(championsObject, null, 4)};
+export type Champion_${season}_${lang} = ${Array.from(championNamesForType)
+    .map((name) => `'${name}'`)
+    .join(' | ')};
+  `;
   await writeFile(`${outDir}/${season}/champion_${lang}.ts`, ret);
 }
+
+/**
+ * 이름에 들어가는 스페이스를 _ 로 대체하기 위해서 사용함.
+ */
+const replaceSpaceToUnderscore = (str: string) => {
+  return str.replace(/\s/g, '_');
+};
+
+/**
+ * 이름에 들어가는 ' 를 제거하기 위해서 사용함.
+ * Cho'Gath -> ChoGath
+ */
+const removeQuote = (str: string) => {
+  return str.replace(/'/g, '');
+};

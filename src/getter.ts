@@ -9,12 +9,8 @@ import { trait_season_9b as Traits_9b_en } from './_generated/season_9b/trait_en
 import { trait_season_9b as Traits_9b_ko } from './_generated/season_9b/trait_ko';
 import { Season } from './types/seasonType';
 import { LanguageType } from './types/config';
-import { ItemName } from './types/item';
 
-const getChampions = (
-  season: Season,
-  lang: LanguageType = 'ko'
-): { [key in ChampionName]?: ChampionData } => {
+const getChampions = (season: Season, lang: LanguageType = 'ko') => {
   switch (season) {
     case 'season_9':
       return lang === 'ko' ? Champions_9_ko : Champions_9_en;
@@ -32,9 +28,23 @@ export const getTraits = (season: Season, lang: LanguageType = 'ko') => {
   }
 };
 
-export const getAllChampionNames = (season: Season, lang: LanguageType = 'ko') => {
+export const getAllChampionNames = (
+  season: Season,
+  lang: LanguageType = 'ko',
+  sortByCost?: boolean
+) => {
   const champions = getChampions(season, lang);
-  return Object.keys(champions) as ChampionName[];
+
+  if (sortByCost) {
+    return Object.values(champions)
+      .sort((a, b) => a.cost - b.cost)
+      .map((champion) => champion?.name)
+      .filter(Boolean) as ChampionName[];
+  }
+
+  return Object.values(champions)
+    .map((champion) => champion?.name)
+    .filter(Boolean) as ChampionName[];
 };
 
 export const getCost = (champion: ChampionName, season: Season): number => {
@@ -54,9 +64,23 @@ export const getChampionData = (
   champion: ChampionName,
   season: Season,
   lang: LanguageType = 'ko'
-) => {
+): ChampionData => {
+  const defaultData: ChampionData = {
+    apiName: 'no-matched-item',
+    name: 'no-matched-item',
+    traits: [],
+    url: '',
+    cost: 0,
+  };
   const championsData = getChampions(season, lang);
-  return championsData[champion] as ChampionData;
+
+  for (const key in championsData) {
+    if (championsData[key].name === champion) {
+      return championsData[key] as ChampionData;
+    }
+  }
+
+  return defaultData;
 };
 
 export const getChampionTraits = (
