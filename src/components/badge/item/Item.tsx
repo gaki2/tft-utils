@@ -8,6 +8,9 @@ import { TFT_Tooltip } from '../../../utils/components/TFT_Tooltip';
 export type ItemProps<T extends Season> = {
   season: T;
   itemName: ItemMap[T];
+  /**
+   * @default 'ko'
+   */
   lang?: LanguageType;
 };
 
@@ -34,7 +37,7 @@ export const Item = <T extends Season>({ season, itemName, lang = 'ko' }: ItemPr
   return (
     <>
       <Wrapper data-tooltip-id={tooltipId}>
-        <Img src={url} alt={name}></Img>
+        <Img src={url} alt={name} />
       </Wrapper>
       <TFT_Tooltip
         id={tooltipId}
@@ -61,63 +64,4 @@ const Img = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
-`;
-
-const TooltipWrapper = styled.div`
-  --width: 320px;
-  --img-width: 32px;
-  --img-height: 32px;
-  --font-color: #fff;
-  --composition-img-width: 24px;
-  --composition-img-height: 24px;
-
-  max-width: var(--width);
-`;
-
-const TooltipTitle = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 0.25rem;
-`;
-
-const TooltipTitleImg = styled.img`
-  width: var(--img-width);
-  height: var(--img-height);
-  object-fit: cover;
-`;
-
-const TooltipTitleText = styled.span`
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: var(--font-color);
-  align-self: center;
-`;
-
-const Divider = styled.hr`
-  width: 100%;
-  border-width: 0.5px;
-`;
-
-const TooltipDescription = styled.div`
-  font-size: 0.875rem;
-  color: var(--font-color);
-`;
-
-const TooltipCompositionWrapper = styled.div<{ hidden: boolean }>`
-  display: ${({ hidden }) => (hidden ? 'none' : 'flex')};
-  flex-direction: row;
-  align-items: center;
-`;
-
-const TooltipCompositionTitle = styled.span`
-  font-size: 0.875rem;
-  color: var(--font-color);
-`;
-
-const TooltipCompositionImg = styled.img`
-  width: var(--composition-img-width);
-  height: var(--composition-img-height);
-  object-fit: cover;
-  margin-left: 6px;
 `;
