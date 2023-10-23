@@ -261,7 +261,7 @@ export const champion_season_9b = {
         "traits": [
             "Bilgewater",
             "Gunner",
-            "Reaver King"
+            "Reaver_King"
         ]
     },
     "TFT9_Sion": {

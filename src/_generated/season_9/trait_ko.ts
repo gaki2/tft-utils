@@ -1,4 +1,4 @@
-export const trait_season_9 = {
+export const trait_season_9_ko = {
     "Bastion": {
         "apiName": "Bastion",
         "name": "요새",
@@ -91,7 +91,7 @@ export const trait_season_9 = {
     },
     "ShadowIsles": {
         "apiName": "ShadowIsles",
-        "name": "그림자 군도",
+        "name": "그림자_군도",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/ShadowIsles.png"
     },
     "Freljord": {
@@ -126,7 +126,7 @@ export const trait_season_9 = {
     },
     "Technogenius": {
         "apiName": "Technogenius",
-        "name": "발명의 대가",
+        "name": "발명의_대가",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Technogenius.png"
     },
     "Challenger": {
@@ -140,4 +140,4 @@ export const trait_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Ionia.png"
     }
 };
-export type Trait_season_9_ko = "요새" | "마법사" | "요들" | "백발백중" | "공허" | "데마시아" | "불한당" | "학살자" | "기원자" | "난동꾼" | "녹서스" | "슈리마" | "책략가" | "구원자" | "필트오버" | "연쇄마법사" | "사수" | "여제" | "그림자 군도" | "프렐요드" | "타곤" | "다르킨" | "방랑자" | "자운" | "전쟁기계" | "발명의 대가" | "도전자" | "아이오니아"
+export type Trait_season_9_ko = "요새" | "마법사" | "요들" | "백발백중" | "공허" | "데마시아" | "불한당" | "학살자" | "기원자" | "난동꾼" | "녹서스" | "슈리마" | "책략가" | "구원자" | "필트오버" | "연쇄마법사" | "사수" | "여제" | "그림자_군도" | "프렐요드" | "타곤" | "다르킨" | "방랑자" | "자운" | "전쟁기계" | "발명의_대가" | "도전자" | "아이오니아"
