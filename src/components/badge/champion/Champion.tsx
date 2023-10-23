@@ -4,7 +4,8 @@ import { LanguageType } from '../../../types';
 import styled from 'styled-components';
 import { getChampionData } from '../../../getter';
 import { useMemo } from 'react';
-import { TFT_Tooltip } from '../../../utils/components/TFT_Tooltip';
+import { Tooltip } from '../../../utils/components/Tooltip';
+import { Trait } from '../trait/Trait';
 
 export type ChampionBadgeProps<T extends Season> = {
   season: T;
@@ -30,7 +31,24 @@ export const Champion = <T extends Season>({
         <Img src={url} alt={name} cost={cost} />
         <Border cost={cost} />
       </Wrapper>
-      <TFT_Tooltip id={tooltipId} title={name} titleImgUrl={url} />
+      <Tooltip id={tooltipId}>
+        <TooltipWrapper>
+          <TooltipTitle>
+            <TooltipImgWrapper>
+              <TooltipTitleImg src={url} alt={name} />
+              <TooltipTitleText>{name}</TooltipTitleText>
+            </TooltipImgWrapper>
+            <TooltipTraitWrapper>
+              {traits.map((trait, index) => (
+                <TooltipTraitItemWrapper key={index}>
+                  <Trait season={season} name={trait} disableTooltip={true} />
+                  <span>{trait}</span>
+                </TooltipTraitItemWrapper>
+              ))}
+            </TooltipTraitWrapper>
+          </TooltipTitle>
+        </TooltipWrapper>
+      </Tooltip>
     </>
   );
 };
@@ -64,4 +82,54 @@ const Border = styled.div<{ cost: number }>`
   box-sizing: border-box;
   border: 2px solid ${({ cost }) => `var(--${cost}_cost_border)`};
   border-radius: 4px;
+`;
+
+const TooltipWrapper = styled.div`
+  --width: 320px;
+  --img-width: 32px;
+  --img-height: 32px;
+  --font-color: #fff;
+  --composition-img-width: 24px;
+  --composition-img-height: 24px;
+
+  max-width: var(--width);
+`;
+
+const TooltipTitle = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+`;
+
+const TooltipImgWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+`;
+
+const TooltipTitleImg = styled.img`
+  width: var(--img-width);
+  height: var(--img-height);
+  object-fit: cover;
+`;
+
+const TooltipTitleText = styled.span`
+  font-size: 0.75rem;
+  color: var(--font-color);
+  align-self: center;
+`;
+
+const TooltipTraitWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+`;
+
+const TooltipTraitItemWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
 `;

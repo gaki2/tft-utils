@@ -794,35 +794,35 @@ export const items_season_9 = {
         "name": "드레이븐의 도끼",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleDravensAxe.png",
-        "desc": "보유한  골드당 공격력  @AttackDamagePerGold@% 획득 (최대  @AttackDamageGoldLimit@골드)<br><br>공격 시 @StacksPerAttack@회 중첩, 최대 @CashoutStacks@회 중첩. 최대 중첩 시  @CashoutGold@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 공격력  @AttackDamagePerGold@% 획득 (최대  @AttackDamageGoldLimit@골드)<br><br>공격 시 @StacksPerAttack@회 중첩, 최대 @CashoutStacks@회 중첩. 최대 중첩 시  @CashoutGold@골드 획득"
     },
     "TFT7_Item_ShimmerscaleMogulsMail": {
         "apiName": "TFT7_Item_ShimmerscaleMogulsMail",
         "name": "거물의 갑옷",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleMogulsMail.png",
-        "desc": "피해를 입으면 방어력  @BaseResistsPerStack@, 마법 저항력  @BaseResistsPerStack@, 체력  @BaseHealthPerStack@ 획득 (최대 @StackCap@회 중첩)<br><br>최대 중첩 시  @GoldAtFullStacks@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "피해를 입으면 방어력  @BaseResistsPerStack@, 마법 저항력  @BaseResistsPerStack@, 체력  @BaseHealthPerStack@ 획득 (최대 @StackCap@회 중첩)<br><br>최대 중첩 시  @GoldAtFullStacks@골드 획득"
     },
     "TFT7_Item_ShimmerscaleGamblersBlade": {
         "apiName": "TFT7_Item_ShimmerscaleGamblersBlade",
         "name": "도박꾼의 칼날",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleGamblersBlade.png",
-        "desc": "보유한  골드당 추가 공격 속도  @AttackSpeedPerGold*100@% 획득 (최대  @AttackSpeedGoldLimit@골드)<br><br>공격할 때마다 @ChanceToProc*100@% 확률로  @GoldPerProc@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 추가 공격 속도  @AttackSpeedPerGold*100@% 획득 (최대  @AttackSpeedGoldLimit@골드)<br><br>공격할 때마다 @ChanceToProc*100@% 확률로  @GoldPerProc@골드 획득"
     },
     "TFT7_Item_ShimmerscaleHeartOfGold": {
         "apiName": "TFT7_Item_ShimmerscaleHeartOfGold",
         "name": "쓸데없이 큰 보석",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleHeartOfGold.png",
-        "desc": "전투당 1회: 전투 시작 후 장착 유닛이 @ProcTimeInSeconds@초 동안 생존하면 생존한 아군 @UnitsPerGold@명당  1골드를 획득하고 보유한  골드당 생존한 아군이 각각 @BonusDamagePerGold*100@%의 추가 피해를 입힘 (최대  @GoldLimit@골드)<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "전투당 1회: 전투 시작 후 장착 유닛이 @ProcTimeInSeconds@초 동안 생존하면 생존한 아군 @UnitsPerGold@명당  1골드를 획득하고 보유한  골드당 생존한 아군이 각각 @BonusDamagePerGold*100@%의 추가 피해를 입힘 (최대  @GoldLimit@골드)"
     },
     "TFT7_Item_ShimmerscaleGoldmancersStaff": {
         "apiName": "TFT7_Item_ShimmerscaleGoldmancersStaff",
         "name": "황금술사의 지팡이",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleGoldmancersStaff.png",
-        "desc": "보유한  골드당 주문력  @AbilityPowerPerGold@ 획득하고(최대  @AbilityPowerGoldMax@골드) 적을 처치할 때마다 @OnKillProcChance*100@% 확률로  @OnKillProcGold@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 주문력  @AbilityPowerPerGold@ 획득하고(최대  @AbilityPowerGoldMax@골드) 적을 처치할 때마다 @OnKillProcChance*100@% 확률로  @OnKillProcGold@골드 획득"
     },
     "TFT7_Item_ShimmerscaleDiamondHands": {
         "apiName": "TFT7_Item_ShimmerscaleDiamondHands",
@@ -892,21 +892,21 @@ export const items_season_9 = {
         "name": "드레이븐의 도끼",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleDravensAxe_HR.png",
-        "desc": "보유한  골드당 공격력  @AttackDamagePerGold@% 획득 (최대  @AttackDamageGoldLimit@골드)<br><br>공격 시 @StacksPerAttack@회 중첩, 최대 @CashoutStacks@회 중첩. 최대 중첩 시  @CashoutGold@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 공격력  @AttackDamagePerGold@% 획득 (최대  @AttackDamageGoldLimit@골드)<br><br>공격 시 @StacksPerAttack@회 중첩, 최대 @CashoutStacks@회 중첩. 최대 중첩 시  @CashoutGold@골드 획득"
     },
     "TFT7_Item_ShimmerscaleGamblersBlade_HR": {
         "apiName": "TFT7_Item_ShimmerscaleGamblersBlade_HR",
         "name": "도박꾼의 칼날",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleGamblersBlade_HR.png",
-        "desc": "보유한  골드당 추가 공격 속도  @AttackSpeedPerGold*100@% 획득 (최대  @AttackSpeedGoldLimit@골드)<br><br>공격할 때마다 @ChanceToProc*100@% 확률로  @GoldPerProc@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 추가 공격 속도  @AttackSpeedPerGold*100@% 획득 (최대  @AttackSpeedGoldLimit@골드)<br><br>공격할 때마다 @ChanceToProc*100@% 확률로  @GoldPerProc@골드 획득"
     },
     "TFT7_Item_ShimmerscaleGoldmancersStaff_HR": {
         "apiName": "TFT7_Item_ShimmerscaleGoldmancersStaff_HR",
         "name": "황금술사의 지팡이",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleGoldmancersStaff_HR.png",
-        "desc": "보유한  골드당 주문력  @AbilityPowerPerGold@ 획득하고(최대  @AbilityPowerGoldMax@골드) 적을 처치할 때마다 @OnKillProcChance*100@% 확률로  @OnKillProcGold@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "보유한  골드당 주문력  @AbilityPowerPerGold@ 획득하고(최대  @AbilityPowerGoldMax@골드) 적을 처치할 때마다 @OnKillProcChance*100@% 확률로  @OnKillProcGold@골드 획득"
     },
     "TFT7_Item_ShimmerscaleHeartOfGold_HR": {
         "apiName": "TFT7_Item_ShimmerscaleHeartOfGold_HR",
@@ -920,7 +920,7 @@ export const items_season_9 = {
         "name": "거물의 갑옷",
         "composition": [],
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/items/TFT7_Item_ShimmerscaleMogulsMail_HR.png",
-        "desc": "피해를 입으면 방어력  @BaseResistsPerStack@, 마법 저항력  @BaseResistsPerStack@, 체력  @BaseHealthPerStack@ 획득 (최대 @StackCap@회 중첩)<br><br>최대 중첩 시  @GoldAtFullStacks@골드 획득<br><br>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@"
+        "desc": "피해를 입으면 방어력  @BaseResistsPerStack@, 마법 저항력  @BaseResistsPerStack@, 체력  @BaseHealthPerStack@ 획득 (최대 @StackCap@회 중첩)<br><br>최대 중첩 시  @GoldAtFullStacks@골드 획득"
     },
     "TFT9_Item_StrategistEmblem": {
         "apiName": "TFT9_Item_StrategistEmblem",

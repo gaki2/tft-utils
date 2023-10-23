@@ -6,6 +6,7 @@ import { Season } from '../types/seasonType';
 import { SEASON_SET_DATA_IDX_MAP } from './shared';
 import { S3 } from '../environments/urls';
 import { ChampionData } from '../types/champion';
+import { SpaceToUnderBar } from '../utils/regex';
 
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
@@ -58,6 +59,11 @@ export async function createChampions(lang: LanguageType, season: Season) {
       (object: { apiName: string }) => object.apiName === id
     );
     const { traits } = targetChampion;
+    if (traits.length && traits) {
+      traits.forEach((trait: string, index: number) => {
+        traits[index] = SpaceToUnderBar(trait);
+      });
+    }
     const apiName = handleApiName(id);
     const url = `${S3}/${season}/champions/${apiName}.png`;
     const champion = new Champion(name, id, url, tier, traits);

@@ -127,7 +127,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Gwen.png",
         "cost": 4,
         "traits": [
-            "그림자 군도",
+            "그림자_군도",
             "학살자"
         ]
     },
@@ -139,7 +139,7 @@ export const champion_season_9 = {
         "traits": [
             "필트오버",
             "요들",
-            "발명의 대가"
+            "발명의_대가"
         ]
     },
     "TFT9_JarvanIV": {
@@ -311,7 +311,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Senna.png",
         "cost": 5,
         "traits": [
-            "그림자 군도",
+            "그림자_군도",
             "사수",
             "구원자"
         ]
@@ -449,7 +449,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Maokai.png",
         "cost": 1,
         "traits": [
-            "그림자 군도",
+            "그림자_군도",
             "요새"
         ]
     },
@@ -519,7 +519,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Kalista.png",
         "cost": 3,
         "traits": [
-            "그림자 군도",
+            "그림자_군도",
             "도전자"
         ]
     },
@@ -589,7 +589,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Viego.png",
         "cost": 1,
         "traits": [
-            "그림자 군도",
+            "그림자_군도",
             "불한당"
         ]
     },

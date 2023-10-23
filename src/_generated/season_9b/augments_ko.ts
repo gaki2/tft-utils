@@ -955,13 +955,13 @@ export const augments_season_9b = {
     },
     "TFT9_Augment_ReturnOnInvestment": {
         "apiName": "TFT9_Augment_ReturnOnInvestment",
-        "description": "상점을 18번 새로고침하면 전략가의 왕관을 획득합니다(1회 한정).<br><br>(이번 게임의 새로고침 횟수: @TFTUnitProperty.item:TFT9_ReturnOnInvestmentRolls@)",
+        "description": "상점을 18번 새로고침하면 전략가의 왕관을 획득합니다(1회 한정).",
         "name": "투자 수익률",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/GoldReserves2.png"
     },
     "TFT9_Augment_JustKeepRolling": {
         "apiName": "TFT9_Augment_JustKeepRolling",
-        "description": "상점을 8번 새로고침하면 게임이 끝날 때까지 새로고침 비용이 1골드가 됩니다.<br><br>(이번 게임의 새로고침 횟수: @TFTUnitProperty.item:TFT9_JustKeepRollingRolls@)",
+        "description": "상점을 8번 새로고침하면 게임이 끝날 때까지 새로고침 비용이 1골드가 됩니다.",
         "name": "단골 고객",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/augments/Pirates2.png"
     },

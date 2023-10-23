@@ -127,7 +127,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Gwen.png",
         "cost": 4,
         "traits": [
-            "Shadow Isles",
+            "Shadow_Isles",
             "Slayer"
         ]
     },
@@ -311,7 +311,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Senna.png",
         "cost": 5,
         "traits": [
-            "Shadow Isles",
+            "Shadow_Isles",
             "Gunner",
             "Redeemer"
         ]
@@ -449,7 +449,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Maokai.png",
         "cost": 1,
         "traits": [
-            "Shadow Isles",
+            "Shadow_Isles",
             "Bastion"
         ]
     },
@@ -519,7 +519,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Kalista.png",
         "cost": 3,
         "traits": [
-            "Shadow Isles",
+            "Shadow_Isles",
             "Challenger"
         ]
     },
@@ -589,7 +589,7 @@ export const champion_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Viego.png",
         "cost": 1,
         "traits": [
-            "Shadow Isles",
+            "Shadow_Isles",
             "Rogue"
         ]
     },

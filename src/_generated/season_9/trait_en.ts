@@ -1,4 +1,4 @@
-export const trait_season_9 = {
+export const trait_season_9_en = {
     "Bastion": {
         "apiName": "Bastion",
         "name": "Bastion",
@@ -91,7 +91,7 @@ export const trait_season_9 = {
     },
     "ShadowIsles": {
         "apiName": "ShadowIsles",
-        "name": "Shadow Isles",
+        "name": "Shadow_Isles",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/ShadowIsles.png"
     },
     "Freljord": {
@@ -140,4 +140,4 @@ export const trait_season_9 = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/traits/Ionia.png"
     }
 };
-export type Trait_season_9_en = "Bastion" | "Sorcerer" | "Yordle" | "Deadeye" | "Void" | "Demacia" | "Rogue" | "Slayer" | "Invoker" | "Bruiser" | "Noxus" | "Shurima" | "Strategist" | "Redeemer" | "Piltover" | "Multicaster" | "Gunner" | "Empress" | "Shadow Isles" | "Freljord" | "Targon" | "Darkin" | "Wanderer" | "Zaun" | "Juggernaut" | "Technogenius" | "Challenger" | "Ionia"
+export type Trait_season_9_en = "Bastion" | "Sorcerer" | "Yordle" | "Deadeye" | "Void" | "Demacia" | "Rogue" | "Slayer" | "Invoker" | "Bruiser" | "Noxus" | "Shurima" | "Strategist" | "Redeemer" | "Piltover" | "Multicaster" | "Gunner" | "Empress" | "Shadow_Isles" | "Freljord" | "Targon" | "Darkin" | "Wanderer" | "Zaun" | "Juggernaut" | "Technogenius" | "Challenger" | "Ionia"

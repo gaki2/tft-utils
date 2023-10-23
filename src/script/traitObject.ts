@@ -38,7 +38,7 @@ export async function createTraits(lang: LanguageType, season: Season) {
 
   for (let i = 0; i < traits.length; i++) {
     const { name: _name, apiName: _apiName } = traits[i];
-    const name = _name.replace('<br>', '');
+    const name = _name.replace('<br>', '').replace(' ', '_');
     traitNamesForType.add(name);
     const apiName = handleApiName(_apiName);
     const url = `${S3}/${season}/traits/${apiName}.png`;
@@ -46,7 +46,7 @@ export async function createTraits(lang: LanguageType, season: Season) {
 
     traitsObject[apiName] = trait;
   }
-  const ret = `export const trait_${season} = ${JSON.stringify(traitsObject, null, 4)};
+  const ret = `export const trait_${season}_${lang} = ${JSON.stringify(traitsObject, null, 4)};
 export type Trait_${season}_${lang} = ${Array.from(traitNamesForType)
     .map((trait) => `"${trait}"`)
     .join(' | ')}
