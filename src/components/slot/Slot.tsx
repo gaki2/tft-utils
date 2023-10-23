@@ -4,10 +4,7 @@ import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
 import { throttle } from '../../utils/throttle';
-import { Popover } from '../../utils/popover/Popover';
-import { SlotPopup } from './popup_view/SlotPopup';
 import styled from 'styled-components';
-import { ChampionName } from '../../types';
 
 type SlotProps = {
   board: Board;
@@ -102,20 +99,7 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
           )}
         </StyledBorder>
       </StyledWrapper>
-      {slotData && isOpened && (
-        <Popover
-          parentTop={dimension?.top ?? 0}
-          parentLeft={dimension?.left ?? 0}
-          parentWidth={dimension?.width ?? 0}
-          parentHeight={dimension?.height ?? 0}
-          closePopover={() => setIsOpened(false)}>
-          <SlotPopup
-            championName={slotData?.championData?.apiName as ChampionName}
-            season={season}
-            language={language}
-          />
-        </Popover>
-      )}
+      {slotData && isOpened && <>팝업</>}
     </>
   );
 };
