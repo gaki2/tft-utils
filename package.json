@@ -7,7 +7,8 @@
     "storybook": "storybook dev -p 6006",
     "build-rollup": "rollup -c",
     "build": "rimraf lib && npm run build-rollup",
-    "prepublishOnly": "npm run parse && npm run build"
+    "prepublishOnly": "npm run parse && npm run build",
+    "release": "changeset publish"
   },
   "keywords": [
     "tft",
