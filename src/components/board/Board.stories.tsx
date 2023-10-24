@@ -19,19 +19,19 @@ const MOCK_DATA: ChampionNode[] = [
       row: 2,
       col: 2,
     },
-    name: 'TFT9_Jhin',
+    name: '진',
   },
   {
     position: {
       row: 2,
       col: 3,
     },
-    name: 'TFT9_Gangplank',
+    name: '갱플랭크',
   },
 ];
 
 const Boards = () => {
-  return <Board champions={MOCK_DATA} season={'season_9b'} language={'ko_kr'} />;
+  return <Board champions={MOCK_DATA} season={'season_9b'} language={'ko'} />;
 };
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
