@@ -3,7 +3,6 @@ import { Board, SlotData } from '../board/class/Board';
 import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
-import { throttle } from '../../utils/throttle';
 import styled from 'styled-components';
 
 type SlotProps = {
@@ -14,41 +13,11 @@ type SlotProps = {
   language: LanguageType;
 };
 
-type Dimension = {
-  top: number;
-  left: number;
-  width: number;
-  height: number;
-};
-
 const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const imageDivRef = useRef<HTMLDivElement>(null);
-  const [isOpened, setIsOpened] = useState(false);
-  const [dimension, setDimension] = useState<Dimension | null>(null);
-
-  useEffect(() => {
-    const updateDimension = throttle(() => {
-      if (wrapperRef.current) {
-        const scrollY = window.scrollY;
-        const scrollX = window.scrollX;
-        const { top, left, width, height } = wrapperRef.current?.getBoundingClientRect();
-        setDimension({ top: top + scrollY, left: left + scrollX, width, height });
-      }
-    }, 20);
-
-    if (window && wrapperRef.current && slotData) {
-      updateDimension();
-      window.addEventListener('resize', updateDimension);
-
-      return () => {
-        window.removeEventListener('resize', updateDimension);
-      };
-    }
-  }, [slotData]);
 
   const onDragStart = () => {
-    setIsOpened(false);
     board.updateDragState({
       isDragging: true,
       draggingSlotIdx: slotIdx,
@@ -86,7 +55,6 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
       <StyledWrapper
         draggable={Boolean(slotData)}
         ref={wrapperRef}
-        onClick={() => setIsOpened(true)}
         onDragStart={onDragStart}
         onDragOver={onDragOver}
         onDragLeave={onDragLeave}
@@ -99,7 +67,6 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
           )}
         </StyledBorder>
       </StyledWrapper>
-      {slotData && isOpened && <>팝업</>}
     </>
   );
 };
