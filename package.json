@@ -6,9 +6,8 @@
     "parse": "ts-node src/script/execute.ts",
     "storybook": "storybook dev -p 6006",
     "build-rollup": "rollup -c",
-    "build": "rimraf lib && npm run build-rollup",
-    "prepublishOnly": "npm run parse && npm run build",
-    "release": "changeset publish"
+    "build": "rimraf lib && npm run parse && npm run build-rollup",
+    "release": "npm run build && changeset publish"
   },
   "keywords": [
     "tft",
