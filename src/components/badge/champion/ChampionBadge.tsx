@@ -6,6 +6,7 @@ import { getChampionData } from '../../../getter';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { TraitBadge } from '../trait/TraitBadge';
+import { TraitNameMap } from '../../../types/trait';
 
 export type ChampionBadgeProps<T extends Season> = {
   season: T;
@@ -41,7 +42,11 @@ export const ChampionBadge = <T extends Season>({
             <TooltipTraitWrapper>
               {traits.map((trait, index) => (
                 <TooltipTraitItemWrapper key={index}>
-                  <TraitBadge season={season} name={trait} disableTooltip={true} />
+                  <TraitBadge
+                    season={season}
+                    name={trait as TraitNameMap[typeof season]}
+                    disableTooltip={true}
+                  />
                   <span>{trait}</span>
                 </TooltipTraitItemWrapper>
               ))}
