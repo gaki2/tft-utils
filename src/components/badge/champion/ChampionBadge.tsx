@@ -1,6 +1,6 @@
-import { Season } from 'src/types/seasonType';
-import { ChampionNameMap } from '../../../types/champion';
-import { LanguageType } from '../../../types';
+import { type Season } from 'src/types/seasonType';
+import { type ChampionNameMap } from '../../../types/champion';
+import { type LanguageType } from '../../../types';
 import styled from 'styled-components';
 import { getChampionData } from '../../../getter';
 import { useMemo } from 'react';

@@ -57,7 +57,7 @@ const commonjsConfig = {
     clearScreen: true,
   },
   output: {
-    dir: 'lib/src',
+    dir: 'lib',
     entryFileNames: '[name].cjs',
     preserveModules: true,
     preserveModulesRoot: 'lib',
@@ -82,7 +82,7 @@ const esmConfig = {
     exclude: 'node_modules/**',
   },
   output: {
-    dir: 'lib/src',
+    dir: 'lib',
     format: 'esm',
     preserveModules: true,
     preserveModulesRoot: 'lib',
