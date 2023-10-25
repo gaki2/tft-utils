@@ -1,20 +1,19 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Trait } from './Trait';
+import type { Meta } from '@storybook/react';
+import { TraitBadge } from './TraitBadge';
 import styled from 'styled-components';
 import { Season } from '../../../types';
 import { getTraits } from '../../../trait_getter';
 import { TraitName } from '../../../types/trait';
 
 const meta = {
-  title: 'Example/Trait',
-  component: Trait,
+  title: 'Example/Badge/Trait',
+  component: TraitBadge,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Trait>;
+} satisfies Meta<typeof TraitBadge>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 let id = 0;
 
@@ -22,13 +21,13 @@ const TraitView = ({ traitNames, season }: { traitNames: TraitName[]; season: Se
   return (
     <Wrapper>
       {traitNames.map((name) => (
-        <Trait key={`${name}-${++id}`} name={name} season={season} />
+        <TraitBadge key={`${name}-${++id}`} name={name} season={season} />
       ))}
     </Wrapper>
   );
 };
 
-export const Season_9: Story = {
+export const Season_9 = {
   render: () => {
     const traits = getTraits('season_9', 'ko');
     const traitNames = Object.values(traits).map((trait) => trait.name) as TraitName[];
@@ -36,7 +35,7 @@ export const Season_9: Story = {
   },
 };
 
-export const Season_9b: Story = {
+export const Season_9b = {
   render: () => {
     const traits = getTraits('season_9b', 'ko');
     const traitNames = Object.values(traits).map((trait) => trait.name) as TraitName[];

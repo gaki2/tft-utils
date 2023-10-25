@@ -1,32 +1,31 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Item } from './Item';
+import type { Meta } from '@storybook/react';
+import { ItemBadge } from './ItemBadge';
 import styled from 'styled-components';
 import { ItemName } from '../../../types/item';
 import { getItems } from '../../../item_getter';
 import { Season } from '../../../types';
 
 const meta = {
-  title: 'Example/Item',
-  component: Item,
+  title: 'Example/Badge/Item',
+  component: ItemBadge,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Item>;
+} satisfies Meta<typeof ItemBadge>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 const ItemView = ({ itemNames, season }: { itemNames: ItemName[]; season: Season }) => {
   return (
     <Wrapper>
       {itemNames.map((name) => (
-        <Item key={name} itemName={name} season={season} />
+        <ItemBadge key={name} itemName={name} season={season} />
       ))}
     </Wrapper>
   );
 };
 
-export const Season_9: Story = {
+export const Season_9 = {
   render: () => {
     const items = getItems('season_9', 'ko');
     const itemNames = Object.values(items).map((item) => item.name) as ItemName[];
@@ -34,7 +33,7 @@ export const Season_9: Story = {
   },
 };
 
-export const Season_9b: Story = {
+export const Season_9b = {
   render: () => {
     const items = getItems('season_9b', 'ko');
     const itemNames = Object.values(items).map((item) => item.name) as ItemName[];

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
 
-export type ItemProps<T extends Season> = {
+export type ItemBadgeProps<T extends Season> = {
   season: T;
   itemName: ItemMap[T];
   /**
@@ -16,7 +16,11 @@ export type ItemProps<T extends Season> = {
 
 let id = 0;
 
-export const Item = <T extends Season>({ season, itemName, lang = 'ko' }: ItemProps<T>) => {
+export const ItemBadge = <T extends Season>({
+  season,
+  itemName,
+  lang = 'ko',
+}: ItemBadgeProps<T>) => {
   const { url, name, desc, composition, apiName } = getItemData({ season, lang, name: itemName });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
