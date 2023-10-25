@@ -1,4 +1,5 @@
-import { LanguageType, Season } from '../../../types';
+import { Season } from '../../../types/seasonType';
+import { LanguageType } from '../../../types/config';
 import { TraitNameMap } from '../../../types/trait';
 import { getTraitData } from '../../../trait_getter';
 import { useMemo } from 'react';
