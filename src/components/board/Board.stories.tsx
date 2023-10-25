@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta } from '@storybook/react';
 import { Board } from './Board';
 import { ChampionNode } from './class/Board';
 
@@ -11,7 +11,6 @@ const meta = {
 } satisfies Meta<typeof Board>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 const MOCK_DATA: ChampionNode[] = [
   {
@@ -34,8 +33,6 @@ const Boards = () => {
   return <Board champions={MOCK_DATA} season={'season_9b'} language={'ko'} />;
 };
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-export const Template: Story = {
+export const Template = {
   render: () => <Boards />,
 };

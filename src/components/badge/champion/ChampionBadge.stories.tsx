@@ -1,19 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Champion } from './Champion';
+import type { Meta } from '@storybook/react';
+import { ChampionBadge } from './ChampionBadge';
 import styled from 'styled-components';
 import { ChampionName, Season } from '../../../types';
 import { getAllChampionNames } from '../../../getter';
 
 const meta = {
-  title: 'Example/Champion',
-  component: Champion,
+  title: 'Example/Badge/Champion',
+  component: ChampionBadge,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Champion>;
+} satisfies Meta<typeof ChampionBadge>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 let id = 0;
 
@@ -27,23 +26,22 @@ const ChampionView = ({
   return (
     <Wrapper>
       {championNames.map((name) => (
-        <Champion key={`${name}-${++id}`} championName={name} season={season} />
+        <ChampionBadge key={`${name}-${++id}`} championName={name} season={season} />
       ))}
     </Wrapper>
   );
 };
 
-export const Season_9: Story = {
+export const Season_9 = {
   render: () => {
     const championNames = getAllChampionNames('season_9', 'ko', true);
     return <ChampionView championNames={championNames} season={'season_9'} />;
   },
 };
 
-export const Season_9b: Story = {
+export const Season_9b = {
   render: () => {
     const championNames = getAllChampionNames('season_9b', 'ko', true);
-    console.log(championNames);
     return <ChampionView championNames={championNames} season={'season_9b'} />;
   },
 };

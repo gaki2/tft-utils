@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { underBarToSpace } from '../../../utils/regex';
 
-export type TraitProps<T extends Season> = {
+export type TraitBadgeProps<T extends Season> = {
   season: T;
   name: TraitNameMap[T];
   /**
@@ -21,12 +21,12 @@ export type TraitProps<T extends Season> = {
 
 let id = 0;
 
-export const Trait = <T extends Season>({
+export const TraitBadge = <T extends Season>({
   season,
   name,
   lang = 'ko',
   disableTooltip = false,
-}: TraitProps<T>) => {
+}: TraitBadgeProps<T>) => {
   const { name: traitName, apiName, url } = getTraitData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
