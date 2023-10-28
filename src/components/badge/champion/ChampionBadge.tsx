@@ -1,4 +1,4 @@
-import { type Season } from 'src/types/seasonType';
+import { type Season } from '../../../types/seasonType';
 import { type ChampionNameMap } from '../../../types/champion';
 import { type LanguageType } from '../../../types';
 import styled from 'styled-components';
