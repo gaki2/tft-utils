@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { TraitBadge } from '../trait/TraitBadge';
 import { TraitNameMap } from '../../../types/trait';
+import { CommonBadgeProps } from '../common_props_type';
 
 export type ChampionBadgeProps<T extends Season> = {
   season: T;
@@ -15,7 +16,7 @@ export type ChampionBadgeProps<T extends Season> = {
    * @default 'ko'
    */
   lang?: LanguageType;
-};
+} & CommonBadgeProps;
 
 let id = 0;
 
@@ -23,12 +24,13 @@ export const ChampionBadge = <T extends Season>({
   season,
   lang,
   championName,
+  className,
 }: ChampionBadgeProps<T>) => {
   const { name, apiName, url, cost, traits } = getChampionData(championName, season, lang);
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId}>
+      <Wrapper data-tooltip-id={tooltipId} className={className}>
         <Img src={url} alt={name} cost={cost} />
         <Border cost={cost} />
       </Wrapper>

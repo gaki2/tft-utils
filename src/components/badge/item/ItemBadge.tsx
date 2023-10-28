@@ -4,6 +4,7 @@ import { getItemData, getItemDataByApiName } from '../../../item_getter';
 import styled from 'styled-components';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
+import { CommonBadgeProps } from '../common_props_type';
 
 export type ItemBadgeProps<T extends Season> = {
   season: T;
@@ -12,7 +13,7 @@ export type ItemBadgeProps<T extends Season> = {
    * @default 'ko'
    */
   lang?: LanguageType;
-};
+} & CommonBadgeProps;
 
 let id = 0;
 
@@ -20,6 +21,7 @@ export const ItemBadge = <T extends Season>({
   season,
   itemName,
   lang = 'ko',
+  className,
 }: ItemBadgeProps<T>) => {
   const { url, name, desc, composition, apiName } = getItemData({ season, lang, name: itemName });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
@@ -36,7 +38,7 @@ export const ItemBadge = <T extends Season>({
 
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId}>
+      <Wrapper data-tooltip-id={tooltipId} className={className}>
         <Img src={url} alt={name} />
       </Wrapper>
       <Tooltip id={tooltipId}>
