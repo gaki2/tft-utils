@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.10
+
+### Patch Changes
+
+- 345f655: - 49-championbadge-컴포넌트에서-season-의-타입-추론이-안되는-버그
+
 ## 0.1.9
 
 ### Patch Changes
