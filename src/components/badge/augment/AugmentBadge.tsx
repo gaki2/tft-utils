@@ -4,12 +4,13 @@ import { AugmentMap } from '../../../types/augment';
 import { getAugmentData } from '../../../augment_getter';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { useMemo } from 'react';
+import { CommonBadgeProps } from '../common_props_type';
 
 export type AugmentBadgeProps<T extends Season> = {
   season: T;
   name: AugmentMap[T];
   lang?: LanguageType;
-};
+} & CommonBadgeProps;
 
 let id = 0;
 
@@ -17,13 +18,14 @@ export const AugmentBadge = <T extends Season>({
   season,
   name,
   lang = 'ko',
+  className,
 }: AugmentBadgeProps<T>) => {
   const { apiName, name: augName, url, description } = getAugmentData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   return (
     <>
-      <Wrapper lang={lang} data-tooltip-id={tooltipId}>
+      <Wrapper lang={lang} data-tooltip-id={tooltipId} className={className}>
         <Img src={url} alt={augName}></Img>
       </Wrapper>
       <Tooltip id={tooltipId}>

@@ -6,6 +6,7 @@ import { useMemo } from 'react';
 import styled from 'styled-components';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { underBarToSpace } from '../../../utils/regex';
+import { CommonBadgeProps } from '../common_props_type';
 
 export type TraitBadgeProps<T extends Season> = {
   season: T;
@@ -18,7 +19,7 @@ export type TraitBadgeProps<T extends Season> = {
    * @default false
    */
   disableTooltip?: boolean;
-};
+} & CommonBadgeProps;
 
 let id = 0;
 
@@ -27,13 +28,14 @@ export const TraitBadge = <T extends Season>({
   name,
   lang = 'ko',
   disableTooltip = false,
+  className,
 }: TraitBadgeProps<T>) => {
   const { name: traitName, apiName, url } = getTraitData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId}>
+      <Wrapper data-tooltip-id={tooltipId} className={className}>
         <Img src={url} alt={traitName} />
       </Wrapper>
       <Tooltip id={tooltipId} tooltipProps={{ hidden: disableTooltip }}>
