@@ -24,13 +24,13 @@ export const ChampionBadge = <T extends Season>({
   season,
   lang,
   championName,
-  className,
+  style,
 }: ChampionBadgeProps<T>) => {
   const { name, apiName, url, cost, traits } = getChampionData(championName, season, lang);
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId} className={className}>
+      <Wrapper data-tooltip-id={tooltipId} style={style}>
         <Img src={url} alt={name} cost={cost} />
         <Border cost={cost} />
       </Wrapper>
@@ -65,6 +65,7 @@ const Wrapper = styled.div`
   height: 32px;
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 `;
 
 const Img = styled.img<{ cost: number }>`

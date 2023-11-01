@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type CommonBadgeProps = {
-  className?: string;
+  style?: React.CSSProperties;
 };

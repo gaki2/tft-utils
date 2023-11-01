@@ -18,14 +18,14 @@ export const AugmentBadge = <T extends Season>({
   season,
   name,
   lang = 'ko',
-  className,
+  style,
 }: AugmentBadgeProps<T>) => {
   const { apiName, name: augName, url, description } = getAugmentData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   return (
     <>
-      <Wrapper lang={lang} data-tooltip-id={tooltipId} className={className}>
+      <Wrapper lang={lang} data-tooltip-id={tooltipId} style={style}>
         <Img src={url} alt={augName}></Img>
       </Wrapper>
       <Tooltip id={tooltipId}>
@@ -46,6 +46,7 @@ const Wrapper = styled.div`
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: middle;
 `;
 
 const Img = styled.img`
