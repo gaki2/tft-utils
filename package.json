@@ -1,6 +1,6 @@
 {
   "name": "tft-utils",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "tft team-builder",
   "scripts": {
     "parse": "ts-node src/script/execute.ts",

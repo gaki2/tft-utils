@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.11
+
+### Patch Changes
+
+- 9d77d99: CommonBadgeProps 추가 / className 속성을 받을 수 있도록 함
+
 ## 0.1.10
 
 ### Patch Changes
