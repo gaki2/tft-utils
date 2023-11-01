@@ -21,7 +21,7 @@ export const ItemBadge = <T extends Season>({
   season,
   itemName,
   lang = 'ko',
-  className,
+  style,
 }: ItemBadgeProps<T>) => {
   const { url, name, desc, composition, apiName } = getItemData({ season, lang, name: itemName });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
@@ -38,7 +38,7 @@ export const ItemBadge = <T extends Season>({
 
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId} className={className}>
+      <Wrapper data-tooltip-id={tooltipId} style={style}>
         <Img src={url} alt={name} />
       </Wrapper>
       <Tooltip id={tooltipId}>
@@ -70,6 +70,7 @@ const Wrapper = styled.div`
   width: 32px;
   height: 32px;
   display: inline-block;
+  vertical-align: middle;
 `;
 
 const Img = styled.img`

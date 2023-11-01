@@ -28,14 +28,14 @@ export const TraitBadge = <T extends Season>({
   name,
   lang = 'ko',
   disableTooltip = false,
-  className,
+  style,
 }: TraitBadgeProps<T>) => {
   const { name: traitName, apiName, url } = getTraitData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId} className={className}>
+      <Wrapper data-tooltip-id={tooltipId} style={style}>
         <Img src={url} alt={traitName} />
       </Wrapper>
       <Tooltip id={tooltipId} tooltipProps={{ hidden: disableTooltip }}>
@@ -57,6 +57,7 @@ const Wrapper = styled.div`
   align-items: center;
   border-radius: 4px;
   background-color: #222;
+  vertical-align: middle;
 `;
 
 const Img = styled.img`
