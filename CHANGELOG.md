@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.12
+
+### Patch Changes
+
+- d507df9: style 속성 추가
+
 ## 0.1.11
 
 ### Patch Changes
