@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { CommonBadgeProps } from '../common_props_type';
+import { underBarToSpace } from '../../../utils/regex';
 
 export type ItemBadgeProps<T extends Season> = {
   season: T;
@@ -25,7 +26,7 @@ export const ItemBadge = <T extends Season>({
 }: ItemBadgeProps<T>) => {
   const { url, name, desc, composition, apiName } = getItemData({ season, lang, name: itemName });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
-
+  const title = underBarToSpace(name);
   const compositionDataUrls: string[] = useMemo(() => {
     if (composition && composition.length > 0) {
       return composition.map((element) => {
@@ -45,7 +46,7 @@ export const ItemBadge = <T extends Season>({
         <TooltipWrapper>
           <TooltipTitle>
             <TooltipTitleImg src={url} alt={name} />
-            <TooltipTitleText>{name}</TooltipTitleText>
+            <TooltipTitleText>{title}</TooltipTitleText>
           </TooltipTitle>
           <Divider />
           <TooltipBody dangerouslySetInnerHTML={{ __html: desc }} />

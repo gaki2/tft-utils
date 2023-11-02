@@ -4,6 +4,7 @@ import fs from 'fs';
 import { S3 } from '../environments/urls';
 import { writeFile } from '../utils/file';
 import { convertKeysToUpperCase, isEmptyObject } from '../utils/my_lodash';
+import { cleanAngleBracket, cleanBrTag, spaceToUnderBar } from '../utils/regex';
 
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
@@ -56,7 +57,7 @@ export async function createItems(lang: LanguageType, season: Season) {
     }
 
     const { name: originalName, composition, desc: original_desc, effects } = target;
-    const name = cleanBrTag(originalName);
+    const name = spaceToUnderBar(cleanBrTag(originalName));
     const desc = replaceVariables(
       cleanAngleBracket(cleanPercent(cleanZWSP(original_desc))),
       effects
@@ -81,17 +82,6 @@ export type Item_${season}_${lang} = ${Array.from(itemNamesForType)
   `;
   await writeFile(`${outDir}/${season}/items_${lang}.ts`, ret);
 }
-
-const cleanBrTag = (str: string) => {
-  return str.replace(/<br>/g, '');
-};
-
-/**
- * <br> 태그를 제외한 <~~~>, </~~~> 형태의 태그를 제거함.
- */
-const cleanAngleBracket = (str: string) => {
-  return str.replace(/<(?!br>)[^>]*>/g, '');
-};
 
 /**
  * @~~~@ 형태의 변수를 실제 값으로 치환해준다.

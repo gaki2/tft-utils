@@ -4,6 +4,7 @@ import fs from 'fs';
 import { S3 } from '../environments/urls';
 import { writeFile } from '../utils/file';
 import { convertKeysToUpperCase, isEmptyObject } from '../utils/my_lodash';
+import { cleanBrTag, spaceToUnderBar } from '../utils/regex';
 
 const jsonDir = path.join(__dirname, '../json');
 const outDir = path.join(__dirname, '../_generated');
@@ -70,7 +71,7 @@ export async function createAugments(lang: LanguageType, season: Season) {
     }
 
     const { name: _name, desc, effects } = detailedData;
-    const name = _name.replace('<br>', '');
+    const name = spaceToUnderBar(cleanBrTag(_name));
     augmentNamesForType.add(name);
     const replacedDesc = replaceVariables(desc, effects);
     const augment = new Augment(id, replacedDesc, name, url);

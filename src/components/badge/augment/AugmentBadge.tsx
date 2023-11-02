@@ -5,6 +5,7 @@ import { getAugmentData } from '../../../augment_getter';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { useMemo } from 'react';
 import { CommonBadgeProps } from '../common_props_type';
+import { underBarToSpace } from '../../../utils/regex';
 
 export type AugmentBadgeProps<T extends Season> = {
   season: T;
@@ -22,6 +23,7 @@ export const AugmentBadge = <T extends Season>({
 }: AugmentBadgeProps<T>) => {
   const { apiName, name: augName, url, description } = getAugmentData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
+  const title = underBarToSpace(augName);
 
   return (
     <>
@@ -32,7 +34,7 @@ export const AugmentBadge = <T extends Season>({
         <TooltipWrapper>
           <TooltipTitle>
             <TooltipTitleImg src={url} alt={augName} />
-            <TooltipTitleText>{augName}</TooltipTitleText>
+            <TooltipTitleText>{title}</TooltipTitleText>
           </TooltipTitle>
           <Divider />
           <TooltipBody dangerouslySetInnerHTML={{ __html: description }} />
