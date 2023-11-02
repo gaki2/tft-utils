@@ -8,6 +8,7 @@ import { Tooltip } from '../../../utils/components/Tooltip';
 import { TraitBadge } from '../trait/TraitBadge';
 import { TraitNameMap } from '../../../types/trait';
 import { CommonBadgeProps } from '../common_props_type';
+import { underBarToSpace } from '../../../utils/regex';
 
 export type ChampionBadgeProps<T extends Season> = {
   season: T;
@@ -28,6 +29,7 @@ export const ChampionBadge = <T extends Season>({
 }: ChampionBadgeProps<T>) => {
   const { name, apiName, url, cost, traits } = getChampionData(championName, season, lang);
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
+  const title = underBarToSpace(name);
   return (
     <>
       <Wrapper data-tooltip-id={tooltipId} style={style}>
@@ -39,7 +41,7 @@ export const ChampionBadge = <T extends Season>({
           <TooltipTitle>
             <TooltipImgWrapper>
               <TooltipTitleImg src={url} alt={name} />
-              <TooltipTitleText>{name}</TooltipTitleText>
+              <TooltipTitleText>{title}</TooltipTitleText>
             </TooltipImgWrapper>
             <TooltipTraitWrapper>
               {traits.map((trait, index) => (

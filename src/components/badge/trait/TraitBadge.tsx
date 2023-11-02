@@ -32,7 +32,7 @@ export const TraitBadge = <T extends Season>({
 }: TraitBadgeProps<T>) => {
   const { name: traitName, apiName, url } = getTraitData({ season, lang, name });
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
-
+  const title = underBarToSpace(traitName);
   return (
     <>
       <Wrapper data-tooltip-id={tooltipId} style={style}>
@@ -41,7 +41,7 @@ export const TraitBadge = <T extends Season>({
       <Tooltip id={tooltipId} tooltipProps={{ hidden: disableTooltip }}>
         <TooltipWrapper>
           <TooltipTitle>
-            <TooltipTitleText>{underBarToSpace(traitName)}</TooltipTitleText>
+            <TooltipTitleText>{title}</TooltipTitleText>
           </TooltipTitle>
         </TooltipWrapper>
       </Tooltip>
