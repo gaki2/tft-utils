@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.13
+
+### Patch Changes
+
+- 11c0394: Badge 컴포넌트에 띄어쓰기를 '\_' 로 바꾸는 로직 적용
+
 ## 0.1.12
 
 ### Patch Changes
