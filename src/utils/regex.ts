@@ -13,7 +13,7 @@ export const removeBrTag = (str: string) => {
  * <SomeTag>, </AnyTag> 같은 패턴을 제거함.
  * (예외) <br> 은 제거하지 않음.
  */
-export const cleanAngleBracket = (str: string) => {
+export const removeAngleBracket = (str: string) => {
   return str.replace(/<(?!br>)[^>]*>/g, '');
 };
 
