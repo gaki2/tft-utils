@@ -1,9 +1,15 @@
 import { LanguageType, Season } from '../../types';
 import { S3 } from '../../environments/urls';
 import { GeneralParser } from './generalParser';
-import { removeBrTag, removePercent, removeZWSP, spaceToUnderBar } from '../../utils/regex';
+import {
+  removeAngleBracket,
+  removeBrTag,
+  removePercent,
+  removeZWSP,
+  spaceToUnderBar,
+} from '../../utils/regex';
 
-interface Item {
+export interface Item {
   apiName: string;
   name: string;
   /**
@@ -62,7 +68,7 @@ export class ItemParser {
       }
 
       const desc = GeneralParser.replaceVariables(
-        GeneralParser.applyRegex(originalDesc, removeZWSP, removePercent),
+        GeneralParser.applyRegex(originalDesc, removeZWSP, removePercent, removeAngleBracket),
         effects
       );
       const item: Item = { apiName: id, name, url, desc, composition };

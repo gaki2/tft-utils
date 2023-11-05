@@ -26,8 +26,8 @@ export class GeneralParser {
   }
 
   static replaceVariables(text: string, variables: any) {
-    if (isEmptyObject(text)) return text;
-    convertKeysToUpperCase(text);
+    if (isEmptyObject(variables)) return text;
+    convertKeysToUpperCase(variables);
     // p2: @variable@ 에서 @Damage*2@ 와 같이 *2 라는 수식이 들어갔을때 *2 를 나타냄.
     return text.replace(/@(\w+)(\*[\d]+)?@/g, function (match, p1, p2) {
       const value = variables[p1.toUpperCase()];

@@ -3,6 +3,7 @@ import { S3 } from '../../environments/urls';
 import { GeneralParser } from './generalParser';
 import { removeQuote, spaceToUnderBar } from '../../utils/regex';
 import { SEASON_SET_DATA_IDX_MAP } from '../shared';
+import { removeDuplicates } from '../../utils/my_lodash';
 
 type Champion = {
   /**
@@ -40,7 +41,7 @@ export class ChampionParser {
     championList: ReturnType<typeof this.parseChampionList>
   ) {
     const championData =
-      JSON.parse(championDataJsonString)[SEASON_SET_DATA_IDX_MAP[this.season]].champions;
+      JSON.parse(championDataJsonString)['setData'][SEASON_SET_DATA_IDX_MAP[this.season]].champions;
 
     if (Object.keys(championData).length === 0) {
       throw new Error('championData is empty');
@@ -75,18 +76,20 @@ export class ChampionParser {
     championList: ReturnType<typeof this.parseChampionList>
   ) {
     const championData =
-      JSON.parse(championDataJsonString)[SEASON_SET_DATA_IDX_MAP[this.season]].champions;
+      JSON.parse(championDataJsonString)['setData'][SEASON_SET_DATA_IDX_MAP[this.season]].champions;
 
-    return championList
-      .map(({ id }) => {
-        const data = championData.find((object: { apiName: string }) => object.apiName === id);
-        if (!data) {
-          return '';
-        }
-        const { name: originalName } = data;
-        return GeneralParser.applyRegex(originalName, spaceToUnderBar, removeQuote);
-      })
-      .filter(Boolean);
+    return removeDuplicates(
+      championList
+        .map(({ id }) => {
+          const data = championData.find((object: { apiName: string }) => object.apiName === id);
+          if (!data) {
+            return '';
+          }
+          const { name: originalName } = data;
+          return GeneralParser.applyRegex(originalName, spaceToUnderBar, removeQuote);
+        })
+        .filter(Boolean)
+    );
   }
 }
 
