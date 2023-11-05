@@ -4,7 +4,7 @@ import { items_season_9 as items_9_en } from './_generated/season_9/items_en';
 import { items_season_9 as items_9_ko } from './_generated/season_9/items_ko';
 import { items_season_9b as items_9b_en } from './_generated/season_9b/items_en';
 import { items_season_9b as items_9b_ko } from './_generated/season_9b/items_ko';
-import { ItemData } from './script/itemObject';
+import { Item } from './script/parser/itemParser';
 
 type ItemGetterProps = {
   name: ItemName;
@@ -32,7 +32,7 @@ export const getItems = (season: Season, lang: LanguageType) => {
  * @param name 아이템 이름 (ex: '피바라기', '음전자 망토' ...)
  */
 export const getItemData = ({ name, season, lang }: ItemGetterProps) => {
-  const defaultItemData: ItemData = {
+  const defaultItemData: Item = {
     apiName: 'no-matched-item',
     name: 'no-matched-item',
     composition: [],
@@ -43,7 +43,7 @@ export const getItemData = ({ name, season, lang }: ItemGetterProps) => {
 
   for (const key in items) {
     if (items[key].name === name) {
-      return items[key] as ItemData;
+      return items[key] as Item;
     }
   }
 
@@ -51,7 +51,7 @@ export const getItemData = ({ name, season, lang }: ItemGetterProps) => {
 };
 
 export const getItemDataByApiName = ({ apiName, season, lang }: ItemGetterPropsApiName) => {
-  const defaultItemData: ItemData = {
+  const defaultItemData: Item = {
     apiName: 'no-matched-item',
     name: 'no-matched-item',
     composition: [],
