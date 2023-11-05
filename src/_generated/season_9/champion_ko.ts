@@ -1,7 +1,7 @@
 export const champion_season_9 = {
     "TFT9_Tristana": {
-        "name": "트리스타나",
         "apiName": "TFT9_Tristana",
+        "name": "트리스타나",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Tristana.png",
         "cost": 1,
         "traits": [
@@ -10,8 +10,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Irelia": {
-        "name": "이렐리아",
         "apiName": "TFT9_Irelia",
+        "name": "이렐리아",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Irelia.png",
         "cost": 1,
         "traits": [
@@ -20,8 +20,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Aatrox": {
-        "name": "아트록스",
         "apiName": "TFT9_Aatrox",
+        "name": "아트록스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Aatrox.png",
         "cost": 5,
         "traits": [
@@ -31,8 +31,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Ahri": {
-        "name": "아리",
         "apiName": "TFT9_Ahri",
+        "name": "아리",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Ahri.png",
         "cost": 5,
         "traits": [
@@ -41,8 +41,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Akshan": {
-        "name": "아크샨",
         "apiName": "TFT9_Akshan",
+        "name": "아크샨",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Akshan.png",
         "cost": 3,
         "traits": [
@@ -51,8 +51,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Ashe": {
-        "name": "애쉬",
         "apiName": "TFT9_Ashe",
+        "name": "애쉬",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Ashe.png",
         "cost": 2,
         "traits": [
@@ -61,8 +61,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Azir": {
-        "name": "아지르",
         "apiName": "TFT9_Azir",
+        "name": "아지르",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Azir.png",
         "cost": 4,
         "traits": [
@@ -71,8 +71,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_BelVeth": {
-        "name": "벨베스",
         "apiName": "TFT9_BelVeth",
+        "name": "벨베스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/BelVeth.png",
         "cost": 5,
         "traits": [
@@ -81,8 +81,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_ChoGath": {
-        "name": "초가스",
         "apiName": "TFT9_ChoGath",
+        "name": "초가스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/ChoGath.png",
         "cost": 1,
         "traits": [
@@ -91,8 +91,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Darius": {
-        "name": "다리우스",
         "apiName": "TFT9_Darius",
+        "name": "다리우스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Darius.png",
         "cost": 3,
         "traits": [
@@ -101,8 +101,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Ekko": {
-        "name": "에코",
         "apiName": "TFT9_Ekko",
+        "name": "에코",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Ekko.png",
         "cost": 3,
         "traits": [
@@ -112,8 +112,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Garen": {
-        "name": "가렌",
         "apiName": "TFT9_Garen",
+        "name": "가렌",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Garen.png",
         "cost": 3,
         "traits": [
@@ -122,8 +122,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Gwen": {
-        "name": "그웬",
         "apiName": "TFT9_Gwen",
+        "name": "그웬",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Gwen.png",
         "cost": 4,
         "traits": [
@@ -132,8 +132,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Heimerdinger": {
-        "name": "하이머딩거",
         "apiName": "TFT9_Heimerdinger",
+        "name": "하이머딩거",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Heimerdinger.png",
         "cost": 5,
         "traits": [
@@ -143,8 +143,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_JarvanIV": {
-        "name": "자르반_4세",
         "apiName": "TFT9_JarvanIV",
+        "name": "자르반_4세",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/JarvanIV.png",
         "cost": 4,
         "traits": [
@@ -153,8 +153,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Jayce": {
-        "name": "제이스",
         "apiName": "TFT9_Jayce",
+        "name": "제이스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Jayce.png",
         "cost": 3,
         "traits": [
@@ -163,8 +163,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Jinx": {
-        "name": "징크스",
         "apiName": "TFT9_Jinx",
+        "name": "징크스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Jinx.png",
         "cost": 2,
         "traits": [
@@ -173,8 +173,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_KaiSa": {
-        "name": "카이사",
         "apiName": "TFT9_KaiSa",
+        "name": "카이사",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/KaiSa.png",
         "cost": 4,
         "traits": [
@@ -183,8 +183,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Karma": {
-        "name": "카르마",
         "apiName": "TFT9_Karma",
+        "name": "카르마",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Karma.png",
         "cost": 3,
         "traits": [
@@ -193,8 +193,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Katarina": {
-        "name": "카타리나",
         "apiName": "TFT9_Katarina",
+        "name": "카타리나",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Katarina.png",
         "cost": 3,
         "traits": [
@@ -203,8 +203,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Kled": {
-        "name": "클레드",
         "apiName": "TFT9_Kled",
+        "name": "클레드",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Kled.png",
         "cost": 2,
         "traits": [
@@ -214,8 +214,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_KSante": {
-        "name": "크산테",
         "apiName": "TFT9_KSante",
+        "name": "크산테",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/KSante.png",
         "cost": 5,
         "traits": [
@@ -224,8 +224,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Lissandra": {
-        "name": "리산드라",
         "apiName": "TFT9_Lissandra",
+        "name": "리산드라",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Lissandra.png",
         "cost": 3,
         "traits": [
@@ -234,8 +234,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Lux": {
-        "name": "럭스",
         "apiName": "TFT9_Lux",
+        "name": "럭스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Lux.png",
         "cost": 4,
         "traits": [
@@ -244,8 +244,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Orianna": {
-        "name": "오리아나",
         "apiName": "TFT9_Orianna",
+        "name": "오리아나",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Orianna.png",
         "cost": 1,
         "traits": [
@@ -254,8 +254,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Poppy": {
-        "name": "뽀삐",
         "apiName": "TFT9_Poppy",
+        "name": "뽀삐",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Poppy.png",
         "cost": 1,
         "traits": [
@@ -265,8 +265,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Shen": {
-        "name": "쉔",
         "apiName": "TFT9_Shen",
+        "name": "쉔",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Shen.png",
         "cost": 4,
         "traits": [
@@ -276,8 +276,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RekSai": {
-        "name": "렉사이",
         "apiName": "TFT9_RekSai",
+        "name": "렉사이",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RekSai.png",
         "cost": 3,
         "traits": [
@@ -286,8 +286,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Renekton": {
-        "name": "레넥톤",
         "apiName": "TFT9_Renekton",
+        "name": "레넥톤",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Renekton.png",
         "cost": 1,
         "traits": [
@@ -296,8 +296,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Sejuani": {
-        "name": "세주아니",
         "apiName": "TFT9_Sejuani",
+        "name": "세주아니",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Sejuani.png",
         "cost": 4,
         "traits": [
@@ -306,8 +306,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Senna": {
-        "name": "세나",
         "apiName": "TFT9_Senna",
+        "name": "세나",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Senna.png",
         "cost": 5,
         "traits": [
@@ -317,8 +317,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Sion": {
-        "name": "사이온",
         "apiName": "TFT9_Sion",
+        "name": "사이온",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Sion.png",
         "cost": 5,
         "traits": [
@@ -327,8 +327,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Sona": {
-        "name": "소나",
         "apiName": "TFT9_Sona",
+        "name": "소나",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Sona.png",
         "cost": 3,
         "traits": [
@@ -337,8 +337,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Soraka": {
-        "name": "소라카",
         "apiName": "TFT9_Soraka",
+        "name": "소라카",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Soraka.png",
         "cost": 2,
         "traits": [
@@ -347,8 +347,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Swain": {
-        "name": "스웨인",
         "apiName": "TFT9_Swain",
+        "name": "스웨인",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Swain.png",
         "cost": 2,
         "traits": [
@@ -358,8 +358,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Taric": {
-        "name": "타릭",
         "apiName": "TFT9_Taric",
+        "name": "타릭",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Taric.png",
         "cost": 3,
         "traits": [
@@ -369,8 +369,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Teemo": {
-        "name": "티모",
         "apiName": "TFT9_Teemo",
+        "name": "티모",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Teemo.png",
         "cost": 2,
         "traits": [
@@ -380,8 +380,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_VelKoz": {
-        "name": "벨코즈",
         "apiName": "TFT9_VelKoz",
+        "name": "벨코즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/VelKoz.png",
         "cost": 3,
         "traits": [
@@ -391,8 +391,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Warwick": {
-        "name": "워윅",
         "apiName": "TFT9_Warwick",
+        "name": "워윅",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Warwick.png",
         "cost": 2,
         "traits": [
@@ -402,8 +402,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Yasuo": {
-        "name": "야스오",
         "apiName": "TFT9_Yasuo",
+        "name": "야스오",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Yasuo.png",
         "cost": 4,
         "traits": [
@@ -412,8 +412,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Zed": {
-        "name": "제드",
         "apiName": "TFT9_Zed",
+        "name": "제드",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Zed.png",
         "cost": 2,
         "traits": [
@@ -423,8 +423,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Cassiopeia": {
-        "name": "카시오페아",
         "apiName": "TFT9_Cassiopeia",
+        "name": "카시오페아",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Cassiopeia.png",
         "cost": 1,
         "traits": [
@@ -434,8 +434,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Vi": {
-        "name": "바이",
         "apiName": "TFT9_Vi",
+        "name": "바이",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Vi.png",
         "cost": 2,
         "traits": [
@@ -444,8 +444,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Maokai": {
-        "name": "마오카이",
         "apiName": "TFT9_Maokai",
+        "name": "마오카이",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Maokai.png",
         "cost": 1,
         "traits": [
@@ -454,8 +454,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Kayle": {
-        "name": "케일",
         "apiName": "TFT9_Kayle",
+        "name": "케일",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Kayle.png",
         "cost": 1,
         "traits": [
@@ -464,8 +464,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Samira": {
-        "name": "사미라",
         "apiName": "TFT9_Samira",
+        "name": "사미라",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Samira.png",
         "cost": 1,
         "traits": [
@@ -474,8 +474,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Urgot": {
-        "name": "우르곳",
         "apiName": "TFT9_Urgot",
+        "name": "우르곳",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Urgot.png",
         "cost": 4,
         "traits": [
@@ -484,8 +484,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Aphelios": {
-        "name": "아펠리오스",
         "apiName": "TFT9_Aphelios",
+        "name": "아펠리오스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Aphelios.png",
         "cost": 4,
         "traits": [
@@ -494,8 +494,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Zeri": {
-        "name": "제리",
         "apiName": "TFT9_Zeri",
+        "name": "제리",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Zeri.png",
         "cost": 4,
         "traits": [
@@ -504,8 +504,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Galio": {
-        "name": "갈리오",
         "apiName": "TFT9_Galio",
+        "name": "갈리오",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Galio.png",
         "cost": 2,
         "traits": [
@@ -514,8 +514,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Kalista": {
-        "name": "칼리스타",
         "apiName": "TFT9_Kalista",
+        "name": "칼리스타",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Kalista.png",
         "cost": 3,
         "traits": [
@@ -524,8 +524,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Nasus": {
-        "name": "나서스",
         "apiName": "TFT9_Nasus",
+        "name": "나서스",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Nasus.png",
         "cost": 4,
         "traits": [
@@ -534,8 +534,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Malzahar": {
-        "name": "말자하",
         "apiName": "TFT9_Malzahar",
+        "name": "말자하",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Malzahar.png",
         "cost": 1,
         "traits": [
@@ -544,8 +544,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Taliyah": {
-        "name": "탈리야",
         "apiName": "TFT9_Taliyah",
+        "name": "탈리야",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Taliyah.png",
         "cost": 2,
         "traits": [
@@ -554,8 +554,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Ryze": {
-        "name": "라이즈",
         "apiName": "TFT9_Ryze",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Ryze.png",
         "cost": 5,
         "traits": [
@@ -564,8 +564,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Sett": {
-        "name": "세트",
         "apiName": "TFT9_Sett",
+        "name": "세트",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Sett.png",
         "cost": 2,
         "traits": [
@@ -574,8 +574,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Jhin": {
-        "name": "진",
         "apiName": "TFT9_Jhin",
+        "name": "진",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Jhin.png",
         "cost": 1,
         "traits": [
@@ -584,8 +584,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Viego": {
-        "name": "비에고",
         "apiName": "TFT9_Viego",
+        "name": "비에고",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Viego.png",
         "cost": 1,
         "traits": [
@@ -594,8 +594,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_Kassadin": {
-        "name": "카사딘",
         "apiName": "TFT9_Kassadin",
+        "name": "카사딘",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/Kassadin.png",
         "cost": 2,
         "traits": [
@@ -604,8 +604,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeDemacia": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeDemacia",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeDemacia.png",
         "cost": 5,
         "traits": [
@@ -614,8 +614,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeBandleCity": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeBandleCity",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeBandleCity.png",
         "cost": 5,
         "traits": [
@@ -624,8 +624,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeFreljord": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeFreljord",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeFreljord.png",
         "cost": 5,
         "traits": [
@@ -634,8 +634,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeIonia": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeIonia",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeIonia.png",
         "cost": 5,
         "traits": [
@@ -644,8 +644,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeNoxus": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeNoxus",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeNoxus.png",
         "cost": 5,
         "traits": [
@@ -654,8 +654,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzePiltover": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzePiltover",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzePiltover.png",
         "cost": 5,
         "traits": [
@@ -664,8 +664,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeShadowIsles": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeShadowIsles",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeShadowIsles.png",
         "cost": 5,
         "traits": [
@@ -674,8 +674,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeShurima": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeShurima",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeShurima.png",
         "cost": 5,
         "traits": [
@@ -684,8 +684,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeTargon": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeTargon",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeTargon.png",
         "cost": 5,
         "traits": [
@@ -694,8 +694,8 @@ export const champion_season_9 = {
         ]
     },
     "TFT9_RyzeZaun": {
-        "name": "라이즈",
         "apiName": "TFT9_RyzeZaun",
+        "name": "라이즈",
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9/champions/RyzeZaun.png",
         "cost": 5,
         "traits": [

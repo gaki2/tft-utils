@@ -2,7 +2,7 @@ export const isEmptyObject = (obj: any) => {
   return Object.keys(obj).length === 0;
 };
 
-export function convertKeysToUpperCase(obj: any) {
+export function convertKeysToUpperCase(obj: { [key: string]: any }) {
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {
       const upperKey = key.toUpperCase();
@@ -12,4 +12,8 @@ export function convertKeysToUpperCase(obj: any) {
       }
     }
   }
+}
+
+export function removeDuplicates<T>(arr: T[]) {
+  return [...new Set(arr)];
 }

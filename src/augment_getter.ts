@@ -4,7 +4,7 @@ import { augments_season_9b as augments_9b_ko } from './_generated/season_9b/aug
 import { augments_season_9 as augments_9_en } from './_generated/season_9/augments_en';
 import { augments_season_9 as augments_9_ko } from './_generated/season_9/augments_ko';
 import { augments_season_9b as augments_9b_en } from './_generated/season_9b/augments_en';
-import { AugmentData } from './script/augmentObject';
+import { Augment } from './script/parser/augmentParser';
 
 export const getAugments = (season: Season, lang: LanguageType) => {
   switch (season) {
@@ -32,7 +32,7 @@ export const getAugmentData = ({ name, season, lang }: AugmentGetterProps) => {
 
   for (const key in augments) {
     if (augments[key].name === name) {
-      return augments[key] as AugmentData;
+      return augments[key] as Augment;
     }
   }
 

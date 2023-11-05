@@ -1,7 +1,7 @@
-import { TraitData } from '../../../script/traitObject';
+import { Trait } from '../../../script/parser/traitParser';
 
 type TraitsViewProps = {
-  traits: TraitData[];
+  traits: Trait[];
 };
 
 export const TraitsView = ({ traits }: TraitsViewProps) => {
