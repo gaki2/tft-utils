@@ -1,14 +1,14 @@
-import { LanguageType, Season } from '../types';
-import { ChampionParser } from './parser/championParser';
-import { ItemParser } from './parser/itemParser';
-import { AugmentParser } from './parser/augmentParser';
-import { TraitParser } from './parser/traitParser';
-import { GeneralParser } from './parser/generalParser';
+import { LanguageType, Season } from '../../types';
+import { ChampionParser } from './championParser';
+import { ItemParser } from './itemParser';
+import { AugmentParser } from './augmentParser';
+import { TraitParser } from './traitParser';
+import { GeneralParser } from './generalParser';
 import path from 'path';
-import { LANGUAGES, SEASONS } from '../types/config';
+import { LANGUAGES, SEASONS } from '../../types/config';
 
-const jsonDir = path.join(__dirname, '../json');
-const outDir = path.join(__dirname, '../_generated');
+const jsonDir = path.join(__dirname, '../../json');
+const outDir = path.join(__dirname, '../../_generated');
 
 class TFT_Parser {
   constructor(
