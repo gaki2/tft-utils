@@ -11,11 +11,6 @@
     "release": "npm run build && changeset publish",
     "test": "vitest run"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test"
-    }
-  },
   "keywords": [
     "tft",
     "league of legends",
