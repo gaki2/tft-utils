@@ -11,6 +11,11 @@
     "release": "npm run build && changeset publish",
     "test": "vitest run"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  },
   "keywords": [
     "tft",
     "league of legends",
@@ -92,6 +97,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-vitest": "^0.3.9",
     "file-loader": "^6.2.0",
+    "husky": "^8.0.3",
     "plop": "^3.1.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
