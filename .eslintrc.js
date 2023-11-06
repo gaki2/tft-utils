@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:storybook/recommended',
+    'plugin:vitest/recommended'
   ],
   parser: '@typescript-eslint/parser',
   overrides: [],
@@ -23,7 +24,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'vitest'],
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
