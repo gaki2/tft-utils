@@ -14,7 +14,7 @@ describe('Parser 테스트', () => {
       acc.push([season, language]);
     }
     return acc;
-  }, []);
+  }, [] as [Season, LanguageType][]);
 
   const jsonDir = path.join(__dirname, '../../json');
 
@@ -34,9 +34,7 @@ describe('Parser 테스트', () => {
       expect(
         () => championParser.parseChampionData(allDataSet, championList).resolves
       ).not.toThrowError();
-      expect(
-        () => championParser.parseChampionName(allDataSet, championList).resolves
-      ).not.toThrowError();
+      expect(() => championParser.parseChampionName(allDataSet, championList)).not.toThrowError();
     }
   );
 
@@ -54,7 +52,7 @@ describe('Parser 테스트', () => {
       const itemList = itemParser.parseItemList(itemListDataSet);
       expect(() => itemList).not.toThrowError();
       expect(() => itemParser.parseItemData(allDataSet, itemList).resolves).not.toThrowError();
-      expect(() => itemParser.parseItemName(allDataSet, itemList).resolves).not.toThrowError();
+      expect(() => itemParser.parseItemName(allDataSet, itemList)).not.toThrowError();
     }
   );
 
@@ -70,9 +68,7 @@ describe('Parser 테스트', () => {
     expect(
       () => augmentParser.parseAugmentData(allDataSet, augmentList).resolves
     ).not.toThrowError();
-    expect(
-      () => augmentParser.parseAugmentName(allDataSet, augmentList).resolves
-    ).not.toThrowError();
+    expect(() => augmentParser.parseAugmentName(allDataSet, augmentList)).not.toThrowError();
   });
 
   test.each(config)('특성 파싱 정상 여부 테스트 [시즌: %s, 언어: %s]', async (season, language) => {
@@ -80,6 +76,6 @@ describe('Parser 테스트', () => {
     const traitParser = new TraitParser(language, season);
 
     expect(() => traitParser.parseTraitData(allDataSet).resolves).not.toThrowError();
-    expect(() => traitParser.parseTraitName(allDataSet).resolves).not.toThrowError();
+    expect(() => traitParser.parseTraitName(allDataSet)).not.toThrowError();
   });
 });

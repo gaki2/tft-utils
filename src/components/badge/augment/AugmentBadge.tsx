@@ -1,27 +1,32 @@
 import { LanguageType, Season } from '../../../types';
 import styled from 'styled-components';
-import { AugmentMap } from '../../../types/augment';
-import { getAugmentData } from '../../../augment_getter';
+import { AugmentGetter, AugmentName } from '../../../getter/augment_getter';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { useMemo } from 'react';
 import { CommonBadgeProps } from '../common_props_type';
 import { underBarToSpace } from '../../../utils/regex';
 
-export type AugmentBadgeProps<T extends Season> = {
-  season: T;
-  name: AugmentMap[T];
-  lang?: LanguageType;
+export type AugmentBadgeProps<S extends Season, L extends LanguageType> = {
+  season: S;
+  name: AugmentName<S, L>;
+  lang: L;
 } & CommonBadgeProps;
 
 let id = 0;
 
-export const AugmentBadge = <T extends Season>({
+export const AugmentBadge = <S extends Season, L extends LanguageType>({
   season,
   name,
-  lang = 'ko',
+  lang,
   style,
-}: AugmentBadgeProps<T>) => {
-  const { apiName, name: augName, url, description } = getAugmentData({ season, lang, name });
+}: AugmentBadgeProps<S, L>) => {
+  const augmentGetter = useMemo(() => new AugmentGetter(season, lang), [season, lang]);
+  const {
+    apiName,
+    name: augName,
+    url,
+    description,
+  } = useMemo(() => augmentGetter.getDataFromName(name), [augmentGetter, name]);
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
   const title = underBarToSpace(augName);
 

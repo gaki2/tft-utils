@@ -8,6 +8,7 @@ import {
   removeZWSP,
   spaceToUnderBar,
 } from '../../utils/regex';
+import { ItemStat } from '../template/itemStatTemplate';
 
 export interface Item {
   apiName: string;
@@ -18,6 +19,7 @@ export interface Item {
   composition: string[];
   url: string;
   desc: string;
+  stat?: { [key in ItemStat]?: number };
 }
 
 export class ItemParser {

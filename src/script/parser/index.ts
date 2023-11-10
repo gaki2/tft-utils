@@ -1,14 +1,14 @@
-import { LanguageType, Season } from '../types';
-import { ChampionParser } from './parser/championParser';
-import { ItemParser } from './parser/itemParser';
-import { AugmentParser } from './parser/augmentParser';
-import { TraitParser } from './parser/traitParser';
-import { GeneralParser } from './parser/generalParser';
+import { LanguageType, Season } from '../../types';
+import { ChampionParser } from './championParser';
+import { ItemParser } from './itemParser';
+import { AugmentParser } from './augmentParser';
+import { TraitParser } from './traitParser';
+import { GeneralParser } from './generalParser';
 import path from 'path';
-import { LANGUAGES, SEASONS } from '../types/config';
+import { LANGUAGES, SEASONS } from '../../types/config';
 
-const jsonDir = path.join(__dirname, '../json');
-const outDir = path.join(__dirname, '../_generated');
+const jsonDir = path.join(__dirname, '../../json');
+const outDir = path.join(__dirname, '../../_generated');
 
 class TFT_Parser {
   constructor(
@@ -54,8 +54,12 @@ export type Champion_${this.season}_${this.language} = ${championName
     const itemData = this.itemParser.parseItemData(allDataSet, itemList);
     const itemName = this.itemParser.parseItemName(allDataSet, itemList);
 
-    const ret = `export const items_${this.season} = ${JSON.stringify(itemData, null, 4)};
-export type Item_${this.season}_${this.language} = ${itemName
+    const ret = `export const items_${this.season}_${this.language} = ${JSON.stringify(
+      itemData,
+      null,
+      4
+    )};
+export type ItemName_${this.season}_${this.language} = ${itemName
       .map((item) => `"${item}"`)
       .join(' | ')}
   `;
@@ -87,8 +91,12 @@ export type Trait_${this.season}_${this.language} = ${Array.from(traitName)
     const augmentData = this.augmentParser.parseAugmentData(allDataSet, augmentList);
     const augmentName = this.augmentParser.parseAugmentName(allDataSet, augmentList);
 
-    const ret = `export const augments_${this.season} = ${JSON.stringify(augmentData, null, 4)};
-export type Augment_${this.season}_${this.language} = ${augmentName
+    const ret = `export const augments_${this.season}_${this.language} = ${JSON.stringify(
+      augmentData,
+      null,
+      4
+    )};
+export type AugmentName_${this.season}_${this.language} = ${augmentName
       .map((aug) => `"${aug}"`)
       .join(' | ')};
 `;

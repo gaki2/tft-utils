@@ -7,10 +7,15 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:storybook/recommended',
-    'plugin:vitest/recommended'
   ],
   parser: '@typescript-eslint/parser',
-  overrides: [],
+  overrides: [
+    {
+      plugins: ['vitest'],
+      files: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
+      extends: ['plugin:vitest/recommended'],
+    },
+  ],
   parserOptions: {
     project: ['./tsconfig.json'], // Specify it only for TypeScript files
     ecmaVersion: 'latest',
@@ -24,7 +29,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react', '@typescript-eslint', 'vitest'],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
