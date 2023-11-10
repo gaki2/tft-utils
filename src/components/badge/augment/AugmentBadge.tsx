@@ -1,6 +1,6 @@
 import { LanguageType, Season } from '../../../types';
 import styled from 'styled-components';
-import { AugmentGetter, AugmentName } from '../../../augment_getter';
+import { AugmentGetter, AugmentName } from '../../../getter/augment_getter';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { useMemo } from 'react';
 import { CommonBadgeProps } from '../common_props_type';

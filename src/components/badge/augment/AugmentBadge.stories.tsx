@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import { AugmentBadge } from './AugmentBadge';
 import styled from 'styled-components';
 import { LanguageType, Season } from '../../../types';
-import { AugmentGetter, AugmentName } from '../../../augment_getter';
+import { AugmentGetter, AugmentName } from '../../../getter/augment_getter';
 
 const meta = {
   title: 'Example/Badge/Augment',

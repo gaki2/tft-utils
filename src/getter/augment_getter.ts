@@ -1,15 +1,15 @@
-import { LanguageType, Season } from './types';
+import { LanguageType, Season } from '../types';
 import {
   augments_season_9b_ko,
   AugmentName_season_9b_ko,
-} from './_generated/season_9b/augments_ko';
-import { augments_season_9_en, AugmentName_season_9_en } from './_generated/season_9/augments_en';
-import { augments_season_9_ko, AugmentName_season_9_ko } from './_generated/season_9/augments_ko';
+} from '../_generated/season_9b/augments_ko';
+import { augments_season_9_en, AugmentName_season_9_en } from '../_generated/season_9/augments_en';
+import { augments_season_9_ko, AugmentName_season_9_ko } from '../_generated/season_9/augments_ko';
 import {
   augments_season_9b_en,
   AugmentName_season_9b_en,
-} from './_generated/season_9b/augments_en';
-import { Augment } from './script/parser/augmentParser';
+} from '../_generated/season_9b/augments_en';
+import { Augment } from '../script/parser/augmentParser';
 
 type AugmentDataSetMap = {
   season_9: {
@@ -73,5 +73,4 @@ export class AugmentGetter<S extends Season, L extends LanguageType> {
       url: '',
     };
   }
-  // throw Error(`에러발생 위치: getDataFromName() / 에러내용: ${name} is not matched!`);
 }
