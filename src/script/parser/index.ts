@@ -54,8 +54,12 @@ export type Champion_${this.season}_${this.language} = ${championName
     const itemData = this.itemParser.parseItemData(allDataSet, itemList);
     const itemName = this.itemParser.parseItemName(allDataSet, itemList);
 
-    const ret = `export const items_${this.season} = ${JSON.stringify(itemData, null, 4)};
-export type Item_${this.season}_${this.language} = ${itemName
+    const ret = `export const items_${this.season}_${this.language} = ${JSON.stringify(
+      itemData,
+      null,
+      4
+    )};
+export type ItemName_${this.season}_${this.language} = ${itemName
       .map((item) => `"${item}"`)
       .join(' | ')}
   `;
