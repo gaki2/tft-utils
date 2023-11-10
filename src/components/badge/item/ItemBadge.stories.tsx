@@ -1,9 +1,8 @@
 import type { Meta } from '@storybook/react';
 import { ItemBadge } from './ItemBadge';
 import styled from 'styled-components';
-import { ItemName } from '../../../types/item';
-import { getItems } from '../../../item_getter';
-import { Season } from '../../../types';
+import { LanguageType, Season } from '../../../types';
+import { ItemGetter, ItemName } from '../../../getter/item_getter';
 
 const meta = {
   title: 'Example/Badge/Item',
@@ -15,11 +14,19 @@ const meta = {
 
 export default meta;
 
-const ItemView = ({ itemNames, season }: { itemNames: ItemName[]; season: Season }) => {
+const ItemView = <S extends Season, L extends LanguageType>({
+  itemNames,
+  season,
+  language,
+}: {
+  itemNames: ItemName<S, L>[];
+  season: S;
+  language: L;
+}) => {
   return (
     <Wrapper>
       {itemNames.map((name) => (
-        <ItemBadge key={name} itemName={name} season={season} />
+        <ItemBadge key={name} itemName={name} season={season} lang={language} />
       ))}
     </Wrapper>
   );
@@ -27,17 +34,18 @@ const ItemView = ({ itemNames, season }: { itemNames: ItemName[]; season: Season
 
 export const Season_9 = {
   render: () => {
-    const items = getItems('season_9', 'ko');
-    const itemNames = Object.values(items).map((item) => item.name) as ItemName[];
-    return <ItemView itemNames={itemNames} season={'season_9'} />;
+    const itemGetter = new ItemGetter('season_9', 'ko');
+    const itemNames = itemGetter.getAllItemNames();
+
+    return <ItemView itemNames={itemNames} language={'ko'} season={'season_9'} />;
   },
 };
 
 export const Season_9b = {
   render: () => {
-    const items = getItems('season_9b', 'ko');
-    const itemNames = Object.values(items).map((item) => item.name) as ItemName[];
-    return <ItemView itemNames={itemNames} season={'season_9b'} />;
+    const itemGetter = new ItemGetter('season_9b', 'ko');
+    const itemNames = itemGetter.getAllItemNames();
+    return <ItemView itemNames={itemNames} language={'ko'} season={'season_9b'} />;
   },
 };
 
