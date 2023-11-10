@@ -87,8 +87,12 @@ export type Trait_${this.season}_${this.language} = ${Array.from(traitName)
     const augmentData = this.augmentParser.parseAugmentData(allDataSet, augmentList);
     const augmentName = this.augmentParser.parseAugmentName(allDataSet, augmentList);
 
-    const ret = `export const augments_${this.season} = ${JSON.stringify(augmentData, null, 4)};
-export type Augment_${this.season}_${this.language} = ${augmentName
+    const ret = `export const augments_${this.season}_${this.language} = ${JSON.stringify(
+      augmentData,
+      null,
+      4
+    )};
+export type AugmentName_${this.season}_${this.language} = ${augmentName
       .map((aug) => `"${aug}"`)
       .join(' | ')};
 `;
