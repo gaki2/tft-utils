@@ -1,8 +1,8 @@
 import type { Meta } from '@storybook/react';
 import { ChampionBadge } from './ChampionBadge';
 import styled from 'styled-components';
-import { ChampionName, Season } from '../../../types';
-import { getAllChampionNames } from '../../../getter';
+import { LanguageType, Season } from '../../../types';
+import { ChampionGetter, ChampionName } from '../../../getter/champion_getter';
 
 const meta = {
   title: 'Example/Badge/Champion',
@@ -16,17 +16,24 @@ export default meta;
 
 let id = 0;
 
-const ChampionView = ({
+const ChampionView = <S extends Season, L extends LanguageType>({
   championNames,
   season,
+  language,
 }: {
-  championNames: ChampionName[];
-  season: Season;
+  championNames: ChampionName<S, L>[];
+  season: S;
+  language: L;
 }) => {
   return (
     <Wrapper>
       {championNames.map((name) => (
-        <ChampionBadge key={`${name}-${++id}`} championName={name} season={season} />
+        <ChampionBadge
+          key={`${name}-${++id}`}
+          championName={name}
+          season={season}
+          lang={language}
+        />
       ))}
     </Wrapper>
   );
@@ -34,15 +41,19 @@ const ChampionView = ({
 
 export const Season_9 = {
   render: () => {
-    const championNames = getAllChampionNames('season_9', 'ko', true);
-    return <ChampionView championNames={championNames} season={'season_9'} />;
+    const championGetter = new ChampionGetter('season_9', 'ko');
+    const championNames = championGetter.getAllChampionNames();
+
+    return <ChampionView championNames={championNames} season={'season_9'} language={'ko'} />;
   },
 };
 
 export const Season_9b = {
   render: () => {
-    const championNames = getAllChampionNames('season_9b', 'ko', true);
-    return <ChampionView championNames={championNames} season={'season_9b'} />;
+    const championGetter = new ChampionGetter('season_9b', 'ko');
+    const championNames = championGetter.getAllChampionNames();
+
+    return <ChampionView championNames={championNames} season={'season_9b'} language={'ko'} />;
   },
 };
 

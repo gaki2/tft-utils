@@ -5,7 +5,7 @@ import { removeQuote, spaceToUnderBar } from '../../utils/regex';
 import { SEASON_SET_DATA_IDX_MAP } from '../shared';
 import { removeDuplicates } from '../../utils/my_lodash';
 
-type Champion = {
+export type Champion = {
   /**
    * @example
    * Language 가 한국어일때는, '징크스'

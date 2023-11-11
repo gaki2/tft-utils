@@ -43,7 +43,7 @@ export class ItemGetter<S extends Season, L extends LanguageType> {
         return this.language === 'ko' ? items_season_9b_ko : items_season_9b_en;
       default:
         throw Error(
-          '에러발생 위치: getAugmentDataSet() / 에러내용: 증강 데이터셋을 불러오는데 실패하였습니다.'
+          '에러발생 위치: getItemDataSet() / 에러내용: 아이템 데이터셋을 불러오는데 실패하였습니다.'
         );
     }
   }

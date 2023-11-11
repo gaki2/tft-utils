@@ -1,33 +1,33 @@
 import { type Season } from '../../../types/seasonType';
-import { type ChampionNameMap } from '../../../types/champion';
 import { type LanguageType } from '../../../types';
 import styled from 'styled-components';
-import { getChampionData } from '../../../getter';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { TraitBadge } from '../trait/TraitBadge';
-import { TraitNameMap } from '../../../types/trait';
 import { CommonBadgeProps } from '../common_props_type';
 import { underBarToSpace } from '../../../utils/regex';
+import { ChampionGetter, ChampionName } from '../../../getter/champion_getter';
+import { TraitName } from '../../../getter/trait_getter';
 
-export type ChampionBadgeProps<T extends Season> = {
-  season: T;
-  championName: ChampionNameMap[T];
+export type ChampionBadgeProps<S extends Season, L extends LanguageType> = {
+  season: S;
+  championName: ChampionName<S, L>;
   /**
    * @default 'ko'
    */
-  lang?: LanguageType;
+  lang: L;
 } & CommonBadgeProps;
 
 let id = 0;
 
-export const ChampionBadge = <T extends Season>({
+export const ChampionBadge = <S extends Season, L extends LanguageType>({
   season,
   lang,
   championName,
   style,
-}: ChampionBadgeProps<T>) => {
-  const { name, apiName, url, cost, traits } = getChampionData(championName, season, lang);
+}: ChampionBadgeProps<S, L>) => {
+  const championGetter = useMemo(() => new ChampionGetter(season, lang), [season, lang]);
+  const { name, apiName, url, cost, traits } = championGetter.getDataFromName(championName);
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
   const title = underBarToSpace(name);
   return (
@@ -44,13 +44,9 @@ export const ChampionBadge = <T extends Season>({
               <TooltipTitleText>{title}</TooltipTitleText>
             </TooltipImgWrapper>
             <TooltipTraitWrapper>
-              {traits.map((trait, index) => (
+              {(traits as TraitName<S, L>[]).map((trait, index) => (
                 <TooltipTraitItemWrapper key={index}>
-                  <TraitBadge
-                    season={season}
-                    name={trait as TraitNameMap[typeof season]}
-                    disableTooltip={true}
-                  />
+                  <TraitBadge season={season} lang={lang} name={trait} disableTooltip={true} />
                   <span>{trait}</span>
                 </TooltipTraitItemWrapper>
               ))}
