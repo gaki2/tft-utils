@@ -1,20 +1,19 @@
 import { Season } from '../../../types/seasonType';
 import { LanguageType } from '../../../types/config';
-import { TraitNameMap } from '../../../types/trait';
-import { getTraitData } from '../../../trait_getter';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { underBarToSpace } from '../../../utils/regex';
 import { CommonBadgeProps } from '../common_props_type';
+import { TraitGetter, TraitName } from '../../../getter/trait_getter';
 
-export type TraitBadgeProps<T extends Season> = {
-  season: T;
-  name: TraitNameMap[T];
+export type TraitBadgeProps<S extends Season, L extends LanguageType> = {
+  season: S;
+  name: TraitName<S, L>;
   /**
    * @default 'ko'
    */
-  lang?: LanguageType;
+  lang: L;
   /**
    * @default false
    */
@@ -23,14 +22,15 @@ export type TraitBadgeProps<T extends Season> = {
 
 let id = 0;
 
-export const TraitBadge = <T extends Season>({
+export const TraitBadge = <S extends Season, L extends LanguageType>({
   season,
   name,
-  lang = 'ko',
+  lang,
   disableTooltip = false,
   style,
-}: TraitBadgeProps<T>) => {
-  const { name: traitName, apiName, url } = getTraitData({ season, lang, name });
+}: TraitBadgeProps<S, L>) => {
+  const traitGetter = useMemo(() => new TraitGetter(season, lang), [season, lang]);
+  const { name: traitName, apiName, url } = traitGetter.getDataFromName(name);
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
   const title = underBarToSpace(traitName);
   return (

@@ -160,4 +160,4 @@ export const trait_season_9b_en = {
         "url": "https://tft-utils.s3.ap-northeast-2.amazonaws.com/season_9b/traits/Ionia.png"
     }
 };
-export type Trait_season_9b_en = "Bastion" | "Sorcerer" | "Yordle" | "Deadeye" | "Void" | "Demacia" | "Rogue" | "Slayer" | "Invoker" | "Reaver_King" | "Bruiser" | "Noxus" | "Shurima" | "Strategist" | "Redeemer" | "Piltover" | "Multicaster" | "Gunner" | "Empress" | "Shadow_Isles" | "Ixtal" | "Freljord" | "Bilgewater" | "Targon" | "Wanderer" | "Zaun" | "Vanquisher" | "Juggernaut" | "Technogenius" | "Challenger" | "Darkin" | "Ionia"
+export type TraitName_season_9b_en = "Bastion" | "Sorcerer" | "Yordle" | "Deadeye" | "Void" | "Demacia" | "Rogue" | "Slayer" | "Invoker" | "Reaver_King" | "Bruiser" | "Noxus" | "Shurima" | "Strategist" | "Redeemer" | "Piltover" | "Multicaster" | "Gunner" | "Empress" | "Shadow_Isles" | "Ixtal" | "Freljord" | "Bilgewater" | "Targon" | "Wanderer" | "Zaun" | "Vanquisher" | "Juggernaut" | "Technogenius" | "Challenger" | "Darkin" | "Ionia"

@@ -1,4 +1,4 @@
-export const champion_season_9b = {
+export const champions_season_9b_en = {
     "TFT9_Irelia": {
         "apiName": "TFT9_Irelia",
         "name": "Irelia",
@@ -724,5 +724,5 @@ export const champion_season_9b = {
         ]
     }
 };
-export type Champion_season_9b_en = 'Irelia' | 'Ahri' | 'Ashe' | 'Azir' | 'BelVeth' | 'ChoGath' | 'Darius' | 'Ekko' | 'Quinn' | 'Heimerdinger' | 'Jarvan_IV' | 'Jayce' | 'Jinx' | 'KaiSa' | 'Karma' | 'Katarina' | 'KSante' | 'Nautilus' | 'Silco' | 'Orianna' | 'Poppy' | 'Shen' | 'RekSai' | 'Renekton' | 'Sejuani' | 'Gangplank' | 'Sion' | 'Sona' | 'Soraka' | 'Swain' | 'Taric' | 'VelKoz' | 'Warwick' | 'Nilah' | 'Cassiopeia' | 'Vi' | 'Kayle' | 'Samira' | 'Aphelios' | 'Xayah' | 'Galio' | 'Miss_Fortune' | 'Nasus' | 'Malzahar' | 'Taliyah' | 'Ryze' | 'Sett' | 'Jhin' | 'Illaoi' | 'Kassadin' | 'Naafiri' | 'Fiora' | 'Mordekaiser' | 'Milio' | 'Qiyana' | 'Neeko' | 'Graves' | 'Twisted_Fate' | 'Aatrox';
+export type ChampionName_season_9b_en = 'Irelia' | 'Ahri' | 'Ashe' | 'Azir' | 'BelVeth' | 'ChoGath' | 'Darius' | 'Ekko' | 'Quinn' | 'Heimerdinger' | 'Jarvan_IV' | 'Jayce' | 'Jinx' | 'KaiSa' | 'Karma' | 'Katarina' | 'KSante' | 'Nautilus' | 'Silco' | 'Orianna' | 'Poppy' | 'Shen' | 'RekSai' | 'Renekton' | 'Sejuani' | 'Gangplank' | 'Sion' | 'Sona' | 'Soraka' | 'Swain' | 'Taric' | 'VelKoz' | 'Warwick' | 'Nilah' | 'Cassiopeia' | 'Vi' | 'Kayle' | 'Samira' | 'Aphelios' | 'Xayah' | 'Galio' | 'Miss_Fortune' | 'Nasus' | 'Malzahar' | 'Taliyah' | 'Ryze' | 'Sett' | 'Jhin' | 'Illaoi' | 'Kassadin' | 'Naafiri' | 'Fiora' | 'Mordekaiser' | 'Milio' | 'Qiyana' | 'Neeko' | 'Graves' | 'Twisted_Fate' | 'Aatrox';
   

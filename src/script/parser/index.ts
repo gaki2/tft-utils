@@ -37,8 +37,12 @@ class TFT_Parser {
     const championData = this.championParser.parseChampionData(allDataSet, championList);
     const championName = this.championParser.parseChampionName(allDataSet, championList);
 
-    const ret = `export const champion_${this.season} = ${JSON.stringify(championData, null, 4)};
-export type Champion_${this.season}_${this.language} = ${championName
+    const ret = `export const champions_${this.season}_${this.language} = ${JSON.stringify(
+      championData,
+      null,
+      4
+    )};
+export type ChampionName_${this.season}_${this.language} = ${championName
       .map((name) => `'${name}'`)
       .join(' | ')};
   `;
@@ -75,7 +79,7 @@ export type ItemName_${this.season}_${this.language} = ${itemName
       null,
       4
     )};
-export type Trait_${this.season}_${this.language} = ${Array.from(traitName)
+export type TraitName_${this.season}_${this.language} = ${Array.from(traitName)
       .map((trait) => `"${trait}"`)
       .join(' | ')}
 `;
