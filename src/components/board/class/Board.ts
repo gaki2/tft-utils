@@ -1,7 +1,6 @@
 import { Position } from '../../../types/board';
 import { LanguageType, Season } from '../../../types';
-import { ChampionGetter, ChampionName } from '../../../getter/champion_getter';
-import { Champion } from '../../../script/parser/championParser';
+import { ChampionGetter } from '../../../getter/champion_getter';
 
 export const BOARD_ROW_COUNT = 4;
 export const BOARD_COL_COUNT = 7;
@@ -9,14 +8,15 @@ export const BOARD_SLOT_COUNT = BOARD_ROW_COUNT * BOARD_COL_COUNT;
 
 export type StarLevel = 0 | 1 | 2 | 3 | 4;
 export type Rule = 'main_dps' | 'sub_dps' | 'main_tank' | 'sub_tank';
+type ChampionData = { name: string; apiName: string; url: string; cost: number; traits: string[] };
 
-export type ChampionNode<S extends Season, L extends LanguageType> = {
+export type ChampionNode = {
   position: Position;
-  name: ChampionName<S, L>;
+  name: string;
 };
 
 export type SlotData = {
-  championData: Champion;
+  championData: ChampionData;
   rule?: Rule;
   starLevel?: StarLevel;
 };
@@ -33,11 +33,11 @@ export type BoardModelState = {
 // execute when `slots` state is changed
 export type slotsStateListener = (state?: BoardModelState) => void;
 
-export class Board<S extends Season, L extends LanguageType> {
+export class Board {
   private state: BoardModelState;
   private slotsStateListener: slotsStateListener;
 
-  public constructor(championDataList: ChampionNode<S, L>[], season: S, lang: L) {
+  public constructor(championDataList: ChampionNode[], season: Season, lang: LanguageType) {
     const championGetter = new ChampionGetter(season, lang);
 
     const slots: (SlotData | null)[] = Array(BOARD_SLOT_COUNT).fill(null);
