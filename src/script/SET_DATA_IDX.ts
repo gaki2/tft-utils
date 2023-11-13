@@ -7,4 +7,5 @@ import { Season } from '../types/seasonType';
 export const SEASON_SET_DATA_IDX_MAP: Record<Season, number> = {
   season_9: 21,
   season_9b: 24,
+  season_10: 3,
 };
