@@ -35,3 +35,18 @@ export const removePercent = (str: string) => {
 export const removeZWSP = (str: string) => {
   return str.replace(/\u200B/g, '');
 };
+
+/**
+ * 문자열의 마지막에 위치한 .tex 확장자를 .png 로 변경한다.
+ */
+export const DotTexToDotPng = (str: string) => {
+  return str.replace(/\.tex$/, '.png');
+};
+
+export const DotddsToDotPng = (str: string) => {
+  return str.replace(/\.dds$/, '.png');
+};
+
+export const ToLowerCase = (str: string) => {
+  return str.toLowerCase();
+};

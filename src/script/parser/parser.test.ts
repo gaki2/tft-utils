@@ -19,26 +19,6 @@ describe('Parser 테스트', () => {
   const jsonDir = path.join(__dirname, '../../json');
 
   test.each(config)(
-    '챔피언 파싱 정상 여부 테스트 [시즌: %s, 언어: %s]',
-    async (season, language) => {
-      const allDataSet = GeneralParser.readFileSync(
-        `${jsonDir}/${season}/tft_data_${language}.json`
-      );
-      const championListDataSet = GeneralParser.readFileSync(
-        `${jsonDir}/${season}/tft_champions_${language}.json`
-      );
-
-      const championParser = new ChampionParser(language, season);
-      const championList = championParser.parseChampionList(championListDataSet);
-      expect(() => championList).not.toThrowError();
-      expect(
-        () => championParser.parseChampionData(allDataSet, championList).resolves
-      ).not.toThrowError();
-      expect(() => championParser.parseChampionName(allDataSet, championList)).not.toThrowError();
-    }
-  );
-
-  test.each(config)(
     '아이템 파싱 정상 여부 테스트 [시즌: %s, 언어: %s]',
     async (season, language) => {
       const allDataSet = GeneralParser.readFileSync(

@@ -1,5 +1,4 @@
 import { LanguageType, Season } from '../../types';
-import { ChampionParser } from './championParser';
 import { ItemParser } from './itemParser';
 import { AugmentParser } from './augmentParser';
 import { TraitParser } from './traitParser';
@@ -14,39 +13,16 @@ class TFT_Parser {
   constructor(
     private language: LanguageType,
     private season: Season,
-    private championParser: ChampionParser,
     private itemParser: ItemParser,
     private augmentParser: AugmentParser,
     private traitParser: TraitParser
   ) {}
 
   static new(season: Season, language: LanguageType) {
-    const championParser = new ChampionParser(language, season);
     const itemParser = new ItemParser(language, season);
     const augmentParser = new AugmentParser(language, season);
     const traitParser = new TraitParser(language, season);
-    return new TFT_Parser(language, season, championParser, itemParser, augmentParser, traitParser);
-  }
-
-  private async createChampion(allDataSet: string) {
-    const championListDataSet = GeneralParser.readFileSync(
-      `${jsonDir}/${this.season}/tft_champions_${this.language}.json`
-    );
-
-    const championList = this.championParser.parseChampionList(championListDataSet);
-    const championData = this.championParser.parseChampionData(allDataSet, championList);
-    const championName = this.championParser.parseChampionName(allDataSet, championList);
-
-    const ret = `export const champions_${this.season}_${this.language} = ${JSON.stringify(
-      championData,
-      null,
-      4
-    )};
-export type ChampionName_${this.season}_${this.language} = ${championName
-      .map((name) => `'${name}'`)
-      .join(' | ')};
-  `;
-    await GeneralParser.writeFile(`${outDir}/${this.season}/champion_${this.language}.ts`, ret);
+    return new TFT_Parser(language, season, itemParser, augmentParser, traitParser);
   }
 
   private async createItem(allDataSet: string) {
@@ -112,7 +88,6 @@ export type AugmentName_${this.season}_${this.language} = ${augmentName
       `${jsonDir}/${this.season}/tft_data_${this.language}.json`
     );
 
-    await this.createChampion(allDataSet);
     await this.createItem(allDataSet);
     await this.createTrait(allDataSet);
     await this.createAugment(allDataSet);
