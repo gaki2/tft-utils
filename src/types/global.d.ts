@@ -12,4 +12,6 @@ declare global {
   type DeepNullable<T> = {
     [P in keyof T]: T[P] extends object ? DeepNullable<T[P]> : T[P] | null;
   };
+
+  type Nullable<T> = T | null;
 }
