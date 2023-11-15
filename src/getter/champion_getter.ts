@@ -1,5 +1,8 @@
 import { Season } from '../types';
-import { ChampionData_10, champions_season_10 } from '../_generated/season_10/champions_season_10';
+import {
+  type ChampionData_10,
+  champions_season_10,
+} from '../_generated/season_10/champions_season_10';
 
 export class ChampionGetter {
   /**

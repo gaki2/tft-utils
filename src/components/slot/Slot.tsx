@@ -4,6 +4,7 @@ import { SlotIndex } from '../../types/board';
 import { Season } from '../../types/seasonType';
 import { LanguageType } from '../../types/config';
 import styled from 'styled-components';
+import { Rule } from './label/Rule';
 
 type SlotProps = {
   board: Board;
@@ -61,7 +62,7 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
         onDrop={onDrop}>
         <StyledBorder cost={slotData?.championData?.cost}>
           <StyledImageDiv ref={imageDivRef} url={slotData?.championData?.url ?? ''} />
-          {/*{Boolean(slotData) && <Label rule={'sub_tank'} lang={language} />}*/}
+          {slotData?.main && <Rule />}
           {Boolean(slotData) && (
             <StyledChampionName>{slotData?.championData?.name}</StyledChampionName>
           )}

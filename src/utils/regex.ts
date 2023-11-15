@@ -47,6 +47,13 @@ export const DotddsToDotPng = (str: string) => {
   return str.replace(/\.dds$/, '.png');
 };
 
+/**
+ * 문자열의 마지막에 위치한 .tex 나 .dds 를 .png 로 변경한다.
+ */
+export const ToDotPng = (str: string) => {
+  return str.replace(/(\.tex|\.dds)$/, '.png');
+};
+
 export const ToLowerCase = (str: string) => {
   return str.toLowerCase();
 };

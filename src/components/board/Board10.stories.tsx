@@ -1,36 +1,36 @@
 import type { Meta } from '@storybook/react';
-import { Board } from './Board';
-import { ChampionNode } from './class/Board';
+import { Board10, BoardChampion10 } from './Board10';
 
 const meta = {
-  title: 'Example/Board',
-  component: Board,
+  title: 'Example/Board/Season10',
+  component: Board10,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Board>;
+} satisfies Meta<typeof Board10>;
 
 export default meta;
 
-const MOCK_DATA: ChampionNode[] = [
+const MOCK_DATA: BoardChampion10[] = [
   {
     position: {
       row: 2,
       col: 2,
     },
-    name: '진',
+    name: 'Garen',
+    main: true,
   },
   {
     position: {
       row: 2,
       col: 3,
     },
-    name: '갱플랭크',
+    name: 'Yorick',
   },
 ];
 
 const Boards = () => {
-  return <Board champions={MOCK_DATA} season={'season_9b'} language={'ko'} />;
+  return <Board10 champions={MOCK_DATA} language={'ko'} />;
 };
 
 export const Template = {

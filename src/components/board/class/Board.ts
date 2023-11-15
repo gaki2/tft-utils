@@ -1,23 +1,26 @@
 import { Position } from '../../../types/board';
 import { LanguageType, Season } from '../../../types';
 import { ChampionGetter } from '../../../getter/champion_getter';
+import { ToDotPng, ToLowerCase } from '../../../utils/regex';
+import { PBE } from '../../../environments/urls';
 
 export const BOARD_ROW_COUNT = 4;
 export const BOARD_COL_COUNT = 7;
 export const BOARD_SLOT_COUNT = BOARD_ROW_COUNT * BOARD_COL_COUNT;
 
 export type StarLevel = 0 | 1 | 2 | 3 | 4;
-export type Rule = 'main_dps' | 'sub_dps' | 'main_tank' | 'sub_tank';
 type ChampionData = { name: string; apiName: string; url: string; cost: number; traits: string[] };
 
 export type ChampionNode = {
   position: Position;
   name: string;
+  main?: boolean;
+  starLevel?: StarLevel;
 };
 
 export type SlotData = {
   championData: ChampionData;
-  rule?: Rule;
+  main?: boolean;
   starLevel?: StarLevel;
 };
 
@@ -38,15 +41,37 @@ export class Board {
   private slotsStateListener: slotsStateListener;
 
   public constructor(championDataList: ChampionNode[], season: Season, lang: LanguageType) {
-    const championGetter = new ChampionGetter(season, lang);
-
-    const slots: (SlotData | null)[] = Array(BOARD_SLOT_COUNT).fill(null);
-    championDataList.forEach((data) => {
-      const championData = championGetter.getDataFromName(data.name);
-      slots[this.convertRowColToIdx(data.position)] = { championData };
-    });
-
+    const slots = this.initSlotData(season, championDataList, lang);
     this.state = { slots, isDragging: false, draggingSlotIdx: null, dragoverSlotIdx: null };
+  }
+
+  private initSlotData(season: Season, champions: ChampionNode[], lang: LanguageType) {
+    const slots: (SlotData | null)[] = Array(BOARD_SLOT_COUNT).fill(null);
+
+    switch (season) {
+      case 'season_10':
+        champions.forEach((data) => {
+          const championData = ChampionGetter.getChampionDataFromName(data.name, season);
+          if (!championData) {
+            throw new Error(`Board.ts : Invalid champion name: ${data.name}`);
+          }
+          const { name, apiName, cost, traits, tileIcon } = championData;
+          slots[this.convertRowColToIdx(data.position)] = {
+            main: data.main,
+            starLevel: data.starLevel,
+            championData: {
+              name: name[lang] ?? '',
+              apiName: apiName ?? '',
+              cost: cost ?? 0,
+              traits: traits[lang].filter((trait): trait is string => Boolean(trait)) ?? [],
+              url: `${PBE}/${ToLowerCase(ToDotPng(tileIcon ?? ''))}`,
+            },
+          };
+        });
+        return slots;
+      default:
+        return slots;
+    }
   }
 
   private convertRowColToIdx(position: Position): number {
