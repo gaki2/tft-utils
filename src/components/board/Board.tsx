@@ -42,6 +42,7 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(7, var(--slot-width));
   gap: 0 4px;
   flex-shrink: 0;
+  margin-left: calc(var(--slot-width) * 0.25);
 
   & > :nth-child(n + 1):nth-child(-n + 7) {
     transform: translateX(calc(-25% - 1px));

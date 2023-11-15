@@ -3,7 +3,6 @@ import { LANGUAGES, LanguageType, SEASONS } from '../../types/config';
 import { Season } from '../../types';
 import { GeneralParser } from './generalParser';
 import path from 'path';
-import { ChampionParser } from './championParser';
 import { ItemParser } from './itemParser';
 import { AugmentParser } from './augmentParser';
 import { TraitParser } from './traitParser';

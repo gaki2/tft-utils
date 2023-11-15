@@ -6,28 +6,30 @@ import { Tooltip } from '../../../utils/components/Tooltip';
 import { TraitBadge } from '../trait/TraitBadge';
 import { CommonBadgeProps } from '../common_props_type';
 import { underBarToSpace } from '../../../utils/regex';
-import { ChampionGetter, ChampionName } from '../../../getter/champion_getter';
-import { TraitName } from '../../../getter/trait_getter';
+import { ChampionBadge10 } from './ChampionBadge10';
 
-export type ChampionBadgeProps<S extends Season, L extends LanguageType> = {
-  season: S;
-  championName: ChampionName<S, L>;
-  /**
-   * @default 'ko'
-   */
-  lang: L;
+export type ChampionBadgeProps = {
+  season: Season;
+  lang: LanguageType;
+  name: string;
+  apiName: string;
+  url: string;
+  cost: number;
+  traits: string[];
 } & CommonBadgeProps;
 
 let id = 0;
 
-export const ChampionBadge = <S extends Season, L extends LanguageType>({
+export const ChampionBadge = ({
   season,
   lang,
-  championName,
+  name,
+  apiName,
+  url,
+  cost,
+  traits,
   style,
-}: ChampionBadgeProps<S, L>) => {
-  const championGetter = useMemo(() => new ChampionGetter(season, lang), [season, lang]);
-  const { name, apiName, url, cost, traits } = championGetter.getDataFromName(championName);
+}: ChampionBadgeProps) => {
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
   const title = underBarToSpace(name);
   return (
@@ -44,12 +46,12 @@ export const ChampionBadge = <S extends Season, L extends LanguageType>({
               <TooltipTitleText>{title}</TooltipTitleText>
             </TooltipImgWrapper>
             <TooltipTraitWrapper>
-              {(traits as TraitName<S, L>[]).map((trait, index) => (
-                <TooltipTraitItemWrapper key={index}>
-                  <TraitBadge season={season} lang={lang} name={trait} disableTooltip={true} />
-                  <span>{trait}</span>
-                </TooltipTraitItemWrapper>
-              ))}
+              {/*{traits.map((trait, index) => (*/}
+              {/*  <TooltipTraitItemWrapper key={index}>*/}
+              {/*    <TraitBadge season={season} lang={lang} name={trait} disableTooltip={true} />*/}
+              {/*    <span>{trait}</span>*/}
+              {/*  </TooltipTraitItemWrapper>*/}
+              {/*))}*/}
             </TooltipTraitWrapper>
           </TooltipTitle>
         </TooltipWrapper>
@@ -59,8 +61,8 @@ export const ChampionBadge = <S extends Season, L extends LanguageType>({
 };
 
 const Wrapper = styled.div`
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   display: inline-block;
   position: relative;
   vertical-align: middle;

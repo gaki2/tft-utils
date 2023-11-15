@@ -1,8 +1,8 @@
 import { LanguageType, Season } from '../../types';
-import { SEASON_SET_DATA_IDX_MAP } from '../shared';
 import { removeBrTag, spaceToUnderBar } from '../../utils/regex';
 import { GeneralParser } from './generalParser';
 import { S3 } from '../../environments/urls';
+import { SEASON_SET_DATA_IDX_MAP } from '../SET_DATA_IDX';
 
 export type Trait = {
   apiName: string;
