@@ -9,7 +9,12 @@ type _TooltipProps = {
 
 export const Tooltip = ({ id, tooltipProps, children }: _TooltipProps) => {
   return (
-    <_Tooltip delayShow={0} delayHide={0} style={{ padding: '8px' }} {...tooltipProps} id={id}>
+    <_Tooltip
+      delayShow={0}
+      delayHide={0}
+      style={{ padding: '8px', zIndex: 9999 }}
+      {...tooltipProps}
+      id={id}>
       {children}
     </_Tooltip>
   );
