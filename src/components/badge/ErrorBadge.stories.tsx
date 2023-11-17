@@ -7,12 +7,6 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  // argTypes: {
-  //   errorText: {
-  //     control: 'select',
-  //     options: ['sd', 'esx'],
-  //   },
-  // },
 } satisfies Meta<typeof ErrorBadge>;
 
 export default meta;
