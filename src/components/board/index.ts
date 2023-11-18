@@ -1,1 +1,1 @@
-export { Board10, type Board10Props } from './Board10';
+export { Board10, type Board10Props, type BoardChampion10 } from './Board10';
