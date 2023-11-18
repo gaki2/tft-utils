@@ -25,8 +25,8 @@ const ItemView = <S extends Season, L extends LanguageType>({
 }) => {
   return (
     <Wrapper>
-      {itemNames.map((name) => (
-        <ItemBadge key={name} itemName={name} season={season} lang={language} />
+      {itemNames.map((name, idx) => (
+        <ItemBadge key={idx} itemName={name} season={season} lang={language} />
       ))}
     </Wrapper>
   );
