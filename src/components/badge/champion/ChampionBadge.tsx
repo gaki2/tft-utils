@@ -1,5 +1,4 @@
-import { type Season } from '../../../types/seasonType';
-import { type LanguageType } from '../../../types';
+import { type LanguageType, Season } from '../../../types';
 import styled from 'styled-components';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';

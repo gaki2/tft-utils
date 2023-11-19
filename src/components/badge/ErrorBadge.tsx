@@ -5,6 +5,10 @@ type ErrorBadgeProps = {
   errorText?: string;
 };
 
+export const errorText = ({ location, desc }: { location: string; desc: string }) => {
+  return `Error In ${location}: ${desc}`;
+};
+
 export const ErrorBadge = ({ errorText }: ErrorBadgeProps) => {
   return (
     <>

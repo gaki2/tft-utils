@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Board, SlotData } from '../board/class/Board';
 import { SlotIndex } from '../../types/board';
-import { Season } from '../../types/seasonType';
-import { LanguageType } from '../../types/config';
+import { LanguageType, Season } from '../../types/config';
 import styled from 'styled-components';
 import { Rule } from './label/Rule';
 

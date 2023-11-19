@@ -1,50 +1,34 @@
-import { LanguageType, Season } from '../../../types';
+import { LanguageType } from '../../../types';
 import styled from 'styled-components';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { CommonBadgeProps } from '../common_props_type';
 import { underBarToSpace } from '../../../utils/regex';
-import { ItemApiName, ItemGetter, ItemName } from '../../../getter/item_getter';
-import { ItemStat } from '../../../script/template/itemStatTemplate';
-import { itemStatNameMap, itemStatUnitMap } from './item_stat_map';
+import { ItemStat } from './ItemStat';
 
-export type ItemBadgeProps<S extends Season, L extends LanguageType> = {
-  season: S;
-  itemName: ItemName<S, L>;
-  /**
-   * @default 'ko'
-   */
-  lang: L;
+export type ItemBadgeProps = {
+  apiName: string;
+  name: string;
+  desc: string;
+  url: string;
+  compositionUrls: string[];
+  stat: Record<string, number | null>;
+  lang: LanguageType;
 } & CommonBadgeProps;
 
 let id = 0;
 
-export const ItemBadge = <S extends Season, L extends LanguageType>({
-  season,
-  itemName,
-  lang,
-  style,
-}: ItemBadgeProps<S, L>) => {
-  const itemGetter = useMemo(() => new ItemGetter(season, lang), [season, lang]);
-  const { url, name, desc, composition, apiName, stat } = itemGetter.getDataFromName(itemName);
+export const ItemBadge = (props: ItemBadgeProps) => {
+  const { apiName, name, desc, url, compositionUrls, stat, lang, ...commonProps } = props;
+
   const isEmptyStat = Object.keys(stat ?? {}).length === 0;
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
 
   const title = underBarToSpace(name);
 
-  const compositionDataUrls: string[] = useMemo(() => {
-    if (composition && composition.length > 0) {
-      return composition.map((compositionApiName) => {
-        const { url } = itemGetter.getDataFromApiName(compositionApiName as ItemApiName<S, L>);
-        return url;
-      });
-    }
-    return [];
-  }, [composition, lang, season]);
-
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId} style={style}>
+      <Wrapper data-tooltip-id={tooltipId} style={commonProps.style}>
         <Img src={url} alt={name} />
       </Wrapper>
       <Tooltip id={tooltipId}>
@@ -55,23 +39,13 @@ export const ItemBadge = <S extends Season, L extends LanguageType>({
           </TooltipTitle>
           <Divider />
           <TooltipBody dangerouslySetInnerHTML={{ __html: desc }} />
-          {!isEmptyStat && (
-            <ItemStatWrapper>
-              {(Object.keys(stat!) as ItemStat[]).map((key) => {
-                return (
-                  <span key={key}>{`${itemStatNameMap[key][lang]} +${stat![key as ItemStat]}${
-                    itemStatUnitMap[key]
-                  }`}</span>
-                );
-              })}
-            </ItemStatWrapper>
-          )}
-          {compositionDataUrls.length > 0 && (
+          <ItemStat statRecord={stat} lang={lang} />
+          {compositionUrls.length > 0 && (
             <>
               <Divider />
               <TooltipFooterWrapper>
                 <TooltipFooterTitle>{lang === 'ko' ? '조합' : 'Recipe'}: </TooltipFooterTitle>
-                {compositionDataUrls.map((url, index) => (
+                {compositionUrls.map((url, index) => (
                   <TooltipFooterImg key={index} src={url} alt={name} />
                 ))}
               </TooltipFooterWrapper>

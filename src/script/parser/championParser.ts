@@ -1,8 +1,8 @@
 import { LanguageType, Season } from '../../types';
-import { SEASON_SET_DATA_IDX_MAP } from '../SET_DATA_IDX';
 import { General } from '../general';
 import _ from 'lodash';
 import path from 'path';
+import { SEASON_SET_DATA_IDX_MAP } from '../../types/config';
 
 const BRANCHS_MAP = {
   season_10: ['ability.desc', 'ability.name', 'name', 'traits'],

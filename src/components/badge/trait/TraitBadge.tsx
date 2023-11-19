@@ -1,47 +1,38 @@
-import { Season } from '../../../types/seasonType';
 import { LanguageType } from '../../../types/config';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 import { Tooltip } from '../../../utils/components/Tooltip';
-import { underBarToSpace } from '../../../utils/regex';
 import { CommonBadgeProps } from '../common_props_type';
-import { TraitGetter, TraitName } from '../../../getter/trait_getter';
 
-export type TraitBadgeProps<S extends Season, L extends LanguageType> = {
-  season: S;
-  name: TraitName<S, L>;
-  /**
-   * @default 'ko'
-   */
-  lang: L;
-  /**
-   * @default false
-   */
+export type TraitBadgeProps = {
+  name: string;
+  apiName: string;
+  url: string;
+  lang: LanguageType;
   disableTooltip?: boolean;
 } & CommonBadgeProps;
 
 let id = 0;
 
-export const TraitBadge = <S extends Season, L extends LanguageType>({
-  season,
+export const TraitBadge = ({
   name,
+  apiName,
+  url,
   lang,
   disableTooltip = false,
   style,
-}: TraitBadgeProps<S, L>) => {
-  const traitGetter = useMemo(() => new TraitGetter(season, lang), [season, lang]);
-  const { name: traitName, apiName, url } = traitGetter.getDataFromName(name);
+}: TraitBadgeProps) => {
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
-  const title = underBarToSpace(traitName);
+
   return (
     <>
-      <Wrapper data-tooltip-id={tooltipId} style={style}>
-        <Img src={url} alt={traitName} />
+      <Wrapper lang={lang} data-tooltip-id={tooltipId} style={style}>
+        <Img src={url} alt={apiName} />
       </Wrapper>
       <Tooltip id={tooltipId} tooltipProps={{ hidden: disableTooltip }}>
         <TooltipWrapper>
           <TooltipTitle>
-            <TooltipTitleText>{title}</TooltipTitleText>
+            <TooltipTitleText>{name}</TooltipTitleText>
           </TooltipTitle>
         </TooltipWrapper>
       </Tooltip>
