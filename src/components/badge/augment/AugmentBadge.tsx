@@ -1,48 +1,35 @@
 import { LanguageType, Season } from '../../../types';
 import styled from 'styled-components';
-import { AugmentGetter, AugmentName } from '../../../getter/augment_getter';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { useMemo } from 'react';
 import { CommonBadgeProps } from '../common_props_type';
-import { underBarToSpace } from '../../../utils/regex';
 
-export type AugmentBadgeProps<S extends Season, L extends LanguageType> = {
-  season: S;
-  name: AugmentName<S, L>;
-  lang: L;
+export type AugmentBadgeProps = {
+  apiName: string;
+  name: string;
+  url: string;
+  desc: string;
+  lang: LanguageType;
 } & CommonBadgeProps;
 
 let id = 0;
 
-export const AugmentBadge = <S extends Season, L extends LanguageType>({
-  season,
-  name,
-  lang,
-  style,
-}: AugmentBadgeProps<S, L>) => {
-  const augmentGetter = useMemo(() => new AugmentGetter(season, lang), [season, lang]);
-  const {
-    apiName,
-    name: augName,
-    url,
-    description,
-  } = useMemo(() => augmentGetter.getDataFromName(name), [augmentGetter, name]);
+export const AugmentBadge = ({ apiName, name, url, desc, lang, style }: AugmentBadgeProps) => {
   const tooltipId = useMemo(() => `${apiName}-${++id}`, [apiName]);
-  const title = underBarToSpace(augName);
 
   return (
     <>
       <Wrapper lang={lang} data-tooltip-id={tooltipId} style={style}>
-        <Img src={url} alt={augName}></Img>
+        <Img src={url} alt={apiName}></Img>
       </Wrapper>
       <Tooltip id={tooltipId}>
         <TooltipWrapper>
           <TooltipTitle>
-            <TooltipTitleImg src={url} alt={augName} />
-            <TooltipTitleText>{title}</TooltipTitleText>
+            <TooltipTitleImg src={url} alt={apiName} />
+            <TooltipTitleText>{name}</TooltipTitleText>
           </TooltipTitle>
           <Divider />
-          <TooltipBody dangerouslySetInnerHTML={{ __html: description }} />
+          <TooltipBody dangerouslySetInnerHTML={{ __html: desc }} />
         </TooltipWrapper>
       </Tooltip>
     </>

@@ -1,97 +1,76 @@
-import { LanguageType, Season } from '../../types';
-import { S3 } from '../../environments/urls';
 import { GeneralParser } from './generalParser';
-import {
-  removeAngleBracket,
-  removeBrTag,
-  removePercent,
-  removeZWSP,
-  spaceToUnderBar,
-} from '../../utils/regex';
-import { ItemStat } from '../template/itemStatTemplate';
+import { Season } from '../../types';
+import path from 'path';
+import { LANGUAGES } from '../../types/config';
+import _ from 'lodash';
+import { General } from '../general';
 
-export interface Item {
-  apiName: string;
-  name: string;
-  /**
-   * composition 은 아이템을 조합하는데 필요한 아이템들의 apiName 을 담고있다.
-   */
-  composition: string[];
-  url: string;
-  desc: string;
-  stat?: { [key in ItemStat]?: number };
+const BRANCHES = ['desc', 'name'];
+
+const jsonDir = path.join(__dirname, '../../json');
+const generatedDir = path.join(__dirname, '../../_generated');
+
+function getAdditionalText(season: Season) {
+  switch (season) {
+    case 'season_9b':
+      return `export type ItemName_9b = SplitTwice<keyof typeof items_season_9b, '_'>[2];
+export type ItemData_9b = DeepNullable<(typeof items_season_9b)['TFT_Item_Bloodthirster']>;
+`;
+  }
 }
 
 export class ItemParser {
-  constructor(private language: LanguageType, private season: Season) {}
-
-  parseItemList(itemListJsonString: string) {
-    const itemList = JSON.parse(itemListJsonString).data;
-
-    if (Object.keys(itemList).length === 0) {
-      throw new Error('itemList is empty');
-    }
-
-    return Object.values<{ id: string; image: { full: string } }>(itemList).map((value) => {
-      const { id } = value;
-      return {
-        id,
-        url: `${S3}/${this.season}/items/${value.image.full}`,
-      };
-    });
-  }
-
-  parseItemData(itemDataJsonString: string, itemList: ReturnType<typeof this.parseItemList>) {
-    const itemData = JSON.parse(itemDataJsonString).items;
+  static getItemIdList(season: Season) {
+    const itemListDataSet = GeneralParser.readFileSync(`${jsonDir}/${season}/tft_item_ko.json`);
+    const itemData = JSON.parse(itemListDataSet).data;
 
     if (Object.keys(itemData).length === 0) {
-      throw new Error('itemData is empty');
+      throw new Error('ItemList is empty');
     }
 
-    return itemList.reduce((acc, { id, url }) => {
-      const data = itemData.find((object: { apiName: string }) => object.apiName === id);
-
-      /**
-       * @exception
-       */
-      if (!data) {
-        console.error(`${id} is not matched!`);
-        return acc;
-      }
-
-      const { name: originalName, composition, desc: originalDesc, effects } = data;
-      const name = GeneralParser.applyRegex(originalName, spaceToUnderBar, removeBrTag);
-
-      /**
-       * @exception `name` 이 빈 문자열인 경우가 있음.
-       */
-      if (!name) {
-        return acc;
-      }
-
-      const desc = GeneralParser.replaceVariables(
-        GeneralParser.applyRegex(originalDesc, removeZWSP, removePercent, removeAngleBracket),
-        effects
-      );
-      const item: Item = { apiName: id, name, url, desc, composition };
-      acc[id] = item;
-      return acc;
-    }, {} as { [key in string]: Item });
+    return Object.values<{ id: string }>(itemData).map((augment) => augment.id);
   }
 
-  parseItemName(itemDataJsonString: string, itemList: ReturnType<typeof this.parseItemList>) {
-    const itemData = JSON.parse(itemDataJsonString).items;
+  static getItemData(season: Season, itemList: ReturnType<typeof this.getItemIdList>) {
+    const itemDataMap = LANGUAGES.reduce((acc, language) => {
+      const dataSet = JSON.parse(
+        GeneralParser.readFileSync(`${jsonDir}/${season}/tft_data_${language}.json`)
+      ).items;
 
-    return itemList
-      .map(({ id }) => {
-        const data = itemData.find((object: { apiName: string }) => object.apiName === id);
+      for (let i = 0; i < itemList.length; i++) {
+        const id = itemList[i];
+        const data = dataSet.find((object: { apiName: string }) => object.apiName === id);
+
         if (!data) {
-          return '';
+          console.error(`${id} is not matched!`);
+          return acc;
         }
-        const { name: originalName } = data;
-        const name = GeneralParser.applyRegex(originalName, spaceToUnderBar, removeBrTag);
-        return name;
-      })
-      .filter(Boolean);
+
+        if (!_.get(acc, id)) {
+          _.set(acc, id, data);
+        }
+
+        BRANCHES.forEach((branch) => {
+          _.set(acc, id + '.' + branch + `.${language}`, _.get(data, branch));
+        });
+      }
+
+      return acc;
+    }, {});
+
+    const ret = `export const items_${season} = ${JSON.stringify(itemDataMap, null, 2)}
+
+${getAdditionalText(season)}
+  `;
+
+    return General.writeFile(`${generatedDir}/${season}/items_${season}.ts`, ret);
   }
 }
+
+function parseItem(season: Season) {
+  const itemIdList = ItemParser.getItemIdList(season);
+
+  return ItemParser.getItemData(season, itemIdList);
+}
+
+parseItem('season_9b');

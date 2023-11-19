@@ -1,7 +1,6 @@
 import { MemoizedSlot } from '../slot/Slot';
 import { SlotIndex } from '../../types/board';
-import { Season } from '../../types/seasonType';
-import { LanguageType } from '../../types/config';
+import { LanguageType, Season } from '../../types/config';
 import styled from 'styled-components';
 import { ChampionNode } from './class/Board';
 import { useBoard } from './useBoard';

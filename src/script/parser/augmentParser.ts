@@ -1,73 +1,78 @@
 import { GeneralParser } from './generalParser';
-import { LanguageType, Season } from '../../types';
-import { S3 } from '../../environments/urls';
-import { removeBrTag, spaceToUnderBar } from '../../utils/regex';
+import { Season } from '../../types';
+import path from 'path';
+import { LANGUAGES } from '../../types/config';
+import _ from 'lodash';
+import { General } from '../general';
 
-export interface Augment {
-  apiName: string;
-  description: string;
-  name: string;
-  url: string;
+const BRANCHES = ['desc', 'name'];
+
+const jsonDir = path.join(__dirname, '../../json');
+const generatedDir = path.join(__dirname, '../../_generated');
+
+function getAdditionalText(season: Season) {
+  switch (season) {
+    case 'season_9b':
+      return `export type AugmentName_9b = SplitTwice<keyof typeof augments_season_9b, '_'>[2];
+export type AugmentData_9b = DeepNullable<(typeof augments_season_9b)['TFT6_Augment_GachaAddict']>;
+`;
+  }
 }
 
-export class AugmentParser {
-  constructor(private language: LanguageType, private season: Season) {}
+export class _AugmentParser {
+  static getAugmentIdList(season: Season) {
+    const augmentListDataSet = GeneralParser.readFileSync(
+      `${jsonDir}/${season}/tft_augments_ko.json`
+    );
+    const augmentData = JSON.parse(augmentListDataSet).data;
 
-  parseAugmentList(augmentListJsonString: string) {
-    const augmentList = JSON.parse(augmentListJsonString).data;
-
-    if (Object.keys(augmentList).length === 0) {
+    if (Object.keys(augmentData).length === 0) {
       throw new Error('AugmentList is empty');
     }
 
-    return Object.values<{ id: string; image: { full: string } }>(augmentList).map((augment) => ({
-      id: augment.id,
-      url: `${S3}/${this.season}/augments/${augment.image.full}`,
-    }));
+    return Object.values<{ id: string }>(augmentData).map((augment) => augment.id);
   }
 
-  parseAugmentData(
-    augmentDataJsonString: string,
-    augmentList: ReturnType<typeof this.parseAugmentList>
-  ) {
-    const augmentData = JSON.parse(augmentDataJsonString).items;
+  static getAugmentData(season: Season, augmentList: ReturnType<typeof this.getAugmentIdList>) {
+    const augmentDataMap = LANGUAGES.reduce((acc, language) => {
+      const augmentDataSet = JSON.parse(
+        GeneralParser.readFileSync(`${jsonDir}/${season}/tft_data_${language}.json`)
+      ).items;
 
-    if (Object.keys(augmentData).length === 0) {
-      throw new Error('AugmentData is empty');
-    }
+      for (let i = 0; i < augmentList.length; i++) {
+        const id = augmentList[i];
+        const data = augmentDataSet.find((object: { apiName: string }) => object.apiName === id);
 
-    return augmentList.reduce((acc, { id, url }) => {
-      const data = augmentData.find((object: { apiName: string }) => object.apiName === id);
-      if (!data) {
-        console.error(`${id} is not matched!`);
-        return acc;
+        if (!data) {
+          console.error(`${id} is not matched!`);
+          return acc;
+        }
+
+        if (!_.get(acc, id)) {
+          _.set(acc, id, data);
+        }
+
+        BRANCHES.forEach((branch) => {
+          _.set(acc, id + '.' + branch + `.${language}`, _.get(data, branch));
+        });
       }
 
-      const { name: originalName, desc: originalDesc, effects } = data;
-      const name = GeneralParser.applyRegex(originalName, spaceToUnderBar, removeBrTag);
-      const desc = GeneralParser.replaceVariables(originalDesc, effects);
-      const augment: Augment = { apiName: id, description: desc, name, url };
-      acc[id] = augment;
       return acc;
-    }, {} as { [key in string]: Augment });
-  }
+    }, {});
 
-  parseAugmentName(
-    augmentDataJsonString: string,
-    augmentList: ReturnType<typeof this.parseAugmentList>
-  ) {
-    const augmentData = JSON.parse(augmentDataJsonString).items;
+    const ret = `export const augments_${season} = ${JSON.stringify(augmentDataMap, null, 2)}
 
-    return augmentList
-      .map(({ id }) => {
-        const data = augmentData.find((object: { apiName: string }) => object.apiName === id);
-        if (!data) {
-          return '';
-        }
-        const { name: originalName } = data;
-        const name = GeneralParser.applyRegex(originalName, spaceToUnderBar, removeBrTag);
-        return name;
-      })
-      .filter(Boolean);
+${getAdditionalText(season)}
+  `;
+
+    return General.writeFile(`${generatedDir}/${season}/augments_${season}.ts`, ret);
   }
 }
+
+function parseAugment(season: Season) {
+  const augmentList = _AugmentParser.getAugmentIdList(season);
+
+  return _AugmentParser.getAugmentData(season, augmentList);
+}
+
+parseAugment('season_9b');
