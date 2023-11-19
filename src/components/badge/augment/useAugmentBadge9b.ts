@@ -26,7 +26,7 @@ export const useAugmentBadge9b = (props: UseAugmentBadge9bProps) => {
 
   return {
     apiName: apiName ?? '',
-    name: name ?? '',
+    name: name[lang] ?? '',
     lang,
     url,
     desc: parsedDesc,
