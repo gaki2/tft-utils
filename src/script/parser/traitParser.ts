@@ -39,7 +39,9 @@ export class TraitParser {
       return acc;
     }, {});
 
-    const ret = `export const traits_${season} = ${JSON.stringify(traitDataMap, null, 2)}
+    const ret = `import { DeepNullable, Split } from '../../types/utilType';
+
+export const traits_${season} = ${JSON.stringify(traitDataMap, null, 2)}
 
 ${getAdditionalText(season)}
   `;

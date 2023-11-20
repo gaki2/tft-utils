@@ -58,7 +58,9 @@ export class ItemParser {
       return acc;
     }, {});
 
-    const ret = `export const items_${season} = ${JSON.stringify(itemDataMap, null, 2)}
+    const ret = `import { DeepNullable, SplitTwice } from '../../types/utilType';
+
+export const items_${season} = ${JSON.stringify(itemDataMap, null, 2)}
 
 ${getAdditionalText(season)}
   `;
