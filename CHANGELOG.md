@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.14
+
+### Patch Changes
+
+- 8f81d2e: 뱃지 컴포넌트 리펙토링
+
 ## 0.1.13
 
 ### Patch Changes
