@@ -1,4 +1,4 @@
-import { Trait } from '../../../script/parser/traitParser';
+import { Trait } from '../../../../script/parser/traitParser';
 
 type TraitsViewProps = {
   traits: Trait[];
