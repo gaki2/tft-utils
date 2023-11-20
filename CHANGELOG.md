@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.15
+
+### Patch Changes
+
+- b1e084d: 타입 추론이 안되는 버그 해결
+
 ## 0.1.14
 
 ### Patch Changes
