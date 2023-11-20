@@ -60,7 +60,9 @@ export class _AugmentParser {
       return acc;
     }, {});
 
-    const ret = `export const augments_${season} = ${JSON.stringify(augmentDataMap, null, 2)}
+    const ret = `import { DeepNullable, SplitTwice } from '../../types/utilType';
+
+export const augments_${season} = ${JSON.stringify(augmentDataMap, null, 2)}
 
 ${getAdditionalText(season)}
   `;

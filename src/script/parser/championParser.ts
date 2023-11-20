@@ -139,7 +139,9 @@ export class ChampionParser {
       return acc;
     }, {} as { [key: string]: any });
 
-    const ret = `export const champions_${season} = ${JSON.stringify(merged_data, null, 2)}
+    const ret = `import { DeepNullable, Split } from '../../types/utilType';
+
+export const champions_${season} = ${JSON.stringify(merged_data, null, 2)}
 
 ${getAdditionalText(season)}
   `;
