@@ -1,4 +1,4 @@
-import { MemoizedSlot } from '../slot/Slot';
+import { MemoizedSlot } from './slot/Slot';
 import { SlotIndex } from '../../types/board';
 import { LanguageType, Season } from '../../types/config';
 import styled from 'styled-components';

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Board, SlotData } from '../board/class/Board';
-import { SlotIndex } from '../../types/board';
-import { LanguageType, Season } from '../../types/config';
+import { Board, SlotData } from '../class/Board';
+import { SlotIndex } from '../../../types/board';
+import { LanguageType, Season } from '../../../types/config';
 import styled from 'styled-components';
 import { Rule } from './label/Rule';
 
