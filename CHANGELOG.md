@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.16
+
+### Patch Changes
+
+- 6dca08b: 시즌10 적용
+
 ## 0.1.15
 
 ### Patch Changes
