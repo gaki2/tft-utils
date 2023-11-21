@@ -18,24 +18,23 @@ $ npm i tft-utils
 ### Board 컴포넌트 (배치툴)
 
 ```tsx
-import { Board } from 'tft-utils';
 
 const App = () => {
   const champions = [
     {
       position: {row: 0, col: 0},
-      champion: 'Aatrox',
+      champion: 'Sona',
       main: true,
     },
     {
       position: {row: 0, col: 1},
-      champion: 'Jhin',
+      champion: 'Riven',
     },
   ];
   
   return (
     // Board10 은 시즌10 전용 배치툴을 의미합니다. (시즌 11이 나올경우 Board11 컴포넌트가 만들어짐.)
-    <Board10 champions={champions} season={'season_9'} />
+    <Board10 champions={champions} />
   );
 };
 ```
