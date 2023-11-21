@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.17
+
+### Patch Changes
+
+- a7e7ca1: parser 와 component 분리
+
 ## 0.1.16
 
 ### Patch Changes
