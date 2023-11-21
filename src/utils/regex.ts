@@ -1,3 +1,7 @@
+export function applyRegex(target: string, ...args: ((text: string) => string)[]) {
+  return args.reduce((acc, fn) => fn(acc), target);
+}
+
 export const underBarToSpace = (str: string) => str.replace(/_/g, ' ');
 
 export const spaceToUnderBar = (str: string) => str.replace(/ /g, '_');

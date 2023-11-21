@@ -13,7 +13,3 @@ export function convertKeysToUpperCase(obj: { [key: string]: any }) {
     }
   }
 }
-
-export function removeDuplicates<T>(arr: T[]) {
-  return [...new Set(arr)];
-}

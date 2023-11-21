@@ -1,7 +1,7 @@
 import { LanguageType } from '../../../types';
 import { useMemo } from 'react';
-import { GeneralParser } from '../../../script/parser/generalParser';
 import {
+  applyRegex,
   removeAngleBracket,
   removePercent,
   removeZWSP,
@@ -11,6 +11,7 @@ import {
 import { ItemGetter } from '../../../getter/item_getter';
 import { SEASON_10_BASEURL } from '../../../environments/urls';
 import { ItemData_10 } from '../../../_generated/season_10/items_season_10';
+import { replaceVariables } from '../../../utils/replaceVariables';
 
 type UseItemBadge10Props = ItemData_10 & {
   lang: LanguageType;
@@ -21,8 +22,8 @@ export const useItemBadge10 = (props: UseItemBadge10Props) => {
 
   const parsedDesc = useMemo(() => {
     const matchedDesc = desc[lang] ?? '';
-    return GeneralParser.replaceVariables(
-      GeneralParser.applyRegex(matchedDesc, removeZWSP, removePercent, removeAngleBracket),
+    return replaceVariables(
+      applyRegex(matchedDesc, removeZWSP, removePercent, removeAngleBracket),
       effects
     );
   }, [lang, apiName]);

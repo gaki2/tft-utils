@@ -1,5 +1,6 @@
 import fs from 'fs';
 
+// parser 안에서만 사용할것
 export class General {
   static readFileSync(path: string) {
     return fs.readFileSync(path, 'utf8');
@@ -18,9 +19,5 @@ export class General {
    */
   static parse(data: string) {
     return JSON.parse(data);
-  }
-
-  static applyRegex(target: string, ...args: ((text: string) => string)[]) {
-    return args.reduce((acc, fn) => fn(acc), target);
   }
 }
