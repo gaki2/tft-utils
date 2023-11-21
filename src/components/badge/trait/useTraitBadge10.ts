@@ -1,6 +1,6 @@
 import { LanguageType } from '../../../types';
 import { TraitData_10 } from '../../../_generated/season_10/traits_season_10';
-import { PBE } from '../../../environments/urls';
+import { SEASON_10_BASEURL } from '../../../environments/urls';
 import { ToDotPng, ToLowerCase } from '../../../utils/regex';
 
 type UseTraitBadge10Props = TraitData_10 & {
@@ -10,7 +10,7 @@ type UseTraitBadge10Props = TraitData_10 & {
 export const useTraitBadge10 = (props: UseTraitBadge10Props) => {
   const { lang, apiName, name, icon } = props;
 
-  const url = icon ? `${PBE}/${ToLowerCase(ToDotPng(icon ?? ''))}` : '';
+  const url = icon ? `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(icon ?? ''))}` : '';
 
   return {
     apiName: apiName ?? '',

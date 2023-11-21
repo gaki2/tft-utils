@@ -2,7 +2,7 @@ import { Position } from '../../../types/board';
 import { LanguageType, Season } from '../../../types';
 import { ChampionGetter } from '../../../getter/champion_getter';
 import { ToDotPng, ToLowerCase } from '../../../utils/regex';
-import { PBE } from '../../../environments/urls';
+import { SEASON_10_BASEURL } from '../../../environments/urls';
 
 export const BOARD_ROW_COUNT = 4;
 export const BOARD_COL_COUNT = 7;
@@ -64,7 +64,7 @@ export class Board {
               apiName: apiName ?? '',
               cost: cost ?? 0,
               traits: traits[lang].filter((trait): trait is string => Boolean(trait)) ?? [],
-              url: `${PBE}/${ToLowerCase(ToDotPng(tileIcon ?? ''))}`,
+              url: `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(tileIcon ?? ''))}`,
             },
           };
         });

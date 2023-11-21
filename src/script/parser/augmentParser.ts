@@ -12,18 +12,16 @@ const generatedDir = path.join(__dirname, '../../_generated');
 
 function getAdditionalText(season: Season) {
   switch (season) {
-    case 'season_9b':
-      return `export type AugmentName_9b = SplitTwice<keyof typeof augments_season_9b, '_'>[2];
-export type AugmentData_9b = DeepNullable<(typeof augments_season_9b)['TFT6_Augment_GachaAddict']>;
+    case 'season_10':
+      return `export type AugmentName_10 = SplitTwice<keyof typeof augments_season_10, '_'>[2];
+export type AugmentData_10 = DeepNullable<(typeof augments_season_10)['TFT9_Augment_Idealism']>;
 `;
   }
 }
 
 export class _AugmentParser {
   static getAugmentIdList(season: Season) {
-    const augmentListDataSet = GeneralParser.readFileSync(
-      `${jsonDir}/${season}/tft_augments_ko.json`
-    );
+    const augmentListDataSet = GeneralParser.readFileSync(`${jsonDir}/${season}/tft-augments.json`);
     const augmentData = JSON.parse(augmentListDataSet).data;
 
     if (Object.keys(augmentData).length === 0) {
@@ -77,4 +75,4 @@ function parseAugment(season: Season) {
   return _AugmentParser.getAugmentData(season, augmentList);
 }
 
-parseAugment('season_9b');
+parseAugment('season_10');
