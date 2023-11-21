@@ -2,7 +2,7 @@ import { ChampionData_10 } from '../../../_generated/season_10/champions_season_
 import { LanguageType, Season } from '../../../types';
 import { useMemo } from 'react';
 import { ToDotPng, ToLowerCase } from '../../../utils/regex';
-import { PBE } from '../../../environments/urls';
+import { SEASON_10_BASEURL } from '../../../environments/urls';
 
 type UseChampionBadge10Props = {
   lang: LanguageType;
@@ -12,7 +12,7 @@ export const useChampionBadge10 = (props: UseChampionBadge10Props) => {
   const { lang, apiName, name, cost, traits, tileIcon } = props;
 
   const url = useMemo(
-    () => (tileIcon ? `${PBE}/${ToLowerCase(ToDotPng(tileIcon))}` : ''),
+    () => (tileIcon ? `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(tileIcon))}` : ''),
     [tileIcon]
   );
 

@@ -12,16 +12,16 @@ const generatedDir = path.join(__dirname, '../../_generated');
 
 function getAdditionalText(season: Season) {
   switch (season) {
-    case 'season_9b':
-      return `export type ItemName_9b = SplitTwice<keyof typeof items_season_9b, '_'>[2];
-export type ItemData_9b = DeepNullable<(typeof items_season_9b)['TFT_Item_Bloodthirster']>;
+    case 'season_10':
+      return `export type ItemName_10 = SplitTwice<keyof typeof items_season_10, '_'>[2];
+export type ItemData_10 = DeepNullable<(typeof items_season_10)['TFT_Item_Bloodthirster']>;
 `;
   }
 }
 
 export class ItemParser {
   static getItemIdList(season: Season) {
-    const itemListDataSet = GeneralParser.readFileSync(`${jsonDir}/${season}/tft_item_ko.json`);
+    const itemListDataSet = GeneralParser.readFileSync(`${jsonDir}/${season}/tft-item.json`);
     const itemData = JSON.parse(itemListDataSet).data;
 
     if (Object.keys(itemData).length === 0) {
@@ -75,4 +75,4 @@ function parseItem(season: Season) {
   return ItemParser.getItemData(season, itemIdList);
 }
 
-parseItem('season_9b');
+parseItem('season_10');

@@ -46,7 +46,7 @@
       "critChance": null,
       "critMultiplier": 0,
       "damage": 50,
-      "hp": 625,
+      "hp": 550,
       "initialMana": 0,
       "magicResist": 40,
       "mana": 0,
@@ -339,8 +339,8 @@
           "name": "damage",
           "value": [
             0,
-            300,
-            450,
+            275,
+            410,
             1500,
             0,
             0,
@@ -411,7 +411,7 @@
   },
   "TFT10_Akali": {
     "ability": {
-      "desc": "가장 먼 표식이 없는 적에게 <physicalDamage>@Total_Shuriken_Damage@(%i:scaleAP%)</physicalDamage>의 물리 피해를 입히고 표식을 남깁니다. 표식이 남은 모든 적에게 돌진하여 각각 <physicalDamage>@Total_Dash_Damage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "가장 멀리 있는 표식이 없는 대상에게 표창을 던져 표식을 남깁니다. 이후 표식이 남은 모든 적에게 돌진한 뒤 타격하여 <physicalDamage>@Total_Strike_Damage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입히고, 돌진 경로에 있는 적에게는 <physicalDamage>@Total_Dash_Damage@(%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Akali/HUD/Icons2D/TFT10_Akali_E.TFT_Set10.dds",
       "name": "The Baddest",
       "variables": [
@@ -829,7 +829,7 @@
       "hp": 600,
       "initialMana": 40,
       "magicResist": 20,
-      "mana": 120,
+      "mana": 135,
       "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT10_Aphelios/HUD/TFT10_Aphelios_Square.TFT_Set10.tex",
@@ -900,9 +900,9 @@
           "name": "HeadlinerDootDamage",
           "value": [
             190,
-            135,
-            200,
-            300,
+            95,
+            140,
+            215,
             190,
             190,
             190
@@ -959,9 +959,9 @@
       "critMultiplier": 1.399999976158142,
       "damage": 40,
       "hp": 550,
-      "initialMana": 30,
+      "initialMana": 15,
       "magicResist": 20,
-      "mana": 90,
+      "mana": 75,
       "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT10_Bard/HUD/TFT10_Bard_Square.TFT_Set10.tex",
@@ -972,7 +972,7 @@
   },
   "TFT10_Blitzcrank": {
     "ability": {
-      "desc": "<spellPassive>기본 지속 효과:</spellPassive> @Period@초마다 주변 적에게 <magicDamage>@ZapDamage@ (%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> <TFTBonus>@ShieldAmount@(%i:scaleAP%)</TFTBonus>의 보호막을 얻습니다. @Duration@초 동안 매초 기본 지속 효과 피해를 입힙니다. 적중당한 적은 추가로 최대 체력의 <scaleLevel>@HealthRatio*100@%</scaleLevel>에 해당하는 마법 피해를 입습니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "<spellPassive>기본 지속 효과:</spellPassive> @Period@초마다 주변 적에게 <magicDamage>@ZapDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> <TFTBonus>@ShieldAmount@(%i:scaleAP%)</TFTBonus>의 보호막을 얻습니다. @Duration@초 동안 블리츠크랭크가 매초 기본 지속 효과 피해를 입히며, 추가로 대상 최대 체력의 <scaleLevel>@HealthRatio*100@%</scaleLevel>에 해당하는 마법 피해를 입힙니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Blitzcrank/HUD/Icons2D/TFT10_BlitzcrankP.TFT_Set10.dds",
       "name": "덩실덩실 보호막",
       "variables": [
@@ -1245,7 +1245,7 @@
       "attackSpeed": 0.699999988079071,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
-      "damage": 45,
+      "damage": 42,
       "hp": 450,
       "initialMana": 15,
       "magicResist": 15,
@@ -1304,9 +1304,9 @@
           "name": "BASE_DAMAGE",
           "value": [
             0,
-            150,
-            225,
-            375,
+            60,
+            90,
+            145,
             0,
             0,
             0
@@ -1381,14 +1381,14 @@
     "name": "에코",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT10_Ekko_Mobile.TFT_Set10.tex",
     "stats": {
-      "armor": 45,
+      "armor": 40,
       "attackSpeed": 0.6499999761581421,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 50,
       "hp": 850,
       "initialMana": 50,
-      "magicResist": 45,
+      "magicResist": 40,
       "mana": 125,
       "range": 1
     },
@@ -1618,8 +1618,8 @@
           "value": [
             400,
             500,
+            550,
             600,
-            750,
             650,
             650,
             650
@@ -1643,7 +1643,7 @@
             3,
             3.3499999046325684,
             3.3499999046325684,
-            3.4000000953674316,
+            3.3499999046325684,
             3,
             3,
             3
@@ -1682,7 +1682,7 @@
   },
   "TFT10_Gragas": {
     "ability": {
-      "desc": "@DURATION@초 동안 <scaleHealth>@HEALING@</scaleHealth>의 체력을 회복합니다. 이후 주변 적에게 <magicDamage>@TOTAL_DAMAGE@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @CCDuration@초 동안 <TFTKeyword>동상</TFTKeyword> 효과를 부여합니다.<br><br><rules>동상: 공격 속도가 30% 감소합니다.</rules><br><br>@TF`TUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "@DURATION@초 동안 <scaleHealth>@HEALING@</scaleHealth>의 체력을 회복합니다. 이후 주변 적에게 <magicDamage>@TOTAL_DAMAGE@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @CCDuration@초 동안 <TFTKeyword>동상</TFTKeyword> 효과를 부여합니다.<br><br><rules>동상: 공격 속도가 30% 감소합니다.</rules><br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Gragas/HUD/Icons2D/TFT10_GragasPassiveHeal.TFT_Set10.dds",
       "name": "댄스 타임",
       "variables": [
@@ -1837,7 +1837,7 @@
             3,
             3,
             3,
-            3,
+            7,
             3,
             3,
             3
@@ -1858,25 +1858,25 @@
         {
           "name": "HeadlinerArmor",
           "value": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ]
         },
         {
           "name": "HeadlinerMagicResist",
           "value": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ]
         },
         {
@@ -1965,7 +1965,7 @@
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 70,
-      "hp": 1100,
+      "hp": 1050,
       "initialMana": 70,
       "magicResist": 70,
       "mana": 150,
@@ -1988,8 +1988,8 @@
           "value": [
             0,
             230,
-            350,
-            550,
+            345,
+            520,
             250,
             250,
             250
@@ -2095,7 +2095,7 @@
   },
   "TFT10_Jhin": {
     "ability": {
-      "desc": "<spellPassive>기본 지속 효과:</spellPassive> 대기석에 대단원의 막 소총이 @RiflesRequired@개 있으면 공격 대신 지휘를 시작합니다. 각 소총은 마에스트로와 같은 속도로 발사되고 <physicalDamage>@TOTAL_DAMAGE@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 4번째 세례마다 @EmpoweredShotBonusTooltipOnly*100@%의 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> 대단원의 막 소총 <scaleLevel>@RIFLES_PER_CAST@</scaleLevel>개를 빈 대기석 슬롯에 놓습니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "<spellPassive>기본 지속 효과:</spellPassive> 기본 공격 시 추가로 <TFTBonus>@BonusManaOnAttack@</TFTBonus>의 마나를 회복합니다. 대기석에 대단원의 막 소총이 @RiflesRequired@개 있으면 공격 대신 지휘를 시작합니다. 각 소총은 마에스트로와 같은 속도로 발사되고 <physicalDamage>@TOTAL_DAMAGE@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 4번째 세례마다 @EmpoweredShotBonusTooltipOnly*100@%의 피해를 입힙니다.<br><br><spellActive>사용 시:</spellActive> 대단원의 막 소총 <scaleLevel>@RIFLES_PER_CAST@</scaleLevel>개를 빈 대기석 슬롯에 놓습니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Jhin/HUD/Icons2D/TFT10_Jhin_W_Spotted.TFT_Set10.dds",
       "name": "종말의 협주곡 라단조",
       "variables": [
@@ -2162,13 +2162,13 @@
         {
           "name": "HeadlinerAttackDamage",
           "value": [
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
           ]
         },
         {
@@ -2278,13 +2278,13 @@
         {
           "name": "ROCKET_AD_PERCENT",
           "value": [
-            0.4000000059604645,
-            0.4000000059604645,
-            0.4000000059604645,
-            0.4000000059604645,
-            0.4000000059604645,
-            0.4000000059604645,
-            0.4000000059604645
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
           ]
         },
         {
@@ -2424,7 +2424,7 @@
       "hp": 700,
       "initialMana": 40,
       "magicResist": 30,
-      "mana": 125,
+      "mana": 120,
       "range": 4
     },
     "tileIcon": "ASSETS/Characters/TFT10_Karthus/HUD/TFT10_Karthus_Square.TFT_Set10.tex",
@@ -2551,9 +2551,9 @@
           "name": "BaseAttackDamage",
           "value": [
             0,
-            25,
-            40,
-            60,
+            30,
+            45,
+            70,
             0,
             0,
             0
@@ -2599,9 +2599,9 @@
           "name": "BaseFinaleDamage",
           "value": [
             0,
-            180,
-            270,
-            410,
+            190,
+            285,
+            430,
             0,
             0,
             0
@@ -2690,13 +2690,13 @@
         {
           "name": "HeadlinerAbilityPower",
           "value": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ]
         },
         {
@@ -2732,14 +2732,14 @@
     "name": "케인",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT10_Kayn_Mobile.TFT_Set10.tex",
     "stats": {
-      "armor": 60,
+      "armor": 70,
       "attackSpeed": 0.8500000238418579,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 75,
-      "hp": 1100,
+      "hp": 1200,
       "initialMana": 0,
-      "magicResist": 60,
+      "magicResist": 70,
       "mana": 50,
       "range": 1
     },
@@ -2948,13 +2948,13 @@
         {
           "name": "HeadlinerBonusHeal",
           "value": [
-            0.20000000298023224,
-            0.20000000298023224,
-            0.20000000298023224,
-            0.20000000298023224,
-            0.20000000298023224,
-            0.20000000298023224,
-            0.20000000298023224
+            0.11999999731779099,
+            0.11999999731779099,
+            0.11999999731779099,
+            0.11999999731779099,
+            0.11999999731779099,
+            0.11999999731779099,
+            0.11999999731779099
           ]
         }
       ]
@@ -2972,7 +2972,7 @@
       "critMultiplier": 1.399999976158142,
       "damage": 50,
       "hp": 600,
-      "initialMana": 60,
+      "initialMana": 70,
       "magicResist": 40,
       "mana": 140,
       "range": 1
@@ -3041,13 +3041,13 @@
         {
           "name": "NumShots",
           "value": [
-            16,
-            16,
-            16,
-            16,
-            16,
-            16,
-            16
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14
           ]
         },
         {
@@ -3065,13 +3065,13 @@
         {
           "name": "HeadlinerAttackDamage",
           "value": [
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
           ]
         },
         {
@@ -3111,7 +3111,7 @@
       "attackSpeed": 0.8999999761581421,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
-      "damage": 70,
+      "damage": 65,
       "hp": 850,
       "initialMana": 50,
       "magicResist": 30,
@@ -3158,9 +3158,9 @@
           "name": "StunDamage",
           "value": [
             0,
+            120,
             180,
-            270,
-            430,
+            280,
             0,
             0,
             0
@@ -3294,7 +3294,7 @@
   },
   "TFT10_Mordekaiser": {
     "ability": {
-      "desc": "@Duration@초 동안 <TFTBonus>@ModifiedShieldAmount@(%i:scaleAP%)</TFTBonus>의 보호막을 얻고 주변 적에게 <magicDamage>@ModifiedZoneDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 이후 주변 적에게 <magicDamage>@ModifiedFinaleDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>안면 강타로 적을 처치하면 주문력과 공격력이 <TFTBonus>@StatGain@%</TFTBonus>만큼, 방어력 및 마법 저항력이 <TFTBonus>@StatGain@</TFTBonus>만큼 증가합니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "@Duration@초 동안 <TFTBonus>@ModifiedShieldAmount@(%i:scaleAP%)</TFTBonus>의 보호막을 얻고 주변 적에게 <magicDamage>@ModifiedZoneDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 이후 주변 적에게 <magicDamage>@ModifiedFinaleDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.<br><br>안면 붕괴로 적을 처치하면 주문력과 공격력이 <TFTBonus>@StatGain@%</TFTBonus>만큼, 방어력 및 마법 저항력이 <TFTBonus>@StatGain@</TFTBonus>만큼 증가합니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Mordekaiser/HUD/Icons2D/TFT10_MordekaiserQ3.TFT_Set10.dds",
       "name": "안면 붕괴",
       "variables": [
@@ -3413,9 +3413,9 @@
       "critMultiplier": 1.399999976158142,
       "damage": 60,
       "hp": 850,
-      "initialMana": 60,
+      "initialMana": 70,
       "magicResist": 55,
-      "mana": 100,
+      "mana": 120,
       "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT10_Mordekaiser/HUD/TFT10_Mordekaiser_Square.TFT_Set10.tex",
@@ -3502,7 +3502,7 @@
   },
   "TFT10_Neeko": {
     "ability": {
-      "desc": "체력이 가장 높은 아군을 코스프레해 @Duration@초 동안 <TFTBonus>@ModifiedShield@(%i:scaleAP%)</TFTBonus>+<TFTBonus>@ShieldPercent@%</TFTBonus>의 보호막을 얻습니다. 보호막이 사라질 때 주변 적에게 최초 보호막 수치의 <magicDamage>@DamagePercent*100@%</magicDamage>에 해당하는 마법 피해를 입힙니다.<br><br>@TFTUnitProperty.unit:TFT10_Headliner_TRA@",
+      "desc": "체력이 가장 높은 아군을 코스프레해 @Duration@초 동안 <TFTBonus>@ModifiedShield@(%i:scaleAP%)</TFTBonus>+아군 체력의 <TFTBonus>@ShieldPercent@%</TFTBonus>에 해당하는 보호막을 얻습니다. 보호막이 사라질 때 주변 적에게 최초 보호막 수치의 <magicDamage>@DamagePercent*100@%</magicDamage>에 해당하는 마법 피해를 입힙니다.<br><br>@TFTUnitProperty.unit:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Neeko/HUD/Icons2D/TFT10_Neeko_W2.TFT_Set10.dds",
       "name": "코스프레",
       "variables": [
@@ -3570,9 +3570,9 @@
           "name": "DamagePercent",
           "value": [
             0.5,
-            0.6000000238418579,
             0.699999988079071,
-            0.800000011920929,
+            0.8999999761581421,
+            1.149999976158142,
             0.5,
             0.5,
             0.5
@@ -3627,9 +3627,9 @@
           "name": "BASE_DR",
           "value": [
             0,
-            0.20000000298023224,
-            0.20000000298023224,
             0.25,
+            0.25,
+            0.30000001192092896,
             0,
             0,
             0
@@ -3710,13 +3710,13 @@
         {
           "name": "DR_CAP_tooltip_only",
           "value": [
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579
+            0.699999988079071,
+            0.699999988079071,
+            0.699999988079071,
+            0.699999988079071,
+            0.699999988079071,
+            0.699999988079071,
+            0.699999988079071
           ]
         }
       ]
@@ -3747,7 +3747,7 @@
   },
   "TFT10_Poppy": {
     "ability": {
-      "desc": "<spellPassive>기본 지속 효과:</spellPassive> 추가 체력에 따라 공격력이 증가합니다. (현재: <physicalDamage>@TotalBonusAD@%(%i:scaleHealth%)</physicalDamage>)<br><br><spellActive>사용 시:</spellActive> @Duration@초 동안 방어력 및 마법 저항력이 <TFTBonus>@ArmorAndMR@</TFTBonus>만큼 증가하고 가장 가까운 적을 <TFTBonus>@TargetNumber@</TFTBonus>번 내리쳐 <physicalDamage>@TotalDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 추가로 적중할 때마다 <scaleHealth>@TotalHealing@(%i:scaleHealth%%i:scaleAP%)</scaleHealth>의 체력을 회복합니다. 이 스킬로 적을 처치하면 추가로 <TFTBonus>@ExtraSlams@</TFTBonus>회 찍기 공격을 가합니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "<spellPassive>기본 지속 효과:</spellPassive> 추가 체력에 따라 공격력이 증가합니다. (현재: <TFTBonus>@TotalBonusAD@%(%i:scaleHealth%)</TFTBonus>)<br><br><spellActive>사용 시:</spellActive> @Duration@초 동안 방어력 및 마법 저항력이 <TFTBonus>@ArmorAndMR@</TFTBonus>만큼 증가합니다. 또한 가장 가까운 적을 <TFTBonus>@TargetNumber@</TFTBonus>번 내리쳐 적중할 때마다 <physicalDamage>@TotalDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입히고 <scaleHealth>@TotalHealing@(%i:scaleHealth%%i:scaleAP%)</scaleHealth>의 체력을 회복합니다. 이 스킬로 적을 처치하면 추가로 한 번 찍기 공격을 가합니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Poppy/HUD/Icons2D/TFT10_Poppy_Q.TFT_Set10.dds",
       "name": "망치 가져와",
       "variables": [
@@ -3907,9 +3907,9 @@
           "name": "BASE_AD_RATIO",
           "value": [
             0,
-            4.75,
-            4.75,
-            20,
+            5,
+            5,
+            10,
             0,
             0,
             0
@@ -3957,7 +3957,7 @@
             1.5,
             1.5,
             1.5,
-            1.5,
+            5,
             1.5,
             1.5,
             1.5
@@ -4014,13 +4014,13 @@
         {
           "name": "HeadlinerAttackDamage",
           "value": [
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
           ]
         },
         {
@@ -4049,7 +4049,7 @@
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 75,
-      "hp": 950,
+      "hp": 1050,
       "initialMana": 0,
       "magicResist": 60,
       "mana": 50,
@@ -4063,7 +4063,7 @@
   },
   "TFT10_Riven": {
     "ability": {
-      "desc": "다음 @Duration@초 동안 <TFTBonus>@ModifiedShield@(%i:scaleAD%%i:scaleAP%)</TFTBonus>의 보호막을 얻습니다. 또한 공격 시 대상과 주변 적에게 <physicalDamage>@ModifiedSplashDamage@(%i:scaleAD%)</physicalDamage>의 추가 물리 피해를 입힙니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "다음 @Duration@초 동안 <TFTBonus>@ModifiedShield@(%i:scaleAD%%i:scaleAP%)</TFTBonus>의 보호막을 얻습니다. 또한 기본 공격 시 대상과 1칸 내의 적에게 <physicalDamage>@ModifiedSplashDamage@(%i:scaleAD%)</physicalDamage>의 추가 물리 피해를 입힙니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Riven/HUD/Icons2D/TFT10_RivenPathoftheExile.TFT_Set10.dds",
       "name": "복셀 방어",
       "variables": [
@@ -4082,13 +4082,13 @@
         {
           "name": "SplashDamageADPercent",
           "value": [
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158
           ]
         },
         {
@@ -4118,25 +4118,25 @@
         {
           "name": "ShieldADPercent",
           "value": [
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            2.5
           ]
         },
         {
           "name": "HeadlinerHealth",
           "value": [
-            200,
-            200,
-            200,
-            200,
-            200,
-            200,
-            200
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
           ]
         },
         {
@@ -4198,9 +4198,9 @@
       "critMultiplier": 1.399999976158142,
       "damage": 60,
       "hp": 800,
-      "initialMana": 0,
+      "initialMana": 50,
       "magicResist": 40,
-      "mana": 50,
+      "mana": 100,
       "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT10_Riven/HUD/TFT10_Riven_Square.TFT_Set10.tex",
@@ -4231,9 +4231,9 @@
           "name": "BasePercentAD",
           "value": [
             2.0999999046325684,
-            2.25,
-            2.25,
-            2.299999952316284,
+            2.4000000953674316,
+            2.4000000953674316,
+            2.5,
             2.0999999046325684,
             2.0999999046325684,
             2.0999999046325684
@@ -4254,13 +4254,13 @@
         {
           "name": "SimulateLaunchAttackNum",
           "value": [
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ]
         },
         {
@@ -4418,13 +4418,13 @@
         {
           "name": "HeadlinerAbilityPower",
           "value": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ]
         }
       ]
@@ -4463,9 +4463,9 @@
           "name": "BaseMagicDamage",
           "value": [
             0,
-            175,
-            260,
-            395,
+            140,
+            210,
+            315,
             0,
             0,
             0
@@ -4490,13 +4490,13 @@
         {
           "name": "HeadlinerHighNoteBonus",
           "value": [
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579,
-            0.6000000238418579
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645
           ]
         }
       ]
@@ -4618,13 +4618,13 @@
         {
           "name": "HeadlinerHealthThreshold",
           "value": [
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448,
-            0.15000000596046448
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
           ]
         },
         {
@@ -4654,9 +4654,9 @@
       "critMultiplier": 1.399999976158142,
       "damage": 55,
       "hp": 950,
-      "initialMana": 0,
+      "initialMana": 30,
       "magicResist": 45,
-      "mana": 100,
+      "mana": 90,
       "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT10_Sett/HUD/TFT10_Sett_Square.TFT_Set10.tex",
@@ -4676,8 +4676,8 @@
           "name": "HealRatio",
           "value": [
             0.03999999910593033,
-            0.05999999865889549,
-            0.09000000357627869,
+            0.03999999910593033,
+            0.07000000029802322,
             1,
             1,
             1,
@@ -4688,8 +4688,8 @@
           "name": "Duration",
           "value": [
             6,
-            6,
-            6,
+            2,
+            2,
             30,
             30,
             30,
@@ -4700,8 +4700,8 @@
           "name": "BaseShieldAmount",
           "value": [
             400,
-            500,
-            600,
+            350,
+            550,
             3333,
             9000,
             9000,
@@ -4723,13 +4723,13 @@
         {
           "name": "HeadlinerAttackSpeedBoost",
           "value": [
-            0.019999999552965164,
-            0.019999999552965164,
-            0.019999999552965164,
-            0.019999999552965164,
-            0.019999999552965164,
-            0.019999999552965164,
-            0.019999999552965164
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582
           ]
         }
       ]
@@ -5083,7 +5083,7 @@
       "critMultiplier": 1.399999976158142,
       "damage": 45,
       "hp": 550,
-      "initialMana": 0,
+      "initialMana": 20,
       "magicResist": 20,
       "mana": 70,
       "range": 4
@@ -5274,7 +5274,7 @@
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT10_Vex_Mobile.TFT_Set10.tex",
     "stats": {
       "armor": 20,
-      "attackSpeed": 0.699999988079071,
+      "attackSpeed": 0.75,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 40,
@@ -5300,9 +5300,9 @@
           "name": "ARMOR_REDUCTION",
           "value": [
             30,
-            10,
-            12,
             15,
+            18,
+            20,
             30,
             30,
             30
@@ -5323,13 +5323,13 @@
         {
           "name": "EMPOWERED_PUNCH_RATIO",
           "value": [
-            2.799999952316284,
-            2.799999952316284,
-            2.799999952316284,
-            2.799999952316284,
-            2.799999952316284,
-            2.799999952316284,
-            2.799999952316284
+            3.200000047683716,
+            3.200000047683716,
+            3.200000047683716,
+            3.200000047683716,
+            3.200000047683716,
+            3.200000047683716,
+            3.200000047683716
           ]
         },
         {
@@ -5501,14 +5501,14 @@
     "name": "비에고",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT10_Viego_Mobile.TFT_Set10.tex",
     "stats": {
-      "armor": 60,
+      "armor": 65,
       "attackSpeed": 0.8500000238418579,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
-      "damage": 70,
+      "damage": 75,
       "hp": 1000,
       "initialMana": 70,
-      "magicResist": 60,
+      "magicResist": 65,
       "mana": 120,
       "range": 1
     },
@@ -5836,13 +5836,13 @@
         {
           "name": "HeadlinerHealth",
           "value": [
-            200,
-            200,
-            200,
-            200,
-            200,
-            200,
-            200
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
           ]
         },
         {
@@ -6046,9 +6046,9 @@
           "name": "ADPercent",
           "value": [
             0,
-            1.2999999523162842,
-            1.2999999523162842,
-            2.5999999046325684,
+            1.75,
+            1.75,
+            3.5,
             10,
             10,
             10
@@ -6082,9 +6082,9 @@
           "name": "MarkDamageADRatio",
           "value": [
             0,
-            3.25,
-            3.25,
-            6.5,
+            3.5,
+            3.5,
+            7,
             3.5,
             3.5,
             3.5
@@ -6151,15 +6151,15 @@
     "name": "제드",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT10_Zed_Mobile.TFT_Set10.tex",
     "stats": {
-      "armor": 55,
-      "attackSpeed": 0.8999999761581421,
+      "armor": 60,
+      "attackSpeed": 0.949999988079071,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 75,
       "hp": 1000,
       "initialMana": 30,
-      "magicResist": 55,
-      "mana": 70,
+      "magicResist": 60,
+      "mana": 50,
       "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT10_Zed/HUD/TFT10_Zed_Square.TFT_Set10.tex",
@@ -6190,8 +6190,8 @@
           "name": "BombDamage",
           "value": [
             40,
-            80,
-            120,
+            70,
+            105,
             400,
             40,
             40,
@@ -6202,9 +6202,9 @@
           "name": "StartingBombs",
           "value": [
             8,
-            4,
-            4,
-            50,
+            5,
+            5,
+            35,
             8,
             8,
             8
@@ -6225,25 +6225,25 @@
         {
           "name": "NumToIncreasePerCast",
           "value": [
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ]
         },
         {
           "name": "HeadlinerAbilityPower",
           "value": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ]
         },
         {
@@ -6363,7 +6363,7 @@
       "attackSpeed": 0.75,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
-      "damage": 60,
+      "damage": 55,
       "hp": 650,
       "initialMana": 0,
       "magicResist": 20,
@@ -6378,7 +6378,7 @@
   },
   "TFT10_Olaf": {
     "ability": {
-      "desc": "<spellPassive>기본 지속 효과:</spellPassive> 공격 시 <scaleHealth>@HealValue@(%i:scaleAP%)</scaleHealth>의 체력을 회복합니다. 잃은 체력 @PercentMissingHealth@%당 공격 속도가 <TFTBonus>@ModifiedASValue@%(%i:scaleHealth%)</TFTBonus> 증가합니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
+      "desc": "<spellPassive>기본 지속 효과:</spellPassive> 공격 시 <scaleHealth>@ModifiedHealValue@(%i:scaleAP%)</scaleHealth>의 체력을 회복합니다. 잃은 체력 @PercentMissingHealth@%당 공격 속도가 <TFTBonus>@ModifiedASValue@% (%i:scaleHealth%)</TFTBonus> 증가합니다.<br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@",
       "icon": "ASSETS/Characters/TFT10_Olaf/HUD/Icons2D/TFT10_Olaf_W.TFT_Set10.dds",
       "name": "광전사의 분노",
       "variables": [
@@ -6546,9 +6546,9 @@
           "name": "BaseDamage",
           "value": [
             0,
-            45,
-            70,
-            210,
+            50,
+            75,
+            225,
             0,
             0,
             0
@@ -6770,9 +6770,9 @@
           "name": "ADDamage",
           "value": [
             0,
-            3,
-            3,
-            3.049999952316284,
+            2.5,
+            2.5,
+            2.549999952316284,
             0,
             0,
             0
@@ -6830,9 +6830,9 @@
           "name": "MagicDamage",
           "value": [
             40,
-            40,
-            60,
-            90,
+            30,
+            45,
+            65,
             40,
             40,
             40
@@ -6855,7 +6855,7 @@
       "hp": 600,
       "initialMana": 0,
       "magicResist": 20,
-      "mana": 40,
+      "mana": 30,
       "range": 6
     },
     "tileIcon": "ASSETS/Characters/TFT10_Kaisa/HUD/TFT10_Kaisa_Square.TFT_Set10.tex",
@@ -7079,15 +7079,15 @@
     "name": "아칼리",
     "squareIcon": "ASSETS/UX/TFT/ChampionSplashes/TFT10_Akali_TrueDamage_Mobile.TFT_Set10.tex",
     "stats": {
-      "armor": 60,
+      "armor": 65,
       "attackSpeed": 0.8500000238418579,
       "critChance": 0.25,
       "critMultiplier": 1.399999976158142,
       "damage": 70,
       "hp": 1000,
       "initialMana": 0,
-      "magicResist": 60,
-      "mana": 70,
+      "magicResist": 65,
+      "mana": 60,
       "range": 1
     },
     "tileIcon": "ASSETS/Characters/TFT10_Akali_TrueDamage/HUD/TFT10_Akali_TrueDamage_Square.TFT_Set10.tex",

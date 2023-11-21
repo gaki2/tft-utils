@@ -1,11 +1,11 @@
 import { Season } from '../types';
-import { ItemData_9b, items_season_9b } from '../_generated/season_9b/items_season_9b';
+import { ItemData_10, items_season_10 } from '../_generated/season_10/items_season_10';
 
 export class ItemGetter {
   static getItemDataFromName(name: string, season: Season) {
     switch (season) {
-      case 'season_9b':
-        const target = (Object.keys(items_season_9b) as (keyof typeof items_season_9b)[]).find(
+      case 'season_10':
+        const target = (Object.keys(items_season_10) as (keyof typeof items_season_10)[]).find(
           (apiName) => {
             return apiName.includes(name);
           }
@@ -15,7 +15,7 @@ export class ItemGetter {
           return null;
         }
 
-        return items_season_9b[target] as ItemData_9b;
+        return items_season_10[target] as ItemData_10;
     }
   }
 }

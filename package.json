@@ -4,7 +4,10 @@
   "description": "tft team-builder",
   "scripts": {
     "start": "npm run storybook",
-    "parse": "ts-node src/script/parser/index.ts",
+    "parse_augment": "ts-node -T src/script/parser/augmentParser.ts",
+    "parse_champion": "ts-node -T src/script/parser/championParser.ts",
+    "parse_item": "ts-node -T src/script/parser/itemParser.ts",
+    "parse_trait": "ts-node -T src/script/parser/traitParser.ts",
     "storybook": "storybook dev -p 6006",
     "build-rollup": "rollup -c",
     "build": "rimraf lib && npm run build-rollup",

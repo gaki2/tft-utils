@@ -1,12 +1,12 @@
 import { Season } from '../types';
-import { AugmentData_9b, augments_season_9b } from '../_generated/season_9b/augments_season_9b';
+import { AugmentData_10, augments_season_10 } from '../_generated/season_10/augments_season_10';
 
 export class AugmentGetter {
   static getAugmentDataFromName(name: string, season: Season) {
     switch (season) {
-      case 'season_9b':
+      case 'season_10':
         const target = (
-          Object.keys(augments_season_9b) as (keyof typeof augments_season_9b)[]
+          Object.keys(augments_season_10) as (keyof typeof augments_season_10)[]
         ).find((apiName) => {
           return apiName.includes(name);
         });
@@ -15,7 +15,7 @@ export class AugmentGetter {
           return null;
         }
 
-        return augments_season_9b[target] as AugmentData_9b;
+        return augments_season_10[target] as AugmentData_10;
     }
   }
 }
