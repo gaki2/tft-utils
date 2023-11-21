@@ -2,8 +2,8 @@ import { LanguageType } from '../../../types';
 import { useMemo } from 'react';
 import { SEASON_10_BASEURL } from '../../../environments/urls';
 import { ToDotPng, ToLowerCase } from '../../../utils/regex';
-import { GeneralParser } from '../../../script/parser/generalParser';
 import { AugmentData_10 } from '../../../_generated/season_10/augments_season_10';
+import { replaceVariables } from '../../../utils/replaceVariables';
 
 type UseAugmentBadge10Props = AugmentData_10 & {
   lang: LanguageType;
@@ -21,7 +21,7 @@ export const useAugmentBadge10 = (props: UseAugmentBadge10Props) => {
 
     if (!matchedDesc) return '';
 
-    return GeneralParser.replaceVariables(matchedDesc, effects);
+    return replaceVariables(matchedDesc, effects);
   }, [lang]);
 
   return {
