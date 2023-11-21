@@ -15,7 +15,7 @@ $ npm i tft-utils
 
 # Usage
 
-*Board*
+### Board 컴포넌트 (배치툴)
 
 ```tsx
 import { Board } from 'tft-utils';
@@ -24,36 +24,47 @@ const App = () => {
   const champions = [
     {
       position: {row: 0, col: 0},
-      champion: 'TFT9_Aatrox',
+      champion: 'Aatrox',
+      main: true,
     },
     {
       position: {row: 0, col: 1},
-      champion: 'TFT9_Jhin',
+      champion: 'Jhin',
     },
   ];
   
   return (
-    <Board champions={champions} season={'season_9'} lang={'en_us'} />
+    // Board10 은 시즌10 전용 배치툴을 의미합니다. (시즌 11이 나올경우 Board11 컴포넌트가 만들어짐.)
+    <Board10 champions={champions} season={'season_9'} />
   );
 };
 ```
 
-position 은 { row, col } 객체로 구성되어 있으며 row 는 0 ~ 3, col 은 0 ~ 6 의 값을 가집니다. <br>
-champion 은 롤토체스 챔피언의 이름을 입력합니다. <br>
-Board 컴포넌트는 자체적으로 드래그 앤 드랍 기능이 구현되어 있어 챔피언의 위치를 변경할 수 있습니다. <br>
-또한 챔피언을 클릭 할 시, 챔피언의 가격, 시너지 정보를 띄워주는 팝오버가 열립니다.
+### Badge 컴포넌트 (챔피언, 아이템, 특성, 증강)
 
-![team_builder](https://tft-utils.s3.ap-northeast-2.amazonaws.com/assets/team_builder.png)
+```tsx
+const App = () => {
 
-# Season, Language Support
+  return (
+    <>
+      <ChampionBadge10 name={'Sona'} />
+      <ItemBadge10 name={'BFSword'} />
+      <TraitBadge10 name={'8bit'} />
+      <AugmentBadge10 name={'SalvageBin'} />
+    </>
+      );
+};
+```
+
+# 시즌, 언어 지원
  
 *Season Support*
 
-`season_9`, `season_9b`
-season9b 는 시즌 9.5 라는 뜻입니다.
+`season10`
 
 *Language Support*
-`en_us` `ko_kr`
+
+`en` `ko`
 
 # Peer Dependencies
 
