@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.19
+
+### Patch Changes
+
+- 781b1f0: 증강 apiName 수정
+
 ## 0.1.18
 
 ### Patch Changes
