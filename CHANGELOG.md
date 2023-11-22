@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.18
+
+### Patch Changes
+
+- d94c568: 아이템 API 이름수정
+
 ## 0.1.17
 
 ### Patch Changes
