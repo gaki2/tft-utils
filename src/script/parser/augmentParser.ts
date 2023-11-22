@@ -4,6 +4,7 @@ import path from 'path';
 import { LANGUAGES } from '../../types/config';
 import _ from 'lodash';
 import { General } from '../general';
+import { augments_season_10 } from '../../_generated/season_10/augments_season_10';
 
 const BRANCHES = ['desc', 'name'];
 
@@ -76,3 +77,22 @@ function parseAugment(season: Season) {
 }
 
 parseAugment('season_10');
+
+// function name_en_to_apiName() {
+//   const data = augments_season_10;
+//
+//   const newData = Object.keys(data).reduce((acc, apiName) => {
+//     const augmentNameEn = data[apiName].name.en.replace(/ /g, '_');
+//     if (!augmentNameEn) {
+//       return acc;
+//     }
+//
+//     const newApiName = 'TFT10_Augment_' + augmentNameEn;
+//     acc[newApiName] = data[apiName];
+//     acc[newApiName].apiName = newApiName;
+//     return acc;
+//   }, {});
+//   General.writeFile(`${generatedDir}/season_10/temp.ts`, JSON.stringify(newData, null, 2));
+// }
+//
+// name_en_to_apiName();
