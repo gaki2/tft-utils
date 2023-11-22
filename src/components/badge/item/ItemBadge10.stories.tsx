@@ -37,6 +37,6 @@ const Wrapper = styled.div`
 
 export const Season10: StoryFn<ItemBadge10Props> = Template.bind({});
 Season10.args = {
-  name: 'Bloodthirster',
+  name: 'Guardbreaker',
   lang: 'ko',
 };
