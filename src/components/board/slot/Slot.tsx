@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Board, SlotData } from '../class/Board';
 import { SlotIndex } from '../../../types/board';
 import { LanguageType, Season } from '../../../types/config';
@@ -59,7 +59,12 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
         onDragOver={onDragOver}
         onDragLeave={onDragLeave}
         onDrop={onDrop}>
-        <StyledBorder cost={slotData?.championData?.cost}>
+        {slotData?.headliner && (
+          <Headliner
+            src={'https://tft-utils.s3.ap-northeast-2.amazonaws.com/assets/headliner.png'}
+          />
+        )}
+        <StyledBorder cost={slotData?.championData?.cost} headliner={Boolean(slotData?.headliner)}>
           <StyledImageDiv ref={imageDivRef} url={slotData?.championData?.url ?? ''} />
           {slotData?.main && <Rule />}
           {Boolean(slotData) && (
@@ -84,7 +89,17 @@ const StyledWrapper = styled.div`
   background-color: var(--initial_bg);
 `;
 
-const StyledBorder = styled.div<{ cost: number | undefined | null }>`
+const Headliner = styled.img`
+  position: absolute;
+  z-index: 100;
+  width: calc(var(--slot-height) * 0.25);
+  height: calc(var(--slot-height) * 0.25);
+  max-width: 100%;
+  top: 25%;
+  left: 3%;
+`;
+
+const StyledBorder = styled.div<{ cost: number | undefined | null; headliner: boolean }>`
   --1_cost_border: rgb(128, 128, 128);
   --2_cost_border: rgb(17, 178, 136);
   --3_cost_border: rgb(32, 122, 199);
@@ -92,6 +107,7 @@ const StyledBorder = styled.div<{ cost: number | undefined | null }>`
   --5_cost_border: rgb(255, 185, 59);
 
   position: relative;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -99,6 +115,36 @@ const StyledBorder = styled.div<{ cost: number | undefined | null }>`
   padding: var(--border-width);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-color: ${({ cost }) => (cost ? `var(--${cost}_cost_border)` : '#000')};
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  &::before {
+    content: '';
+    display: ${({ headliner }) => (headliner ? 'block' : 'none')};
+    background: ${({ cost }) =>
+      cost
+        ? `conic-gradient(
+      var(--${cost}_cost_border) 0deg,
+      var(--${cost}_cost_border) 140deg,
+      rgb(255,255,255) 180deg,
+      var(--${cost}_cost_border) 180deg,
+      var(--${cost}_cost_border) 320deg,
+      rgb(255,255,255) 1turn
+    )`
+        : '#000'};
+    animation: 2s linear 0s infinite normal none running rotate;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    width: 160%;
+  }
 `;
 
 const StyledImageDiv = styled.div<{ url: string }>`
