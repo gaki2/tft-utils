@@ -4,6 +4,7 @@ import { SlotIndex } from '../../../types/board';
 import { LanguageType, Season } from '../../../types/config';
 import styled from 'styled-components';
 import { Rule } from './label/Rule';
+import { StarLevel } from './star/StarLevel';
 
 type SlotProps = {
   board: Board;
@@ -71,6 +72,7 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
             <StyledChampionName>{slotData?.championData?.name}</StyledChampionName>
           )}
         </StyledBorder>
+        {slotData?.starLevel && <StarLevel starLevel={slotData?.starLevel} />}
       </StyledWrapper>
     </>
   );

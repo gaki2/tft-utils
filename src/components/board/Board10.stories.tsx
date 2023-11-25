@@ -20,6 +20,7 @@ const MOCK_DATA: BoardChampion10[] = [
     name: 'Garen',
     main: true,
     headliner: true,
+    starLevel: 3,
   },
   {
     position: {
