@@ -11,18 +11,20 @@ export const BOARD_SLOT_COUNT = BOARD_ROW_COUNT * BOARD_COL_COUNT;
 export type StarLevel = 0 | 1 | 2 | 3 | 4;
 type ChampionData = { name: string; apiName: string; url: string; cost: number; traits: string[] };
 
+type MetaData = {
+  main?: boolean;
+  starLevel?: StarLevel;
+  headliner?: boolean;
+};
+
 export type ChampionNode = {
   position: Position;
   name: string;
-  main?: boolean;
-  starLevel?: StarLevel;
-};
+} & MetaData;
 
 export type SlotData = {
   championData: ChampionData;
-  main?: boolean;
-  starLevel?: StarLevel;
-};
+} & MetaData;
 
 export type BoardModelState = {
   slots: (SlotData | null)[];
@@ -59,6 +61,7 @@ export class Board {
           slots[this.convertRowColToIdx(data.position)] = {
             main: data.main,
             starLevel: data.starLevel,
+            headliner: data.headliner,
             championData: {
               name: name[lang] ?? '',
               apiName: apiName ?? '',
