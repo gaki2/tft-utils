@@ -2,10 +2,10 @@ import { type LanguageType, Season } from '../../../types';
 import styled from 'styled-components';
 import { useMemo } from 'react';
 import { Tooltip } from '../../../utils/components/Tooltip';
-import { TraitBadge } from '../trait/TraitBadge';
 import { CommonBadgeProps } from '../common_props_type';
 import { underBarToSpace } from '../../../utils/regex';
-import { ChampionBadge10 } from './ChampionBadge10';
+import { TraitBadge10 } from '../trait/TraitBadge10';
+import { TraitGetter } from '../../../getter/trait_getter';
 
 export type ChampionBadgeProps = {
   season: Season;
@@ -45,12 +45,17 @@ export const ChampionBadge = ({
               <TooltipTitleText>{title}</TooltipTitleText>
             </TooltipImgWrapper>
             <TooltipTraitWrapper>
-              {/*{traits.map((trait, index) => (*/}
-              {/*  <TooltipTraitItemWrapper key={index}>*/}
-              {/*    <TraitBadge season={season} lang={lang} name={trait} disableTooltip={true} />*/}
-              {/*    <span>{trait}</span>*/}
-              {/*  </TooltipTraitItemWrapper>*/}
-              {/*))}*/}
+              {traits.map((trait, index) => (
+                <TooltipTraitItemWrapper key={index}>
+                  <TraitBadge10
+                    season={season}
+                    lang={lang}
+                    name={TraitGetter.getTraitApiNameFromDisplayName(trait, season)}
+                    disableTooltip={true}
+                  />
+                  <span>{trait}</span>
+                </TooltipTraitItemWrapper>
+              ))}
             </TooltipTraitWrapper>
           </TooltipTitle>
         </TooltipWrapper>
@@ -106,6 +111,7 @@ const TooltipTitle = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.25rem;
 `;
 

@@ -84,7 +84,8 @@ const TooltipTitleText = styled.span`
 const Divider = styled.hr`
   width: 100%;
   border-width: 0.5px;
-  margin: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 `;
 
 const TooltipBody = styled.div`
