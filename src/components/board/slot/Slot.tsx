@@ -5,6 +5,7 @@ import { LanguageType, Season } from '../../../types/config';
 import styled from 'styled-components';
 import { Rule } from './label/Rule';
 import { StarLevel } from './star/StarLevel';
+import { SEASON_10_BASEURL } from '../../../environments/urls';
 
 type SlotProps = {
   board: Board;
@@ -62,7 +63,7 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
         onDrop={onDrop}>
         {slotData?.headliner && (
           <Headliner
-            src={'https://tft-utils.s3.ap-northeast-2.amazonaws.com/assets/headliner.png'}
+            src={`${SEASON_10_BASEURL}/assets/ux/tft/hud/headliner/set10_headliner_icon.png`}
           />
         )}
         <StyledBorder cost={slotData?.championData?.cost} headliner={Boolean(slotData?.headliner)}>

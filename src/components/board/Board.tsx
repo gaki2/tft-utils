@@ -4,6 +4,7 @@ import { LanguageType, Season } from '../../types/config';
 import styled from 'styled-components';
 import { ChampionNode } from './class/Board';
 import { useBoard } from './useBoard';
+import { TraitList } from './trait_list/TraitList';
 
 export type BoardProps = { champions: ChampionNode[]; season: Season; language?: LanguageType };
 
@@ -12,22 +13,32 @@ export const Board = ({ champions, season, language = 'ko' }: BoardProps) => {
 
   return (
     <Wrapper>
-      {board.getAllSlots().map((slotData, idx) => (
-        <MemoizedSlot
-          key={idx}
-          board={board}
-          slotData={slotData}
-          slotIdx={idx as SlotIndex}
-          season={season}
-          language={language}
-        />
-      ))}
+      <GridWrapper>
+        {board.getAllSlots().map((slotData, idx) => (
+          <MemoizedSlot
+            key={idx}
+            board={board}
+            slotData={slotData}
+            slotIdx={idx as SlotIndex}
+            season={season}
+            language={language}
+          />
+        ))}
+      </GridWrapper>
+      <TraitList season={season} allSlotData={board.getAllSlots()} lang={language} />
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  --slot-width: 84px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const GridWrapper = styled.div`
+  --slot-width: 82px;
   --slot-height: 96px;
   --font-size: 13px;
   --border-width: 3px;
@@ -41,7 +52,7 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(7, var(--slot-width));
   gap: 0 4px;
   flex-shrink: 0;
-  margin-left: calc(var(--slot-width) * 0.25);
+  //margin-left: calc(var(--slot-width) * 0.25);
 
   & > :nth-child(n + 1):nth-child(-n + 7) {
     transform: translateX(calc(-25% - 1px));
