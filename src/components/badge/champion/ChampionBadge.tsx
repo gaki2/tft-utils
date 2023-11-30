@@ -50,6 +50,7 @@ export const ChampionBadge = ({
                   <TraitBadge10
                     season={season}
                     lang={lang}
+                    // trait 이 displayName 이라서, apiName 으로 바꿔줘야함. 하지만 그 과정에서 타입이 string 으로 꼬여서 발생하는 타입에러임.
                     name={TraitGetter.getTraitApiNameFromDisplayName(trait, season)}
                     disableTooltip={true}
                   />

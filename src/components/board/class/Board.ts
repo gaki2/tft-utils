@@ -15,6 +15,7 @@ type MetaData = {
   main?: boolean;
   starLevel?: StarLevel;
   headliner?: boolean;
+  headlinerTrait?: string;
 };
 
 export type ChampionNode = {
@@ -62,6 +63,7 @@ export class Board {
             main: data.main,
             starLevel: data.starLevel,
             headliner: data.headliner,
+            headlinerTrait: data.headlinerTrait,
             championData: {
               name: name[lang] ?? '',
               apiName: apiName ?? '',
