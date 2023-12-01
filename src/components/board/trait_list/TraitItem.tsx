@@ -44,8 +44,7 @@ const Wrapper = styled.div<{ headliner: boolean }>`
   justify-content: center;
   flex-shrink: 0;
   padding: calc(var(--gap) * 0.5);
-  border-radius: 4px;
-  background-color: ${({ headliner }) => (headliner ? 'lightsteelblue' : 'none')};
+  background-color: ${({ headliner }) => (headliner ? '#5FBDFF' : 'none')};
 `;
 
 const TraitBadgeBackground = styled.div<{ traitType: TraitType }>`
@@ -85,10 +84,8 @@ const TraitCount = styled.div`
   padding: 0 4px;
   align-items: center;
   justify-content: center;
-  color: var(--font-color);
-  border-radius: 4px;
+  color: var(--board-font-color);
   transform: scale(var(--font-scale));
-  //background: linear-gradient(90deg, rgba(18, 233, 17, 1) 0%, rgba(173, 215, 163, 1) 95%);
 `;
 
 const TraitInfo = styled.div`
@@ -99,10 +96,10 @@ const TraitInfo = styled.div`
 
 const TraitName = styled.span`
   font-size: 0.8rem;
-  color: var(--font-color);
+  color: var(--board-font-color);
 `;
 
 const TraitLevel = styled.span`
   font-size: 0.7rem;
-  color: var(--font-color);
+  color: var(--board-font-color);
 `;

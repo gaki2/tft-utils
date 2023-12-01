@@ -8,13 +8,14 @@ type TraitListProps = {
   season: Season;
   allSlotData: (SlotData | null)[];
   lang: LanguageType;
+  isDarkmode: boolean;
 };
 
-export const TraitList = ({ season, allSlotData, lang }: TraitListProps) => {
+export const TraitList = ({ season, allSlotData, lang, isDarkmode }: TraitListProps) => {
   const traitProps = useTraitList({ season, allSlotData, lang });
 
   return (
-    <Wrapper>
+    <Wrapper isDarkmode={isDarkmode}>
       {traitProps.map((trait, idx) => {
         return <TraitItem trait={trait} key={idx} />;
       })}
@@ -22,9 +23,8 @@ export const TraitList = ({ season, allSlotData, lang }: TraitListProps) => {
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ isDarkmode: boolean }>`
   --max-width: 620px;
-  --font-color: black;
   /**
    Trait 의 이름과 레벨을 표시할지 여부
    */
@@ -37,6 +37,7 @@ const Wrapper = styled.div`
   max-width: var(--max-width);
   display: flex;
   overflow-x: scroll;
+  background-color: ${(props) => (props.isDarkmode ? '#8d949e' : 'var(--trait-list-bg-color)')};
 
   @media (max-width: 768px) {
     --max-width: 360px;

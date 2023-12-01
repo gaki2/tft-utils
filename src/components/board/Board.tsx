@@ -5,10 +5,16 @@ import styled from 'styled-components';
 import { ChampionNode } from './class/Board';
 import { useBoard } from './useBoard';
 import { TraitList } from './trait_list/TraitList';
+import './variable.css';
 
-export type BoardProps = { champions: ChampionNode[]; season: Season; language?: LanguageType };
+export type BoardProps = {
+  champions: ChampionNode[];
+  season: Season;
+  language?: LanguageType;
+  isDarkmode?: boolean;
+};
 
-export const Board = ({ champions, season, language = 'ko' }: BoardProps) => {
+export const Board = ({ champions, season, language = 'ko', isDarkmode = false }: BoardProps) => {
   const { board } = useBoard(champions, season, language);
 
   return (
@@ -22,10 +28,16 @@ export const Board = ({ champions, season, language = 'ko' }: BoardProps) => {
             slotIdx={idx as SlotIndex}
             season={season}
             language={language}
+            isDarkmode={isDarkmode}
           />
         ))}
       </GridWrapper>
-      <TraitList season={season} allSlotData={board.getAllSlots()} lang={language} />
+      <TraitList
+        season={season}
+        allSlotData={board.getAllSlots()}
+        lang={language}
+        isDarkmode={isDarkmode}
+      />
     </Wrapper>
   );
 };
