@@ -13,9 +13,10 @@ type SlotProps = {
   slotIdx: SlotIndex;
   season: Season;
   language: LanguageType;
+  isDarkmode: boolean;
 };
 
-const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
+const Slot = ({ board, slotData, slotIdx, season, language, isDarkmode }: SlotProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const imageDivRef = useRef<HTMLDivElement>(null);
 
@@ -67,7 +68,11 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
           />
         )}
         <StyledBorder cost={slotData?.championData?.cost} headliner={Boolean(slotData?.headliner)}>
-          <StyledImageDiv ref={imageDivRef} url={slotData?.championData?.url ?? ''} />
+          <StyledImageDiv
+            ref={imageDivRef}
+            url={slotData?.championData?.url ?? ''}
+            isDarkmode={isDarkmode}
+          />
           {slotData?.main && <Rule />}
           {Boolean(slotData) && (
             <StyledChampionName>{slotData?.championData?.name}</StyledChampionName>
@@ -150,14 +155,15 @@ const StyledBorder = styled.div<{ cost: number | undefined | null; headliner: bo
   }
 `;
 
-const StyledImageDiv = styled.div<{ url: string }>`
+const StyledImageDiv = styled.div<{ url: string; isDarkmode: boolean }>`
   &.isOver {
     background-color: #6497af;
   }
 
   height: 100%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: #fff 50% / cover no-repeat;
+  background: ${({ isDarkmode }) =>
+    isDarkmode ? '#606770 50% / cover no-repeat' : 'var(--slot-bg-color) 50% / cover no-repeat'};
   background-image: ${({ url }) => `url(${url})`};
   cursor: ${({ url }) => (Boolean(url) ? 'pointer' : 'default')};
 `;
