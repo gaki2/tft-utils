@@ -49,6 +49,8 @@ const Wrapper = styled.div`
   border-radius: 4px;
   background-color: #222;
   vertical-align: middle;
+  overflow: hidden;
+  font-size: 10px;
 `;
 
 const Img = styled.img`

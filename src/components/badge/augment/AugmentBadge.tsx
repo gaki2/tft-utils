@@ -1,4 +1,4 @@
-import { LanguageType, Season } from '../../../types';
+import { LanguageType } from '../../../types';
 import styled from 'styled-components';
 import { Tooltip } from '../../../utils/components/Tooltip';
 import { useMemo } from 'react';
@@ -25,7 +25,7 @@ export const AugmentBadge = ({ apiName, name, url, desc, lang, style }: AugmentB
       <Tooltip id={tooltipId}>
         <TooltipWrapper>
           <TooltipTitle>
-            <TooltipTitleImg src={url} alt={apiName} />
+            <TooltipTitleImg src={url} alt={name} />
             <TooltipTitleText>{name}</TooltipTitleText>
           </TooltipTitle>
           <Divider />
@@ -41,6 +41,9 @@ const Wrapper = styled.div`
   height: 32px;
   display: inline-block;
   vertical-align: middle;
+  // image 로드가 실패했을때 alt text 가 badge 밖으로 나가지 않도록.
+  overflow: hidden;
+  font-size: 10px;
 `;
 
 const Img = styled.img`

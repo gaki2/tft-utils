@@ -71,6 +71,8 @@ const Wrapper = styled.div`
   display: inline-block;
   position: relative;
   vertical-align: middle;
+  overflow: hidden;
+  font-size: 10px;
 `;
 
 const Img = styled.img<{ cost: number }>`

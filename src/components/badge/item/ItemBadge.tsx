@@ -62,6 +62,8 @@ const Wrapper = styled.div`
   height: 32px;
   display: inline-block;
   vertical-align: middle;
+  overflow: hidden;
+  font-size: 10px;
 `;
 
 const Img = styled.img`
