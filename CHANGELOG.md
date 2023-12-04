@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.20
+
+### Patch Changes
+
+- 1990937: Board에 특성 UI 추가
+
 ## 0.1.19
 
 ### Patch Changes
