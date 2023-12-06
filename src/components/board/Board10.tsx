@@ -1,4 +1,3 @@
-import { LanguageType } from '../../types';
 import { ChampionName_10 } from '../../_generated/season_10/champions_season_10';
 import { ChampionNode } from './class/Board';
 import { Board, BoardProps } from './Board';

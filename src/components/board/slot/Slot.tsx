@@ -13,10 +13,9 @@ type SlotProps = {
   slotIdx: SlotIndex;
   season: Season;
   language: LanguageType;
-  isDarkmode: boolean;
 };
 
-const Slot = ({ board, slotData, slotIdx, season, language, isDarkmode }: SlotProps) => {
+const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const imageDivRef = useRef<HTMLDivElement>(null);
 
@@ -68,11 +67,7 @@ const Slot = ({ board, slotData, slotIdx, season, language, isDarkmode }: SlotPr
           />
         )}
         <StyledBorder cost={slotData?.championData?.cost} headliner={Boolean(slotData?.headliner)}>
-          <StyledImageDiv
-            ref={imageDivRef}
-            url={slotData?.championData?.url ?? ''}
-            isDarkmode={isDarkmode}
-          />
+          <StyledImageDiv ref={imageDivRef} url={slotData?.championData?.url ?? ''} />
           {slotData?.main && <Rule />}
           {Boolean(slotData) && (
             <StyledChampionName>{slotData?.championData?.name}</StyledChampionName>
@@ -89,12 +84,10 @@ export const MemoizedSlot = React.memo(Slot, (prevProps, nextProps) => {
 });
 
 const StyledWrapper = styled.div`
-  --initial_bg: transparent;
-
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: var(--initial_bg);
+  background-color: transparent;
 `;
 
 const Headliner = styled.img`
@@ -155,15 +148,14 @@ const StyledBorder = styled.div<{ cost: number | undefined | null; headliner: bo
   }
 `;
 
-const StyledImageDiv = styled.div<{ url: string; isDarkmode: boolean }>`
+const StyledImageDiv = styled.div<{ url: string }>`
   &.isOver {
     background-color: #6497af;
   }
 
   height: 100%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: ${({ isDarkmode }) =>
-    isDarkmode ? '#606770 50% / cover no-repeat' : 'var(--slot-bg-color) 50% / cover no-repeat'};
+  background: var(--background-color) 50% / cover no-repeat;
   background-image: ${({ url }) => `url(${url})`};
   cursor: ${({ url }) => (Boolean(url) ? 'pointer' : 'default')};
 `;

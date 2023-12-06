@@ -82,7 +82,7 @@ const MOCK_DATA: BoardChampion10[] = [
 ];
 
 const Boards = () => {
-  return <Board10 champions={MOCK_DATA} language={'ko'} />;
+  return <Board10 champions={MOCK_DATA} language={'ko'} isDarkmode={false} />;
 };
 
 export const Template = {

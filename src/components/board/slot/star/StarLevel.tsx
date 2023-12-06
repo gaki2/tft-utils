@@ -24,11 +24,11 @@ const Wrapper = styled.div`
   --platinum: rgb(71, 177, 128);
 
   position: absolute;
-  transform: translate(-50%);
+  transform: translate(-50%) scale(var(--font-scale));
   top: 0;
   left: 50%;
   z-index: 1;
-  font-size: 20px;
+  font-size: 16px;
   text-shadow: 0 2px 5px #000, 0 2px 5px #000;
 `;
 

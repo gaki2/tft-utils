@@ -28,8 +28,8 @@ export const TraitItem = ({ trait }: TraitItemProps) => {
         </TraitBadgeBackground>
         <TraitCount>{trait.count}</TraitCount>
         <TraitInfo>
-          <TraitName>{trait.name}</TraitName>
-          <TraitLevel>{trait.level.join(' ▶ ')}</TraitLevel>
+          {/*<TraitName>{trait.name}</TraitName>*/}
+          {/*{trait.type !== 'NONE' && <TraitLevel>{trait.level.join(' ▶ ')}</TraitLevel>}*/}
         </TraitInfo>
       </Wrapper>
     </>
@@ -37,14 +37,11 @@ export const TraitItem = ({ trait }: TraitItemProps) => {
 };
 
 const Wrapper = styled.div<{ headliner: boolean }>`
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
-  gap: calc(var(--gap) * 0.5);
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  padding: calc(var(--gap) * 0.5);
-  background-color: ${({ headliner }) => (headliner ? '#5FBDFF' : 'none')};
 `;
 
 const TraitBadgeBackground = styled.div<{ traitType: TraitType }>`
@@ -61,7 +58,6 @@ const TraitBadgeBackground = styled.div<{ traitType: TraitType }>`
   align-items: center;
 
   cursor: pointer;
-  filter: ${({ traitType }) => (traitType === 'PLATINUM' ? 'none' : 'invert(1)')};
 `;
 
 const TraitImg = styled.img<{ traitType: TraitType }>`
@@ -74,8 +70,7 @@ const TraitImg = styled.img<{ traitType: TraitType }>`
   height: var(--icon-size);
   object-position: center;
   object-fit: cover;
-  filter: ${({ traitType }) =>
-    traitType === 'GOLD' || traitType === 'PLATINUM' ? 'invert(1)' : 'opacity(1)'};
+  filter: ${({ traitType }) => (traitType !== 'NONE' ? 'invert(1)' : 'opacity(1)')};
 `;
 
 const TraitCount = styled.div`
@@ -84,7 +79,7 @@ const TraitCount = styled.div`
   padding: 0 4px;
   align-items: center;
   justify-content: center;
-  color: var(--board-font-color);
+  color: var(--font-color);
   transform: scale(var(--font-scale));
 `;
 
@@ -96,10 +91,10 @@ const TraitInfo = styled.div`
 
 const TraitName = styled.span`
   font-size: 0.8rem;
-  color: var(--board-font-color);
+  color: var(--font-color);
 `;
 
 const TraitLevel = styled.span`
   font-size: 0.7rem;
-  color: var(--board-font-color);
+  color: var(--font-color);
 `;
