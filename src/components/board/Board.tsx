@@ -11,6 +11,9 @@ export type BoardProps = {
   champions: ChampionNode[];
   season: Season;
   language?: LanguageType;
+  /**
+   * @default false
+   */
   isDarkmode?: boolean;
 };
 
@@ -18,7 +21,7 @@ export const Board = ({ champions, season, language = 'ko', isDarkmode = false }
   const { board } = useBoard(champions, season, language);
 
   return (
-    <Wrapper>
+    <Wrapper data-darkmode={isDarkmode}>
       <GridWrapper>
         {board.getAllSlots().map((slotData, idx) => (
           <MemoizedSlot
@@ -28,35 +31,44 @@ export const Board = ({ champions, season, language = 'ko', isDarkmode = false }
             slotIdx={idx as SlotIndex}
             season={season}
             language={language}
-            isDarkmode={isDarkmode}
           />
         ))}
       </GridWrapper>
-      <TraitList
-        season={season}
-        allSlotData={board.getAllSlots()}
-        lang={language}
-        isDarkmode={isDarkmode}
-      />
+      <TraitList season={season} allSlotData={board.getAllSlots()} lang={language} />
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  --background-color: #fff;
+  --font-color: #000;
+
+  // 다크모드가 트루라면
+  &[data-darkmode='true'] {
+    --background-color: #606770;
+    --font-color: #fff;
+  }
+
   width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
 `;
 
 const GridWrapper = styled.div`
-  --slot-width: 82px;
-  --slot-height: 96px;
-  --font-size: 13px;
-  --border-width: 3px;
+  --slot-width: 60px;
+  --slot-height: 70px;
+  --font-size: 12px;
+  --border-width: 2px;
   --font-scale: 1;
 
-  width: 100%;
+  @media (max-width: 768px) {
+    --font-scale: 0.7;
+    --slot-width: 44px;
+    --slot-height: 50px;
+    --font-size: 11px;
+    --border-width: 2px;
+  }
+
   justify-content: center;
   -webkit-box-pack: center;
   display: grid;
@@ -84,13 +96,5 @@ const GridWrapper = styled.div`
 
   & * {
     box-sizing: border-box;
-  }
-
-  @media (max-width: 768px) {
-    --font-scale: 0.7;
-    --slot-width: 44px;
-    --slot-height: 50px;
-    --font-size: 11px;
-    --border-width: 2px;
   }
 `;
