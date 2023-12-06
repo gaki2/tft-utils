@@ -1,5 +1,11 @@
 # tft-utils
 
+## 0.1.21
+
+### Patch Changes
+
+- abd492a: Board UI 수정
+
 ## 0.1.20
 
 ### Patch Changes
