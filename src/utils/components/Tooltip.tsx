@@ -14,7 +14,6 @@ export const Tooltip = ({ id, tooltipProps, children }: _TooltipProps) => {
       delayHide={0}
       style={{ padding: '8px', zIndex: 9999 }}
       {...tooltipProps}
-      openOnClick={true}
       id={id}>
       {children}
     </_Tooltip>
