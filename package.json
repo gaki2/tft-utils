@@ -12,7 +12,8 @@
     "build-rollup": "rollup -c",
     "build": "rimraf lib && npm run build-rollup",
     "release": "npm run build && changeset publish",
-    "test": "vitest run"
+    "test": "vitest run",
+    "link": "npm run build && npm link"
   },
   "keywords": [
     "tft",
