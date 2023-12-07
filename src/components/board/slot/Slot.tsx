@@ -60,7 +60,8 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
         onDragStart={onDragStart}
         onDragOver={onDragOver}
         onDragLeave={onDragLeave}
-        onDrop={onDrop}>
+        onDrop={onDrop}
+        data-empty={slotData === null}>
         {slotData?.headliner && (
           <Headliner
             src={`${SEASON_10_BASEURL}/assets/ux/tft/hud/headliner/set10_headliner_icon.png`}
@@ -88,6 +89,11 @@ const StyledWrapper = styled.div`
   height: 100%;
   position: relative;
   background-color: transparent;
+  cursor: pointer;
+
+  &[data-empty='true'] {
+    cursor: default;
+  }
 `;
 
 const Headliner = styled.img`
@@ -157,7 +163,6 @@ const StyledImageDiv = styled.div<{ url: string }>`
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: var(--background-color) 50% / cover no-repeat;
   background-image: ${({ url }) => `url(${url})`};
-  cursor: ${({ url }) => (Boolean(url) ? 'pointer' : 'default')};
 `;
 
 const StyledChampionName = styled.span`
