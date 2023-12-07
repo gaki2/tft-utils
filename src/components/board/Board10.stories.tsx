@@ -13,71 +13,62 @@ export default meta;
 
 const MOCK_DATA: BoardChampion10[] = [
   {
-    name: 'Amumu',
+    name: 'Ekko',
     position: {
       row: 0,
-      col: 0,
+      col: 5,
     },
+    starLevel: 2,
   },
   {
-    name: 'TahmKench',
+    name: 'Urgot',
     position: {
       row: 0,
       col: 1,
     },
+    starLevel: 2,
+  },
+  {
+    name: 'KSante',
+    position: {
+      row: 0,
+      col: 2,
+    },
+    starLevel: 2,
   },
   {
     name: 'Sett',
     position: {
       row: 0,
-      col: 2,
-    },
-  },
-  {
-    name: 'Thresh',
-    position: {
-      row: 0,
       col: 3,
     },
+    starLevel: 3,
+    headliner: true,
+    headlinerTrait: 'PopBand',
   },
   {
-    name: 'Poppy',
+    name: 'Yone',
     position: {
       row: 0,
       col: 4,
     },
+    starLevel: 2,
   },
   {
-    name: 'Urgot',
-    position: {
-      row: 1,
-      col: 2,
-    },
-    starLevel: 3,
-  },
-  {
-    name: 'Samira',
+    name: 'Aphelios',
     position: {
       row: 3,
       col: 0,
     },
     starLevel: 3,
-    headliner: true,
-    headlinerTrait: 'Country',
   },
   {
-    name: 'Vex',
+    name: 'Senna',
     position: {
       row: 3,
       col: 1,
     },
-  },
-  {
-    name: 'Sona',
-    position: {
-      row: 3,
-      col: 2,
-    },
+    starLevel: 3,
   },
 ];
 

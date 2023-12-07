@@ -38,9 +38,9 @@ function getTraitCounter(allSlotData: (SlotData | null)[], season: Season) {
       const apiName = TraitGetter.getTraitDataFromName(slotData.headlinerTrait, season)?.apiName;
       if (apiName) {
         if (acc[apiName]) {
-          acc[apiName] += 100;
+          acc[apiName] += 101;
         } else {
-          acc[apiName] = 100;
+          acc[apiName] = 101;
         }
       }
     }
@@ -103,7 +103,6 @@ function getTraitType(level: number[], count: number): TraitType {
       idx = i + 1;
     }
   }
-
   if (idx === 1 && level.length === 1) {
     return 'GOLD';
   }
@@ -141,7 +140,7 @@ function getTraitProps(
     }
 
     const traitLevel = getTraitLevel(details.effects).sort((a, b) => a - b);
-    const traitType = getTraitType(traitLevel, count);
+    const traitType = getTraitType(traitLevel, count > 100 ? count - 100 : count);
     const url = details.icon ? `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(details.icon))}` : '';
     const name = details.name[lang] ?? '';
     const headliner = count > 100;
@@ -153,7 +152,7 @@ function getTraitProps(
       type: traitType,
       level: traitLevel,
       headliner,
-      count: count > 100 ? count - 100 + 1 : count,
+      count: count > 100 ? count - 100 : count,
     });
 
     return acc;
