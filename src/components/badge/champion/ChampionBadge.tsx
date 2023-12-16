@@ -51,6 +51,8 @@ export const ChampionBadge = ({
                     season={season}
                     lang={lang}
                     // trait 이 displayName 이라서, apiName 으로 바꿔줘야함. 하지만 그 과정에서 타입이 string 으로 꼬여서 발생하는 타입에러임.
+                    /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+                    // @ts-ignore
                     name={TraitGetter.getTraitApiNameFromDisplayName(trait, season)}
                     disableTooltip={true}
                   />
@@ -73,6 +75,8 @@ const Wrapper = styled.div`
   vertical-align: middle;
   overflow: hidden;
   font-size: 10px;
+
+  user-select: none;
 `;
 
 const Img = styled.img<{ cost: number }>`

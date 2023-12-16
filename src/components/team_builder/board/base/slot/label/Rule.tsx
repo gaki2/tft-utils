@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LanguageType } from '../../../../types';
+import { LanguageType } from '../../../../../../types';
 
 export const Rule = () => {
   return <Wrapper>{'Main'}</Wrapper>;

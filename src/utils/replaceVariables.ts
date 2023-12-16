@@ -1,4 +1,4 @@
-import { convertKeysToUpperCase, isEmptyObject } from './my_lodash';
+import { convertKeysToUpperCase, isEmptyObject } from './my_utils';
 
 export function replaceVariables(text: string, variables: any) {
   if (isEmptyObject(variables)) return text;

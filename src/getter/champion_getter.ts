@@ -18,7 +18,7 @@ export class ChampionGetter {
         const target = (
           Object.keys(champions_season_10) as (keyof typeof champions_season_10)[]
         ).find((apiName) => {
-          return apiName === `TFT10_${name}`;
+          return apiName === `TFT10_${name}` || apiName.includes(name);
         });
 
         if (!target) {

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Board, ChampionNode } from './class/Board';
-import { LanguageType, Season } from '../../types';
+import { LanguageType, Season } from '../../../../types';
 
 export const useBoard = (championData: ChampionNode[], season: Season, lang: LanguageType) => {
   const [_, setRerender] = useState(0);

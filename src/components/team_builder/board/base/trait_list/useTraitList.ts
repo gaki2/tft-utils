@@ -1,8 +1,8 @@
 import { SlotData } from '../class/Board';
-import { TraitGetter } from '../../../getter/trait_getter';
-import { LanguageType, Season } from '../../../types';
-import { SEASON_10_BASEURL } from '../../../environments/urls';
-import { ToDotPng, ToLowerCase } from '../../../utils/regex';
+import { TraitGetter } from '../../../../../getter/trait_getter';
+import { LanguageType, Season } from '../../../../../types';
+import { SEASON_10_BASEURL } from '../../../../../environments/urls';
+import { ToDotPng, ToLowerCase } from '../../../../../utils/regex';
 
 type UseTraitListProps = {
   season: Season;
@@ -45,7 +45,7 @@ function getTraitCounter(allSlotData: (SlotData | null)[], season: Season) {
       }
     }
 
-    const displayTraits = slotData.championData.traits;
+    const displayTraits = slotData.traits;
     const apiNameTraits = displayTraits.map((trait) =>
       TraitGetter.getTraitApiNameFromDisplayName(trait, season)
     );
