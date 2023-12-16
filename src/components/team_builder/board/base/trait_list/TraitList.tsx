@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LanguageType, Season } from '../../../types';
+import { LanguageType, Season } from '../../../../../types';
 import { SlotData } from '../class/Board';
 import { useTraitList } from './useTraitList';
 import { TraitItem } from './TraitItem';
@@ -39,6 +39,7 @@ const Wrapper = styled.div`
   overflow-y: scroll;
   max-height: 280px;
   margin-left: 32px;
+  overscroll-behavior: contain;
 
   @media (max-width: 768px) {
     --max-width: 360px;

@@ -4252,7 +4252,7 @@ export const champions_season_10 = {
       range: 1,
     },
     tileIcon: 'ASSETS/Characters/TFT_ItemUnknown/Skins/Skin0/TFT7_JadeStatue_Square.dds',
-    traits: null,
+    traits: [],
   },
   TFT10_YorickGhoulMelee: {
     ability: {

@@ -1,14 +1,12 @@
 import { MemoizedSlot } from './slot/Slot';
-import { SlotIndex } from '../../types/board';
-import { LanguageType, Season } from '../../types/config';
+import { SlotIndex } from '../../../../types/board';
+import { LanguageType, Season } from '../../../../types/config';
 import styled from 'styled-components';
-import { ChampionNode } from './class/Board';
-import { useBoard } from './useBoard';
 import { TraitList } from './trait_list/TraitList';
-import './variable.css';
+import { Board as BoardModel } from './class/Board';
 
 export type BoardProps = {
-  champions: ChampionNode[];
+  board: BoardModel;
   season: Season;
   language?: LanguageType;
   /**
@@ -17,8 +15,8 @@ export type BoardProps = {
   isDarkmode?: boolean;
 };
 
-export const Board = ({ champions, season, language = 'ko', isDarkmode = false }: BoardProps) => {
-  const { board } = useBoard(champions, season, language);
+export const Board = (props: BoardProps) => {
+  const { season, language = 'ko', isDarkmode = false, board } = props;
 
   return (
     <Wrapper data-darkmode={isDarkmode}>

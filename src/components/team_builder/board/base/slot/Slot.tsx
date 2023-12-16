@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { Board, SlotData } from '../class/Board';
-import { SlotIndex } from '../../../types/board';
-import { LanguageType, Season } from '../../../types/config';
+import { SlotIndex } from '../../../../../types/board';
+import { LanguageType, Season } from '../../../../../types/config';
 import styled from 'styled-components';
 import { Rule } from './label/Rule';
 import { StarLevel } from './star/StarLevel';
-import { SEASON_10_BASEURL } from '../../../environments/urls';
+import { SEASON_10_BASEURL } from '../../../../../environments/urls';
 
 type SlotProps = {
   board: Board;
@@ -52,6 +52,11 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
     wrapperRef.current?.setAttribute('backgroundColor', 'transparent');
   };
 
+  const onContextMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+    board.delete(slotIdx);
+  };
+
   return (
     <>
       <StyledWrapper
@@ -60,6 +65,7 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
         onDragStart={onDragStart}
         onDragOver={onDragOver}
         onDragLeave={onDragLeave}
+        onContextMenu={onContextMenu}
         onDrop={onDrop}
         data-empty={slotData === null}>
         {slotData?.headliner && (
@@ -67,12 +73,10 @@ const Slot = ({ board, slotData, slotIdx, season, language }: SlotProps) => {
             src={`${SEASON_10_BASEURL}/assets/ux/tft/hud/headliner/set10_headliner_icon.png`}
           />
         )}
-        <StyledBorder cost={slotData?.championData?.cost} headliner={Boolean(slotData?.headliner)}>
-          <StyledImageDiv ref={imageDivRef} url={slotData?.championData?.url ?? ''} />
+        <StyledBorder cost={slotData?.cost} headliner={Boolean(slotData?.headliner)}>
+          <StyledImageDiv ref={imageDivRef} url={slotData?.url ?? ''} />
           {slotData?.main && <Rule />}
-          {Boolean(slotData) && (
-            <StyledChampionName>{slotData?.championData?.name}</StyledChampionName>
-          )}
+          {Boolean(slotData) && <StyledChampionName>{slotData?.name}</StyledChampionName>}
         </StyledBorder>
         {slotData?.starLevel && <StarLevel starLevel={slotData?.starLevel} />}
       </StyledWrapper>

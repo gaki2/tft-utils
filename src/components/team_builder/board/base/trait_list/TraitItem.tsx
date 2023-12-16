@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { TraitData, TraitType } from './useTraitList';
-import { TRAIT_BACKGROUND_URL } from '../../../environments/urls';
-import { Tooltip } from '../../../utils/components/Tooltip';
+import { S3 } from '../../../../../environments/urls';
+import { Tooltip } from '../../../../../utils/components/Tooltip';
 
 const TRAIT_TYPE_URL_MAP = {
-  NONE: 'cteamplanner_activetrait_empty.png',
-  BRONZE: 'cteamplanner_activetrait_kbronze.png',
-  SILVER: 'cteamplanner_activetrait_ksilver.png',
-  GOLD: 'cteamplanner_activetrait_kgold.png',
-  PLATINUM: 'cteamplanner_activetrait_kchromatic.png',
+  NONE: '/assets/darken.svg',
+  BRONZE: '/assets/bronze.svg',
+  SILVER: '/assets/silver.svg',
+  GOLD: '/assets/gold.svg',
+  PLATINUM: '/assets/chromatic.svg',
 } as const;
 
 type TraitItemProps = {
@@ -19,10 +19,11 @@ export const TraitItem = ({ trait }: TraitItemProps) => {
   return (
     <>
       <Tooltip id={trait.apiName}>{trait.name}</Tooltip>
-      <Wrapper headliner={trait.headliner}>
+      <Wrapper>
         <TraitBadgeBackground
           data-tooltip-id={trait.apiName}
           traitType={trait.type}
+          isHeadliner={trait.headliner}
           key={trait.apiName}>
           <TraitImg traitType={trait.type} src={trait.url}></TraitImg>
         </TraitBadgeBackground>
@@ -36,7 +37,7 @@ export const TraitItem = ({ trait }: TraitItemProps) => {
   );
 };
 
-const Wrapper = styled.div<{ headliner: boolean }>`
+const Wrapper = styled.div`
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
@@ -44,9 +45,8 @@ const Wrapper = styled.div<{ headliner: boolean }>`
   justify-content: center;
 `;
 
-const TraitBadgeBackground = styled.div<{ traitType: TraitType }>`
-  background-image: url(${({ traitType }) =>
-    TRAIT_BACKGROUND_URL + '/' + TRAIT_TYPE_URL_MAP[traitType]});
+const TraitBadgeBackground = styled.div<{ traitType: TraitType; isHeadliner?: boolean }>`
+  background-image: url(${({ traitType }) => S3 + TRAIT_TYPE_URL_MAP[traitType]});
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -58,6 +58,22 @@ const TraitBadgeBackground = styled.div<{ traitType: TraitType }>`
   align-items: center;
 
   cursor: pointer;
+
+  ${({ isHeadliner }) =>
+    isHeadliner &&
+    `
+      ::before {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       background-size: contain;
+       background-image: url('https://tft-utils.s3.ap-northeast-2.amazonaws.com/assets/headliner-frame.svg');
+       opacity: 0.5;
+  `}
+  }
 `;
 
 const TraitImg = styled.img<{ traitType: TraitType }>`
@@ -70,7 +86,7 @@ const TraitImg = styled.img<{ traitType: TraitType }>`
   height: var(--icon-size);
   object-position: center;
   object-fit: cover;
-  filter: ${({ traitType }) => (traitType !== 'NONE' ? 'invert(1)' : 'opacity(1)')};
+  filter: invert(1);
 `;
 
 const TraitCount = styled.div`

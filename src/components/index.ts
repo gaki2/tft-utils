@@ -1,2 +1,2 @@
-export * from './board';
+export * from './team_builder';
 export * from './badge';

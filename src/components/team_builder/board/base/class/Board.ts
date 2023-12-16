@@ -1,31 +1,34 @@
-import { Position } from '../../../types/board';
-import { LanguageType, Season } from '../../../types';
-import { ChampionGetter } from '../../../getter/champion_getter';
-import { ToDotPng, ToLowerCase } from '../../../utils/regex';
-import { SEASON_10_BASEURL } from '../../../environments/urls';
+import { Position } from '../../../../../types/board';
+import { LanguageType, Season } from '../../../../../types';
+import { ChampionGetter } from '../../../../../getter/champion_getter';
+import { ToDotPng, ToLowerCase } from '../../../../../utils/regex';
+import { SEASON_10_BASEURL } from '../../../../../environments/urls';
 
 export const BOARD_ROW_COUNT = 4;
 export const BOARD_COL_COUNT = 7;
 export const BOARD_SLOT_COUNT = BOARD_ROW_COUNT * BOARD_COL_COUNT;
 
 export type StarLevel = 0 | 1 | 2 | 3 | 4;
-type ChampionData = { name: string; apiName: string; url: string; cost: number; traits: string[] };
-
-type MetaData = {
-  main?: boolean;
-  starLevel?: StarLevel;
-  headliner?: boolean;
-  headlinerTrait?: string;
+export type ChampionData = {
+  name: string;
+  apiName: string;
+  url: string;
+  cost: number;
+  traits: string[];
 };
 
-export type ChampionNode = {
+export type MetaData = Partial<{
+  main: boolean;
+  starLevel: StarLevel;
+  headliner: boolean;
+  headlinerTrait: string;
+}> & {
   position: Position;
-  name: string;
-} & MetaData;
+};
 
-export type SlotData = {
-  championData: ChampionData;
-} & MetaData;
+export type ChampionNode = ChampionData & MetaData;
+
+export type SlotData = ChampionData & MetaData;
 
 export type BoardModelState = {
   slots: (SlotData | null)[];
@@ -42,41 +45,36 @@ export type slotsStateListener = (state?: BoardModelState) => void;
 export class Board {
   private state: BoardModelState;
   private slotsStateListener: slotsStateListener;
+  private season: Season;
+  private lang: LanguageType;
 
-  public constructor(championDataList: ChampionNode[], season: Season, lang: LanguageType) {
-    const slots = this.initSlotData(season, championDataList, lang);
+  public constructor(champions: ChampionNode[], season: Season, lang: LanguageType) {
+    this.season = season;
+    this.lang = lang;
+
+    const slots: (SlotData | null)[] = Array(BOARD_SLOT_COUNT).fill(null);
+    for (let i = 0; i < champions.length; i++) {
+      const { row, col } = champions[i].position;
+      const idx = this.convertRowColToIdx({ row, col });
+      slots[idx] = champions[i];
+    }
+
     this.state = { slots, isDragging: false, draggingSlotIdx: null, dragoverSlotIdx: null };
   }
 
-  private initSlotData(season: Season, champions: ChampionNode[], lang: LanguageType) {
-    const slots: (SlotData | null)[] = Array(BOARD_SLOT_COUNT).fill(null);
+  public insert(champion: ChampionNode) {
+    this.state.slots[this.convertRowColToIdx(champion.position)] = champion;
+    this.slotsStateListener(this.state);
+  }
 
-    switch (season) {
-      case 'season_10':
-        champions.forEach((data) => {
-          const championData = ChampionGetter.getChampionDataFromName(data.name, season);
-          if (!championData) {
-            throw new Error(`Board.ts : Invalid champion name: ${data.name}`);
-          }
-          const { name, apiName, cost, traits, tileIcon } = championData;
-          slots[this.convertRowColToIdx(data.position)] = {
-            main: data.main,
-            starLevel: data.starLevel,
-            headliner: data.headliner,
-            headlinerTrait: data.headlinerTrait,
-            championData: {
-              name: name[lang] ?? '',
-              apiName: apiName ?? '',
-              cost: cost ?? 0,
-              traits: traits[lang].filter((trait): trait is string => Boolean(trait)) ?? [],
-              url: `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(tileIcon ?? ''))}`,
-            },
-          };
-        });
-        return slots;
-      default:
-        return slots;
-    }
+  public delete(idx: number) {
+    this.state.slots[idx] = null;
+    this.slotsStateListener(this.state);
+  }
+
+  public reset() {
+    this.state.slots = Array(BOARD_SLOT_COUNT).fill(null);
+    this.slotsStateListener(this.state);
   }
 
   private convertRowColToIdx(position: Position): number {
@@ -89,6 +87,19 @@ export class Board {
       throw new Error(`Invalid col: ${col}. Must be in range [0, ${BOARD_COL_COUNT})`);
     }
     return row * BOARD_COL_COUNT + col;
+  }
+
+  private convertIdxToRowCol(idx: number): Position | null {
+    if (idx < 0 || idx >= BOARD_SLOT_COUNT) {
+      console.error(`Board 의 ${idx} 가 범위를 초과했습니다. min: 0, max: ${BOARD_SLOT_COUNT - 1}`);
+      return null;
+    }
+    return { row: Math.floor(idx / BOARD_COL_COUNT), col: idx % BOARD_COL_COUNT };
+  }
+
+  public findEmptySlot() {
+    const emptySlotIdx = this.state.slots.findIndex((slot) => slot === null);
+    return this.convertIdxToRowCol(emptySlotIdx);
   }
 
   public getState() {
@@ -130,10 +141,18 @@ export class Board {
     }
   }
 
-  private _swap(slot1: number, slot2: number) {
-    const temp = this.state.slots[slot1];
-    this.state.slots[slot1] = this.state.slots[slot2];
-    this.state.slots[slot2] = temp;
+  private _swap(slotIdx1: number, slotIdx2: number) {
+    const temp = this.state.slots[slotIdx1];
+    this.state.slots[slotIdx1] = this.state.slots[slotIdx2];
+    this.state.slots[slotIdx2] = temp;
+
+    // 만약 슬롯의 값이 null 이 아니라면, position 을 업데이트 해줍니다.
+    if (this.state.slots[slotIdx1] !== null) {
+      this.state.slots[slotIdx1]!.position = this.convertIdxToRowCol(slotIdx1)!;
+    }
+    if (this.state.slots[slotIdx2] !== null) {
+      this.state.slots[slotIdx2]!.position = this.convertIdxToRowCol(slotIdx2)!;
+    }
   }
 
   public swap() {
