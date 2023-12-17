@@ -13,7 +13,8 @@
     "build": "rimraf lib && npm run build-rollup",
     "release": "npm run build && changeset publish",
     "test": "vitest run",
-    "link": "npm run build && npm link"
+    "link": "npm run build && npm link",
+    "api": "ts-node -T src/script/api/championDetail.ts"
   },
   "keywords": [
     "tft",
@@ -101,6 +102,7 @@
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "lodash": "^4.17.21",
+    "node-html-parser": "^6.1.11",
     "plop": "^3.1.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",

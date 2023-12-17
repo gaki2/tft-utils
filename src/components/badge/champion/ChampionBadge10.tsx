@@ -5,6 +5,7 @@ import { ChampionGetter } from '../../../getter/champion_getter';
 import { ErrorBadge } from '../ErrorBadge';
 import { useChampionBadge10 } from './useChampionBadge10';
 import { ChampionBadge } from './ChampionBadge';
+import { ChampionTooltipContent10 } from '../../tooltip/ChampionTooltipContent10';
 
 export type ChampionBadge10Props = {
   name: ChampionName_10;
@@ -24,5 +25,9 @@ export const ChampionBadge10 = (props: ChampionBadge10Props) => {
 
   const badgeProps = useChampionBadge10({ ...championData, lang });
 
-  return <ChampionBadge {...badgeProps} {...rest} />;
+  return (
+    <ChampionBadge {...badgeProps} {...rest}>
+      <ChampionTooltipContent10 {...badgeProps} />
+    </ChampionBadge>
+  );
 };

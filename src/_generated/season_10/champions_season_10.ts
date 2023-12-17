@@ -4374,7 +4374,7 @@ export const champions_season_10 = {
       en: [],
     },
   },
-  TFT10_Akali_TrueDamage: {
+  TFT10_AkaliTrueDamage: {
     ability: {
       desc: {
         ko: '가장 가까운 3칸 내의 적 세 명에게 <physicalDamage>@TOTAL_DAMAGE@(%i:scaleAD%)</physicalDamage>의 물리 피해를 세 번 나누어 입힙니다. 세 번의 공격 후 살아남은 적 하나당 <TFTBonus>@TOTAL_MANA_REFUND@(%i:scaleAP%)</TFTBonus>의 마나를 돌려받습니다.<br><br><spellActive enabled=TFT10_BlingActive alternate=rules>반짝반짝 보너스: 삼연타격으로 입힌 피해의 <scaleHealth><ShowIfNot.TFT10_BlingActive>@TFTUnitProperty.:TFT10_AkaliOmnivamp@%</ShowIfNot.TFT10_BlingActive><ShowIf.TFT10_BlingActive>@TFTUnitProperty.:TFT10_AkaliOmnivamp@%</ShowIf.TFT10_BlingActive></scaleHealth>만큼 체력을 회복합니다.</spellActive><br><br>@TFTUnitProperty.:TFT10_Headliner_TRA@',
@@ -4419,8 +4419,8 @@ export const champions_season_10 = {
         },
       ],
     },
-    apiName: 'TFT10_Akali_TrueDamage',
-    characterName: 'TFT10_Akali_TrueDamage',
+    apiName: 'TFT10_AkaliTrueDamage',
+    characterName: 'TFT10_AkaliTrueDamage',
     cost: 4,
     icon: 'ASSETS/UX/TFT/ChampionSplashes/TFT10_Akali_TrueDamage.TFT_Set10.tex',
     name: {

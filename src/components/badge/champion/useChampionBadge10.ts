@@ -9,12 +9,16 @@ type UseChampionBadge10Props = {
 } & ChampionData_10;
 
 export const useChampionBadge10 = (props: UseChampionBadge10Props) => {
-  const { lang, apiName, name, cost, traits, tileIcon } = props;
+  const { lang, apiName, name, cost, traits, tileIcon, ability } = props;
 
   const url = useMemo(
     () => (tileIcon ? `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(tileIcon))}` : ''),
     [tileIcon]
   );
+
+  const skillUrl = useMemo(() => {
+    return ability.icon ? `${SEASON_10_BASEURL}/${ToLowerCase(ToDotPng(ability.icon))}` : '';
+  }, [ability]);
 
   const championName = useMemo(() => name[lang] ?? '', [name, lang]);
 
@@ -36,5 +40,6 @@ export const useChampionBadge10 = (props: UseChampionBadge10Props) => {
     cost: championCost,
     url,
     traits: championTraits,
+    skillUrl,
   };
 };
