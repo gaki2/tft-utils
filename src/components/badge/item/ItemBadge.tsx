@@ -29,7 +29,7 @@ export const ItemBadge = (props: ItemBadgeProps) => {
   return (
     <>
       <Wrapper data-tooltip-id={tooltipId} style={commonProps.style}>
-        <Img src={url} alt={name} />
+        <Img width={'32px'} height={'32px'} src={url} alt={name} />
       </Wrapper>
       <Tooltip id={tooltipId}>
         <TooltipWrapper>
