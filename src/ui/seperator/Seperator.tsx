@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
-type HrSize = 'none' | 'S' | 'M' | 'L' | 'XL';
+type Size = 'none' | 'S' | 'M' | 'L' | 'XL';
 
-type HrProps = {
-  size: HrSize;
+type SeperatorProps = {
+  size: Size;
 };
 
-export const Hr = ({ size }: HrProps) => {
-  return <MyHr role='separator' size={size} />;
+export const Seperator = ({ size }: SeperatorProps) => {
+  return <Div role='separator' size={size} />;
 };
 
-const MyHr = styled.div<{ size: HrSize }>`
+const Div = styled.div<{ size: Size }>`
   --none: 0 0 0 0;
   --S: 0 0 0.25rem 0;
   --M: 0 0 0.5rem 0;

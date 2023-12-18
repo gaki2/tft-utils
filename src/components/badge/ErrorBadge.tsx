@@ -1,5 +1,5 @@
 import { S3 } from '../../environments/urls';
-import { Tooltip } from '../../utils/components/Tooltip';
+import { Tooltip } from '../../ui/tooltip/Tooltip';
 
 type ErrorBadgeProps = {
   errorText?: string;

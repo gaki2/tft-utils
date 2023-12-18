@@ -1,7 +1,7 @@
 import { LanguageType } from '../../../types/config';
 import { useMemo } from 'react';
 import styled from 'styled-components';
-import { Tooltip } from '../../../utils/components/Tooltip';
+import { Tooltip } from '../../../ui/tooltip/Tooltip';
 import { CommonBadgeProps } from '../common_props_type';
 
 export type TraitBadgeProps = {
