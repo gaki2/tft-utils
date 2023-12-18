@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { skills_season_10 } from '../../_generated/season_10/skill_season_10';
 import { Hr } from '../../utils/components/Hr';
-import { Dollar } from '../../utils/components/Dollar';
 import { TraitGetter } from '../../getter/trait_getter';
 import { useMemo } from 'react';
 import { getTraitIconUrl10 } from '../badge/trait/trait_utils';
 import { filterNullable } from '../../utils/my_utils';
+import { Dollar } from '../../ui/icons/Dollar';
 
 type ChampionTooltipContent10Props = {
   name: string;
@@ -40,7 +40,7 @@ export const ChampionTooltipContent10 = (props: ChampionTooltipContent10Props) =
       <Name>{name}</Name>
       <Hr size={'S'} />
       <FlexRow gap={'3px'}>
-        <Dollar />
+        <Dollar width={'1rem'} height={'1rem'} />
         <span>{cost}</span>
       </FlexRow>
       <Hr size={'S'} />
@@ -128,8 +128,4 @@ const Desc = styled.div`
   white-space: pre-line;
   line-height: 1.5;
   color: #dcdcdc;
-`;
-
-const DamageP = styled.p`
-  line-height: 1;
 `;

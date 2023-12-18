@@ -5,6 +5,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import commonjs from "rollup-plugin-commonjs";
 import terser from '@rollup/plugin-terser';
 import css from 'rollup-plugin-import-css';
+import svgr from '@svgr/rollup';
 
 const extensions = ['.tsx', 'ts', 'js', '.mjs'];
 
@@ -47,7 +48,7 @@ const dtsConfig = {
   plugins: [dts()]
 };
 
-const Plugins = [commonjs(), peerDepsExternal(), esbuildConfig, terser(), css()];
+const Plugins = [commonjs(), peerDepsExternal(), esbuildConfig, terser(), css(), svgr()];
 
 /** @type {import('rollup').RollupOptions} */
 const commonjsConfig = {

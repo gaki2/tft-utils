@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { WithPrimitive } from '../../../../types/primitive';
 import { LanguageType, Season } from '../../../../types';
 import { useState } from 'react';
-import { sortBy } from 'lodash';
+import sortBy from 'lodash/sortBy';
 
 type ChampionList = {
   name: string;
