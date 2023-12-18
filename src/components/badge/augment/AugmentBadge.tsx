@@ -1,6 +1,6 @@
 import { LanguageType } from '../../../types';
 import styled from 'styled-components';
-import { Tooltip } from '../../../utils/components/Tooltip';
+import { Tooltip } from '../../../ui/tooltip/Tooltip';
 import { useMemo } from 'react';
 import { CommonBadgeProps } from '../common_props_type';
 

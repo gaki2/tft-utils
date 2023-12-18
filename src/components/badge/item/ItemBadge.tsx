@@ -1,7 +1,7 @@
 import { LanguageType } from '../../../types';
 import styled from 'styled-components';
 import { useMemo } from 'react';
-import { Tooltip } from '../../../utils/components/Tooltip';
+import { Tooltip } from '../../../ui/tooltip/Tooltip';
 import { CommonBadgeProps } from '../common_props_type';
 import { underBarToSpace } from '../../../utils/regex';
 import { ItemStat } from './ItemStat';

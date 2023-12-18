@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { skills_season_10 } from '../../_generated/season_10/skill_season_10';
-import { Hr } from '../../utils/components/Hr';
 import { TraitGetter } from '../../getter/trait_getter';
 import { useMemo } from 'react';
 import { getTraitIconUrl10 } from '../badge/trait/trait_utils';
 import { filterNullable } from '../../utils/my_utils';
 import { Dollar } from '../../ui/icons/Dollar';
+import { Seperator } from '../../ui/seperator';
 
 type ChampionTooltipContent10Props = {
   name: string;
@@ -38,12 +38,12 @@ export const ChampionTooltipContent10 = (props: ChampionTooltipContent10Props) =
   return (
     <Wrapper>
       <Name>{name}</Name>
-      <Hr size={'S'} />
+      <Seperator size={'S'} />
       <FlexRow gap={'3px'}>
         <Dollar width={'1rem'} height={'1rem'} />
         <span>{cost}</span>
       </FlexRow>
-      <Hr size={'S'} />
+      <Seperator size={'S'} />
       <FlexCol gap={'2px'}>
         {filterNullable(traitDetails).map((trait) => {
           return (
@@ -54,7 +54,7 @@ export const ChampionTooltipContent10 = (props: ChampionTooltipContent10Props) =
           );
         })}
       </FlexCol>
-      <Hr size={'M'} />
+      <Seperator size={'M'} />
       <FlexRow gap={'6px'}>
         <SkillImg src={skillUrl} />
         <div>
@@ -62,9 +62,9 @@ export const ChampionTooltipContent10 = (props: ChampionTooltipContent10Props) =
           <Mana>{skillDetail.mana}</Mana>
         </div>
       </FlexRow>
-      <Hr size={'M'}></Hr>
+      <Seperator size={'M'} />
       <Desc>{`${skillDetail.description}`}</Desc>
-      <Hr size={'M'} />
+      <Seperator size={'M'} />
       <FlexCol gap={'2px'}>
         {skillDetail.damage.map((item) => {
           return (

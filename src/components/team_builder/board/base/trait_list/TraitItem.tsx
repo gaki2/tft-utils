@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { TraitData, TraitType } from './useTraitList';
 import { S3 } from '../../../../../environments/urls';
-import { Tooltip } from '../../../../../utils/components/Tooltip';
+import { Tooltip } from '../../../../../ui/tooltip/Tooltip';
 
 const TRAIT_TYPE_URL_MAP = {
   NONE: '/assets/darken.svg',

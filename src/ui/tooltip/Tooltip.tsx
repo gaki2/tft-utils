@@ -1,13 +1,12 @@
 import { Tooltip as _Tooltip } from 'react-tooltip';
 import React from 'react';
 
-type _TooltipProps = {
+export type TooltipProps = React.PropsWithChildren<{
   id: string;
-  children: React.ReactNode;
   tooltipProps?: React.ComponentProps<typeof _Tooltip>;
-};
+}>;
 
-export const Tooltip = ({ id, tooltipProps, children }: _TooltipProps) => {
+export const Tooltip = ({ id, tooltipProps, children }: TooltipProps) => {
   return (
     <_Tooltip
       delayShow={0}
